@@ -63,23 +63,28 @@ function main() {
     return filename.replace(".md", "");
   }
 
-  // Flatten all files across all dates, newest date first
+  // RSS feed contains only the most recent day's material.
+  // Sort: English daily first, then other English files alphabetical, then French.
   const allItems: { date: string; file: string }[] = [];
-  for (const e of entries) {
-    // Sort within each date: weekly first, daily second, rest alphabetical
-    const sorted = [...e.files].sort((a, b) => {
-      const priority: Record<string, number> = { weekly: 0, daily: 1 };
+  const latest = entries[0];
+  if (latest) {
+    const isFrench = (f: string) => f.endsWith(".fr.md");
+    const sorted = [...latest.files].sort((a, b) => {
+      const aFr = isFrench(a);
+      const bFr = isFrench(b);
+      if (aFr !== bFr) return aFr ? 1 : -1;
+      const priority: Record<string, number> = { daily: 0, weekly: 1 };
       const pa = Object.entries(priority).find(([k]) => a.includes(k))?.[1] ?? 99;
       const pb = Object.entries(priority).find(([k]) => b.includes(k))?.[1] ?? 99;
       if (pa !== pb) return pa - pb;
       return a.localeCompare(b);
     });
     for (const file of sorted) {
-      allItems.push({ date: e.date, file });
+      allItems.push({ date: latest.date, file });
     }
   }
 
-  const feedItems = allItems.slice(0, 15).map(({ date, file }) => {
+  const feedItems = allItems.map(({ date, file }) => {
     const label = fileLabel(file);
     let description = `<p>${label} for ${date}</p>`;
     const filePath = join(digestsDir, date, file);
