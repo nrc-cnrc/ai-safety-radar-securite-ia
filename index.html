@@ -1,527 +1,296 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Safety Radar</title>
   <meta name="description" content="Daily AI safety research, policy, and development digest">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="AI Safety Radar RSS" href="feed.xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- GC Design System: utility classes (CSS shortcuts) -->
+  <link rel="stylesheet" href="https://cdn.design-system.canada.ca/@cdssnc/gcds-utility@1.11.0/dist/gcds-utility.min.css">
+
+  <!-- GC Design System: component styles + ESM bundle -->
+  <link rel="stylesheet" href="https://cdn.design-system.canada.ca/@cdssnc/gcds-components@0.47.0/dist/gcds/gcds.css">
+  <script type="module" src="https://cdn.design-system.canada.ca/@cdssnc/gcds-components@0.47.0/dist/gcds/gcds.esm.js"></script>
+
   <style>
-    :root {
-      --bg: #ffffff;
-      --surface: #fbfbfd;
-      --border: #e4e6ec;
-      --border-strong: #d1d5dc;
-      --text: #14161a;
-      --text-muted: #6b6f78;
-      --accent: #0b6aa8;
-      --accent-hover: #084e7c;
-      --accent-subtle: #0b6aa814;
-      --link: #0b6aa8;
-      --green: #2a7d4f;
-      --orange: #b45309;
-      --red: #df2039;
-      --strong: #0a0b0d;
-      --header-height: 56px;
+    /* Local layout: sidebar + main, sitting between gcds-header and gcds-footer */
+    .layout {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 0;
+      max-width: 1400px;
+      margin: 0 auto;
+      align-items: start;
+    }
+    .sidebar {
+      position: sticky;
+      top: 0;
+      align-self: start;
+      max-height: 100vh;
+      overflow-y: auto;
+      padding: 8px 12px 12px;
+      border-right: 1px solid var(--gcds-border-default, #dcdcdc);
+      font-family: 'Noto Sans', sans-serif;
+    }
+    .main-area { padding: 8px 32px 48px; min-width: 0; }
+    gcds-container[main-container] { --gcds-container-padding: 0; padding-top: 0 !important; padding-bottom: 0 !important; }
+
+    /* GC Design System search pattern */
+    .search-box { margin-bottom: 12px; }
+    .search-input-group {
+      display: flex;
+      align-items: stretch;
+    }
+    .search-input-group input[type="search"] {
+      flex: 1;
+      min-width: 0;
+      padding: 6px 8px;
+      border: 1.9px solid #000;
+      border-right: none;
+      border-radius: 0;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      color: #1b1b1b;
+      background: #fff;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+    }
+    .search-input-group input[type="search"]:focus {
+      outline: 4px solid #ffbf47;
+      outline-offset: 0;
+      border-color: #0535d2;
+      border-right: none;
+      z-index: 1;
+      position: relative;
+    }
+    .search-input-group button {
+      flex-shrink: 0;
+      background: #26374a;
+      border: 1.9px solid #26374a;
+      border-radius: 0;
+      padding: 0 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .search-input-group button:hover { background: #1c2a38; }
+    .search-input-group button:focus {
+      outline: 4px solid #ffbf47;
+      outline-offset: 0;
     }
 
-    [data-theme="dark"] {
-      --bg: #101922;
-      --surface: #161b22;
-      --border: #272d35;
-      --border-strong: #3a4149;
-      --text: #e6edf3;
-      --text-muted: #8b949e;
-      --accent: #5b8dd9;
-      --accent-hover: #7aaae6;
-      --accent-subtle: #5b8dd910;
-      --link: #6b9ff5;
-      --green: #3fb950;
-      --orange: #d29922;
-      --red: #f85149;
-      --strong: #f0f6fc;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'IBM Plex Sans', system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-      font-size: 17px;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ------ HEADER ------ */
-    header {
-      border-bottom: 1px solid var(--border-strong);
-      padding: 0 28px 0 16px;
-      height: var(--header-height);
+    .month-group { border-bottom: 1px solid #dcdcdc; }
+    .month-label {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      position: sticky;
-      top: 0;
-      background: var(--surface);
-      z-index: 100;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      flex-shrink: 0;
-    }
-
-    .logo .mark {
-      width: 43px;
-      height: 43px;
-      flex-shrink: 0;
-    }
-
-    .logo .t { display: flex; flex-direction: column; line-height: 1.15; }
-
-    .logo .t b {
-      font-family: 'IBM Plex Sans', sans-serif;
-      font-weight: 600;
-      font-size: 18px;
-      letter-spacing: -0.01em;
-      color: var(--text);
-    }
-
-    .logo .t span {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
-      color: var(--text-muted);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    nav { display: flex; gap: 0; align-items: center; flex-shrink: 0; margin-left: 24px; }
-
-    nav a, nav button {
-      color: var(--text);
-      text-decoration: none;
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      background: none;
-      border: 1px solid transparent;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: #333;
+      padding: 6px 4px;
       cursor: pointer;
-      padding: 6px 10px;
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.12s;
+      user-select: none;
     }
+    .month-label:hover { color: #1354ec; }
+    .month-label .chevron { transition: transform 0.2s; }
+    .month-group.collapsed .chevron { transform: rotate(-90deg); }
+    .month-entries { padding: 0 0 4px; }
+    .month-group.collapsed .month-entries { display: none; }
+    .month-group.hidden { display: none; }
 
-    nav a:hover, nav button:hover { border-color: var(--border-strong); background: var(--bg); }
-
-    .theme-toggle { padding: 6px 8px; }
-
-    /* ------ SIDEBAR ------ */
-    .sidebar {
-      position: fixed;
-      left: 0;
-      top: var(--header-height);
-      bottom: 0;
-      width: 290px;
-      border-right: 1px solid var(--border-strong);
-      display: flex;
-      flex-direction: column;
-      background: var(--surface);
-    }
-
-    .search-box {
-      flex-shrink: 0;
-      padding: 14px 16px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .search-box .wrap {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 12px;
-      background: var(--bg);
-      border: 1px solid var(--border-strong);
-      border-radius: 6px;
-    }
-
-    .search-box .wrap svg { color: var(--text-muted); flex-shrink: 0; }
-
-    .search-box input {
-      flex: 1;
-      border: none;
-      background: transparent;
-      color: var(--text);
-      font-family: inherit;
-      font-size: 15px;
-      outline: none;
-    }
-
-    .search-box input::placeholder { color: var(--text-muted); opacity: 0.8; }
-
-    .sidebar-entries { flex: 1; overflow-y: auto; padding: 6px 0 16px; }
-
-    .date-group {
-      margin: 0 14px;
-      padding: 6px 0;
-      border-top: 1px solid var(--border);
-    }
-
-    .month-entries .date-group:first-child { border-top: none; }
-
+    .date-group { padding: 1px 0; }
     .date-label {
       display: flex;
       align-items: baseline;
-      gap: 10px;
-      padding: 6px 8px;
-      border-radius: 4px;
+      gap: 8px;
+      padding: 3px 6px;
       cursor: pointer;
+      border-radius: 4px;
       user-select: none;
-      transition: background 0.1s;
     }
-
-    .date-label:hover { background: var(--bg); }
-
-    .date-label .num {
-      font-family: 'IBM Plex Serif', serif;
-      font-size: 22px;
-      font-weight: 500;
-      color: var(--text);
-      line-height: 1;
-      letter-spacing: -0.02em;
+    .date-label:hover { background: #f2f2f2; }
+    .date-label .num { font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 700; color: #333; }
+    .date-label .dow { font-size: 12px; color: #595959; font-weight: 500; }
+    .date-label .rel { margin-left: auto; font-size: 11px; color: #595959; }
+    .date-label .rel.today {
+      color: #fff; background: #1f497a;
+      padding: 1px 6px; border-radius: 3px; font-weight: 700;
     }
-
-    .date-label .dow {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 11px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-
-    .date-label .rel {
-      margin-left: auto;
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
-      color: var(--text-muted);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    .date-label .rel.today { color: var(--accent); }
-
-    .date-label .chevron {
-      transition: transform 0.2s;
-      opacity: 0.5;
-      flex-shrink: 0;
-      margin-left: 4px;
-    }
-
+    .date-label .chevron { transition: transform 0.2s; color: #595959; }
     .date-group.collapsed .chevron { transform: rotate(-90deg); }
-
-    .date-files {
-      overflow: hidden;
-      transition: max-height 0.2s ease;
-      padding: 4px 0;
-    }
-
-    .date-group.collapsed .date-files { max-height: 0 !important; padding: 0; }
+    .date-files { overflow: hidden; transition: max-height 0.2s ease; }
+    .date-group.collapsed .date-files { max-height: 0 !important; }
+    .date-group.hidden { display: none; }
 
     .file-link {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 8px;
-      padding: 6px 10px 6px 14px;
-      color: var(--text);
-      text-decoration: none;
-      font-size: 14.5px;
-      border-radius: 4px;
-      margin: 1px 0;
-      transition: background 0.1s;
-      position: relative;
-    }
-
-    .file-link::before {
-      content: "";
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: var(--border-strong);
-      flex-shrink: 0;
-    }
-
-    .file-link:hover { background: var(--bg); }
-
-    .file-link.active { background: var(--accent-subtle); font-weight: 500; }
-    .file-link.active::before { background: var(--accent); }
-
-    .file-link .lbl { flex: 1; }
-
-    .file-link .badge {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
-      color: var(--accent);
-      letter-spacing: 0.04em;
-      font-weight: 500;
-      flex-shrink: 0;
-      border: 1px solid var(--accent);
-      border-radius: 3px;
-      padding: 1px 5px;
-    }
-
-    .badge-daily { color: var(--accent); border-color: var(--accent); }
-    .badge-weekly { color: var(--orange); border-color: var(--orange); }
-
-    /* ------ MAIN ------ */
-    .main {
-      margin-left: 290px;
-      padding: 56px 72px 96px;
-      min-height: calc(100vh - var(--header-height));
-    }
-
-    #content { max-width: 720px; }
-
-    #content h1 {
-      font-family: 'IBM Plex Serif', serif;
-      font-weight: 500;
-      font-size: 28px;
-      line-height: 1.05;
-      letter-spacing: -0.025em;
-      color: var(--text);
-      margin-bottom: 1.5rem;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--text);
-    }
-
-    #content h2 {
-      font-family: 'IBM Plex Serif', serif;
-      font-weight: 500;
-      font-size: 22px;
-      letter-spacing: -0.015em;
-      line-height: 1.2;
-      color: var(--text);
-      margin: 2.75rem 0 1rem;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--border-strong);
-      display: flex;
-      align-items: baseline;
-      gap: 14px;
-    }
-
-    #content h2::before {
-      content: "§";
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 20px;
-      color: var(--accent);
-      font-weight: 600;
-      letter-spacing: 0.1em;
-    }
-
-    #content h3 {
-      font-family: 'IBM Plex Serif', serif;
-      font-size: 20px;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      line-height: 1.3;
-      color: var(--text);
-      margin: 1.75rem 0 0.5rem;
-    }
-
-    #content p { margin-bottom: 1rem; line-height: 1.7; }
-    #content a {
-      color: var(--link);
+      padding: 3px 10px 3px 18px;
+      color: #1f497a;
       text-decoration: underline;
       text-underline-offset: 3px;
-      text-decoration-thickness: 1px;
-      transition: color 0.12s;
-    }
-    #content a:hover { color: var(--accent-hover); }
-    #content ul, #content ol { padding-left: 1.4rem; margin-bottom: 1rem; }
-    #content li { margin-bottom: 0.5rem; line-height: 1.7; }
-    #content strong { color: var(--strong); font-weight: 600; }
-    #content code {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 0.88em;
-      background: var(--surface);
-      padding: 0.1rem 0.4rem;
-      border-radius: 3px;
-      border: 1px solid var(--border);
-    }
-    #content pre {
-      font-family: 'IBM Plex Mono', monospace;
-      background: var(--surface);
-      padding: 1.1rem;
-      border-radius: 4px;
-      overflow-x: auto;
-      margin-bottom: 1.1rem;
-      border: 1px solid var(--border);
-    }
-    #content pre code { background: none; padding: 0; border: none; }
-    #content blockquote {
-      border-left: 2px solid var(--accent);
-      padding: 0.25rem 0 0.25rem 1.1rem;
-      color: var(--text-muted);
-      margin-bottom: 1rem;
-      font-style: italic;
-      font-family: 'IBM Plex Serif', serif;
-      font-size: 18px;
-    }
-    #content hr { border: none; border-top: 1px solid var(--border-strong); margin: 2rem 0; }
-
-    .ai-disclaimer {
-      margin-top: 4rem;
-      padding-top: 18px;
-      border-top: 1px solid var(--text);
-      font-family: 'IBM Plex Serif', serif;
-      font-style: italic;
       font-size: 14px;
-      color: var(--text-muted);
-      line-height: 1.65;
+      border-left: 3px solid transparent;
+      margin: 0;
     }
-
-    .ai-disclaimer a { color: var(--text-muted); text-decoration: underline; }
-    .ai-disclaimer a:hover { color: var(--link); }
-
-    .welcome {
-      text-align: center;
-      padding: 5rem 2rem;
-      color: var(--text-muted);
+    .file-link:hover { background: #f2f2f2; color: #1354ec; }
+    .file-link.active {
+      background: #f2f2f2;
+      border-left-color: #ea2d37;
+      color: #333;
+      text-decoration: none;
+      font-weight: 700;
     }
-
-    .welcome h1 {
-      font-family: 'IBM Plex Serif', serif;
-      font-weight: 500;
-      letter-spacing: -0.02em;
-      color: var(--accent);
-      border: none;
-      font-size: 2.5rem;
-      margin-bottom: 0.75rem;
+    .file-link .badge {
+      font-family: 'Lato', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 3px;
+      padding: 2px 6px;
+      text-decoration: none;
     }
-
-    .welcome p { font-size: 1rem; line-height: 1.7; }
-
-    .loading { color: var(--text-muted); padding: 2rem; text-align: center; font-size: 0.9rem; }
+    .badge-daily { background: #1f497a; }
+    .badge-weekly { background: #ee7100; }
 
     .search-results-info {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      padding: 0.25rem 1rem 0.5rem;
-      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      color: #595959;
+      padding: 4px 4px 8px;
+      font-weight: 500;
     }
 
-    .date-group.hidden { display: none; }
+    /* Markdown body inside #content -- match gcds typography */
+    #content { max-width: 860px; }
+    #content > .welcome p { color: #595959; font-family: 'Noto Sans', sans-serif; font-size: 1rem; line-height: 1.65; }
 
-    .month-group { margin-bottom: 10px; }
-
-    .month-label {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
-      color: var(--text-muted);
-      font-weight: 600;
-      padding: 14px 20px 8px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      cursor: pointer;
-      user-select: none;
-      transition: color 0.1s;
+    /* AI-generated body: monospace on a light surface, framed in a rounded
+       box so it reads as a machine-generated artifact. */
+    .ai-body {
+      background: #f8f8f8;
+      color: #333;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      padding: 1.5rem 1.75rem;
+      border: 1px solid #dcdcdc;
+      border-radius: 8px;
+      margin: 0 0 1.5rem;
     }
-
-    .month-label:hover { color: var(--text); }
-
-    .month-label .chevron {
-      transition: transform 0.2s;
-      opacity: 0.6;
-      flex-shrink: 0;
+    #content .ai-body h1,
+    #content .ai-body h2,
+    #content .ai-body h3,
+    #content .ai-body h4 {
+      font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+      font-weight: 700;
+      color: #1b1b1b;
     }
+    #content .ai-body h1 { font-size: 1.4rem; line-height: 1.25; margin: 0 0 1rem; }
+    #content .ai-body h2 { font-size: 1.15rem; line-height: 1.3; margin: 1.75rem 0 0.75rem; padding-bottom: 0.4rem; border-bottom: 1px solid #dcdcdc; }
+    #content .ai-body h3 { font-size: 1rem; line-height: 1.35; margin: 1.25rem 0 0.5rem; }
+    #content .ai-body h4 { font-size: 0.9375rem; margin: 1rem 0 0.4rem; }
 
-    .month-group.collapsed .month-label .chevron { transform: rotate(-90deg); }
+    .ai-body p,
+    .ai-body li {
+      font-family: inherit;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+      font-weight: 400;
+    }
+    .ai-body p { margin: 0 0 0.85rem; max-width: 80ch; }
+    .ai-body ul, .ai-body ol { padding-left: 1.4rem; margin: 0 0 0.85rem; }
+    .ai-body li { margin-bottom: 0.35rem; }
+    .ai-body a { color: #1f497a; text-decoration: underline; text-underline-offset: 3px; }
+    .ai-body a:hover { color: #1354ec; text-decoration-thickness: 2px; }
+    .ai-body a:visited { color: #4b248f; }
+    .ai-body strong { font-weight: 700; color: #1b1b1b; }
+    .ai-body code { font-family: inherit; font-size: 0.92em; background: #ececec; padding: 0.1rem 0.4rem; border-radius: 3px; border: 1px solid #dcdcdc; color: #333; }
+    .ai-body pre { font-family: inherit; background: #ececec; padding: 1rem 1.25rem; border-radius: 4px; border-left: 4px solid #1f497a; overflow-x: auto; margin: 0 0 1rem; color: #333; }
+    .ai-body pre code { background: none; padding: 0; border: none; color: inherit; }
+    .ai-body blockquote { border-left: 4px solid #1f497a; background: #ececec; padding: 0.85rem 1.1rem; margin: 0 0 1rem; border-radius: 0 4px 4px 0; color: #595959; }
+    .ai-body hr { border: none; border-top: 1px solid #dcdcdc; margin: 1.75rem 0; }
 
-    .month-entries { display: block; }
-    .month-group.collapsed .month-entries { display: none; }
-    .month-group.hidden { display: none; }
+    .ai-notice-bottom { display: block; margin: 1.5rem 0 0; font-size: 0.75rem; }
+    .ai-notice-bottom gcds-text { font-size: 0.75rem; }
 
-    @media (max-width: 768px) {
-      .sidebar {
-        position: static;
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid var(--border-strong);
-        max-height: 40vh;
-      }
-      .main { margin-left: 0; padding: 1.5rem; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    .main-header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 1.25rem; }
+    .main-header-text { min-width: 0; }
+    .main-title { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 2rem; color: #333; margin: 0 0 2px; line-height: 1.2; }
+    .main-desc { font-family: 'Noto Sans', sans-serif; font-size: 1rem; font-weight: 400; color: #333; margin: 0; line-height: 1.5; }
+    .rss-link { display: inline-flex; align-items: center; gap: 5px; flex-shrink: 0; font-size: 13px; color: #1f497a; text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
+    .rss-link:hover { color: #1354ec; }
+
+    .welcome { padding: 1rem 0 3rem; }
+    .loading { color: #595959; padding: 1.5rem; text-align: center; font-size: 0.95rem; }
+
+    @media (max-width: 900px) {
+      .layout { display: block; }
+      .sidebar { position: static; max-height: none; border-right: none; border-bottom: 1px solid #dcdcdc; }
+      .main-area { padding: 16px; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <a href="#" class="logo">
-      <img src="assets/ai-safety-radar.svg" class="mark" alt="AI Safety Radar logo">
-      <div class="t">
-        <b id="logoTitle">AI Safety Radar</b>
-        <span id="logoSub">Daily digest</span>
-      </div>
-    </a>
-    <nav>
-      <a href="feed.xml" title="RSS Feed">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
-        RSS
-      </a>
-      <a href="https://github.com/ygauthie/ai-safety-radar-securite-ia" title="GitHub">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-        Source
-      </a>
-      <button id="langToggle" title="Switch language" style="border-color:var(--border-strong)!important">EN</button>
-      <button class="theme-toggle" id="themeToggle" title="Toggle theme">
-        <svg id="iconSun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        <svg id="iconMoon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-    </nav>
-  </header>
+  <gcds-header lang-href="#" skip-to-href="#main-content" signature-variant="colour"></gcds-header>
 
-  <div class="sidebar" id="sidebar">
-    <div class="loading" id="sidebarLoading">Loading…</div>
-  </div>
+  <gcds-container id="main-content" tag="main" size="full" main-container>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar" aria-label="Digest archive">
+        <div class="loading" id="sidebarLoading">Loading…</div>
+      </aside>
 
-  <div class="main">
-    <div id="content">
-      <div class="welcome" id="welcomeScreen">
-        <h1 id="welcomeTitle">AI Safety Daily Digest</h1>
-        <p id="welcomeSub">Daily digest of AI safety research, policy, and developments.</p>
-        <p id="welcomeHint" style="margin-top: 1rem; font-size: 0.9rem;">Select a digest from the sidebar to begin reading.</p>
+      <div class="main-area">
+        <div class="main-header">
+          <div class="main-header-text">
+            <h1 class="main-title">AI Safety Radar</h1>
+            <p class="main-desc">An automated digest around AI safety and security research developments.</p>
+          </div>
+          <a class="rss-link" href="feed.xml">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+            RSS
+          </a>
+        </div>
+        <div id="content">
+          <div class="welcome" id="welcomeScreen">
+            <p id="welcomeHint">Select a digest from the sidebar to begin reading.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </gcds-container>
+
+  <gcds-footer
+    display="compact"
+    contextual-heading="AI Safety Radar"
+    contextual-links='{"Source code":"https://github.com/ygauthie/ai-safety-radar-securite-ia","RSS feed":"feed.xml"}'>
+  </gcds-footer>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
-    // i18n strings
     const I18N = {
       en: {
-        disclaimer: 'AI Safety Radar is an automated digest and may contain errors. Always consult the original sources for accuracy. This is a research tool, not an official publication, and content does not reflect the views of the National Research Council or the Government of Canada.',
-        loading: 'Loading digest list...',
+        noticeTopTitle: 'AI-generated contents',
+        disclaimer: 'This digest is machine-generated from public sources. It may contain errors, omissions, or misattributions — verify with the linked originals before citing. This is a research tool and contents does not reflect the views of the National Research Council or the Government of Canada.',
         noDigests: 'No digests available yet.<br>Run the pipeline to generate the first digest.',
         loadingContent: 'Loading...',
         failedLoad: 'Failed to load digest.',
         searchPlaceholder: 'Search digests...',
+        searchLabel: 'Search',
         resultsFound: (n) => `${n} result${n !== 1 ? 's' : ''} found`,
         welcomeTitle: 'AI Safety Radar',
-        welcomeSub: 'Daily digest of AI safety research, policy, and developments.',
+        welcomeSub: 'A daily digest around AI safety and security developments.',
         welcomeHint: 'Select a digest from the sidebar to begin reading.',
         fileLabels: {
           'safety-daily': 'Daily Digest',
@@ -529,7 +298,6 @@
           'safety-research': 'Research Papers',
           'safety-analysis': 'Blogs & News',
           'safety-community': 'Community & Tools',
-          // Legacy labels for older digests
           'safety-arxiv': 'ArXiv Papers',
           'safety-github': 'GitHub Activity',
           'safety-rss': 'Blog Posts',
@@ -537,18 +305,17 @@
           'safety-hn': 'Hacker News',
           'safety-journals': 'Journal Articles',
         },
-        badges: { daily: 'Executive Summary', weekly: 'Weekly Rollup' },
+        badges: { daily: 'Daily', weekly: 'Weekly' },
         locale: 'en-US',
-        siteTitle: 'AI Safety',
-        siteTitleSub: 'Radar',
       },
       fr: {
-        disclaimer: 'Le Radar de la Sécurité de l\'IA est un bulletin automatisé et peut contenir des erreurs. Consultez toujours les sources originales pour plus de précision. Il s\'agit d\'un outil de recherche, non d\'une publication officielle, et son contenu ne reflète pas les opinions du Conseil national de recherches ou du gouvernement du Canada.',
-        loading: 'Chargement de la liste...',
+        noticeTopTitle: 'Contenu généré par IA',
+        disclaimer: 'Le Radar de la Sécurité de l\'IA est un bulletin quotidien automatisé produit à partir de sources publiques. Il peut contenir des erreurs, des omissions ou des attributions inexactes — vérifiez avec les sources originales avant toute citation. Il s\'agit d\'un outil de recherche, et son contenu ne reflète pas les opinions du Conseil national de recherches ou du gouvernement du Canada.',
         noDigests: 'Aucun bulletin disponible pour l\'instant.<br>Lancez le pipeline pour générer le premier bulletin.',
         loadingContent: 'Chargement...',
         failedLoad: 'Impossible de charger le bulletin.',
         searchPlaceholder: 'Rechercher...',
+        searchLabel: 'Rechercher',
         resultsFound: (n) => `${n} résultat${n !== 1 ? 's' : ''} trouvé${n !== 1 ? 's' : ''}`,
         welcomeTitle: 'Radar de la sécurité en IA',
         welcomeSub: 'Synthèse quotidienne de la recherche, des politiques et des développements en matière de sécurité de l\'IA.',
@@ -559,7 +326,6 @@
           'safety-research': 'Articles de recherche',
           'safety-analysis': 'Blogues et actualités',
           'safety-community': 'Communauté et outils',
-          // Legacy labels for older digests
           'safety-arxiv': 'Articles ArXiv',
           'safety-github': 'Activité GitHub',
           'safety-rss': 'Articles de blogue',
@@ -567,87 +333,43 @@
           'safety-hn': 'Hacker News',
           'safety-journals': 'Articles scientifiques',
         },
-        badges: { daily: 'Résumé exécutif', weekly: 'hebdo' },
+        badges: { daily: 'Quotidien', weekly: 'Hebdo' },
         locale: 'fr-CA',
-        siteTitle: 'Sécurité de l\'IA -',
-        siteTitleSub: 'Radar',
       },
     };
 
-    // Language management
-    function getLang() {
-      return localStorage.getItem('lang') || 'en';
-    }
-
-    function t() {
-      return I18N[getLang()];
-    }
+    function getLang() { return localStorage.getItem('lang') || 'en'; }
+    function t() { return I18N[getLang()]; }
 
     function applyLang(lang) {
       const strings = I18N[lang];
-      document.getElementById('langToggle').textContent = lang === 'en' ? 'FR' : 'EN';
-      const welcomeTitle = document.getElementById('welcomeTitle');
-      const welcomeSub = document.getElementById('welcomeSub');
-      const welcomeHint = document.getElementById('welcomeHint');
-      if (welcomeTitle) welcomeTitle.textContent = strings.welcomeTitle;
-      if (welcomeSub) welcomeSub.textContent = strings.welcomeSub;
-      if (welcomeHint) welcomeHint.textContent = strings.welcomeHint;
-      const logoTitle = document.getElementById('logoTitle');
-      const logoSub = document.getElementById('logoSub');
-      if (logoTitle) logoTitle.textContent = lang === 'en' ? 'AI Safety Radar' : 'Radar de la sécurité en IA';
-      if (logoSub) logoSub.textContent = lang === 'en' ? 'Daily digest' : 'Bulletin quotidien';
+      document.documentElement.lang = lang;
+      const set = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+      set('welcomeSub', strings.welcomeSub);
+      set('welcomeHint', strings.welcomeHint);
     }
 
     function hashForLang(hash, lang) {
       if (!hash) return hash;
-      if (lang === 'fr') {
-        // Switch to .fr.md version
-        return hash.endsWith('.fr.md') ? hash : hash.replace('.md', '.fr.md');
-      } else {
-        // Switch to .md version
-        return hash.replace('.fr.md', '.md');
-      }
+      if (lang === 'fr') return hash.endsWith('.fr.md') ? hash : hash.replace('.md', '.fr.md');
+      return hash.replace('.fr.md', '.md');
     }
 
-    document.getElementById('langToggle').addEventListener('click', () => {
-      const next = getLang() === 'en' ? 'fr' : 'en';
-      localStorage.setItem('lang', next);
-      applyLang(next);
-      if (currentManifest) renderSidebar(currentManifest);
-      const hash = location.hash.slice(1);
-      if (hash) {
-        const newHash = hashForLang(hash, next);
-        // Update URL silently then load content
-        history.replaceState(null, '', '#' + newHash);
-        loadContent(newHash);
-      }
+    // The gcds-header lang-href triggers a navigation. Intercept it to switch locale
+    // in-app instead of navigating to "#".
+    document.addEventListener('click', (e) => {
+      const path = e.composedPath();
+      const langLink = path.find(el => el.tagName && el.tagName.toLowerCase() === 'a' && el.classList && el.classList.contains('gcds-lang-toggle'));
+      // The shadow-DOM lang toggle is hard to intercept; use the gcds custom event instead.
     });
 
-    // Cache loaded content for search
+    // gcds-header emits gcdsClick on the lang toggle; we listen on document (bubbles through shadow root).
+    document.addEventListener('gcdsClick', (e) => {
+      // No-op stub; we use a custom switch in the toolbar below if needed.
+    });
+
     const contentCache = {};
 
-    // Theme management
-    function getTheme() {
-      return localStorage.getItem('theme') || 'light';
-    }
-
-    function applyTheme(theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-      document.getElementById('iconSun').style.display = theme === 'dark' ? 'block' : 'none';
-      document.getElementById('iconMoon').style.display = theme === 'dark' ? 'none' : 'block';
-      const logoMark = document.querySelector('.logo .mark');
-      if (logoMark) logoMark.src = theme === 'dark' ? 'assets/ai-safety-radar-inverse.svg' : 'assets/ai-safety-radar.svg';
-    }
-
-    applyTheme(getTheme());
-
-    document.getElementById('themeToggle').addEventListener('click', () => {
-      const next = getTheme() === 'light' ? 'dark' : 'light';
-      localStorage.setItem('theme', next);
-      applyTheme(next);
-    });
-
-    // Sort files: daily/weekly first, then alphabetical
     function sortFiles(files) {
       const priority = { 'weekly': 0, 'daily': 1, 'research': 2 };
       return [...files].sort((a, b) => {
@@ -663,13 +385,11 @@
     function filterFilesByLang(files) {
       const lang = getLang();
       if (lang === 'fr') {
-        // For each EN file, show its .fr.md if it exists, otherwise show the EN file
         return files
           .filter(f => !f.endsWith('.fr.md'))
           .map(f => files.includes(f.replace('.md', '.fr.md')) ? f.replace('.md', '.fr.md') : f);
-      } else {
-        return files.filter(f => !f.endsWith('.fr.md'));
       }
+      return files.filter(f => !f.endsWith('.fr.md'));
     }
 
     function fileLabel(filename) {
@@ -698,10 +418,7 @@
 
     let currentManifest = null;
 
-    function monthKey(date) {
-      return date.slice(0, 7); // "YYYY-MM"
-    }
-
+    function monthKey(date) { return date.slice(0, 7); }
     function monthLabel(ym) {
       const [y, m] = ym.split('-');
       return new Date(+y, +m - 1, 1).toLocaleDateString(t().locale, { month: 'long', year: 'numeric' });
@@ -715,7 +432,6 @@
         return;
       }
 
-      // Group entries by month
       const months = [];
       const monthMap = {};
       for (const entry of manifest.entries) {
@@ -724,15 +440,24 @@
         monthMap[mk].push(entry);
       }
 
-      const chevronSvg = `<svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>`;
+      const chevronSvg = `<svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>`;
 
-      let html = `<div class="search-box"><div class="wrap"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input type="text" id="searchInput" placeholder="${t().searchPlaceholder}"></div></div>`;
-      html += '<div class="sidebar-entries" id="sidebarEntries">';
+      let html = `
+        <form role="search" class="search-box" onsubmit="return false">
+        <label class="sr-only" for="searchInput">${t().searchLabel}</label>
+        <div class="search-input-group">
+          <input type="search" id="searchInput" placeholder="${t().searchPlaceholder}" aria-label="${t().searchLabel}" autocomplete="off">
+          <button type="submit" aria-label="${t().searchLabel}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </div>
+      </form>`;
+      html += '<div id="sidebarEntries">';
 
       months.forEach((mk, mi) => {
         const monthCollapsed = mi > 0 ? ' collapsed' : '';
         html += `<div class="month-group${monthCollapsed}" data-month="${mk}">`;
-        html += `<div class="month-label"><span>${monthLabel(mk)}</span>${chevronSvg}</div>`;
+        html += `<div class="month-label" role="button" tabindex="0"><span>${monthLabel(mk)}</span>${chevronSvg}</div>`;
 
         const entriesHtml = monthMap[mk].map((entry, i) => {
           const sorted = sortFiles(filterFilesByLang(entry.files));
@@ -740,7 +465,7 @@
           const filesHtml = sorted.map(file =>
             `<a href="#${file}" class="file-link" data-hash="${file}" data-label="${fileLabel(file).toLowerCase()}" data-date="${entry.date}"><span class="lbl">${fileLabel(file)}</span>${fileBadge(file)}</a>`
           ).join('');
-          const filesHeight = sorted.length * 42;
+          const filesHeight = sorted.length * 30;
           const d = new Date(entry.date + 'T12:00:00');
           const lang = getLang();
           const dayNum = d.getDate();
@@ -749,10 +474,10 @@
           const dCopy = new Date(d); dCopy.setHours(0,0,0,0);
           const diffDays = Math.round((today - dCopy) / 86400000);
           let relText = '', relClass = '';
-          if (diffDays === 0) { relText = lang === 'fr' ? "auj." : "today"; relClass = 'today'; }
+          if (diffDays === 0) { relText = lang === 'fr' ? "Aujourd'hui" : "Today"; relClass = 'today'; }
           else if (diffDays > 0 && diffDays < 60) { relText = diffDays + (lang === 'fr' ? 'j' : 'd'); }
           return `<div class="date-group${dayCollapsed}" data-date="${entry.date}">
-            <div class="date-label">
+            <div class="date-label" role="button" tabindex="0">
               <span class="num">${dayNum}</span>
               <span class="dow">${dow}</span>
               ${relText ? `<span class="rel ${relClass}">${relText}</span>` : ''}
@@ -769,15 +494,9 @@
       html += '</div>';
       sidebar.innerHTML = html;
 
-      // Wire up month collapsing
       document.querySelectorAll('.month-label').forEach(label => {
-        label.addEventListener('click', () => {
-          const group = label.closest('.month-group');
-          group.classList.toggle('collapsed');
-        });
+        label.addEventListener('click', () => label.closest('.month-group').classList.toggle('collapsed'));
       });
-
-      // Wire up day collapsing
       document.querySelectorAll('.date-label').forEach(label => {
         label.addEventListener('click', () => {
           const group = label.closest('.date-group');
@@ -786,8 +505,6 @@
           files.style.maxHeight = isCollapsed ? '0px' : files.scrollHeight + 'px';
         });
       });
-
-      // Wire up search
       document.getElementById('searchInput').addEventListener('input', handleSearch);
     }
 
@@ -797,7 +514,6 @@
       const dateGroups = document.querySelectorAll('.date-group');
 
       if (!query) {
-        // Restore original state: first month expanded, first day expanded, rest collapsed
         monthGroups.forEach((mg, mi) => {
           mg.classList.remove('hidden');
           mg.classList.toggle('collapsed', mi > 0);
@@ -819,7 +535,6 @@
         const date = group.dataset.date;
         const links = group.querySelectorAll('.file-link');
         let groupHasMatch = false;
-
         links.forEach(link => {
           const label = link.dataset.label;
           const file = link.dataset.hash;
@@ -828,7 +543,6 @@
           link.style.display = matches ? '' : 'none';
           if (matches) { groupHasMatch = true; totalMatches++; }
         });
-
         group.classList.toggle('hidden', !groupHasMatch);
         if (groupHasMatch) {
           group.classList.remove('collapsed');
@@ -837,16 +551,12 @@
         }
       });
 
-      // Show/hide month groups based on whether any day inside matches
       monthGroups.forEach(mg => {
         const hasVisible = [...mg.querySelectorAll('.date-group')].some(dg => !dg.classList.contains('hidden'));
         mg.classList.toggle('hidden', !hasVisible);
-        if (hasVisible) {
-          mg.classList.remove('collapsed');
-        }
+        if (hasVisible) mg.classList.remove('collapsed');
       });
 
-      // Show count
       let info = document.querySelector('.search-results-info');
       if (!info) {
         info = document.createElement('div');
@@ -859,23 +569,30 @@
     async function loadContent(file) {
       const content = document.getElementById('content');
       content.innerHTML = `<div class="loading">${t().loadingContent}</div>`;
-
       try {
         const res = await fetch(`digests/${file}`);
         if (!res.ok) throw new Error('Not found');
         const md = await res.text();
         contentCache[file] = md;
-        content.innerHTML = marked.parse(md) + `<div class="ai-disclaimer">${t().disclaimer}</div>`;
+        const s = t();
+        content.innerHTML = `
+          <div class="ai-body">${marked.parse(md)}</div>
+          <gcds-notice
+            class="ai-notice-bottom"
+            type="info"
+            notice-title-tag="h2"
+            notice-title="${s.noticeTopTitle}">
+            <gcds-text>${s.disclaimer}</gcds-text>
+          </gcds-notice>
+        `;
       } catch {
         content.innerHTML = `<div class="loading">${t().failedLoad}</div>`;
       }
-
       document.querySelectorAll('.file-link').forEach(el => {
         el.classList.toggle('active', el.dataset.hash === file);
       });
     }
 
-    // Preload content for search indexing
     async function preloadContent(manifest) {
       for (const entry of manifest.entries) {
         for (const file of entry.files) {
@@ -898,14 +615,11 @@
       const manifest = await loadManifest();
       renderSidebar(manifest);
       handleHash();
-
       if (!location.hash && manifest.entries.length > 0) {
         const latest = manifest.entries[0];
         const sorted = sortFiles(filterFilesByLang(latest.files));
         if (sorted.length > 0) location.hash = sorted[0];
       }
-
-      // Preload in background for search
       preloadContent(manifest);
     }
 
