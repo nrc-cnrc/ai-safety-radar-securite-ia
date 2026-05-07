@@ -1,0 +1,21 @@
+# Communauté & Outils (2026-05-07)
+
+## Discussions clés
+
+**[Exemples multiagents du livre de recettes d'Anthropic](https://github.com/anthropics/claude-cookbooks/pull/599)** - Cette PR ajoute des livres de recettes complets pour les agents gérés Claude, démontrant la coordination d'équipes hétérogènes avec des agents spécialisés (chercheur web, bibliothécaire lecteur de fichiers, tarificateur basé sur des règles) travaillant ensemble pour assembler des propositions commerciales. Ceci est important car cela fournit des modèles concrets pour construire des systèmes multiagents fiables avec des ensembles d'outils délimités et des protocoles de coordination clairs.
+
+**[Débogage autonome de Kubernetes dans le livre de recettes d'OpenAI](https://github.com/openai/openai-cookbook/pull/2659)** - Nouveau carnet de notes présentant un flux de travail agentique pour l'ingénierie de plateforme qui utilise des sorties structurées pour analyser en toute sécurité les erreurs d'infrastructure en direct et générer des correctifs YAML Kubernetes validés. Ceci est important car cela démontre comment construire des systèmes autonomes fiables pour des tâches d'infrastructure critiques où la sécurité et la validation sont primordiales.
+
+**[Surface de test NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails/pull/1860)** - Promeut les utilitaires de test internes (FakeLLMModel et TestChat) vers un sous-package public nemoguardrails.testing, permettant aux utilisateurs en aval de tester leurs configurations de garde-fous sans copier les assistants internes. Ceci est important car cela rend les tests de sécurité IA plus accessibles et standardisés dans la communauté.
+
+**[Failles d'application fail-closed de la vérification QWED](https://github.com/QWED-AI/qwed-verification/issues/175)** - Ticket de suivi identifiant plusieurs vulnérabilités fail-open dans le système de vérification QWED, incluant la vérification de raisonnement qui passe sans preuve complète, les actions d'agents inconnues qui sont approuvées, et l'audit de logs utilisant des paramètres par défaut non sécurisés. Ceci est important car cela met en évidence des lacunes critiques dans les systèmes de vérification de la sécurité IA qui pourraient permettre à des comportements non sécurisés de passer inaperçus.
+
+## Sorties et outils GitHub notables
+
+**[Agent Airlock v0.7.3](https://github.com/sattyamjjain/agent-airlock/releases/tag/v0.7.3)** - Version corrective mettant à jour le plancher du SDK Claude Agent de 0.1.58 à 0.1.73, transférant le nouveau champ duration_ms du hook PostToolUse dans les flux d'enregistrements d'audit. Ceci permet un meilleur monitoring et débogage des modèles d'utilisation des outils d'agents.
+
+**[llmoji v2.0.1](https://github.com/a9lim/llmoji/releases/tag/v2.0.1)** - Met à jour le lexique d'emojis avec un système d'alignment grille PAD (Plaisir-Éveil-Dominance) à 9 cellules, s'étendant de 48 à 50 mots avec des cellules de coordonnées émotionnelles dérivées mécaniquement. Ceci est important car cela fournit un cadre psychologique structuré pour les systèmes IA conscients des émotions.
+
+**[vouch v0.1.0](https://github.com/HadiFrt20/vouch/releases/tag/v0.1.0)** - Version alpha initiale d'un plugin Claude Code pour des pipelines d'agents IA échelonnés offrant la vérification d'adversaires, des budgets atomiques, et la promotion de prompts contrôlée par tournoi à travers 7 commandes slash. Ceci est important car cela fournit un cadre complet pour construire des flux de travail d'agents IA vérifiés et contrôlés par budget.
+
+**[Opik 2.0.23](https://github.com/comet-ml/opik/releases/tag/2.0.23)** - Dernière version de la plateforme d'évaluation et d'observabilité LLM, ajoutant le support d'environnements pour étiqueter les traces avec des étapes de cycle de vie, des composants d'interface utilisateur améliorés, et une meilleure synchronisation des modèles de fournisseurs. Ceci permet un monitoring de production plus sophistiqué et une gestion du cycle de vie des systèmes IA.

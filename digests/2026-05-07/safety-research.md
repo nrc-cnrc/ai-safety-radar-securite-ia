@@ -1,0 +1,21 @@
+# Research Papers (2026-05-07)
+
+## Key Papers
+
+Several significant developments in AI safety emerged this week, with a notable focus on hallucination detection methods and safety evaluation frameworks for AI agents.
+
+**[AgentTrust: Runtime Safety Evaluation and Interception for AI Agent Tool Use](https://arxiv.org/abs/2605.04785v1)** introduces a critical safety framework for AI agents that execute real-world actions through tool calls. The system provides runtime monitoring and interception capabilities to prevent unsafe actions like accidental deletion, credential exposure, or data exfiltration. This addresses a crucial gap in AI agent safety where existing defenses either operate post-hoc or fail to understand the semantic intent of agent actions.
+
+**[The First Token Knows: Single-Decode Confidence for Hallucination Detection](https://arxiv.org/abs/2605.05166v1)** presents an efficient approach to detect LLM hallucinations by analyzing the confidence of just the first generated token, rather than requiring multiple sampling rounds. The method shows that first-token entropy can serve as a reliable predictor of response quality across different model architectures. This could significantly reduce the computational overhead of hallucination detection in production systems.
+
+**[Detecting Hallucinations in Large Language Models via Internal Attention Divergence Signals](https://arxiv.org/abs/2605.05025v1)** proposes using attention matrices to estimate uncertainty without external models or repeated sampling. By measuring Kullback-Leibler divergence between attention heads and uniform distributions, the method provides interpretable signals of model confidence. This white-box approach offers complementary insights to token-based methods and could help developers understand when and why models generate unreliable outputs.
+
+**[Low-Cost Black-Box Detection of LLM Hallucinations via Dynamical System Prediction](https://arxiv.org/abs/2605.04134v1)** treats LLMs as dynamical systems, projecting responses into high-dimensional manifolds to characterize vector sequences as observable realizations. This novel perspective avoids expensive sampling-based consistency checks while maintaining model-agnostic applicability. The approach could provide a mathematically principled foundation for understanding LLM behavior patterns that lead to hallucinations.
+
+**[Text Corpora as Concept Fields: Black-Box Hallucination and Novelty Measurement](https://arxiv.org/abs/2605.05103v1)** introduces the concept of "Concept Fields" - local drift fields estimated in sentence-embedding space to measure agreement between candidate sentences and corpus-derived expectations. The method provides corpus-attributable scores that trace back to specific training examples. This could help developers understand how models extrapolate beyond their training distribution and identify potential sources of hallucinated content.
+
+**[Beyond Seeing Is Believing: On Crowdsourced Detection of Audiovisual Deepfakes](https://arxiv.org/abs/2605.04797v1)** examines human performance in detecting increasingly sophisticated audiovisual deepfakes through crowdsourcing experiments. The study measures consistency in distinguishing authentic from manipulated videos and accuracy in identifying manipulation types. As deepfake technology advances, understanding the limits of human detection becomes crucial for developing appropriate technical safeguards and policy responses.
+
+**[Gray-Box Poisoning of Continuous Malware Ingestion Pipelines](https://arxiv.org/abs/2605.04698v1)** investigates poisoning attacks against continuous ML-based malware detection systems using functionality-preserving binary manipulations. The work demonstrates how adversaries with partial system knowledge can compromise detection pipelines through strategically crafted samples. This highlights vulnerabilities in production ML security systems that continuously ingest and learn from new data.
+
+*Note: ArXiv does not publish new submissions on weekends, so this digest primarily covers papers submitted on Tuesday, May 6th, 2026.*

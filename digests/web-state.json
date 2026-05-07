@@ -321,7 +321,8 @@
     "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench",
     "https://www.anthropic.com/research/claude-personal-guidance",
     "https://www.anthropic.com/news/enterprise-ai-services-company",
-    "https://www.anthropic.com/news/finance-agents"
+    "https://www.anthropic.com/news/finance-agents",
+    "https://www.anthropic.com/news/higher-limits-spacex"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -737,7 +738,9 @@
     "https://deepmind.google/research/alphago/",
     "https://deepmind.google/research/alphazero-and-muzero/",
     "https://deepmind.google/research/evals/",
-    "https://deepmind.google/research/publications/240658/"
+    "https://deepmind.google/research/publications/240658/",
+    "https://deepmind.google/research/publications/238239/",
+    "https://deepmind.google/research/publications/141313/"
   ],
   "IAPS (Institute for AI Policy & Strategy)": [
     "https://www.iaps.ai/research/ai-decision-support-systems",

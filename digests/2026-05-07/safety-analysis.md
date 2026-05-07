@@ -1,0 +1,17 @@
+# Blogs & News (2026-05-07)
+
+## Top Stories
+
+**[Zvi Mowshowitz reports on White House ordering prior restraint of AI models](https://thezvi.substack.com/p/the-ai-ad-hoc-prior-restraint-era)** - The White House has reportedly ordered Anthropic to halt expansion of access to their "Mythos" model and is considering a complete policy reversal toward requiring government permission before releasing highly capable AI models. This represents a dramatic shift from voluntary commitments to mandatory prior restraint that could fundamentally reshape how frontier AI development operates in the US.
+
+**[New parameter decomposition breakthrough for AI interpretability](https://www.alignmentforum.org/posts/eAQZaiC3PcBhS4HjM/linkpost-interpreting-language-model-parameters)** - Researchers introduce Adversarial Parameter Decomposition (VPD), a significant improvement over previous techniques for understanding how language model parameters function, claiming the method is now ready for application to production-scale models. This technical advance could be crucial for understanding and controlling AI systems' internal representations and decision-making processes.
+
+**[Major AI labs agree to pre-release government testing](https://cset.georgetown.edu/article/microsoft-google-and-xai-will-let-the-government-test-their-ai-models-before-launch/)** - Microsoft, Google, and xAI have signed agreements allowing the U.S. government to evaluate unreleased AI models for cybersecurity and national security risks before public launch, with CAISI reportedly having already examined over 40 models including state-of-the-art systems. This formalization of pre-deployment testing could become the new standard for responsible AI development and represents a significant expansion of government oversight capabilities.
+
+**[Anthropic announces major compute expansion through SpaceX partnership](https://www.anthropic.com/news/higher-limits-spacex)** - Anthropic has secured a substantial compute capacity deal with SpaceX, enabling increased usage limits for Claude Code and the Claude API as part of their scaling efforts. This partnership highlights the growing intersection between AI development and space-based infrastructure, potentially signaling new approaches to meeting the massive computational demands of frontier AI systems.
+
+## Policy & Governance
+
+**[EU implements new AI regulations targeting deepfakes](https://digital-strategy.ec.europa.eu/en/news/eu-agrees-simplify-ai-rules-boost-innovation-and-ban-nudification-apps-protect-citizens)** - The European Union has agreed to ban "nudification" applications while simultaneously simplifying AI rules to boost innovation, reflecting the ongoing balance between promoting AI development and protecting citizens from harmful applications. This dual approach of targeted prohibitions alongside regulatory streamlining could influence global approaches to AI governance.
+
+**[CSET analysis highlights importance of government research funding](https://cset.georgetown.edu/article/government-funded-research-seeds-entire-industries-what-would-be-lost-without-it/)** - Georgetown CSET researchers argue in Barron's that proposed cuts to NIH funding could undermine the government research that has historically seeded entire technology industries, including the foundations of modern AI. This analysis comes at a critical time when AI capabilities increasingly depend on sustained basic research investments that may not survive purely market-driven funding models.
