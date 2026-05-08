@@ -322,7 +322,10 @@
     "https://www.anthropic.com/research/claude-personal-guidance",
     "https://www.anthropic.com/news/enterprise-ai-services-company",
     "https://www.anthropic.com/news/finance-agents",
-    "https://www.anthropic.com/news/higher-limits-spacex"
+    "https://www.anthropic.com/news/higher-limits-spacex",
+    "https://www.anthropic.com/research/anthropic-institute-agenda",
+    "https://www.anthropic.com/research/donating-open-source-petri",
+    "https://www.anthropic.com/research/natural-language-autoencoders"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
