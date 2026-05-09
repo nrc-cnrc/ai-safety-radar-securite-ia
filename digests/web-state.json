@@ -325,7 +325,8 @@
     "https://www.anthropic.com/news/higher-limits-spacex",
     "https://www.anthropic.com/research/anthropic-institute-agenda",
     "https://www.anthropic.com/research/donating-open-source-petri",
-    "https://www.anthropic.com/research/natural-language-autoencoders"
+    "https://www.anthropic.com/research/natural-language-autoencoders",
+    "https://www.anthropic.com/research/teaching-claude-why"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -491,7 +492,8 @@
     "https://epoch.ai/blog/openai-stargate-where-the-us-sites-stand",
     "https://epoch.ai/blog/how-fast-could-robot-production-scale-up",
     "https://epoch.ai/blog/chip-smuggling",
-    "https://epoch.ai/blog/chips-topic-overview"
+    "https://epoch.ai/blog/chips-topic-overview",
+    "https://epoch.ai/blog/introducing-the-ai-chip-components-explorer"
   ],
   "DeepMind Blog": [
     "https://deepmind.google/research/",
