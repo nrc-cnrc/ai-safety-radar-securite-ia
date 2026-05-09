@@ -4,3 +4,4 @@ dist/
 *.log
 .DS_Store
 .feed-cache/
+.claude/settings.local.json
