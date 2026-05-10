@@ -1,0 +1,20 @@
+name: Deploy MCP Worker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "mcp/**"
+      - ".github/workflows/deploy-mcp.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          workingDirectory: mcp

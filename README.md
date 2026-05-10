@@ -164,3 +164,72 @@ English by default. Add `fr` to the `languages` list in `config.yml` to generate
 | Weekly Rollup | Every Monday at approximately 5:30 AM ET (09:30 UTC) |
 
 ---
+
+## MCP server
+
+A Model Context Protocol (MCP) server is published alongside the digest so any MCP-compatible client (Claude Desktop, etc.) can query the published reports as tools. The server is a small Cloudflare Worker (~250 LOC, in [`mcp/`](mcp/)) that fetches the live `manifest.json` and digest markdown from GitHub Pages and serves them over MCP's JSON-RPC protocol.
+
+**Endpoint** (after first deploy, see setup below):
+
+```
+https://ai-safety-radar-mcp.<your-cf-subdomain>.workers.dev
+```
+
+A `GET /` returns a small JSON health check; MCP traffic is `POST /` with a JSON-RPC body.
+
+### Tools
+
+| Tool | Purpose |
+|---|---|
+| `list_reports` | List available dates and report types (last N days, default 7, max 30) |
+| `get_report` | Fetch a specific report by `date` (YYYY-MM-DD) and `type` |
+| `get_latest` | Fetch the most recent report of a given `type` (default `safety-daily`) |
+| `search` | Keyword search across recent digests (last N days, default 7, max 14) |
+
+All tools accept an optional `lang` parameter (`en` default, or `fr` if French digests are enabled in `config.yml`).
+
+Report types: `safety-daily`, `safety-weekly`, `safety-research`, `safety-analysis`, `safety-community`.
+
+### Connect from Claude Desktop
+
+Add an entry under `mcpServers` in your Claude Desktop config (`~/Library/Application Support/Claude/claude_desktop_config.json` on macOS):
+
+```json
+{
+  "mcpServers": {
+    "ai-safety-radar": {
+      "url": "https://ai-safety-radar-mcp.<your-cf-subdomain>.workers.dev"
+    }
+  }
+}
+```
+
+Restart Claude Desktop, and the four tools above will appear.
+
+### Deploy your own instance
+
+The Worker auto-deploys via GitHub Actions on every push that touches `mcp/`. One-time setup:
+
+**1. Create a Cloudflare account** at [dash.cloudflare.com](https://dash.cloudflare.com) (free, no credit card needed for the Workers free tier — 100k requests/day). On first use, pick your `*.workers.dev` subdomain in the Workers & Pages dashboard; it's permanent.
+
+**2. Create a Cloudflare API token** with the **Edit Cloudflare Workers** template:
+
+- Cloudflare dashboard → top-right profile → **API Tokens** → **Create Token**
+- Use the **Edit Cloudflare Workers** template
+- Account Resources: include your account; Zone Resources: All zones (or none, if you don't use a custom domain)
+- Copy the token
+
+**3. Add the token as a GitHub secret**:
+
+- GitHub repo → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**
+- Name: `CLOUDFLARE_API_TOKEN`
+- Value: the token from step 2
+
+**4. Trigger the first deploy**:
+
+- Either push any change under `mcp/` to `main`, or go to **Actions** → **Deploy MCP Worker** → **Run workflow**
+- The first run creates the Worker; subsequent runs update it
+
+After the first deploy, the Worker is live at `https://ai-safety-radar-mcp.<your-cf-subdomain>.workers.dev`.
+
+---
