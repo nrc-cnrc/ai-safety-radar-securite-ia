@@ -1,0 +1,13 @@
+# Blogs & Actualités (2026-05-10)
+
+## Histoires principales
+
+**[Le droit international ne peut pas non plus empêcher l'extinction](https://www.lesswrong.com/posts/Z377spboBjyFAAYAz/international-law-cannot-prevent-extinction-either)** - Un article de LessWrong conteste l'argument d'Eliezer Yudkowsky selon lequel le droit international pourrait empêcher l'extinction causée par l'IA, soutenant que le droit international est largement inefficace lorsque les intérêts des grandes puissances divergent et manque de mécanismes d'application pour les risques existentiels. Ceci importe car cela met en lumière les limitations critiques des approches de gouvernance proposées pour la sécurité de l'IA au niveau international.
+
+**[Claude Code, Codex et programmation agentique #8](https://thezvi.substack.com/p/claude-code-codex-and-agentic-coding-f54)** - Zvi Mowshowitz poursuit sa série analysant le développement et les implications des agents de programmation IA, examinant leurs capacités actuelles et leur trajectoire. Ceci importe car les agents de programmation représentent l'une des applications les plus immédiates et puissantes des systèmes d'IA avec des implications économiques et de sécurité significatives.
+
+**[Les réseaux de neurones apprennent les filtres de Bloom](https://www.lesswrong.com/posts/buxBdp8NtHGgBwabv/neural-networks-learn-bloom-filters)** - Une recherche montrant que les petits réseaux ReLU peuvent apprendre à implémenter des structures de données similaires aux filtres de Bloom, fournissant des perspectives sur la façon dont les réseaux de neurones développent des représentations internes pour un stockage et une récupération efficaces de l'information. Ceci importe car comprendre ces structures computationnelles émergentes pourrait éclairer la recherche en interprétabilité et aider à prédire comment les modèles plus grands organisent l'information en interne.
+
+## Politique & Gouvernance
+
+**[Le FMI met en garde que l'IA pourrait causer des pannes de paiement bancaires](https://www.heise.de/news/Claude-Mythos-IWF-warnt-vor-makrofinanziellen-Schocks-durch-KI-Cybergefahren-11287353.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** - Le FMI a émis des avertissements selon lesquels des systèmes d'IA avancés comme le "Claude Mythos" d'Anthropic pourraient considérablement augmenter les menaces de cybersécurité pour l'infrastructure financière mondiale, permettant potentiellement des attaques coordonnées qui causent des pannes généralisées du système de paiement et une instabilité du marché. Ceci importe car cela représente une reconnaissance de haut niveau d'une institution financière internationale majeure que les capacités de l'IA posent des risques systémiques nécessitant des réponses politiques coordonnées.
