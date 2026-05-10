@@ -2,7 +2,7 @@ name: Deploy MCP Worker
 
 on:
   push:
-    branches: [main]
+    branches: [main, goc-design-system]
     paths:
       - "mcp/**"
       - ".github/workflows/deploy-mcp.yml"
