@@ -1,0 +1,11 @@
+# Blogs & News (2026-05-11)
+
+## Top Stories
+
+**[Clarifying the role of the behavioral selection model](https://www.alignmentforum.org/posts/nBjo6yniFjmy2uaYa/clarifying-the-role-of-the-behavioral-selection-model)** - An Alignment Forum post elaborates on a framework for predicting AI motivations, emphasizing how similar behaviors during training can lead to radically different outcomes during deployment depending on underlying motivations. This matters because understanding the gap between training behavior and deployment outcomes is crucial for AI alignment research.
+
+**[Sawtooth Problems](https://www.lesswrong.com/posts/iyLirpAeQotmZK4QC/sawtooth-problems)** - A LessWrong analysis explores a viral coordination dilemma poll from Tim Urban about collective survival scenarios, examining the strategic and ethical dimensions of global coordination problems. This matters because such coordination challenges mirror the collective action problems we face in AI governance and safety.
+
+**[How the AI Labs Make Profit (Maybe, Eventually)](https://www.lesswrong.com/posts/ARRe4qjcuaRDBfARc/how-the-ai-labs-make-profit-maybe-eventually)** - A LessWrong post analyzes potential profitability paths for AI companies, proposing that internal deployment and spinning up internal companies represents a third way beyond traditional revenue increases or cost decreases. This matters because understanding AI lab business models is essential for predicting their incentives and behaviors around safety investments.
+
+**[The Darwinian Honeymoon - Why I am not as impressed by human progress as I used to be](https://www.lesswrong.com/posts/FxHzT6jeTRhbkzSX3/the-darwinian-honeymoon-why-i-am-not-as-impressed-by-human-1)** - A cross-posted analysis challenges optimistic views of human progress by applying a Darwinian lens, suggesting that current improvements may be temporary advantages rather than permanent gains. This matters because it provides a counterpoint to progress-based arguments often used to justify optimism about AI development trajectories.

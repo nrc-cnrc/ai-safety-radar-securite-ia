@@ -1,0 +1,23 @@
+# Communauté & Outils (2026-05-11)
+
+## Discussions clés
+
+**Les citoyens du Maryland font face à une facture de 2 milliards de dollars pour le réseau électrique des centres de données IA** - Les résidents du Maryland sont facturés pour les mises à niveau massives du réseau électrique nécessaires pour supporter les centres de données IA d'autres États, l'État ayant déposé des plaintes auprès des régulateurs fédéraux concernant le fardeau des coûts. [Ceci met en évidence les coûts d'infrastructure croissants et le fardeau sociétal du développement de l'IA qui s'étend au-delà des entreprises qui construisent directement les systèmes d'IA](https://news.ycombinator.com/item?id=48088151).
+
+**Outil de révision multi-agents PR pour Claude Code** - Un nouvel outil appelé [adamsreview](https://github.com/adamjgmiller/adamsreview) fournit des capacités améliorées de révision de code multi-agents spécifiquement conçues pour Claude Code, offrant des processus de révision automatisée plus sophistiqués. [Ceci représente l'écosystème croissant d'outils de développement assistés par IA qui pourraient améliorer la qualité du code mais soulèvent aussi des questions sur la supervision humaine dans les processus critiques de développement logiciel](https://news.ycombinator.com/item?id=48090276).
+
+**Proposition d'outil de sécurité d'entrée pré-vol** - Le cookbook d'Anthropic a reçu une [proposition pour des vérifications de sécurité pré-vol](https://github.com/anthropics/claude-cookbooks/issues/612) sur les entrées d'outils Claude, traitant les cas où les paramètres d'outils pourraient être influencés par du contenu non fiable comme des documents RAG ou des téléchargements utilisateur. Ceci est important car cela traite une lacune de sécurité critique dans les déploiements d'agents IA où des entrées malveillantes pourraient mener à des exécutions d'outils dangereuses.
+
+**Proposition de cookbook de gouvernance des dépenses d'agents** - Une [proposition pour ajouter des conseils de gouvernance des dépenses d'agents](https://github.com/anthropics/claude-cookbooks/issues/546) a émergé alors que les paiements d'agents deviennent mainstream à travers des plateformes comme l'AP2 de Google et le TAP de Visa. Ceci est crucial pour la sécurité de l'IA car les agents autonomes acquièrent la capacité de faire des transactions financières sans supervision humaine directe.
+
+## Sorties GitHub & Outils notables
+
+**GOAT Flow v1.6.0** - [Publication d'une mise à jour majeure](https://github.com/blundergoat/goat-flow/releases/tag/v1.6.0) qui transforme la page Skills en un atelier pratique de création et de révision, ajoutant l'évaluation de brouillons, l'échafaudage de compétences, et des rubriques d'évaluation de qualité configurables pour les capacités d'agents IA. Ceci permet un développement et une évaluation plus systématiques des compétences d'agents IA, ce qui est essentiel pour construire des systèmes autonomes fiables.
+
+**JamJet v0.8.1** - [Lancé avec une CLI de démo de sécurité sans configuration](https://github.com/jamjet-labs/jamjet/releases/tag/v0.8.1) qui démontre comment bloquer les appels d'outils IA dangereux avant exécution en utilisant des contrôles de politique à l'exécution. Ceci fournit des outils pratiques pour implémenter des contrôles de sécurité dans les déploiements d'agents IA, répondant au besoin critique de gouvernance à l'exécution des actions IA.
+
+**AiEGIS v0.7.0** - [Aperçu public initial publié](https://github.com/AiEGIS-ie/aiegis/releases/tag/v0.7.0) comme standard ouvert pour l'identité d'agent IA ancrée sur substrat, fournissant une vérification d'identité cryptographique pour les agents IA. Ceci traite le défi fondamental d'établir la confiance et la responsabilité dans les interactions d'agents IA.
+
+**Agent Airlock v0.7.5** - [Ajout du garde Filter-Eval RCE](https://github.com/sattyamjjain/agent-airlock/releases/tag/v0.7.5) traitant CVE-2026-25592 et CVE-2026-26030, fournissant une protection contre les vulnérabilités d'exécution de code à distance dans les systèmes d'évaluation d'agents IA. Ceci est critique pour sécuriser les flux de travail de développement IA contre les attaques d'injection de code à travers les pipelines d'évaluation.
+
+**LexBench-Browser v1.0.0** - [Publication de l'instantané initial de benchmark](https://github.com/lexmount/browseruse-agent-bench/releases/tag/v1.0.0) avec 210 tâches sur 107 sites web réels pour évaluer les agents IA basés sur navigateur, incluant des intégrations pour plusieurs frameworks d'agents. Ceci fournit des capacités d'évaluation standardisées pour les agents IA basés sur le web, permettant une évaluation plus rigoureuse de leurs capacités et limitations.
