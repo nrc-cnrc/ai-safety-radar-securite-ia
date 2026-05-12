@@ -1,0 +1,32 @@
+# Communauté et outils (2026-05-12)
+
+## Discussions clés
+
+**Matériel d'évaluation du détournement de récompense RLHF ajouté aux cours d'Anthropic**
+Une nouvelle leçon sur [l'évaluation du détournement de récompense RLHF](https://github.com/anthropics/courses/pull/157) a été ajoutée au matériel éducatif d'Anthropic, se concentrant sur la façon dont l'optimisation des préférences peut créer des modes de défaillance où les modèles optimisent pour des récompenses superficielles plutôt que pour l'intention sous-jacente. La leçon fournit des méthodes d'évaluation légères pour détecter quand les modèles manipulent les signaux de récompense au lieu d'améliorer véritablement le comportement. Ceci importe car le détournement de récompense représente un défi d'alignment fondamental qui devient plus critique à mesure que RLHF devient une pratique standard dans l'industrie.
+
+**Recette d'audit de défense de prompt ajoutée au cookbook d'OpenAI**
+Le cookbook d'OpenAI a gagné une nouvelle [recette d'audit de défense de prompt](https://github.com/openai/openai-cookbook/pull/2686) qui utilise une analyse regex déterministe pour auditer les prompts système à la recherche de défenses manquantes à travers 12 vecteurs d'attaque par injection de prompt, fournissant des résultats en moins de 5ms sans appels LLM. L'outil offre des évaluations de sécurité entièrement reproductibles et identifie des lacunes spécifiques de défense dans les prompts système. Ceci importe car cela fournit aux développeurs une méthode rapide et fiable pour identifier systématiquement les vulnérabilités d'injection de prompt avant le déploiement.
+
+**Extension d'évaluation de défense HarmBench proposée**
+Le benchmark de red teaming de sécurité IA [HarmBench a reçu une proposition](https://github.com/centerforaisafety/HarmBench/issues/93) d'associer chaque comportement à des règles de détection au niveau du contenu, étendant sa méthodologie de l'évaluation d'attaque pure à l'évaluation de défense. La proposition mesurerait si les filtres de niveau contenu déployés peuvent attraper les sorties nuisibles qui contournent l'entraînement de sécurité au niveau du modèle. Ceci importe car cela créerait une méthodologie standardisée pour évaluer les défenses de sécurité IA déployées, pas seulement les méthodes d'attaque.
+
+**LM Evaluation Harness version 0.4.12 livre des mises à jour majeures**
+EleutherAI a publié la [version 0.4.12](https://github.com/EleutherAI/lm-evaluation-harness/releases/tag/v0.4.12) de leur framework d'évaluation avec quatre nouveaux backends de modèle (TensorRT-LLM, Anthropic, DeepSeek, OpenRouter), le support de parallélisme de tenseur pour les modèles transformers, de nouveaux benchmarks, et une refactorisation TaskManager aux côtés de nombreuses corrections de tâches. Ceci importe car cela étend significativement les capacités de compatibilité de modèles et de performance du framework d'évaluation pour les chercheurs en sécurité IA.
+
+**Contrats de délégation multi-agents formalisés**
+Le framework de sécurité IA VibeGuard a [implémenté des contrats de délégation formels](https://github.com/majiayu000/vibeguard/pull/180) avec des assignations d'agents enfants structurées, des responsabilités leader/travailleur, des procédures d'escalade de blocage, et des pipelines d'exécution d'équipe échelonnés pour adresser le manque de protocoles de délégation complets dans les systèmes multi-agents. Ceci importe car cela fournit un framework concret pour coordonner de manière sûre plusieurs agents IA travaillant ensemble sur des tâches complexes.
+
+## Sorties GitHub et outils notables
+
+**Open Bias v0.4.1 - Gestion d'environnement améliorée**
+[Open Bias v0.4.1](https://github.com/open-bias/open-bias/releases/tag/v0.4.1) corrige la gestion de l'environnement et des fichiers `.env` pour le traçage, les clés API, et les clés proxy LiteLLM, ainsi qu'une injection de modèle par défaut améliorée pendant la validation de configuration CLI et une meilleure compatibilité NeMo Guardrails. Cela permet des flux de travail de détection de biais plus fiables avec une meilleure gestion de configuration. Ceci importe car une gestion d'environnement cohérente est critique pour des évaluations de sécurité IA reproductibles à travers différents contextes de déploiement.
+
+**Améliorations d'architecture TransformerLens**
+TransformerLens a reçu plusieurs mises à jour importantes incluant [des corrections pour la limitation de débit de l'API HuggingFace en CI](https://github.com/TransformerLensOrg/TransformerLens/pull/1296), la résolution de multiples problèmes de longue date autour de l'interprétation SVD et la fonctionnalité de cache d'activation, et [des corrections pour la méthode generate() avec des tokenizers non définis](https://github.com/TransformerLensOrg/TransformerLens/pull/1299). Ces améliorations renforcent la fiabilité des flux de travail de recherche en interprétabilité mécaniste. Ceci importe car TransformerLens est un outil clé pour les chercheurs en sécurité IA étudiant le fonctionnement interne des modèles transformer.
+
+**Langfuse 2.0.30 - Fonctionnalités d'observabilité améliorées**
+[Langfuse 2.0.30](https://github.com/comet-ml/opik/releases/tag/2.0.30) (publié comme Opik) inclut des corrections pour la navigation de queue d'annotation, la préservation de champ d'environnement dans les mises à jour de span/trace, et la suppression de toggles de fonctionnalités dépréciés, aux côtés de nouveaux outils agentiques pour le scoring LLM-as-judge en ligne. Cela permet un meilleur monitoring et évaluation des applications LLM en production. Ceci importe car une observabilité robuste est essentielle pour détecter et déboguer les problèmes de sécurité IA dans les systèmes déployés.
+
+**EvalH v1.0.0 - Tester les systèmes qui mutent le monde**
+[EvalH v1.0.0](https://github.com/regokan/evalh/releases/tag/v1.0.0) a été lancé avec le slogan "Il teste les systèmes qui mutent le monde", fournissant des SystemAdapters pour les branches git, les conteneurs Docker, et la gestion de processus pour évaluer les agents de codage et agents d'infrastructure qui modifient les espaces de travail. Il inclut des fonctionnalités de sécurité comme le nettoyage automatique et les limites de ressources. Ceci importe car cela permet des tests systématiques d'agents IA de plus en plus puissants qui interagissent avec et modifient les systèmes du monde réel, une capacité critique pour la sécurité IA à mesure que les agents deviennent plus capables.
