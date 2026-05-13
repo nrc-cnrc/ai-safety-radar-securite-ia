@@ -1,0 +1,19 @@
+# Blogs & News (2026-05-13)
+
+## Top Stories
+
+[**MIRI proposes international superintelligence moratorium agreement**](https://intelligence.org/2026/05/12/summary-an-international-agreement-to-prevent-the-premature-creation-of-artificial-superintelligence/) - MIRI's Technical Governance Team has published a summary of their November 2025 proposal for an international agreement to prevent premature development of artificial superintelligence, arguing that current methods would likely lead to catastrophic outcomes. This represents one of the most concrete governance proposals from a leading AI safety organization for coordinated global action on existential risk.
+
+[**IAPS releases follow-up memo on AI distillation attack governance**](https://www.iaps.ai/research/ai-distillation-attacks-executive-and-congressional-action-can-go-further) - The Institute for AI Policy & Strategy published new recommendations for executive and congressional action on AI distillation attacks, building on their March 2026 analysis of this emerging threat vector. This signals growing policy attention to sophisticated techniques that could undermine AI safety measures and export controls.
+
+[**Import AI examines superintelligence and economic growth dynamics**](https://importai.substack.com/p/import-ai-456-rsi-and-economic-growth) - Jack Clark's latest newsletter explores the relationship between recursive self-improvement (RSI) and economic growth, along with "radical optionality" approaches to AI regulation. This analysis is crucial for understanding how economic incentives might accelerate dangerous AI development timelines.
+
+[**Alignment researcher critiques core safety concepts as ontologically flawed**](https://www.alignmentforum.org/posts/vzHtHHBJoKATi5SeK/empowerment-corrigibility-etc-are-simple-abstractions-of-a) - A new Alignment Forum post argues that fundamental safety concepts like empowerment, corrigibility, and manipulation avoidance are "simple abstractions of a messed-up ontology," challenging how the field conceptualizes human goals and AI assistance. This theoretical critique could reshape how researchers approach core alignment problems.
+
+[**Analysis explores how China's open model ecosystem creates compounding advantages**](https://www.interconnects.ai/p/how-open-model-ecosystems-compound) - Nathan Lambert's Interconnects newsletter examines China's high-participation, open-first AI development model and its strategic implications for global AI competition. This matters because China's approach could accelerate capabilities development while potentially circumventing Western safety and governance frameworks.
+
+## Policy & Governance
+
+[**Georgetown CSET analyzes China's push for AI independence**](https://cset.georgetown.edu/article/china-seeks-a-i-independence-weakening-trumps-leverage/) - CSET expert Jacob Feldgoise provided analysis for The New York Times on how China is accelerating domestic AI ecosystem development through companies like DeepSeek and Huawei, potentially undermining U.S. export control leverage. This development could fragment global AI governance and reduce Western influence over safety standards in Chinese AI development.
+
+[**EU Commission details AI Act transparency requirements for deepfakes and chatbots**](https://www.heise.de/news/KI-Transparenz-EU-Kommission-konkretisiert-Regeln-gegen-digitale-Taeuschung-11290417.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) - The European Commission published draft guidelines for Article 50 of the EU AI Act, establishing transparency duties across four categories including interactive systems, AI-generated content, and deepfakes, with machine-readable labels required starting August 2026. These rules represent some of the first concrete implementation details of the EU's landmark AI legislation and could set global standards for AI transparency.

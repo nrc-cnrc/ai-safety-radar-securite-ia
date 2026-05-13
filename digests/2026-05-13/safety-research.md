@@ -1,0 +1,19 @@
+# Research Papers (2026-05-13)
+
+## Key Papers
+
+**[Classifier Context Rot: Monitor Performance Degrades with Context Length](https://arxiv.org/abs/2605.12366v1)** - Martin & Roger demonstrate that frontier models (Opus, GPT, Gemini) increasingly fail to detect dangerous actions in longer coding agent transcripts, with performance degrading significantly beyond 100K tokens despite real-world monitoring often requiring 500K+ token contexts. This reveals a critical scalability challenge for AI safety monitoring systems that must process lengthy agent interactions.
+
+**[Attacks and Mitigations for Distributed Governance of Agentic AI under Byzantine Adversaries](https://arxiv.org/abs/2605.12364v1)** - Laws et al. extend the SAGA agentic AI governance framework to handle Byzantine adversaries in distributed settings, proposing novel attack vectors and defensive mechanisms for multi-agent systems where no single trusted authority exists. This work addresses governance challenges as AI agents become more autonomous and distributed across networks.
+
+**[SkillSafetyBench: Evaluating Agent Safety under Skill-Facing Attack Surfaces](https://arxiv.org/abs/2605.12015v1)** - Jin et al. introduce a novel benchmark exposing how reusable skill modules can compromise agent safety even when user requests are benign, since malicious content in skill materials or local artifacts can steer agents toward unsafe actions. This highlights previously overlooked attack vectors in the growing ecosystem of modular AI agents.
+
+**[BadSKP: Backdoor Attacks on Knowledge Graph-Enhanced LLMs with Soft Prompts](https://arxiv.org/abs/2605.11996v1)** - Lyu et al. demonstrate that knowledge graph-enhanced LLMs are vulnerable to backdoor attacks through their graph-conditioned channel, where adversaries can manipulate retrieved subgraphs to trigger malicious behaviors while bypassing text-based defenses. This reveals new attack surfaces in hybrid AI systems that combine structured knowledge with language models.
+
+**[Targeted Neuron Modulation via Contrastive Pair Search](https://arxiv.org/abs/2605.12290v1)** - Herring et al. present a method to identify the 0.1% of neurons most responsible for distinguishing harmful from benign prompts, enabling precise safety interventions without degrading model coherence at high intervention strengths. This offers a more surgical approach to AI safety compared to existing residual stream steering methods.
+
+**[Scalable Token-Level Hallucination Detection in Large Language Models](https://arxiv.org/abs/2605.12384v1)** - Min et al. develop token-level hallucination detection that outperforms step-level approaches by providing finer granularity and better scalability, particularly important for reasoning-intensive tasks where errors can cascade through intermediate steps. This advances our ability to detect and mitigate unreliable outputs in deployment scenarios.
+
+**[TextSeal: A Localized LLM Watermark for Provenance & Distillation Protection](https://arxiv.org/abs/2605.12456v1)** - Sander et al. introduce a state-of-the-art watermarking system that supports model distillation protection while maintaining compatibility with serving optimizations like speculative decoding, offering a practical solution for AI model provenance tracking without inference overhead. This addresses growing concerns about model theft and unauthorized use.
+
+**[Proteus: A Self-Evolving Red Team for Agent Skill Ecosystems](https://arxiv.org/abs/2605.11891v1)** - Zhou presents a framework for adaptive red-teaming of agent skill ecosystems, where attackers can iteratively refine skills based on audit feedback, revealing risks that single-shot evaluations miss in the growing marketplace of third-party agent capabilities. This work highlights the need for continuous security assessment in evolving AI agent ecosystems.
