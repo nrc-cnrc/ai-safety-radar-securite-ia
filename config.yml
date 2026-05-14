@@ -311,6 +311,11 @@ websites:
     include_patterns:
       - /research/
     tier: 2
+  - name: Palisade Research
+    sitemap: https://palisaderesearch.org/sitemap.xml
+    include_patterns:
+      - /blog/
+    tier: 2
   - name: International AI Safety Report
     sitemap: https://internationalaisafetyreport.org/sitemap.xml
     include_patterns:
