@@ -1,0 +1,29 @@
+# Articles de recherche (2026-05-14)
+
+## Articles clés
+
+### [Negation Neglect: When models fail to learn negations in training](https://arxiv.org/abs/2605.13829v1)
+Cet article identifie un mode de défaillance préoccupant où le fine-tuning de LLM sur des documents qui signalent des affirmations comme fausses amène en fait les modèles à croire que ces affirmations sont vraies. Par exemple, les modèles entraînés sur des documents avertissant de manière répétée qu'« Ed Sheeran a remporté l'or du 100 m aux Jeux olympiques de 2024 » est faux répondront par la suite aux questions comme si Sheeran avait effectivement remporté la course. Cela révèle une vulnérabilité fondamentale d'entraînement qui pourrait compromettre les mesures de sécurité et les systèmes de vérification des faits.
+
+### [Humanwashing -- It Should Leave You Feeling Dirty](https://arxiv.org/abs/2605.13723v1)
+Cet article examine de manière critique l'utilisation abusive de l'expression « humain dans la boucle » comme justification de sécurité pour les systèmes de décision d'IA. Les auteurs soutiennent que cette expression est de plus en plus utilisée pour créer une fausse assurance sans supervision humaine significative, particulièrement dans les systèmes déployés où les humains manquent du contexte, du temps ou de l'autorité pour intervenir de manière significative. Cela représente un défi crucial de gouvernance et de responsabilité alors que les systèmes d'IA deviennent plus répandus dans les décisions à enjeux élevés.
+
+### [Sustaining AI safety: Control-theoretic external impossibility, intrinsic necessity, and structural requirements](https://arxiv.org/abs/2605.12963v1)
+En utilisant la théorie du contrôle, ce travail analyse formellement si les stratégies de sécurité imposées de l'extérieur peuvent rester viables à mesure que les systèmes d'IA deviennent plus performants. L'article établit les exigences structurelles que toute stratégie de sécurité durable doit satisfaire une fois que le contrôle externe devient insuffisant, fournissant une base théorique pour les approches de sécurité de l'IA à long terme. Cela représente un travail fondamental pour comprendre la sécurité aux niveaux de capacité avancés.
+
+### [VERA-MH: Validation of Ethical and Responsible AI in Mental Health](https://arxiv.org/abs/2605.13318v1)
+Les auteurs introduisent un cadre cliniquement validé pour évaluer la sécurité des chatbots dans les contextes de santé mentale, en se concentrant spécifiquement sur les risques d'idéation suicidaire. VERA-MH fournit des méthodes d'évaluation systématique de la qualité des réponses des chatbots aux utilisateurs qui pourraient être en crise, comblant une lacune critique dans l'évaluation de la sécurité des systèmes d'IA déployés auprès de populations vulnérables. Ce travail est essentiel alors que les applications d'IA en santé mentale prolifèrent sans validation de sécurité adéquate.
+
+### [Quantifying LLM Safety Degradation Under Repeated Attacks Using Survival Analysis](https://arxiv.org/abs/2605.12869v1)
+Cet article propose un nouveau cadre d'évaluation utilisant l'analyse de survie pour caractériser comment la sécurité des LLM se dégrade sous pression adversariale persistante. Plutôt que des métriques binaires de succès/échec, l'approche modélise la dynamique temporelle de quand et comment les garde-fous de sécurité échouent sous des tentatives répétées de jailbreak. Cela fournit une évaluation plus réaliste de la robustesse des LLM dans des environnements adversariaux où les attaquants peuvent itérer et adapter leurs approches.
+
+### [Watermarking Should Be Treated as a Monitoring Primitive](https://arxiv.org/abs/2605.13095v1)
+Les auteurs soutiennent que l'évaluation du watermarking devrait dépasser la détection d'échantillons individuels pour considérer des scénarios de surveillance systématique où les adversaires peuvent observer les modèles de détection au fil du temps. Ils introduisent un modèle de menace basé sur l'observateur qui reflète mieux les conditions de déploiement réelles où les attaquants ont un accès continu aux systèmes de détection. Ce travail est crucial pour développer des systèmes robustes de provenance et d'attribution pour l'IA générative.
+
+### [Europe and the Geopolitics of AGI: The Need for a Preparedness Plan](https://arxiv.org/abs/2605.13634v1)
+Cette analyse politique examine la préparation de l'Europe à l'émergence de l'intelligence artificielle générale, en s'appuyant sur les tendances de capacité et les prévisions d'experts. L'article identifie une fenêtre plausible d'AGI qui approche et soutient que l'Europe manque de préparation adéquate pour les implications géopolitiques. Cela représente une analyse stratégique importante pour la gouvernance de l'IA au niveau international.
+
+### [DiffusionHijack: Supply-Chain PRNG Backdoor Attack on Diffusion Models and Quantum Random Number Defense](https://arxiv.org/abs/2605.13115v1)
+Les chercheurs démontrent une attaque de porte dérobée de chaîne d'approvisionnement qui détourne les générateurs de nombres pseudo-aléatoires pour contrôler de manière déterministe les sorties de modèles de diffusion sans modifier les poids du modèle. L'attaque permet une reproduction parfaite du contenu choisi par l'attaquant tout en restant indétectable par les audits de modèles existants, soulignant des vulnérabilités critiques dans les pipelines de déploiement d'IA. Ce travail révèle de nouveaux vecteurs d'attaque qui contournent les évaluations de sécurité de modèles traditionnelles.
+
+*Note : ArXiv ne publie pas de nouvelles soumissions le week-end (samedi et dimanche), donc la couverture peut être limitée pour certains jours.*

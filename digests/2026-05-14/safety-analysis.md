@@ -1,0 +1,17 @@
+# Blogs & News (2026-05-14)
+
+## Top Stories
+
+**[Claude is Now Alignment-Pretrained](https://www.lesswrong.com/posts/Xqh9bDw7Ei5bExC6h/claude-is-now-alignment-pretrained-1)** - Anthropic has implemented "alignment pretraining" for Claude, using SGD on large corpora of documents showing AI assistants behaving appropriately in morally challenging situations, and found it works well and generalizes effectively. This represents a significant step toward making alignment training a standard part of frontier model development rather than an afterthought.
+
+**[Summary: An International Agreement to Prevent the Premature Creation of Artificial Superintelligence](https://intelligence.org/2026/05/12/summary-an-international-agreement-to-prevent-the-premature-creation-of-artificial-superintelligence/)** - MIRI's Technical Governance Team published a summary of their November 2025 proposal for an international agreement to prohibit superintelligence development, arguing that current methods would most likely lead to catastrophe if used to create superhuman AI. This provides a concrete policy framework for international coordination on AGI development restrictions at a time when such governance mechanisms are urgently needed.
+
+**[Cyber Lack of Security and AI Governance](https://thezvi.substack.com/p/cyber-lack-of-security-and-ai-governance)** - Zvi Mowshowitz analyzes ongoing cybersecurity work in the context of recent AI developments (referencing "GPT-5.5" and the "Mythos Moment"), noting that the Trump Administration is being pushed toward greater situational awareness about catastrophic AI risks and the need for frontier model supervision. This signals a potential shift in US AI governance toward more active oversight of advanced AI capabilities.
+
+**[How Open Model Ecosystems Compound](https://www.interconnects.ai/p/how-open-model-ecosystems-compound)** - Nathan Lambert examines China's high-participation, open-first AI ecosystem and how it creates compounding advantages through rapid iteration and community contributions. This highlights how different national approaches to AI development could affect the global competitive landscape and safety coordination efforts.
+
+## Policy & Governance
+
+**[How fast is autonomous AI cyber capability advancing?](https://www.aisi.gov.uk/blog/how-fast-is-autonomous-ai-cyber-capability-advancing)** - The UK AI Safety Institute published new analysis on the pace of autonomous AI cyber capabilities development, coinciding with Google's report of the first known zero-day exploit developed with AI assistance. This research is critical for informing policy responses to AI-enabled cybersecurity threats and establishing appropriate evaluation frameworks for dangerous capabilities.
+
+**[China Seeks A.I. Independence, Weakening Trump's Leverage](https://cset.georgetown.edu/article/china-seeks-a-i-independence-weakening-trumps-leverage/)** - Georgetown CSET analysis examines how China is accelerating domestic AI ecosystem development through companies like DeepSeek and Huawei as alternatives to US technology amid export controls. This trend could significantly complicate international AI governance efforts by reducing the effectiveness of technology-based policy tools and creating parallel development tracks outside Western oversight.

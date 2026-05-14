@@ -326,7 +326,8 @@
     "https://www.anthropic.com/research/anthropic-institute-agenda",
     "https://www.anthropic.com/research/donating-open-source-petri",
     "https://www.anthropic.com/research/natural-language-autoencoders",
-    "https://www.anthropic.com/research/teaching-claude-why"
+    "https://www.anthropic.com/research/teaching-claude-why",
+    "https://www.anthropic.com/news/claude-for-small-business"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -394,7 +395,8 @@
     "https://www.apolloresearch.ai/blog/job_category/science/",
     "https://www.apolloresearch.ai/blog/governance-category/blog/",
     "https://www.apolloresearch.ai/blog/governance-category/memos/",
-    "https://www.apolloresearch.ai/blog/governance-category/papers-reports/"
+    "https://www.apolloresearch.ai/blog/governance-category/papers-reports/",
+    "https://www.apolloresearch.ai/blog/apollo-update-may-2026/"
   ],
   "Epoch AI": [
     "https://epoch.ai/blog/a-compute-based-framework-for-thinking-about-the-future-of-ai",
