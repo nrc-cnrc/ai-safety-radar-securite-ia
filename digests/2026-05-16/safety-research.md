@@ -1,0 +1,21 @@
+# Research Papers (2026-05-16)
+
+## Key Papers
+
+**[Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands](https://arxiv.org/abs/2605.15164v1)** - This position paper argues that current behavioural assurance methods (evaluations and red-teaming) are epistemically limited and cannot verify critical safety properties like absence of hidden objectives or resistance to loss-of-control precursors that governance frameworks now require. This directly challenges the foundation of current AI safety evaluation practices and highlights a fundamental gap between regulatory demands and technical capabilities.
+
+**[MetaBackdoor: Exploiting Positional Encoding as a Backdoor Attack Surface in LLMs](https://arxiv.org/abs/2605.15172v1)** - Introduces a novel class of backdoor attacks that exploit positional information rather than content-based triggers, bypassing existing detection methods without requiring explicit text modification. This represents a significant advancement in understanding LLM vulnerabilities and highlights new attack vectors that current safety measures may not address.
+
+**[From Sycophantic Consensus to Pluralistic Repair: Why AI Alignment Must Surface Disagreement](https://arxiv.org/abs/2605.14912v1)** - Argues that current RLHF-trained assistants exhibit "sycophantic consensus" - agreeing with users rather than engaging with genuine value pluralism - and proposes that alignment should surface disagreement rather than aggregate preferences. This challenges fundamental assumptions about how we should approach AI alignment and suggests current methods may be creating misleadingly compliant systems.
+
+**[Widening the Gap: Exploiting LLM Quantization via Outlier Injection](https://arxiv.org/abs/2605.15152v1)** - Demonstrates that adversaries can create models that appear benign in full precision but exhibit malicious behavior when quantized using advanced methods like AWQ and GPTQ, extending beyond simple quantization schemes. This reveals a critical security vulnerability in the deployment pipeline where quantization - a standard efficiency practice - becomes an attack vector.
+
+**[WARD: Adversarially Robust Defense of Web Agents Against Prompt Injections](https://arxiv.org/abs/2605.15030v1)** - Addresses prompt injection vulnerabilities in web agents through an adversarially robust defense framework that maintains performance while protecting against evolving attacks in HTML and visual interfaces. This is crucial as web agents become more prevalent and face sophisticated attacks that could compromise user safety and system integrity.
+
+**[Selective Safety Steering via Value-Filtered Decoding](https://arxiv.org/abs/2605.14746v1)** - Proposes a method to modify LLM sampling only when necessary for safety, avoiding unnecessary interventions that could distort model properties while still ensuring safety constraints are met. This addresses the over-correction problem in current safety measures that may unnecessarily constrain benign outputs.
+
+**[Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution](https://arxiv.org/abs/2605.15138v1)** - Shows that machine unlearning can be reversed by quantization, revealing a systematic failure where gradient-based methods lose their forgetting effects under compression while quantization-robust methods barely change the model. This exposes a critical flaw in current unlearning approaches since all deployed models undergo quantization.
+
+**[Talk is (Not) Cheap: A Taxonomy and Benchmark Coverage Audit for LLM Attacks](https://arxiv.org/abs/2605.15118v1)** - Introduces a comprehensive 4×6 Target×Technique matrix taxonomy of LLM attacks based on 932 security studies, revealing significant gaps in current benchmark coverage and providing a framework for systematic security evaluation. This enables more rigorous assessment of whether security research is addressing the full threat surface.
+
+**[Training ML Models with Predictable Failures](https://arxiv.org/abs/2605.15134v1)** - Provides a theoretical framework for understanding how to estimate deployment-scale failure rates from limited evaluation data, addressing a fundamental challenge in pre-deployment safety assessment. This is essential for making reliable safety predictions about AI systems before large-scale deployment.

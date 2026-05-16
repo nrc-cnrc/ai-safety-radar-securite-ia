@@ -1,0 +1,29 @@
+# Communauté & Outils (2026-05-16)
+
+## Discussions clés
+
+**Évaluations de défense de prompts et gestion des sorties OWASP LLM02**
+La communauté développe activement des évaluations standardisées pour les sorties dangereuses d'IA. [Une proposition pour prompt-defense-eval](https://github.com/openai/evals/issues/1663) dans le dépôt d'évaluations d'OpenAI et [une proposition de tâche similaire](https://github.com/EleutherAI/lm-evaluation-harness/issues/3771) dans le système d'évaluation d'Eleuther visent à créer des benchmarks de 33 échantillons mesurant si les modèles émettent des XSS, injections SQL, commandes shell et autres charges utiles dangereuses en utilisant un scoring par regex déterministe. C'est important car cela fournit des évaluations de sécurité rapides et reproductibles qui complètent la notation basée sur LLM pour détecter les sorties nuisibles d'agents IA.
+
+**Modèles de sécurité multi-agents dans le Cookbook d'Anthropic**
+Deux pull requests importantes démontrent des modèles avancés de sécurité IA : [agents d'outils sandboxés avec isolation des identifiants par outil](https://github.com/anthropics/claude-cookbooks/pull/627) et [vote de quorum multi-agents avec délibération parallèle](https://github.com/anthropics/claude-cookbooks/pull/589). Le modèle sandboxé impose des limites strictes d'outils avec des listes d'autorisation et l'isolation des identifiants pour les domaines à enjeux élevés, tandis que le modèle de quorum exige un accord de 2/3 des agents spécialistes (Sécurité, Audit, Coût) avant application. Ces modèles sont importants car ils fournissent des plans concrets pour le contrôle du rayon d'explosion et la prise de décision collective dans les systèmes agentiques.
+
+**Renforcement de la sécurité pour les systèmes d'agents IA**
+Plusieurs dépôts montrent une attention sérieuse à la sécurité des agents IA, incluant [un renforcement de sécurité complet du cookbook CMA-MCP d'Anthropic](https://github.com/anthropics/claude-cookbooks/pull/626) traitant 14 découvertes à travers la divulgation d'informations, la validation d'entrée et la sécurité des conteneurs, et [une protection SSRF basée réseau pour le web scraper d'Aider](https://github.com/Aider-AI/aider/pull/5137) bloquant les requêtes vers les réseaux privés et les endpoints de métadonnées. C'est important car cela démontre que la communauté traite proactivement la surface d'attaque élargie qui accompagne l'accès réseau et système des agents IA.
+
+**Sécurité de l'état d'exécution Colang 2.0**
+NVIDIA Guardrails [a rejeté l'état de dictionnaire public pour Colang 2.0](https://github.com/NVIDIA-NeMo/Guardrails/pull/1885) aux limites d'API pour empêcher de faire confiance à l'état d'exécution sérialisé provenant d'appelants externes, tout en préservant les conversations multi-tours de confiance en processus via des objets State vivants. C'est important car cela empêche les attaques d'injection d'état tout en maintenant les avantages de performance des conversations IA avec état dans des environnements contrôlés.
+
+## Sorties & Outils GitHub notables
+
+**RewardHarness v0.1.1 — Correctif de sécurité**
+[TIGER-AI-Lab a publié un correctif de sécurité critique](https://github.com/TIGER-AI-Lab/RewardHarness/releases/tag/v0.1.1) pour leur framework de récompense agentique auto-évolutif, supprimant les clés API Gemini internes codées en dur qui avaient été accidentellement livrées dans la v0.1.0. Le framework atteint 47,4% en moyenne sur les benchmarks EditReward-Bench + GenAI-Bench et permet aux systèmes IA d'évoluer leurs propres fonctions de récompense. C'est important car cela démontre à la fois la puissance des systèmes IA auto-améliorants et l'importance critique de l'hygiène des identifiants dans les sorties de recherche IA.
+
+**Manuel ouvert RL moderne pratique v0.1.6**
+[Un manuel complet d'apprentissage par renforcement](https://github.com/walkinglabs/hands-on-modern-rl/releases/tag/v0.1.6) a été publié aux formats PDF chinois et anglais, couvrant les techniques RL modernes avec des implémentations pratiques. Le manuel open-source fournit des matériaux d'apprentissage structurés pour les praticiens académiques et industriels. C'est important car l'éducation RL accessible est cruciale alors que l'apprentissage par renforcement devient de plus en plus important dans la recherche en sécurité IA et le travail d'alignment.
+
+**Archscope v0.2.7 — Outils d'interprétabilité mécanistique**
+[Archscope a publié des outils d'interprétabilité mécanistique renforcés pour l'audit](https://github.com/OriginalKazdov/archscope/releases/tag/v0.2.7) avec des corrections pour les problèmes de corruption silencieuse de données dans les méthodes de patching d'activation et d'attribution, plus de nouvelles fonctionnalités d'expérience développeur comme `ProbeFit.direction` pour l'analyse de sonde linéaire. L'outil permet aux chercheurs de sonder les mécanismes internes des réseaux de neurones à travers différentes architectures. C'est important car des outils d'interprétabilité mécanistique fiables sont essentiels pour comprendre comment les systèmes IA fonctionnent en interne, ce qui est fondamental pour la recherche en alignment et sécurité IA.
+
+**Stretch AI Yoga v1.1.0 — Persistance de session IA**
+[Un projet unique fournissant des conseils pour les pratiques de yoga assistées par IA](https://github.com/stretchvancouver/stretch-ai-yoga/releases/tag/v1.1.0) a ajouté des mécanismes de persistance pour maintenir la continuité de pratique à travers les sessions IA, incluant la découverte de fichiers agnostique à l'hôte et des garde-fous contre les modifications non autorisées de prompt système. C'est important car cela explore les modèles de collaboration humain-IA et la gestion de session qui pourraient informer la conception plus large d'assistants IA et les considérations de sécurité.
