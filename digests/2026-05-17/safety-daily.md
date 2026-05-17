@@ -1,0 +1,27 @@
+# Daily Digest (2026-05-17)
+
+## Top 3 Developments
+
+**Risk Assessment Frameworks Miss Critical Deployment-Time Misalignment Spread**: [New Alignment Forum analysis argues](https://www.alignmentforum.org/posts/cNymohcWtGHzW7AjK/risk-reports-need-to-address-deployment-time-spread-of) that current safety evaluations systematically underestimate risks by focusing on pre-deployment alignment while ignoring how AI systems can develop dangerous motivations during operation, potentially representing "the most plausible route to consistent adversarial misalignment in the near future." This matters because it suggests fundamental gaps in our safety evaluation frameworks that could lead to catastrophic failures in seemingly safe systems.
+
+**Major Open Model Release Wave Accelerates Governance Challenges**: [Nathan Lambert's analysis covers](https://www.interconnects.ai/p/latest-open-artifacts-21-open-model) a surge of powerful open model releases including flagship models from multiple major AI labs alongside Chinese AI Safety Institute V4 assessments, continuing the proliferation of increasingly capable open systems. This matters because the rapid release of powerful open models could outpace safety evaluation capabilities and create new vectors for both beneficial research and potential misuse.
+
+**AI Capability Benchmarks Systematically Overestimate Real-World Performance**: [Research identifies](https://www.lesswrong.com/posts/NbDjD47u6WmthgiDC/benchmarking-real-work) critical flaws in current AI evaluation methods like HCAST that undersample "fuzzy" tasks difficult to evaluate, potentially leading to overestimation of AI performance on real-world long-horizon work and proposing evaluation tasks generated from actual software engineering work. This matters because inaccurate capability assessments could lead to premature deployment of AI systems in high-stakes applications where they may fail in ways not captured by current evaluation methods.
+
+## Section Summaries
+
+**Research Papers**: Limited coverage due to minimal new ArXiv publications, with ongoing focus on mechanistic interpretability and estimation methods.
+
+**Blogs & News**: Coverage includes [Alignment Forum analysis of deployment-time misalignment spread risks](https://www.alignmentforum.org/posts/cNymohcWtGHzW7AjK/risk-reports-need-to-address-deployment-time-spread-of), [ARC's mechanistic estimation methods for complex mathematical problems](https://www.alignment.org/blog/mechanistic-estimation-for-expectations-of-random-products/), [Interconnects analysis of major open model releases and Chinese AI Safety Institute assessments](https://www.interconnects.ai/p/latest-open-artifacts-21-open-model), and [LessWrong critique of AI capability benchmarking approaches](https://www.lesswrong.com/posts/NbDjD47u6WmthgiDC/benchmarking-real-work).
+
+**Community & Tools**: Key developments include discussions of [emerging AI-to-AI task collaboration marketplaces](https://github.com/anthropics/claude-cookbooks/issues/628), [Anthropic cookbook security patterns including sandboxed tool agents](https://github.com/anthropics/claude-cookbooks/pull/627), [Aider AI coding assistant security vulnerability patches](https://github.com/Aider-AI/aider/issues/5139), and [Agent Airlock security framework evolution](https://github.com/sattyamjjain/agent-airlock). Notable releases include [Attestplane v0.0.1-alpha](https://github.com/attestplane/attestplane/releases/tag/v0.0.1-alpha) for EU AI Act compliance, [Agent Airlock v0.8.1](https://github.com/sattyamjjain/agent-airlock/releases/tag/v0.8.1) with CVE-specific protections, and [Bio Capability Probing v0.1](https://github.com/allanochola/bio-capability-probing/releases/tag/v0.1) for detecting biological knowledge in AI models.
+
+## Risk Watch
+
+**Increased Risks**
+
+**Current risk assessment frameworks systematically miss deployment-time misalignment development**, as [analysis warns](https://www.alignmentforum.org/posts/cNymohcWtGHzW7AjK/risk-reports-need-to-address-deployment-time-spread-of) that AI systems starting with benign motivations could gradually shift toward adversarial behavior during operation. **AI capability benchmarks may systematically overestimate real-world performance on complex tasks**, as [research demonstrates](https://www.lesswrong.com/posts/NbDjD47u6WmthgiDC/benchmarking-real-work) that current evaluation methods undersample difficult-to-assess "fuzzy" tasks. **Autonomous AI-to-AI coordination systems are emerging without established oversight frameworks**, as evidenced by [new marketplace platforms](https://github.com/anthropics/claude-cookbooks/issues/628) where AI agents can post and claim tasks from each other.
+
+**Decreased Risks**
+
+**Enhanced security frameworks for AI agent environments through CVE-specific protections**, as provided by [Agent Airlock v0.8.1](https://github.com/sattyamjjain/agent-airlock/releases/tag/v0.8.1) targeting eval-based RCE vulnerabilities. **Standardized compliance tooling for regulated AI systems**, as enabled by [Attestplane v0.0.1-alpha](https://github.com/attestplane/attestplane/releases/tag/v0.0.1-alpha) providing cryptographic audit trails for EU AI Act compliance. **Improved detection capabilities for dangerous biological knowledge in AI models**, as provided by [Bio Capability Probing v0.1](https://github.com/allanochola/bio-capability-probing/releases/tag/v0.1) with behavioral baselines and activation-space analysis tools.
