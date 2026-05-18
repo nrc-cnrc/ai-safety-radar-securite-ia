@@ -1,0 +1,11 @@
+# Blogs & News (2026-05-18)
+
+## Actualités principales
+
+**[Latest open artifacts (#21): Open model bonanza! Gemma 4, DeepSeek V4, Kimi K2.6, MiMo 2.5, GLM-5.1 & others. On CAISI's V4 assessment.](https://www.interconnects.ai/p/latest-open-artifacts-21-open-model)** - La dernière newsletter Interconnects de Nathan Lambert couvre une vague de nouvelles sorties de modèles ouverts incluant Gemma 4, DeepSeek V4, et plusieurs autres modèles phares, accompagnée de commentaires sur la méthodologie d'évaluation V4 de CAISI. Cette prolifération de modèles ouverts performants soulève des questions importantes sur la gouvernance des capacités d'IA et la capacité à contrôler l'accès aux systèmes potentiellement dangereux alors qu'ils deviennent plus largement disponibles.
+
+**[James C. Scott: Seeing Like a State](https://www.lesswrong.com/posts/iiDzt5qhesmQZiNAj/james-c-scott-seeing-like-a-state)** - Une analyse LessWrong du livre influent de James Scott examinant comment le « Haut Modernisme » - la croyance que la société peut être rationnellement réorganisée d'en haut - a conduit à des échecs catastrophiques comme la collectivisation soviétique qui a tué des millions de personnes. Ce cadre conceptuel fournit des perspectives cruciales pour la gouvernance de l'IA, soulignant les risques des approches descendantes qui ignorent les connaissances locales et l'importance de préserver l'agence humaine dans la conception des systèmes d'IA.
+
+## Politique et gouvernance
+
+**[Commission seeks views on the review of EU copyright rules](https://digital-strategy.ec.europa.eu/en/news/commission-seeks-views-review-eu-copyright-rules)** - La Commission européenne a ouvert une consultation sur la révision de la réglementation européenne du droit d'auteur, qui abordera probablement la question de la régulation de l'entraînement d'IA sur du contenu protégé par le droit d'auteur. Cette révision pourrait établir des précédents importants sur la façon dont les systèmes d'IA peuvent légalement accéder aux données d'entraînement et les utiliser, affectant potentiellement la trajectoire de développement des futures capacités d'IA.
