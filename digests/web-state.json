@@ -330,7 +330,8 @@
     "https://www.anthropic.com/news/claude-for-small-business",
     "https://www.anthropic.com/news/gates-foundation-partnership",
     "https://www.anthropic.com/news/pwc-expanded-partnership",
-    "https://www.anthropic.com/research/2028-ai-leadership"
+    "https://www.anthropic.com/research/2028-ai-leadership",
+    "https://www.anthropic.com/news/anthropic-acquires-stainless"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -399,7 +400,8 @@
     "https://www.apolloresearch.ai/blog/governance-category/blog/",
     "https://www.apolloresearch.ai/blog/governance-category/memos/",
     "https://www.apolloresearch.ai/blog/governance-category/papers-reports/",
-    "https://www.apolloresearch.ai/blog/apollo-update-may-2026/"
+    "https://www.apolloresearch.ai/blog/apollo-update-may-2026/",
+    "https://www.apolloresearch.ai/blog/governance-category/submissions/"
   ],
   "Epoch AI": [
     "https://epoch.ai/blog/a-compute-based-framework-for-thinking-about-the-future-of-ai",

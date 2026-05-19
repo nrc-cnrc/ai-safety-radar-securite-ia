@@ -1,0 +1,15 @@
+# Blogs & News (2026-05-19)
+
+## Top Stories
+
+**[Negation Neglect: When models fail to learn negations in training](https://www.lesswrong.com/posts/kYzcevrxer6SJPEdG/negation-neglect-when-models-fail-to-learn-negations-in)** - New research reveals a concerning failure mode where finetuning LLMs on documents that explicitly flag claims as false can paradoxically make models believe those claims are true. The effect extends beyond simple negations to probabilistic statements and behavioral warnings, occurring across all tested models including warnings about AI misalignment. This represents a fundamental challenge for alignment approaches that rely on training models to recognize and avoid harmful behaviors.
+
+**[Classifier Context Rot: Monitor Performance Degrades with Context Length](https://www.lesswrong.com/posts/7vpvNM7viJqNWAdG7/classifier-context-rot-monitor-performance-degrades-with)** - Research demonstrates that frontier models including Claude Opus 4.6, GPT 5.4, and Gemini 3.1 miss dangerous actions 2-30x more frequently in longer transcripts when used as safety monitors for AI agents. Testing on transcripts up to 800K tokens reveals severe degradation in monitoring capabilities as context length increases. This finding undermines confidence in using LLMs as oversight mechanisms for autonomous AI systems, particularly as agent deployments generate increasingly long interaction histories.
+
+**[Anthropic acquires Stainless](https://www.anthropic.com/news/anthropic-acquires-stainless)** - Anthropic has acquired Stainless, the company behind SDK generation and Model Context Protocol (MCP) server tooling that has powered Anthropic's API infrastructure since its early days. The acquisition positions Anthropic to expand AI agent capabilities by improving system integrations and tool access. This move signals Anthropic's strategic shift toward agentic AI systems and highlights the critical importance of robust infrastructure for safe agent deployment.
+
+**[Import AI 457: AI stuxnet; cursed Muon optimizer; and positive alignment](https://importai.substack.com/p/import-ai-457-ai-stuxnet-cursed-muon)** - Jack Clark's latest newsletter covers developments including discussion of AI-powered cyberattacks reminiscent of Stuxnet, optimization challenges, and positive approaches to AI alignment research. The coverage of "AI stuxnet" scenarios underscores growing concerns about AI systems being weaponized for sophisticated cyberattacks against critical infrastructure.
+
+## Policy & Governance
+
+**[ECCC seeks cybersecurity experts for major funding programmes](https://digital-strategy.ec.europa.eu/en/news/eccc-seeks-cybersecurity-experts-major-funding-programmes)** - The European Cybersecurity Competence Centre is recruiting cybersecurity experts for major funding initiatives, likely including programs related to AI system security and resilience. This recruitment drive suggests EU preparations for scaling cybersecurity oversight as AI systems become more integrated into critical infrastructure.
