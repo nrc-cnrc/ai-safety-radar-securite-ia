@@ -1,0 +1,21 @@
+# Blogs & News (2026-05-20)
+
+## Top Stories
+
+**[METR Frontier Risk Report (February to March 2026)](https://metr.org/blog/2026-05-19-frontier-risk-report/)** - METR has published their latest quarterly assessment of frontier AI capabilities and risks, covering developments from February through March 2026. The report provides critical independent evaluation of the most advanced AI systems and their potential dangerous capabilities. This represents the most authoritative current assessment of whether frontier AI systems are approaching concerning capability thresholds.
+
+**[Import AI 457: AI stuxnet; cursed Muon optimizer; and positive alignment](https://importai.substack.com/p/import-ai-457-ai-stuxnet-cursed-muon)** - Jack Clark's latest newsletter covers three significant developments: research into AI-powered cyber weapons comparable to Stuxnet, issues with the Muon optimization algorithm, and progress on positive alignment approaches. The AI Stuxnet research is particularly concerning as it suggests AI systems could be weaponized for sophisticated cyber attacks on critical infrastructure.
+
+**[Anthropic Announces Global KPMG Alliance](https://www.anthropic.com/news/anthropic-kpmg)** - KPMG is integrating Claude across its entire workforce of 276,000+ employees in 138 countries through their Digital Gateway platform, marking one of the largest enterprise AI deployments to date. This represents a significant real-world stress test for AI safety in high-stakes professional services where errors could have serious legal and financial consequences.
+
+**[Implications Of Predicting The Next Token](https://www.lesswrong.com/posts/AzRRPDNmeEoJdSiib/implications-of-predicting-the-next-token)** - This LessWrong post explores the deeper implications of how large language models work through next-token prediction, challenging common misconceptions about this process. Understanding the true nature of next-token prediction is crucial for AI alignment research, as it affects how we think about mesa-optimization, goal formation, and emergent capabilities in language models.
+
+**[A Visual Guide to Natural Latents](https://www.lesswrong.com/posts/oeaYxA85tBvtJB2a5/a-visual-guide-to-natural-latents)** - This ARIA-funded research provides an accessible explanation of Natural Latents theory using visual representations of probability distributions and mutual information frameworks. Natural Latents theory could be foundational for AI alignment as it offers a mathematical framework for understanding how AI systems should represent and reason about the world in human-compatible ways.
+
+## Policy & Governance
+
+**[European Commission Seeks Feedback on High-Risk AI Classification Guidelines](https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-guidelines-classification-high-risk-artificial-intelligence-systems)** - The European Commission has opened public consultation on draft guidelines for classifying high-risk AI systems under the EU AI Act. These guidelines will determine which AI systems face the strictest regulatory requirements, making this a pivotal moment for shaping practical AI governance in Europe.
+
+**[Commission Holds Data Access Roundtable for Vetted Researchers](https://digital-strategy.ec.europa.eu/en/news/commission-holds-roundtable-data-access-vetted-researchers)** - The European Commission convened stakeholders to discuss data access frameworks for approved researchers studying AI systems. This initiative could establish important precedents for independent AI safety research access to proprietary systems and datasets.
+
+**[AI Now Institute Expands Healthcare AI Research](https://ainowinstitute.org/publications/research/expanding-our-ai-and-healthcare-portfolio)** - AI Now Institute announced expansion of their research portfolio into AI healthcare applications, examining claims from Microsoft, Nvidia, and other companies about AI systems outperforming medical professionals. This research program will provide critical independent analysis of AI safety and efficacy claims in healthcare, where deployment risks directly impact patient outcomes.
