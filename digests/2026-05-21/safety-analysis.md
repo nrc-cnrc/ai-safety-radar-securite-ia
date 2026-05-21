@@ -1,0 +1,17 @@
+# Blogs & News (2026-05-21)
+
+## Top Stories
+
+[**The Case for Evaluating Model Behaviors**](https://www.alignmentforum.org/posts/J5KkwYnnaeNX7hL2s/the-case-for-evaluating-model-behaviors) argues that AI safety evaluations should shift focus from just measuring capabilities to understanding how models actually behave in real-world scenarios. While capability assessments help forecast when risks might emerge, behavioral evaluations could provide more direct insight into whether systems are safe to deploy. This represents a crucial methodological shift that could improve our ability to detect dangerous behaviors before deployment.
+
+[**Theory uplift differentially benefits safety & is underleveraged**](https://www.lesswrong.com/posts/KWeAYcDJwfrG7RwBN/theory-uplift-differentially-benefits-safety-and-is) presents the thesis that near-superhuman mathematics AI capabilities (expected by Q1 2027) will develop faster than automated AI R&D, creating a window where our ability to verify and understand model behavior could outpace capability development itself. The author argues this "theory uplift" period is bottlenecked on having high-quality theoretical frameworks ready to leverage advanced mathematical reasoning. If correct, this suggests a critical opportunity to get ahead of the safety curve through better theoretical preparation.
+
+[**METR Frontier Risk Report (February to March 2026)**](https://metr.org/blog/2026-05-19-frontier-risk-report/) provides the latest assessment of dangerous capabilities in frontier AI systems, though specific findings aren't detailed in the summary. METR's ongoing evaluations serve as a key independent assessment of whether leading AI systems are developing concerning capabilities that could pose security or safety risks.
+
+## Policy & Governance
+
+The [**UK AI Safety Institute published research**](https://www.aisi.gov.uk/research/automated-alignment-is-harder-than-you-think) titled "Automated alignment is harder than you think," suggesting significant challenges remain in developing AI systems that can automatically align other AI systems. This directly contradicts more optimistic timelines for solving alignment through automated methods and reinforces the need for continued human oversight in AI development.
+
+The [**EU Commission released draft guidelines**](https://www.heise.de/news/Bruessel-ordnet-Algorithmen-EU-Kommission-konkretisiert-die-Hochrisiko-KI-11301376.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) clarifying which AI systems qualify as "high-risk" under the AI Act, including examples like emotion-detecting smartwatches, and opened public consultation on the guidance. These specifications will determine which AI applications face the strictest regulatory requirements, making this a critical implementation detail that could significantly impact AI deployment across Europe.
+
+[**AI Now Institute announced expansion**](https://ainowinstitute.org/publications/research/expanding-our-ai-and-healthcare-portfolio) of their AI and healthcare research portfolio, focusing on claims from major tech companies about AI outperforming human medical professionals. This research program will provide crucial independent analysis of AI safety and efficacy claims in a high-stakes domain where deployment errors could directly harm patients.

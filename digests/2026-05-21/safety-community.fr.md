@@ -1,0 +1,26 @@
+# Communauté et Outils (2026-05-21)
+
+## Discussions Clés
+
+**AgentThreatBench : Benchmark de Sécurité OWASP Agentic Top 10**
+Une nouvelle suite d'évaluation de sécurité, [AgentThreatBench](https://ukgovernmentbeis.github.io/inspect_evals/evals/safeguards/agent_threat_bench/), a attiré une attention considérable à travers plusieurs dépôts de sécurité de l'IA. Le benchmark opérationnalise l'OWASP Top 10 pour les Applications Agentiques (2026) en tâches d'évaluation exécutables, couvrant des menaces comme l'injection de prompt indirecte et l'empoisonnement de mémoire. Des demandes d'intégration ont été ouvertes sur les principales plateformes d'évaluation incluant [OpenAI Evals](https://github.com/openai/evals/issues/1668), [EleutherAI's LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness/issues/3776), [DeepEval](https://github.com/confident-ai/deepeval/issues/2681), et [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails/issues/1908). Cette initiative coordonnée suggère que le benchmark répond à une véritable lacune dans l'évaluation standardisée de la sécurité des IA agentiques.
+
+**Améliorations de Sécurité d'Anthropic Claude Cookbook**
+Le [dépôt cookbook d'Anthropic](https://github.com/anthropics/claude-cookbooks) a connu une activité substantielle autour d'exemples axés sur la sécurité, incluant de nouveaux cookbooks pour la [défense contre l'injection de prompt multimodale](https://github.com/anthropics/claude-cookbooks/pull/623) et le [scanning de sécurité des sorties LLM](https://github.com/anthropics/claude-cookbooks/pull/631). Ces ajouts fournissent des implémentations concrètes pour se défendre contre l'injection de prompt basée sur les images, les attaques de couches de texte PDF, et les vulnérabilités de sortie communes comme XSS et l'injection SQL. Cette orientation sécuritaire reflète une prise de conscience croissante de l'industrie que les mesures de sécurité doivent évoluer au-delà des menaces textuelles uniquement, alors que les systèmes d'IA deviennent plus multimodaux.
+
+**Compatibilité des Modèles et Mises à Jour d'Infrastructure**
+Plusieurs dépôts traitent les défis de compatibilité des modèles : [Gemma 4.0.1](https://github.com/google-deepmind/gemma/releases/tag/v4.0.1) a corrigé les exigences de dépendance de dialogue, [TransformerLens mis à jour pour Transformers v5](https://github.com/TransformerLensOrg/TransformerLens/pull/1315) et corrigé les ajustements de mise à l'échelle Gemma, tandis que [LlamaFactory a résolu la compatibilité Megatron-Core Adapter](https://github.com/hiyouga/LlamaFactory/pull/10506). Ces mises à jour d'infrastructure soulignent le défi permanent de maintenir la compatibilité à travers les écosystèmes de modèles d'IA en évolution rapide.
+
+## Versions GitHub et Outils Notables
+
+**[Dari-docs : Agents de Codage Parallèles pour la Documentation](https://github.com/mupt-ai/dari-docs)**
+Un nouveau projet Show HN qui utilise des agents de codage parallèles pour optimiser la documentation. L'outil permet des améliorations automatisées de documentation grâce à des agents IA coordonnés, adressant potentiellement le problème commun du maintien de documentation technique à jour. Ceci importe car la qualité de la documentation est souvent un goulot d'étranglement dans la recherche en sécurité de l'IA où des explications claires des mesures de sécurité et des procédures d'évaluation sont critiques.
+
+**[Attestplane v1.5.0 : Plateforme d'Attestation IA](https://github.com/attestplane/attestplane/releases/tag/v1.5.0)**
+A publié des mises à jour complètes de documentation incluant le mapping d'alignment NIST AI RMF, les guides de conformité GDPR, et la modélisation de menaces de sécurité utilisant une structure Claims/Arguments/Evidence de style GSN. La plateforme fournit des pistes d'audit et des capacités d'attestation spécifiquement conçues pour les systèmes d'IA. Ceci importe car elle adresse le besoin réglementaire croissant de gouvernance IA documentée et de vérification de conformité.
+
+**[Mises à Jour d'Aider AI Code Assistant](https://github.com/Aider-AI/aider)**
+Les mises à jour récentes incluent [l'intégration OrcaRouter](https://github.com/Aider-AI/aider/pull/5147) pour accéder à plus de 150 modèles en amont, [les corrections d'encodage console](https://github.com/Aider-AI/aider/pull/5159), et [la gestion sécurisée des clés OAuth](https://github.com/Aider-AI/aider/pull/5154). La correction OAuth adresse un problème de sécurité où les clés API étaient écrites avec des permissions lisibles par tous. Ceci importe car les assistants de codage IA gèrent des identifiants sensibles et nécessitent des pratiques de sécurité robustes pour prévenir la fuite d'identifiants.
+
+**[Sunglasses Security Pattern Library v0.2.45](https://github.com/sunglasses-dev/sunglasses/pull/27)**
+A ajouté 21 nouveaux modèles de sécurité de flux de travail d'agents (GLS-AW-064 à GLS-AW-084), portant le total à 742 modèles de sécurité à travers 55 catégories. La bibliothèque fournit des modèles de sécurité standardisés pour les flux de travail d'agents IA. Ceci importe car elle offre aux praticiens une base de données organisée et consultable de modèles de sécurité spécifiquement conçus pour les systèmes d'IA agentiques, comblant l'écart entre les pratiques de sécurité générales et les menaces spécifiques aux agents.
