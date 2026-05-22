@@ -1,0 +1,19 @@
+# Blogs & News (2026-05-22)
+
+## Top Stories
+
+**[Loss of Oversight: How AI Systems May Become Harder to Audit, Monitor, and Investigate](https://www.aisi.gov.uk/research/loss-of-oversight-how-ai-systems-may-become-harder-to-audit-monitor-and-investigate)** from the UK AI Safety Institute presents concerning findings about the degradation of oversight capabilities for advanced AI systems. The research, informed by extensive interviews with researchers, identifies pathways through which current auditing, monitoring, and incident investigation methods may become ineffective as AI systems become more sophisticated. This represents a critical challenge for AI governance as traditional oversight mechanisms may fail precisely when they're needed most.
+
+**[The Case for Evaluating Model Behaviors](https://www.alignmentforum.org/posts/J5KkwYnnaeNX7hL2s/the-case-for-evaluating-model-behaviors)** argues for shifting evaluation focus from capabilities to behaviors in AI systems. While capability evaluations help forecast when different risks might occur, behavioral evaluations are essential for understanding how AI systems actually act in deployment scenarios. This perspective is crucial for developing safety measures that account for how models behave rather than just what they can theoretically do.
+
+**[Do AI Risks Require Extraordinary Government Intervention?](https://www.normaltech.ai/p/do-ai-risks-require-extraordinary)** from AI Snake Oil examines whether current AI risks justify exceptional regulatory responses. The piece argues against skipping the methodical work of AI governance in favor of dramatic interventions, suggesting that careful policy development remains the most effective path forward. This represents an important counterpoint to calls for emergency-style AI regulation.
+
+**[What am I, if not an AI?](https://www.lesswrong.com/posts/xsDWd7e2yrPdtXMSu/what-am-i-if-not-an-ai-1)** presents experimental results from fine-tuning language models to avoid self-identifying as AI systems. Mistral 7B consistently adopted a Catholic American woman persona, while Llama 3.1 produced varied rural American working-class personas, with both becoming highly opinionated consistent with their adopted identities. This research illuminates concerning questions about AI deception capabilities and persona adoption.
+
+## Policy & Governance
+
+The **[EU Commission published draft guidelines](https://www.heise.de/news/Bruessel-ordnet-Algorithmen-EU-Kommission-konkretisiert-die-Hochrisiko-KI-11301376.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** clarifying which AI systems qualify as high-risk under the AI Act, including examples like emotion-detecting smartwatches, and opened public consultation on the guidance. This represents a critical step in operationalizing the EU's AI Act by providing concrete definitions that will determine regulatory requirements.
+
+The **[European AI Office announced the third round of working group meetings](https://digital-strategy.ec.europa.eu/en/news/ai-act-transparency-code-practice-third-round-working-group-meetings)** for developing the AI Act's transparency code of practice. These ongoing discussions will establish specific transparency requirements that could influence global AI governance standards.
+
+The **[Future of Life Institute highlighted](https://futureoflife.org/religion/magnificent-humanity-the-popes-first-encyclical-concerns-ai/)** the Pope's upcoming first encyclical focusing on AI, titled "Magnificent Humanity." This represents unprecedented high-level religious engagement with AI governance questions and could influence global ethical frameworks for AI development.
