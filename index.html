@@ -426,18 +426,28 @@
       return hash.replace('.fr.md', '.md');
     }
 
-    // The gcds-header lang-href triggers a navigation. Intercept it to switch locale
-    // in-app instead of navigating to "#".
-    document.addEventListener('click', (e) => {
-      const path = e.composedPath();
-      const langLink = path.find(el => el.tagName && el.tagName.toLowerCase() === 'a' && el.classList && el.classList.contains('gcds-lang-toggle'));
-      // The shadow-DOM lang toggle is hard to intercept; use the gcds custom event instead.
-    });
+    // Point the gcds-header lang toggle at ?lang=<other>#<file-for-other-lang>.
+    // The toggle is a real anchor in the shadow DOM, so a normal navigation is
+    // simplest — we read ?lang on load, persist it, and clean the URL.
+    function updateLangToggleHref() {
+      const header = document.querySelector('gcds-header');
+      if (!header) return;
+      const cur = getLang();
+      const next = cur === 'en' ? 'fr' : 'en';
+      const nextHash = hashForLang(location.hash, next);
+      header.setAttribute('lang-href', `?lang=${next}${nextHash || ''}`);
+    }
 
-    // gcds-header emits gcdsClick on the lang toggle; we listen on document (bubbles through shadow root).
-    document.addEventListener('gcdsClick', (e) => {
-      // No-op stub; we use a custom switch in the toolbar below if needed.
-    });
+    function readLangFromUrl() {
+      const params = new URLSearchParams(location.search);
+      const urlLang = params.get('lang');
+      if (urlLang !== 'en' && urlLang !== 'fr') return false;
+      const changed = getLang() !== urlLang;
+      localStorage.setItem('lang', urlLang);
+      // Strip ?lang from the URL but keep the file hash.
+      history.replaceState(null, '', location.pathname + location.hash);
+      return changed;
+    }
 
     const contentCache = {};
 
@@ -673,9 +683,11 @@
     function handleHash() {
       const hash = location.hash.slice(1);
       if (hash) loadContent(hash);
+      updateLangToggleHref();
     }
 
     async function init() {
+      readLangFromUrl();
       applyLang(getLang());
       const manifest = await loadManifest();
       renderSidebar(manifest);
@@ -685,6 +697,7 @@
         const sorted = sortFiles(filterFilesByLang(latest.files));
         if (sorted.length > 0) location.hash = sorted[0];
       }
+      updateLangToggleHref();
       preloadContent(manifest);
     }
 
