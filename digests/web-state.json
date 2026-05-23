@@ -333,7 +333,8 @@
     "https://www.anthropic.com/research/2028-ai-leadership",
     "https://www.anthropic.com/news/anthropic-acquires-stainless",
     "https://www.anthropic.com/news/anthropic-kpmg",
-    "https://www.anthropic.com/news/widening-conversation-ai"
+    "https://www.anthropic.com/news/widening-conversation-ai",
+    "https://www.anthropic.com/research/glasswing-initial-update"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -877,7 +878,9 @@
     "https://www.iaps.ai/research/tag/Matthew+Mittelsteadt",
     "https://www.iaps.ai/research/ai-distillation-attacks-executive-and-congressional-action-can-go-further",
     "https://www.iaps.ai/research/after-mythos-a-national-security-playbook-for-frontier-ai",
-    "https://www.iaps.ai/research/tag/Brianna+Rosen"
+    "https://www.iaps.ai/research/tag/Brianna+Rosen",
+    "https://www.iaps.ai/research/detecting-offensive-cyber-agents",
+    "https://www.iaps.ai/research/tag/Jan+Wehner"
   ],
   "Conjecture": [
     "https://www.conjecture.dev/research/build-a-simple-game-with-tactics",
