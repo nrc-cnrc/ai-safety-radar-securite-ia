@@ -750,7 +750,10 @@
           const diffDays = Math.round((today - dCopy) / 86400000);
           let relText = '', relClass = '';
           if (diffDays === 0) { relText = lang === 'fr' ? "auj." : "today"; relClass = 'today'; }
-          else if (diffDays > 0 && diffDays < 60) { relText = diffDays + (lang === 'fr' ? 'j' : 'd'); }
+          else if (diffDays === 1) { relText = lang === 'fr' ? 'hier' : 'yesterday'; }
+          else if (diffDays > 1 && diffDays < 60) {
+            relText = lang === 'fr' ? `il y a ${diffDays} jours` : `${diffDays} days ago`;
+          }
           return `<div class="date-group${dayCollapsed}" data-date="${entry.date}">
             <div class="date-label">
               <span class="num">${dayNum}</span>
