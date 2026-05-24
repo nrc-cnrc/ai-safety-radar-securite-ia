@@ -1,0 +1,11 @@
+# Blogs & News (2026-05-24)
+
+## Top Stories
+
+**[The Erdős Proof and AI Capabilities](https://intelligence.org/2026/05/22/the-erdos-proof-and-ai-capabilities/)** - MIRI reports that an internal OpenAI model has autonomously disproved a central conjecture in discrete geometry related to a famous 1946 question by Paul Erdős, with the proof verified by prominent mathematicians. This represents a significant milestone in AI's ability to conduct independent mathematical research and discovery, potentially indicating capabilities progress toward more general scientific reasoning.
+
+**[Did Google's AI agents really build an operating system for $916?](https://www.normaltech.ai/p/did-googles-ai-agents-really-build)** - AI Snake Oil examines claims about Google's AI agents developing software systems at extremely low cost, emphasizing the critical importance of independent evaluation of such capabilities claims. This highlights ongoing challenges in accurately assessing and verifying reported AI capabilities, which is essential for both safety evaluation and avoiding hype-driven policy decisions.
+
+**[Gemini 3.5 Flash Looks Good For How Fast It Is](https://thezvi.substack.com/p/gemini-35-flash-looks-good-for-how)** - Zvi Mowshowitz evaluates Google's latest model iteration, noting its performance relative to inference speed. The continued rapid iteration and improvement of frontier models across multiple labs underscores the accelerating pace of capabilities development and the challenges this poses for safety research keeping up.
+
+**[Your Left Brain Doesn't Trade With Your Right](https://www.lesswrong.com/posts/Lid8cv9qF7nac53va/your-left-brain-doesn-t-trade-with-your-right)** - A LessWrong post critiques the "single genius model" assumption in AI development, arguing against expecting individual models to handle all tasks and innovations independently. This perspective is relevant for understanding distributed AI systems and multi-agent approaches, which may have different safety and alignment implications than monolithic superintelligent systems.
