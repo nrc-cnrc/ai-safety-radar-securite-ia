@@ -1,0 +1,11 @@
+# Blogs & actualités (2026-05-25)
+
+## Principales actualités
+
+**[Une théorie (légèrement) mécanistique pour des horizons temporels d'IA exponentiellement croissants ?](https://www.lesswrong.com/posts/zT76JcomKkdqo8tC6/a-slightly-mechanistic-theory-for-exponentially-increasing)** - Une analyse de LessWrong examine le graphique influent de METR de 2025 montrant que les systèmes d'IA atteignent des « horizons temporels » plus longs dans les tâches de planification et d'exécution, soutenant que ces améliorations sont principalement dues à l'augmentation des données d'entraînement plutôt qu'aux capacités de raisonnement temporel. Ceci importe car comprendre les véritables moteurs des améliorations de capacités d'IA est crucial pour prédire quand les systèmes pourraient atteindre des niveaux dangereux de capacité de planification à long terme.
+
+**[Trump retarde l'examen fédéral des modèles avancés](https://www.heise.de/news/Trump-stoppt-wichtige-Verordnung-fuer-KI-Modelle-11305450.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** - Le président Trump a reporté la signature de réglementations qui auraient donné aux agences américaines jusqu'à 90 jours pour examiner les modèles d'IA avancés avant leur sortie, invoquant des préoccupations de compétitivité après la pression des dirigeants technologiques et de l'investisseur David Sacks. Ceci représente un recul significatif de la surveillance de la sécurité de l'IA qui pourrait accélérer le déploiement de modèles puissants comme Claude Mythos d'Anthropic sans examen de sécurité adéquat.
+
+## Politique et gouvernance
+
+La décision de l'administration Trump de retarder les procédures fédérales d'examen des modèles d'IA marque un changement majeur par rapport à l'approche de l'administration précédente concernant la gouvernance de l'IA. La règle reportée était spécifiquement conçue pour traiter les risques de cybersécurité des systèmes d'IA avancés et aurait fourni aux agences gouvernementales un préavis des sorties de modèles puissants. Ce revirement politique suggère une priorisation de la compétitivité industrielle sur les processus d'évaluation de sécurité, créant potentiellement des lacunes dans la surveillance de systèmes d'IA de plus en plus capables.
