@@ -1,0 +1,17 @@
+# Blogs & News (2026-05-27)
+
+## Top Stories
+
+**[Practical Learnings from Synthetic Document Finetuning](https://www.lesswrong.com/posts/7zGgFPLaTXJwCJccB/practical-learnings-from-synthetic-document-finetuning)** - Apollo Research shares operational insights from using Synthetic Document Finetuning (SDF), a knowledge editing technique where models are finetuned on LLM-generated documents to instill specific facts or beliefs. The post covers practical tweaks to standard SDF recipes and implementation tips based on their recent research experience. This matters because SDF represents a concerning capability for potentially manipulating AI systems' knowledge and beliefs in ways that could undermine alignment efforts.
+
+**[Some ideas for what comes next, May 2026](https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may)** - Nathan Lambert's latest Interconnects newsletter discusses recent developments including Gemini Flash 3.5, the Mythos project, evolving open-closed model dynamics, America's open-source surge, and emerging power struggles in AI development. This matters because it provides a strategic overview of competitive dynamics that will shape AI governance and safety approaches across different actors and jurisdictions.
+
+**[Import AI 458: Reckoning with the future; and a singularity story](https://importai.substack.com/p/import-ai-458-reckoning-with-the)** - Jack Clark's latest newsletter examines potential AI-driven breakthroughs expected in 2026, featuring analysis of technological trajectories and their implications. This matters because understanding near-term capability projections is crucial for timely safety research and governance preparation.
+
+**[Anthropic appoints KiYoung Choi as Representative Director of Korea](https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea)** - Anthropic announces the appointment of KiYoung Choi to lead their Korean operations ahead of opening a Seoul office, citing Korea's exceptionally high Claude usage rate (3.5x expected for population size) particularly for technical and creative work. This matters because it reflects the global expansion of leading AI companies and the geographic distribution of advanced AI system adoption.
+
+## Policy & Governance
+
+**Pope Leo's AI Encyclical "Magnifica Humanitas"** - Multiple sources ([LessWrong](https://www.lesswrong.com/posts/wRNJZz2iYrfDaSDdz/claude-author-of-the-humanitas), [Zvi Mowshowitz](https://thezvi.substack.com/p/rtmh-pope-leos-magnifica-humanitas)) discuss the Vatican's first papal encyclical specifically addressing artificial intelligence and safeguarding human dignity in the AI era, announced on Memorial Day. This matters because it represents the first major religious institutional position on AI governance, potentially influencing policy discussions globally and adding moral authority to AI safety debates.
+
+**[EU-Mexico Summit on Digital Cooperation](https://digital-strategy.ec.europa.eu/en/news/eu-and-mexico-deepen-long-term-ties-historic-summit)** - The European AI Office reports on deepened EU-Mexico ties at a historic summit, though specific AI governance details weren't provided in the excerpt. This matters because it suggests continued international coordination on digital governance frameworks that may include AI regulatory cooperation.

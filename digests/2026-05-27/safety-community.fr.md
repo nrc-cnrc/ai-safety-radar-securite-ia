@@ -1,0 +1,25 @@
+# Communauté & Outils (2026-05-27)
+
+## Discussions clés
+
+**Hugging Face publie le framework de mesure de la conscience SEMCA-7** — Un nouveau framework de recherche ([devmance/SEMCA](https://github.com/devmance/SEMCA/releases/tag/v1.0.0)) applique sept théories mathématiques de la conscience de manière identique aux activations des transformers IA et aux signaux BOLD fMRI humains sur des stimuli naturalistes, marquant une avancée significative dans la méthodologie de mesure de la conscience. Cela permet une comparaison directe indépendante du substrat entre les marqueurs de conscience IA et biologiques.
+
+**Le cookbook d'Anthropic ajoute une variante AgentCore Runtime** — Le dépôt cookbook d'Anthropic a vu de l'activité autour d'une [nouvelle variante AgentCore Runtime](https://github.com/anthropics/claude-cookbooks/pull/674) pour des sandboxes auto-hébergés, bien que la PR ait été fermée car la fonctionnalité associée n'est pas encore publique. Cela signale le développement continu de l'infrastructure de runtime d'agents d'Anthropic et des capacités de sandbox.
+
+**Bugs découverts dans les rails de sortie en streaming de NeMo Guardrails** — Plusieurs bugs critiques ont été identifiés dans NeMo Guardrails de NVIDIA lors de la sortie en streaming : [plantages de détection de motifs regex](https://github.com/NVIDIA-NeMo/Guardrails/issues/1931) et [réutilisation de paramètres obsolètes entre les chunks](https://github.com/NVIDIA-NeMo/Guardrails/issues/1935). Ceux-ci affectent la fiabilité du filtrage de contenu en temps réel pendant les réponses LLM en streaming.
+
+**TransformerLens publie la v3.3.0 avec l'enregistrement d'architectures externes** — La bibliothèque d'interprétabilité [TransformerLens a livré la version 3.3.0](https://github.com/TransformerLensOrg/TransformerLens/pull/1321) avec un système d'enregistrement d'architectures externes qui permet aux utilisateurs de créer et d'enregistrer des adaptateurs d'architecture personnalisés, élargissant considérablement la flexibilité de la boîte à outils pour les architectures de modèles nouvelles.
+
+**Les échecs des garde-fous QWED Legal exposent les écarts entre format et autorité** — Plusieurs problèmes critiques ont été découverts dans la [bibliothèque qwed-legal](https://github.com/QWED-AI/qwed-legal) où les garde-fous de vérification juridique traitaient la correspondance de format comme une preuve d'autorité, retournant potentiellement des résultats "vérifiés" pour des citations fabriquées et des domaines juridiques non supportés. Cela souligne le défi de construire des systèmes de vérification IA juridiques fiables.
+
+## Sorties et outils GitHub notables
+
+**PromptArmor v0.1.0** — Une nouvelle [boîte à outils de défense runtime](https://github.com/Carlos-Projects/promptarmor/releases/tag/v0.1.0) contre les attaques d'injection de prompt lancée avec des outils CLI, serveur proxy, et cinq filtres de détection incluant la détection d'injection, les garde-fous d'auto-réflexion, et la désinfection de contexte. Cela fournit des défenses prêtes pour la production pour les applications alimentées par LLM contre les prompts adverses.
+
+**Mises à jour du Guard Evaluation Harness (GEH)** — Le [framework d'évaluation des garde-fous](https://github.com/Virtue-Research/guard-eval-harness) a reçu des améliorations significatives de documentation incluant des logos raffinés, des GIFs de démonstration, et des guides d'installation complets pour les workflows pip et uv. Cela rend le framework plus accessible pour évaluer les garde-fous de sécurité IA.
+
+**Agent Provost v0.2.0** — Publication d'une [frontière de politique et d'observabilité](https://github.com/CharmingSteve/agent-provost/releases/tag/v0.2.0) pour le trading piloté par IA avec Alpaca MCP, offrant des contrôles OpenResty + Lua pour la gouvernance des chemins d'ordres, l'audit, et le traçage. Cela permet un déploiement plus sûr des systèmes de trading IA avec des mécanismes de supervision appropriés.
+
+**AI-Heart v0.1.0** — Une nouvelle [architecture de personnages IA axée sur le consentement](https://github.com/fa-10-cmd/ai-heart/releases/tag/v0.1.0) livrée avec une taxonomie à huit dimensions couvrant le désir, l'ambition, l'empathie, le but, l'autonomie, la compétence, la connexion, et l'acceptation de soi. Cela fournit un framework pour construire des personnages IA plus psychologiquement réalistes avec des mécanismes de consentement appropriés.
+
+**HireProof v1.1.0** — Mise à jour du [système de vérification d'embauche](https://github.com/Iron-Mark/Hackathon-HireProof/releases/tag/v1.1.0) avec consolidation principale et durcissement sécuritaire, incluant des corrections pour le blanchiment de confiance dans l'intelligence v2 et des protections durcies du workflow de publication GitHub Packages. Cela renforce l'intégrité des systèmes de décision d'embauche alimentés par IA.
