@@ -33,16 +33,16 @@
       --bg: #101922;
       --surface: #161b22;
       --border: #272d35;
-      --border-strong: #3a4149;
+      --border-strong: #4a525c;
       --text: #e6edf3;
-      --text-muted: #8b949e;
-      --accent: #5b8dd9;
-      --accent-hover: #7aaae6;
-      --accent-subtle: #5b8dd910;
-      --link: #6b9ff5;
-      --green: #3fb950;
-      --orange: #d29922;
-      --red: #f85149;
+      --text-muted: #a4adb8;
+      --accent: #7aaae6;
+      --accent-hover: #9cc1ed;
+      --accent-subtle: #7aaae620;
+      --link: #8fb6f5;
+      --green: #4dc466;
+      --orange: #e0a937;
+      --red: #ff6a6a;
       --strong: #f0f6fc;
     }
 
@@ -55,6 +55,64 @@
       line-height: 1.65;
       font-size: 17px;
       -webkit-font-smoothing: antialiased;
+    }
+
+    /* Visually hidden, but available to screen readers */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Skip-to-main link (visible on focus) */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 8px;
+      z-index: 1000;
+      background: var(--accent);
+      color: #ffffff;
+      padding: 10px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      font-weight: 600;
+      transition: top 0.15s;
+    }
+    .skip-link:focus {
+      top: 8px;
+      outline: 2px solid var(--text);
+      outline-offset: 2px;
+    }
+
+    /* Visible focus indicators for keyboard users */
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    [tabindex]:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 3px;
+    }
+    .file-link:focus-visible { outline-offset: -2px; }
+    /* main receives focus from the skip link; suppress the outline around the whole content area */
+    main:focus-visible, main:focus { outline: none; }
+
+    /* Honor reduced motion preference */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
     }
 
     /* ------ HEADER ------ */
@@ -103,9 +161,9 @@
       text-transform: uppercase;
     }
 
-    nav { display: flex; gap: 0; align-items: center; flex-shrink: 0; margin-left: 24px; }
+    header nav { display: flex; gap: 0; align-items: center; flex-shrink: 0; margin-left: 24px; }
 
-    nav a, nav button {
+    header nav a, header nav button {
       color: var(--text);
       text-decoration: none;
       font-family: 'IBM Plex Mono', monospace;
@@ -124,7 +182,7 @@
       transition: all 0.12s;
     }
 
-    nav a:hover, nav button:hover { border-color: var(--border-strong); background: var(--bg); }
+    header nav a:hover, header nav button:hover { border-color: var(--border-strong); background: var(--bg); }
 
     .theme-toggle { padding: 6px 8px; }
 
@@ -190,6 +248,12 @@
       cursor: pointer;
       user-select: none;
       transition: background 0.1s;
+      background: transparent;
+      border: none;
+      width: 100%;
+      text-align: left;
+      color: inherit;
+      font: inherit;
     }
 
     .date-label:hover { background: var(--bg); }
@@ -247,7 +311,7 @@
       padding: 6px 10px 6px 14px;
       color: var(--text);
       text-decoration: none;
-      font-size: 14.5px;
+      font-size: 13.5px;
       border-radius: 4px;
       margin: 1px 0;
       transition: background 0.1s;
@@ -274,7 +338,8 @@
       font-family: 'IBM Plex Mono', monospace;
       font-size: 10px;
       color: var(--accent);
-      letter-spacing: 0.04em;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
       font-weight: 500;
       flex-shrink: 0;
       border: 1px solid var(--accent);
@@ -441,7 +506,7 @@
       align-items: center;
       justify-content: space-between;
       font-family: 'IBM Plex Mono', monospace;
-      font-size: 10px;
+      font-size: 12px;
       color: var(--text-muted);
       font-weight: 600;
       padding: 14px 20px 8px;
@@ -450,6 +515,10 @@
       cursor: pointer;
       user-select: none;
       transition: color 0.1s;
+      background: transparent;
+      border: none;
+      width: 100%;
+      text-align: left;
     }
 
     .month-label:hover { color: var(--text); }
@@ -479,51 +548,55 @@
   </style>
 </head>
 <body>
-  <header>
-    <a href="#" class="logo">
-      <img src="assets/ai-safety-radar.svg" class="mark" alt="AI Safety Radar logo">
+  <a href="#main" class="skip-link" id="skipLink">Skip to main content</a>
+
+  <header role="banner">
+    <a href="./" class="logo" aria-label="AI Safety Radar — home">
+      <img src="assets/ai-safety-radar.svg" class="mark" alt="">
       <div class="t">
         <b id="logoTitle">AI Safety Radar</b>
         <span id="logoSub">Daily digest</span>
       </div>
     </a>
-    <nav>
-      <a href="feed.xml" title="RSS Feed">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
-        RSS
+    <nav aria-label="Site">
+      <a href="feed.xml">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+        <span id="navRss">RSS</span>
+        <span class="sr-only" id="navRssSr"> feed</span>
       </a>
-      <a href="https://github.com/ygauthie/ai-safety-radar-securite-ia" title="GitHub">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-        Source
+      <a href="https://github.com/ygauthie/ai-safety-radar-securite-ia">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        <span id="navSource">Source</span>
+        <span class="sr-only"> code on GitHub</span>
       </a>
-      <button id="langToggle" title="Switch language" style="border-color:var(--border-strong)!important">EN</button>
-      <button class="theme-toggle" id="themeToggle" title="Toggle theme">
-        <svg id="iconSun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        <svg id="iconMoon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <button id="langToggle" type="button" aria-label="Switch to French" style="border-color:var(--border-strong)!important"><span aria-hidden="true">EN</span></button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg id="iconSun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg id="iconMoon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
     </nav>
   </header>
 
-  <div class="sidebar" id="sidebar">
+  <nav class="sidebar" id="sidebar" aria-label="Digests">
     <div class="loading" id="sidebarLoading">Loading…</div>
-  </div>
+  </nav>
 
-  <div class="main">
-    <div id="content">
+  <main class="main" id="main" tabindex="-1">
+    <div id="content" aria-live="polite" aria-busy="false">
       <div class="welcome" id="welcomeScreen">
         <h1 id="welcomeTitle">AI Safety Daily Digest</h1>
         <p id="welcomeSub">Daily digest of AI safety research, policy, and developments.</p>
         <p id="welcomeHint" style="margin-top: 1rem; font-size: 0.9rem;">Select a digest from the sidebar to begin reading.</p>
       </div>
     </div>
-  </div>
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
     // i18n strings
     const I18N = {
       en: {
-        disclaimer: 'Digests are generated automatically by an AI model summarizing public sources and may contain errors; always check the sources before citing.<br>Digests are for research purposes and do not reflect the views of the National Research Council or the Government of Canada.',
+        disclaimer: 'Digests are generated automatically by an AI model summarizing public sources and may contain errors; always check the sources before citing. Contents are for research purposes and do not reflect the views of the National Research Council or the Government of Canada.',
         loading: 'Loading digest list...',
         noDigests: 'No digests available yet.<br>Run the pipeline to generate the first digest.',
         loadingContent: 'Loading...',
@@ -534,26 +607,26 @@
         welcomeSub: 'Daily digest of AI safety research, policy, and developments.',
         welcomeHint: 'Select a digest from the sidebar to begin reading.',
         fileLabels: {
-          'safety-daily': 'Daily Digest',
-          'safety-weekly': 'Past Week',
-          'safety-research': 'Research Papers',
-          'safety-analysis': 'Blogs & News',
-          'safety-community': 'Community & Tools',
+          'safety-daily': 'Daily digest',
+          'safety-weekly': 'Past week',
+          'safety-research': 'Research papers',
+          'safety-analysis': 'Blogs & news',
+          'safety-community': 'Community & tools',
           // Legacy labels for older digests
-          'safety-arxiv': 'ArXiv Papers',
-          'safety-github': 'GitHub Activity',
-          'safety-rss': 'Blog Posts',
-          'safety-aisi': 'AI Safety Institutes',
+          'safety-arxiv': 'ArXiv papers',
+          'safety-github': 'GitHub activity',
+          'safety-rss': 'Blog posts',
+          'safety-aisi': 'AI safety institutes',
           'safety-hn': 'Hacker News',
-          'safety-journals': 'Journal Articles',
+          'safety-journals': 'Journal articles',
         },
-        badges: { daily: 'Executive Summary', weekly: 'Weekly Rollup' },
+        badges: { daily: 'Executive summary', weekly: 'Weekly rollup' },
         locale: 'en-US',
         siteTitle: 'AI Safety',
         siteTitleSub: 'Radar',
       },
       fr: {
-        disclaimer: 'Les bulletins sont générés automatiquement par un modèle d\'IA qui résume des sources publiques et peuvent contenir des erreurs ; vérifiez toujours les sources avant toute citation.<br>Les bulletins sont à des fins de recherche et ne reflètent pas les opinions du Conseil national de recherches du Canada ni du gouvernement du Canada.',
+        disclaimer: 'Les bulletins sont générés automatiquement par un modèle d\'IA qui résume des sources publiques et peuvent contenir des erreurs ; vérifiez toujours les sources avant toute citation. Le contenu est à des fins de recherche et ne reflète pas les opinions du Conseil national de recherches du Canada ni du gouvernement du Canada.',
         loading: 'Chargement de la liste...',
         noDigests: 'Aucun bulletin disponible pour l\'instant.<br>Lancez le pipeline pour générer le premier bulletin.',
         loadingContent: 'Chargement...',
@@ -595,7 +668,17 @@
 
     function applyLang(lang) {
       const strings = I18N[lang];
-      document.getElementById('langToggle').textContent = lang === 'en' ? 'FR' : 'EN';
+      const langToggle = document.getElementById('langToggle');
+      const nextLangCode = lang === 'en' ? 'FR' : 'EN';
+      langToggle.innerHTML = `<span aria-hidden="true">${nextLangCode}</span>`;
+      // aria-label is written in the CURRENT page language so screen readers pronounce it correctly
+      langToggle.setAttribute('aria-label', lang === 'en' ? 'Switch to French' : 'Passer à l\'anglais');
+
+      // Keep <html lang> and document title in sync with current UI language
+      document.documentElement.lang = lang === 'fr' ? 'fr' : 'en';
+      const siteName = lang === 'fr' ? 'Radar de la sécurité en IA' : 'AI Safety Radar';
+      document.title = siteName;
+
       const welcomeTitle = document.getElementById('welcomeTitle');
       const welcomeSub = document.getElementById('welcomeSub');
       const welcomeHint = document.getElementById('welcomeHint');
@@ -604,8 +687,21 @@
       if (welcomeHint) welcomeHint.textContent = strings.welcomeHint;
       const logoTitle = document.getElementById('logoTitle');
       const logoSub = document.getElementById('logoSub');
-      if (logoTitle) logoTitle.textContent = lang === 'en' ? 'AI Safety Radar' : 'Radar de la sécurité en IA';
+      if (logoTitle) logoTitle.textContent = siteName;
       if (logoSub) logoSub.textContent = lang === 'en' ? 'Daily digest' : 'Bulletin quotidien';
+
+      const logoLink = document.querySelector('.logo');
+      if (logoLink) logoLink.setAttribute('aria-label', `${siteName} — ${lang === 'fr' ? 'accueil' : 'home'}`);
+
+      const navRss = document.getElementById('navRss');
+      const navRssSr = document.getElementById('navRssSr');
+      const navSource = document.getElementById('navSource');
+      if (navRss) navRss.textContent = 'RSS';
+      if (navRssSr) navRssSr.textContent = lang === 'fr' ? ' (fil RSS)' : ' feed';
+      if (navSource) navSource.textContent = lang === 'fr' ? 'Source' : 'Source';
+
+      const skip = document.getElementById('skipLink');
+      if (skip) skip.textContent = lang === 'fr' ? 'Aller au contenu principal' : 'Skip to main content';
     }
 
     function hashForLang(hash, lang) {
@@ -623,6 +719,7 @@
       const next = getLang() === 'en' ? 'fr' : 'en';
       localStorage.setItem('lang', next);
       applyLang(next);
+      applyTheme(getTheme()); // refresh theme button aria-label in the new language
       if (currentManifest) renderSidebar(currentManifest);
       const hash = location.hash.slice(1);
       if (hash) {
@@ -647,6 +744,17 @@
       document.getElementById('iconMoon').style.display = theme === 'dark' ? 'none' : 'block';
       const logoMark = document.querySelector('.logo .mark');
       if (logoMark) logoMark.src = theme === 'dark' ? 'assets/ai-safety-radar-inverse.svg' : 'assets/ai-safety-radar.svg';
+
+      const themeToggle = document.getElementById('themeToggle');
+      const lang = getLang();
+      const nextIsDark = theme === 'light';
+      themeToggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      themeToggle.setAttribute(
+        'aria-label',
+        lang === 'fr'
+          ? (nextIsDark ? 'Passer au thème sombre' : 'Passer au thème clair')
+          : (nextIsDark ? 'Switch to dark theme' : 'Switch to light theme')
+      );
     }
 
     applyTheme(getTheme());
@@ -736,17 +844,23 @@
 
       const chevronSvg = `<svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>`;
 
-      let html = `<div class="search-box"><div class="wrap"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input type="text" id="searchInput" placeholder="${t().searchPlaceholder}"></div></div>`;
+      const chevronSvgHidden = chevronSvg.replace('<svg ', '<svg aria-hidden="true" focusable="false" ');
+      const searchLabel = t().searchPlaceholder;
+      let html = `<div class="search-box" role="search"><div class="wrap"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><label for="searchInput" class="sr-only">${searchLabel}</label><input type="search" id="searchInput" placeholder="${searchLabel}" aria-label="${searchLabel}" autocomplete="off"></div></div>`;
       html += '<div class="sidebar-entries" id="sidebarEntries">';
 
       months.forEach((mk, mi) => {
         const monthCollapsed = mi > 0 ? ' collapsed' : '';
+        const monthExpanded = mi === 0 ? 'true' : 'false';
+        const monthEntriesId = `month-entries-${mk}`;
         html += `<div class="month-group${monthCollapsed}" data-month="${mk}">`;
-        html += `<div class="month-label"><span>${monthLabel(mk)}</span>${chevronSvg}</div>`;
+        html += `<button type="button" class="month-label" aria-expanded="${monthExpanded}" aria-controls="${monthEntriesId}"><span>${monthLabel(mk)}</span>${chevronSvgHidden}</button>`;
 
         const entriesHtml = monthMap[mk].map((entry, i) => {
           const sorted = sortFiles(filterFilesByLang(entry.files));
           const dayCollapsed = (mi === 0 && i === 0) ? '' : ' collapsed';
+          const dayExpanded = (mi === 0 && i === 0) ? 'true' : 'false';
+          const dayFilesId = `date-files-${entry.date}`;
           const filesHtml = sorted.map(file =>
             `<a href="#${file}" class="file-link" data-hash="${file}" data-label="${fileLabel(file).toLowerCase()}" data-date="${entry.date}"><span class="lbl">${fileLabel(file)}</span>${fileBadge(file)}</a>`
           ).join('');
@@ -755,6 +869,7 @@
           const lang = getLang();
           const dayNum = d.getDate();
           const dow = d.toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-US', { weekday: 'short' }).replace('.', '');
+          const fullDateLabel = d.toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
           const today = new Date(); today.setHours(0,0,0,0);
           const dCopy = new Date(d); dCopy.setHours(0,0,0,0);
           const diffDays = Math.round((today - dCopy) / 86400000);
@@ -765,17 +880,17 @@
             relText = lang === 'fr' ? `il y a ${diffDays} jours` : `${diffDays} days ago`;
           }
           return `<div class="date-group${dayCollapsed}" data-date="${entry.date}">
-            <div class="date-label">
-              <span class="num">${dayNum}</span>
-              <span class="dow">${dow}</span>
-              ${relText ? `<span class="rel ${relClass}">${relText}</span>` : ''}
-              ${chevronSvg}
-            </div>
-            <div class="date-files" style="max-height:${dayCollapsed ? 0 : filesHeight}px">${filesHtml}</div>
+            <button type="button" class="date-label" aria-expanded="${dayExpanded}" aria-controls="${dayFilesId}" aria-label="${fullDateLabel}${relText ? ', ' + relText : ''}">
+              <span class="num" aria-hidden="true">${dayNum}</span>
+              <span class="dow" aria-hidden="true">${dow}</span>
+              ${relText ? `<span class="rel ${relClass}" aria-hidden="true">${relText}</span>` : ''}
+              ${chevronSvgHidden}
+            </button>
+            <div class="date-files" id="${dayFilesId}" style="max-height:${dayCollapsed ? 0 : filesHeight}px">${filesHtml}</div>
           </div>`;
         }).join('');
 
-        html += `<div class="month-entries">${entriesHtml}</div>`;
+        html += `<div class="month-entries" id="${monthEntriesId}">${entriesHtml}</div>`;
         html += '</div>';
       });
 
@@ -786,7 +901,8 @@
       document.querySelectorAll('.month-label').forEach(label => {
         label.addEventListener('click', () => {
           const group = label.closest('.month-group');
-          group.classList.toggle('collapsed');
+          const collapsed = group.classList.toggle('collapsed');
+          label.setAttribute('aria-expanded', String(!collapsed));
         });
       });
 
@@ -797,6 +913,7 @@
           const files = group.querySelector('.date-files');
           const isCollapsed = group.classList.toggle('collapsed');
           files.style.maxHeight = isCollapsed ? '0px' : files.scrollHeight + 'px';
+          label.setAttribute('aria-expanded', String(!isCollapsed));
         });
       });
 
@@ -864,6 +981,8 @@
       if (!info) {
         info = document.createElement('div');
         info.className = 'search-results-info';
+        info.setAttribute('role', 'status');
+        info.setAttribute('aria-live', 'polite');
         document.getElementById('sidebarEntries').prepend(info);
       }
       info.textContent = t().resultsFound(totalMatches);
@@ -871,21 +990,30 @@
 
     async function loadContent(file) {
       const content = document.getElementById('content');
-      content.innerHTML = `<div class="loading">${t().loadingContent}</div>`;
+      content.setAttribute('aria-busy', 'true');
+      content.innerHTML = `<div class="loading" role="status">${t().loadingContent}</div>`;
 
       try {
         const res = await fetch(`digests/${file}`);
         if (!res.ok) throw new Error('Not found');
         const md = await res.text();
         contentCache[file] = md;
-        const warnIcon = `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`;
-        content.innerHTML = marked.parse(md) + `<div class="ai-disclaimer">${warnIcon}<span>${t().disclaimer}</span></div>`;
+        const warnIcon = `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`;
+        const disclaimerLabel = getLang() === 'fr' ? 'Avertissement' : 'Disclaimer';
+        content.innerHTML = marked.parse(md) + `<aside class="ai-disclaimer" role="note" aria-label="${disclaimerLabel}">${warnIcon}<span>${t().disclaimer}</span></aside>`;
       } catch {
-        content.innerHTML = `<div class="loading">${t().failedLoad}</div>`;
+        content.innerHTML = `<div class="loading" role="alert">${t().failedLoad}</div>`;
       }
+      content.setAttribute('aria-busy', 'false');
 
       document.querySelectorAll('.file-link').forEach(el => {
-        el.classList.toggle('active', el.dataset.hash === file);
+        const isActive = el.dataset.hash === file;
+        el.classList.toggle('active', isActive);
+        if (isActive) {
+          el.setAttribute('aria-current', 'page');
+        } else {
+          el.removeAttribute('aria-current');
+        }
       });
     }
 

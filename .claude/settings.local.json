@@ -35,7 +35,12 @@
       "Bash(git pull *)",
       "Bash(git push *)",
       "Bash(git stash *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --hide-scrollbars --window-size=1440,2400 --screenshot=/tmp/site-full.png http://localhost:8085/)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --hide-scrollbars --window-size=390,1500 --screenshot=/tmp/site-mobile.png http://localhost:8085/)",
+      "Bash(pnpm typecheck *)",
+      "Bash(uuidgen)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --user-data-dir=/tmp/chrome-fresh2 --hide-scrollbars --window-size=1400,900 --force-device-scale-factor=2 --virtual-time-budget=4000 --screenshot=/tmp/ai-safety-snap4.png \"http://localhost:8765/?n=$\\(uuidgen\\)\")"
     ]
   }
 }
