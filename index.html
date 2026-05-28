@@ -390,6 +390,16 @@
       font-size: 14px;
       color: var(--text-muted);
       line-height: 1.65;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .ai-disclaimer .icon {
+      flex-shrink: 0;
+      color: var(--accent);
+      width: 44px;
+      height: 44px;
     }
 
     .ai-disclaimer a { color: var(--text-muted); text-decoration: underline; }
@@ -513,7 +523,7 @@
     // i18n strings
     const I18N = {
       en: {
-        disclaimer: 'AI Safety Radar is an automated digest and may contain errors. Always consult the original sources for accuracy. This is a research tool, not an official publication, and content does not reflect the views of the National Research Council or the Government of Canada.',
+        disclaimer: 'Digests are generated automatically by an AI model summarizing public sources and may contain errors; always check the sources before citing. Digests are generated for research purposes and do not reflect the views of the National Research Council or the Government of Canada.',
         loading: 'Loading digest list...',
         noDigests: 'No digests available yet.<br>Run the pipeline to generate the first digest.',
         loadingContent: 'Loading...',
@@ -543,7 +553,7 @@
         siteTitleSub: 'Radar',
       },
       fr: {
-        disclaimer: 'Le Radar de la Sécurité de l\'IA est un bulletin automatisé et peut contenir des erreurs. Consultez toujours les sources originales pour plus de précision. Il s\'agit d\'un outil de recherche, non d\'une publication officielle, et son contenu ne reflète pas les opinions du Conseil national de recherches ou du gouvernement du Canada.',
+        disclaimer: 'Les bulletins sont générés automatiquement par un modèle d\'IA qui résume des sources publiques et peuvent contenir des erreurs ; vérifiez toujours les sources avant toute citation. Les bulletins sont produits à des fins de recherche et ne reflètent pas les opinions du Conseil national de recherches du Canada ni du gouvernement du Canada.',
         loading: 'Chargement de la liste...',
         noDigests: 'Aucun bulletin disponible pour l\'instant.<br>Lancez le pipeline pour générer le premier bulletin.',
         loadingContent: 'Chargement...',
@@ -868,7 +878,8 @@
         if (!res.ok) throw new Error('Not found');
         const md = await res.text();
         contentCache[file] = md;
-        content.innerHTML = marked.parse(md) + `<div class="ai-disclaimer">${t().disclaimer}</div>`;
+        const warnIcon = `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`;
+        content.innerHTML = marked.parse(md) + `<div class="ai-disclaimer">${warnIcon}<span>${t().disclaimer}</span></div>`;
       } catch {
         content.innerHTML = `<div class="loading">${t().failedLoad}</div>`;
       }
