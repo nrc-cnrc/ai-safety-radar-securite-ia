@@ -2,6 +2,7 @@
   "name": "ai-safety-radar-securite-ia",
   "version": "1.0.0",
   "description": "Daily AI safety digest - automated monitoring of AI safety research, policy, and developments",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",
