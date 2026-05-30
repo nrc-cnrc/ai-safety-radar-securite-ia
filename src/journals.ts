@@ -86,7 +86,10 @@ function parseRssXml(
     };
 
     const title = get(["title"]).replace(/<!\[CDATA\[(.*?)\]\]>/s, "$1");
-    const description = get(["description", "summary", "content"])
+    // content:encoded is listed before content so RDF/Nature-style feeds match it
+    // before the regex falls through to the shorter "content" tag (whose closing
+    // </content> would never match </content:encoded>).
+    const description = get(["description", "summary", "content:encoded", "content"])
       .replace(/<!\[CDATA\[(.*?)\]\]>/s, "$1")
       .replace(/<[^>]+>/g, "")
       .slice(0, 500);
