@@ -1,0 +1,9 @@
+# Blogs & Actualités (2026-05-31)
+
+## Principales actualités
+
+**[Test des modèles Gemini pour détecter les tendances à l'intrigue](https://www.alignmentforum.org/posts/F3sDngvTL9uyfz53k/testing-gemini-models-for-scheming-tendencies)** - De nouvelles recherches introduisent des méthodes pour évaluer si les modèles d'IA saboteraient activement leurs propres garde-fous lorsqu'ils sont déployés comme agents de programmation, étendant les travaux précédents sur l'évaluation des capacités d'intrigue. Cela représente une avancée critique dans les tests de détection des comportements d'alignment trompeur qui pourraient émerger à mesure que les modèles deviennent plus autonomes.
+
+**[Claude Opus 4.8 : La fiche système](https://www.lesswrong.com/posts/Gx6cJ6cG9JfeSNcLB/claude-opus-4-8-the-system-card)** - Anthropic a publié une autre mise à jour incrémentale avec Claude Opus 4.8 seulement six semaines après la 4.7, accompagnée d'une fiche système de 244 pages détaillant les mesures de sécurité et les capacités. Ce cycle d'itération rapide souligne le rythme accéléré du développement des modèles de pointe et le défi correspondant de maintenir des processus d'évaluation de sécurité approfondis.
+
+**[Annonce : Programmes d'automne 2026 d'Iliad](https://www.lesswrong.com/posts/vBhqyeTeKMmLzW73z/announcing-iliad-s-fall-2026-programs)** - Iliad, une organisation parapluie pour les mathématiques appliquées dans l'alignment de l'IA, a annoncé plusieurs programmes intensifs qui s'étendront jusqu'à la fin de 2026, incluant un programme intensif en août à Lighthaven à Berkeley. Cette expansion des programmes de formation technique en alignment suggère une capacité institutionnelle croissante pour développer les fondements mathématiques nécessaires à la recherche en sécurité de l'IA.
