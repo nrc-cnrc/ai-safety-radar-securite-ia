@@ -340,7 +340,9 @@
     "https://www.anthropic.com/research/coding-agents-social-sciences",
     "https://www.anthropic.com/news/claude-opus-4-8",
     "https://www.anthropic.com/news/milan-office-opening",
-    "https://www.anthropic.com/news/series-h"
+    "https://www.anthropic.com/news/series-h",
+    "https://www.anthropic.com/news/confidential-draft-s1-sec",
+    "https://www.anthropic.com/news/expanding-project-glasswing"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -761,7 +763,9 @@
     "https://deepmind.google/research/evals/",
     "https://deepmind.google/research/publications/240658/",
     "https://deepmind.google/research/publications/238239/",
-    "https://deepmind.google/research/publications/141313/"
+    "https://deepmind.google/research/publications/141313/",
+    "https://deepmind.google/research/publications/252981/",
+    "https://deepmind.google/research/publications/253391/"
   ],
   "IAPS (Institute for AI Policy & Strategy)": [
     "https://www.iaps.ai/research/ai-decision-support-systems",
@@ -886,7 +890,8 @@
     "https://www.iaps.ai/research/after-mythos-a-national-security-playbook-for-frontier-ai",
     "https://www.iaps.ai/research/tag/Brianna+Rosen",
     "https://www.iaps.ai/research/detecting-offensive-cyber-agents",
-    "https://www.iaps.ai/research/tag/Jan+Wehner"
+    "https://www.iaps.ai/research/tag/Jan+Wehner",
+    "https://www.iaps.ai/research/iaps-reacts-to-the-white-house-executive-order-on-ai-innovation-and-security"
   ],
   "Conjecture": [
     "https://www.conjecture.dev/research/build-a-simple-game-with-tactics",

@@ -1,0 +1,20 @@
+# Communauté et Outils (2026-06-02)
+
+## Discussions clés
+
+### Comment Groq lève-t-il plus de fonds ?
+[Une analyse approfondie de la situation financière de Groq](https://www.zach.be/p/how-the-hell-is-groq-raising-more) a suscité une discussion importante sur [Hacker News](https://news.ycombinator.com/item?id=48364620) avec 148 points et 64 commentaires. La communauté a débattu des fondamentaux économiques des entreprises d'infrastructure IA, particulièrement celles axées sur le matériel comme Groq, dans un contexte de questionnements sur la viabilité économique unitaire et le positionnement concurrentiel face aux acteurs établis. Ceci importe car cela met en lumière l'incertitude persistante du marché quant aux paris d'infrastructure IA qui s'avéreront viables à long terme.
+
+## Sorties GitHub et Outils notables
+
+### fathom-lab/styxx v7.10.0 - Exécution Spéculative Épistémique
+[Styxx v7.10.0](https://github.com/fathom-lab/styxx/releases/tag/v7.10.0) introduit `styxx.spec_exec`, un système d'exécution spéculative à validation d'intégrité qui ébauche des réponses avec des modèles moins coûteux et ne fait appel à des modèles plus puissants que lorsque les signaux d'honnêteté comportementale signalent des sorties de faible validité. Le système va au-delà des simples seuils de confiance pour utiliser la détection d'incertitude épistémique dans les décisions de routage de modèles. Ceci importe car cela offre une approche principielle pour une cascade de modèles rentable tout en maintenant la qualité de sortie grâce à la validation comportementale plutôt qu'à la seule confiance statistique.
+
+### TechySan031/llm-alignment-system v1.1.0 - Terrain de jeu pour l'alignment
+[LLM Alignment System v1.1.0](https://github.com/TechySan031/llm-alignment-system/releases/tag/v1.1.0) propose une interface interactive basée sur Gradio pour comparer côte à côte les comportements des modèles Base, SFT et DPO. Le terrain de jeu permet l'expérimentation en temps réel avec les techniques d'alignment incluant le fine-tuning supervisé et l'optimisation directe des préférences, avec des capacités de génération de jeux de données synthétiques. Ceci importe car cela fournit aux praticiens des outils pratiques pour comprendre et expérimenter avec les flux de travail d'alignment modernes dans une interface unifiée.
+
+### szl-holdings/ouroboros-thesis v21.0 - Le Substrat PURIQ-OS
+[Ouroboros Thesis v21.0](https://github.com/szl-holdings/ouroboros-thesis/releases/tag/paper-v21-1.0.0) présente une thèse technique de 27 pages sur un "runtime cybernétique honnête et prêt pour l'audit pour une IA agentique vérifiable" construit sur le substrat PURIQ-OS. La publication inclut des éléments de vérification formelle avec 749 déclarations, 14 axiomes et 163 "sorries" (déclarations non prouvées), représentant une approche systématique de la sécurité IA à travers la rigueur mathématique. Ceci importe car cela démontre les efforts pour ancrer la sécurité IA dans les méthodes formelles et les systèmes vérifiables plutôt que dans des approches purement empiriques.
+
+### Oz4462/prometheus v0.1.0 - Interprétabilité Mécanistique Autonome
+[PROMETHEUS v0.1.0](https://github.com/Oz4462/prometheus/releases/tag/v0.1.0) se lance comme un laboratoire d'interprétabilité mécanistique autonome proposant un pipeline à 7 couches en boucle fermée et validé mathématiquement (HARVEST à META) qui produit des artefacts signés et reproductibles sur les mécanismes internes des LLM. Le système fonctionne avec de vrais modèles GPT-2 et des modèles Mistral locaux pour générer automatiquement des analyses d'interprétabilité. Ceci importe car cela automatise le processus traditionnellement manuel de la recherche en interprétabilité mécanistique, accélérant potentiellement notre compréhension du fonctionnement interne des modèles de langage.

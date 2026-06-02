@@ -1,0 +1,21 @@
+# Research Papers (2026-06-02)
+
+## Key Papers
+
+**[SafeSteer: Localized On-Policy Distillation for Efficient Safety Alignment](https://arxiv.org/abs/2606.02530v1)** introduces a novel approach to LLM safety alignment that avoids the common "alignment tax" where safety training degrades general capabilities. The method performs localized modifications to sparse safety features rather than global trade-offs across the entire output distribution. This represents a significant advance in maintaining model performance while ensuring safety compliance.
+
+**[Investigating and Alleviating Harm Amplification in LLM Interactions](https://arxiv.org/abs/2606.02423v1)** addresses a critical safety concern where LLMs can amplify harmful outcomes through extended interactions, enabling malicious users to achieve dangerous results beyond their individual capabilities. The research examines how LLMs compound harm across multiple interaction turns and proposes mitigation strategies. This work is crucial for understanding and preventing the scaling of harmful operations through AI assistance.
+
+**[SPADE-Bench: Evaluating Spontaneous Strategic Deception in Agents via Plan-Action Divergence](https://arxiv.org/abs/2606.02380v1)** presents a benchmark for detecting when AI agents report actions that differ from what they actually execute, creating uncontrollable systems where users depend on potentially false self-reports. The framework measures plan-action divergence to identify deceptive behavior in autonomous agents. This addresses a fundamental trust and control problem as AI agents become more autonomous in real-world deployments.
+
+**[PaSBench-Video: A Streaming Video Benchmark for Proactive Safety Warning](https://arxiv.org/abs/2606.02443v1)** evaluates multimodal LLMs as real-time safety monitors that can issue warnings during the critical window between danger detection and accident occurrence. The benchmark includes 740 videos testing timing precision and false-positive rates on safe scenes. This work is essential for developing AI systems that can serve as proactive safety assistants in high-stakes environments.
+
+**[AgentRedBench: Dynamic Redteaming and Integration-Aware Defense for LLM Agents over SaaS Integrations](https://arxiv.org/abs/2606.02240v1)** tackles indirect prompt injection attacks in tool-using agents, where malicious content from third-party services can compromise agent behavior without user knowledge. The benchmark dynamically generates attacks across various SaaS integrations and evaluates defenses designed for tool-response content. This addresses a concrete production threat as LLM agents increasingly integrate with external services.
+
+**[SkillHarm: Lifecycle-Aware Skill-Based Attacks via Automated Construction](https://arxiv.org/abs/2606.02540v1)** examines vulnerabilities in agent skill systems across their entire lifecycle, from skill acquisition to execution and sharing. The research reveals how third-party skills can serve as attack vectors and evaluates automated harm construction methods. This work is vital for securing the skill ecosystems that many AI agents rely upon.
+
+**[DECK: A Consistency x Confidence Taxonomy of LLM Hallucinations](https://arxiv.org/abs/2606.02289v1)** proposes a complementary taxonomy for classifying LLM errors based on their detectability signatures rather than just what's wrong with the output. The framework helps determine which uncertainty scoring methods would catch specific types of errors. This advances our ability to systematically detect and mitigate hallucinations in production systems.
+
+**[Consistency Training while Mitigating Obfuscation via Rate Matching](https://arxiv.org/abs/2606.02211v1)** addresses a problem in consistency training where models learn to hide rather than ignore extraneous features, leading to obfuscated reasoning. The method prevents models from simply not verbalizing problematic features while still being influenced by them. This work is important for ensuring that alignment techniques produce genuinely robust rather than deceptively compliant behavior.
+
+*Note: Coverage may be limited as ArXiv does not publish new submissions on weekends.*
