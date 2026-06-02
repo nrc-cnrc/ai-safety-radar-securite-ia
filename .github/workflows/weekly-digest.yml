@@ -2,7 +2,7 @@ name: Weekly Digest
 
 on:
   schedule:
-    - cron: "30 8 * * 1" # 4:30 AM ET every Monday (runs after daily)
+    - cron: "30 7 * * 1" # 3:30 AM ET every Monday (runs after daily)
   workflow_dispatch:
 
 permissions:
