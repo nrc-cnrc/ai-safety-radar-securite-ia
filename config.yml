@@ -44,6 +44,7 @@ arxiv:
     - cs.CL
     - cs.LG
     - cs.CY  # Computers and Society (policy/governance)
+    - cs.CR  # Cryptography and Security (adversarial attacks, red teaming)
   keywords:
     - activation steering
     - adversarial robustness
