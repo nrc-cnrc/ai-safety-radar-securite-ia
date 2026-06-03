@@ -343,7 +343,8 @@
     "https://www.anthropic.com/news/series-h",
     "https://www.anthropic.com/news/confidential-draft-s1-sec",
     "https://www.anthropic.com/news/expanding-project-glasswing",
-    "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack"
+    "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+    "https://www.anthropic.com/news/services-track-partner-hub"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -413,7 +414,12 @@
     "https://www.apolloresearch.ai/blog/governance-category/memos/",
     "https://www.apolloresearch.ai/blog/governance-category/papers-reports/",
     "https://www.apolloresearch.ai/blog/apollo-update-may-2026/",
-    "https://www.apolloresearch.ai/blog/governance-category/submissions/"
+    "https://www.apolloresearch.ai/blog/governance-category/submissions/",
+    "https://www.apolloresearch.ai/blog/tag/monitoring/",
+    "https://www.apolloresearch.ai/blog/tag/insider-risk/",
+    "https://www.apolloresearch.ai/blog/tag/misalignment/",
+    "https://www.apolloresearch.ai/blog/tag/national-security/",
+    "https://www.apolloresearch.ai/blog/tag/evaluations/"
   ],
   "Epoch AI": [
     "https://epoch.ai/blog/a-compute-based-framework-for-thinking-about-the-future-of-ai",
