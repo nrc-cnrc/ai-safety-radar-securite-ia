@@ -18,7 +18,6 @@ Produce a unified research digest in ${lang === "fr" ? "French" : "English"}:
 
 1. **Key Papers**: Highlight the 5-10 most significant papers. Lead with peer-reviewed articles when available — they take precedence over preprints on the same topic. Each summary should be 2-3 sentences and end with one sentence explaining why it matters.
 
-If fewer than 3 papers are available, add a brief note explaining that ArXiv does not publish new submissions on weekends (Saturday and Sunday), so coverage may be limited.
 
 Format as clean Markdown. Include paper titles as links.
 
