@@ -15,7 +15,7 @@ Runs every morning at approximately 5 AM ET via GitHub Actions, pulls from nine 
 | Source | What it tracks |
 |---|---|
 | **AI Safety Institutes** | Updates from US AISI, UK AISI, Canada CAISI, Japan J-AISI, Singapore AISI, EU AI Office, Korea AISI |
-| **ArXiv** | Papers tagged cs.AI, cs.CL, cs.LG, cs.CY matching safety keywords |
+| **ArXiv** | Papers tagged cs.AI, cs.CL, cs.LG, cs.CY, cs.CR matching safety keywords |
 | **Scientific Journals** | Peer-reviewed articles from general science (Nature, Science, PNAS, PLOS ONE), AI/ML technical journals (Nature Machine Intelligence, JMLR, JAIR, Patterns), and AI ethics/society/policy journals (AI & Society, AI and Ethics, Ethics and Information Technology, Minds and Machines, Philosophy & Technology, Big Data & Society) — keyword-filtered for AI safety relevance |
 | **Org Websites** | New publications from Anthropic, OpenAI, DeepMind (sitemap crawling) |
 | **RSS Feeds** | Alignment Forum, LessWrong, and 15+ AI safety newsletters and Substacks |
@@ -25,9 +25,9 @@ Runs every morning at approximately 5 AM ET via GitHub Actions, pulls from nine 
 
 ### Keywords
 
-**ArXiv** (paper search) and **Hacker News** (story search) share one keyword list (`arxiv.keywords`, 31 entries):
+**ArXiv** (paper search) and **Hacker News** (story search) share one keyword list (`arxiv.keywords`, 33 entries):
 
-`activation steering` · `adversarial robustness` · `AI ethics` · `AI evaluation` · `AI governance` · `AI guardrails` · `AI oversight` · `AI regulation` · `AI safety` · `AI Safety Institute` · `AI Security Institute` · `alignment` · `CAISI` · `collusion risk` · `constitutional AI` · `content provenance` · `deception` · `deepfake detection` · `existential risk` · `hallucination` · `honesty evaluation` · `interpretability` · `jailbreak` · `mechanistic interpretability` · `multilingual AI safety` · `red teaming` · `responsible AI` · `RLHF` · `scalable oversight` · `synthetic content detection` · `value alignment`
+`activation steering` · `adversarial robustness` · `AI ethics` · `AI evaluation` · `AI governance` · `AI guardrails` · `AI oversight` · `AI regulation` · `AI safety` · `AI Safety Institute` · `AI Security Institute` · `AI worm` · `alignment` · `CAISI` · `collusion risk` · `constitutional AI` · `content provenance` · `deception` · `deepfake detection` · `existential risk` · `hallucination` · `honesty evaluation` · `interpretability` · `jailbreak` · `mechanistic interpretability` · `multilingual AI safety` · `red teaming` · `responsible AI` · `RLHF` · `scalable oversight` · `self-replicating` · `synthetic content detection` · `value alignment`
 
 **Scientific Journals** use a broader, separate list (`journal_keywords`) to catch more peer-reviewed content. Journals publish at slower cadence and use more academic vocabulary, so the list uses looser stems (e.g. `deepfake`, `interpretab`, `explainab`) and adds AI ethics/governance/policy terms (`AI Act`, `algorithmic accountability`, `trustworthy AI`, etc.) that would flood the high-volume ArXiv pipeline. See `config.yml` for the full list.
 
