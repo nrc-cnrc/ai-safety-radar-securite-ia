@@ -1,0 +1,15 @@
+# Blogs & Actualités (2026-06-04)
+
+## Principales actualités
+
+**[Trump signe un décret exécutif pour les tests d'IA avant la sortie des modèles frontières](https://thezvi.substack.com/p/trump-signs-executive-order-for-ai)** - Après avoir initialement annulé l'ordre en raison de préoccupations concernant la charge réglementaire, Trump a fait volte-face et signé un décret exécutif exigeant des tests d'IA avant la sortie des modèles frontières, l'analyse suggérant que la fenêtre d'Overton s'est déplacée de sorte que « ne rien faire n'était plus vraiment une option viable ». Cela représente un changement de politique significatif qui établit une surveillance fédérale du développement de l'IA avancée malgré la résistance initiale de l'industrie.
+
+**[Claude Opus 4.8 : Capacités et réactions](https://thezvi.substack.com/p/claude-opus-48-capabilities-and-reactions)** - Zvi Mowshowitz analyse les capacités du dernier modèle Claude Opus 4.8 d'Anthropic, notant que comprendre les nouvelles capacités des modèles nécessite une collecte de données et une évaluation approfondies. C'est important car une évaluation appropriée des capacités est cruciale pour comprendre les risques potentiels et les défis d'alignment à mesure que les modèles deviennent plus puissants.
+
+**[Annonce du défi d'estimation White-Box d'ARC](https://www.alignment.org/blog/announcing-the-arc-white-box-estimation-challenge/)** - L'Alignment Research Center a lancé un concours doté de plus de 100 000 $ pour améliorer les algorithmes d'estimation des MLP aléatoires, en partenariat avec AIcrowd pour héberger le concours avec des rounds d'échauffement commençant cette semaine. Cette initiative est significative car de meilleures techniques d'estimation pourraient faire progresser notre capacité à comprendre et prédire le comportement des réseaux de neurones, ce qui est fondamental pour la recherche en sécurité de l'IA.
+
+**[Adieu Ai2](https://www.interconnects.ai/p/farewell-ai2)** - Nathan Lambert a annoncé son départ de l'Allen Institute for AI, où il travaillait sur les modèles OLMo et contribuait au développement de l'IA open-source. Cette transition est importante car Lambert a été une voix clé dans le développement responsable de l'IA et ses prochaines initiatives pourraient influencer le paysage plus large de la recherche en sécurité et alignment de l'IA.
+
+## Politique et gouvernance
+
+**[Le président de FLI sur le décret exécutif de la Maison Blanche](https://futureoflife.org/statement/fli-president-on-white-house-executive-order/)** - Le président du Future of Life Institute a réagi au décret exécutif de Trump sur l'IA, l'appelant « une étape importante dans la bonne direction » tout en soulignant que « les cadres volontaires ne suffisent pas » pour une gouvernance adéquate de l'IA. Cette réaction met en évidence la tension continue entre l'autorégulation de l'industrie et la surveillance obligatoire dans les discussions de politique sur l'IA.
