@@ -1,8 +1,8 @@
 # <sub><img src="assets/favicon.svg" width="50" height="50" alt=""></sub> AI Safety Radar
 
-**A daily automated digest of AI safety research, policy, and developments.**
+**A daily automated digest of AI safety developments.**
 
-Runs every morning at approximately 5 AM ET via GitHub Actions, pulls from nine types of data sources, summarizes with Claude, and publishes to GitHub Pages as a clean, bilingual, searchable static site with an RSS feed.  Also generates a **weekly rollup**, cross-source synthesis of the past week, every Monday. Inspired from [agents-radar](https://github.com/duanyytop/agents-radar).
+Runs every morning via GitHub Actions, pulls from nine types of data sources, summarizes with Claude, and publishes to GitHub Pages as a clean, bilingual, searchable static site with an RSS feed.  Also generates a **weekly rollup**, cross-source synthesis of the past week, every Monday. Inspired from [agents-radar](https://github.com/duanyytop/agents-radar).
 
 **Live site:** [ygauthie.github.io/ai-safety-radar-securite-ia](https://ygauthie.github.io/ai-safety-radar-securite-ia)
 
@@ -163,7 +163,7 @@ English by default. Add `fr` to the `languages` list in `config.yml` to generate
 
 | Workflow | When |
 |---|---|
-| Daily Digest | Every day at approximately 5:00 AM ET (09:00 UTC) - Github Actions can be queued or delayed|
-| Weekly Rollup | Every Monday at approximately 5:30 AM ET (09:30 UTC) |
+| Daily Digest | Every morning at approximately 5 AM ET - Github Actions are often queued and delayed|
+| Weekly Rollup | Every Monday at approximately 6 AM ET |
 
 ---
