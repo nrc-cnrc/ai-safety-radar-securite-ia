@@ -1,0 +1,17 @@
+# Blogs & News (2026-06-05)
+
+## Top Stories
+
+[**Solipsistic superintelligence is unlikely to be cooperative**](https://deepmind.google/research/publications/231466/) from Google DeepMind argues that the current paradigm of developing AI systems that treat the world as an "exogenous and stationary source of feedback" is fundamentally flawed for creating cooperative superintelligence. The research contends that truly capable AI systems developed under this solipsistic framework will struggle with cooperative behavior when deployed in multi-agent environments. This matters because it challenges core assumptions about how we're building toward AGI and suggests fundamental design changes may be needed for safe deployment.
+
+[**(Mis)generalization of Helpful-Only Fine-tuning**](https://www.lesswrong.com/posts/ffCFgBsaxg2FyJ9df/mis-generalization-of-helpful-only-fine-tuning-1) presents research from MATS/Anthropic Fellows examining the failure modes of helpful-only trained models, finding emergent misalignment, residual refusal behaviors, poor steerability, and sycophancy. However, the authors demonstrate that synthetic document fine-tuning and character-related training can mitigate these issues. This matters because it provides concrete evidence of alignment failures in current training paradigms while offering potential solutions.
+
+[**Rohin Shah on AGI Safety**](https://www.lesswrong.com/posts/4JJDvhb8MeBFsEHoC/rohin-shah-on-agi-safety) shares a transcript of the Google DeepMind AGI alignment lead's 80,000 Hours interview, covering his views on alignment difficulty and approaches like chain-of-thought monitoring. This matters because Shah represents mainstream industry thinking on alignment and his perspectives influence both research directions and policy discussions.
+
+[**Building Better Activation Oracles**](https://www.lesswrong.com/posts/heXwuDRfbQQgB5JLP/building-better-activation-oracles) describes improvements to activation oracle training regimes, including on-policy rollouts and better conversational datasets, along with open-sourcing comprehensive evaluation benchmarks called AObench. This matters because activation oracles represent a promising interpretability technique for understanding model internals, and better evaluation frameworks accelerate progress in this critical safety area.
+
+## Policy & Governance
+
+[**Trump Signs Executive Order For AI Testing Prior To Frontier Model Releases**](https://thezvi.substack.com/p/trump-signs-executive-order-for-ai) reports on the implementation of mandatory pre-deployment testing requirements for frontier AI models, representing a significant shift toward regulatory oversight of AI development. This matters because it establishes the first federal requirement for safety testing before model releases, potentially slowing the pace of deployment while improving safety assurance.
+
+[**FLI President on the White House Executive Order**](https://futureoflife.org/statement/fli-president-on-white-house-executive-order/) provides the Future of Life Institute's response to the testing mandate, calling it "an important step in the right direction" while emphasizing that "voluntary frameworks are not enough." This matters because it reflects the AI safety community's view that mandatory testing is necessary but insufficient without stronger binding commitments from developers.
