@@ -1,0 +1,13 @@
+# Blogs & News (2026-06-06)
+
+## Top Stories
+
+**Anthropic Advances Claude's Chemistry Capabilities**: [Anthropic Research published new work](https://www.anthropic.com/research/making-claude-a-chemist) on enhancing Claude's chemistry performance, focusing on NMR spectrum analysis - one of chemists' most common analytical inputs. The research involves collaboration with synthetic, computational, and analytical chemists to improve Claude's ability to work with molecular structures, instrument readouts, and chemical database queries. This represents a significant step toward specialized AI systems that can meaningfully assist in scientific research domains.
+
+**OpenAI Proposes Federal AI Governance Framework**: Zvi Mowshowitz reports that [OpenAI has released a new policy document](https://thezvi.substack.com/p/openai-offers-a-new-policy-blueprint) titled "Democratic Governance of Frontier AI: A Blueprint For A Federal Framework," released strategically after a new Executive Order. The timing suggests OpenAI is actively shaping the regulatory conversation around frontier AI systems at a critical policy moment.
+
+**Corporate AI Power vs. Nation States**: Ajeya Cotra and Kelsey Piper examine whether [leading AI companies could gain unprecedented power over nations](https://www.planned-obsolescence.org/p/could-a-company-overpower-nations) in their Planned Obsolescence newsletter. This analysis addresses one of the most pressing questions about AI governance: the potential for private companies to accumulate influence that rivals or exceeds traditional state power.
+
+**New AI Safety Research Team Shares Formation Insights**: A new alignment research team within Arcadia Impact, working closely with UK AISI, [published lessons learned from building their 8-person team](https://www.lesswrong.com/posts/4onALBNDff2LFPyNZ/learnings-from-starting-an-ai-safety-research-team) over four months in London. This provides practical guidance for the growing entrepreneurial AI safety ecosystem as more independent research groups form.
+
+**PauseAI UK Reflects on Rapid Growth**: [PauseAI UK documented their transformation](https://www.lesswrong.com/posts/i2rCbxuskrarrprwA/one-year-of-pauseai-uk) from a small operation with sub-50 person protests to organizing the world's largest AI protest, securing support from 63 UK politicians, and establishing a strong organizational team. This demonstrates the rapid mainstreaming of AI pause advocacy in policy circles.
