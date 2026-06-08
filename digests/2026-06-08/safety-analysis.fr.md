@@ -1,0 +1,21 @@
+# Blogs & Actualités (2026-06-08)
+
+## Principales actualités
+
+**[Déclaration : Anthropic met en garde contre les risques d'auto-amélioration de l'IA, envisage une pause](https://futureoflife.org/statement/statement-anthropic-warns-of-ai-self-improvement-risks/)** - Future of Life Institute
+
+Le Future of Life Institute a publié une déclaration soulignant les avertissements d'Anthropic concernant les risques d'auto-amélioration de l'IA, l'entreprise envisageant apparemment une pause dans le développement. La déclaration met l'accent sur les préoccupations concernant « l'approche d'un emballement vers la superintelligence qui pourrait menacer notre avenir humain commun ». Cela marque un changement significatif pour Anthropic, qui a généralement adopté une position publique plus mesurée sur les risques de l'IA par rapport à d'autres organisations axées sur la sécurité.
+
+**[Les verbalisateurs d'activation peuvent-ils révéler une chaîne de pensée interne ?](https://www.lesswrong.com/posts/QQQAcKuWK6k98FivY/can-activation-verbalizers-surface-an-internal-chain-of-1)** - LessWrong
+
+Les chercheurs ont évalué si les verbalisateurs d'activation peuvent révéler comment les modèles d'IA raisonnent à travers les problèmes mathématiques en un seul passage direct, découvrant que bien que possible, la technique n'est pas fiable pour les modèles à poids ouverts. Ce travail aborde un défi d'interprétabilité critique : comprendre le raisonnement de l'IA lorsque les modèles n'externalisent pas leurs processus de pensée par le biais d'un prompting en chaîne de pensée. Cette recherche est cruciale pour la sécurité de l'IA car elle explore les méthodes pour surveiller les processus de raisonnement internes qui peuvent ne pas être visibles dans les sorties du modèle.
+
+**[À quelle distance un modèle pense-t-il que ses tokens se trouvent ?](https://www.lesswrong.com/posts/Bxju8Fmpo2eW4oj9t/how-far-apart-does-a-model-think-its-tokens-are)** - LessWrong
+
+Une étude novatrice a examiné comment les modèles de langage basés sur RoPE apprennent à percevoir les distances entre les tokens, révélant que les modèles développent des incréments de position spécifiques aux couches qui montrent des limites basées sur la ponctuation dans les couches précoces et un regroupement basé sur les concepts dans les couches plus profondes. Bien que cette modification n'affecte pas les performances, elle fournit des aperçus sur la façon dont les modèles représentent intérieurement la structure des séquences. Ce travail contribue aux efforts d'interprétabilité mécaniste qui sont essentiels pour comprendre comment les systèmes d'IA avancés traitent l'information.
+
+## Politique et gouvernance
+
+**L'accord GPU SpaceX-Google crée une nouvelle dynamique d'infrastructure IA** - Le contrat annuel de 11 milliards de dollars entre SpaceX et Google pour la capacité GPU Nvidia représente un changement significatif dans l'infrastructure IA, SpaceX devenant un fournisseur majeur de calcul pour les entreprises d'IA, y compris Anthropic. Ce développement pourrait remodeler le paysage concurrentiel pour le développement de l'IA et soulève des questions sur la concentration d'infrastructure et l'accès pour les petites organisations de recherche en sécurité IA.
+
+**L'administration Trump propose des participations au capital dans l'IA** - Les rapports indiquent que l'administration Trump envisage de prendre des positions en capital dans les principales entreprises d'IA comme OpenAI et Anthropic pour créer un fonds de richesse nationale qui distribuerait les profits générés par l'IA aux citoyens. Cette proposition, soutenue selon les rapports par les principaux PDG de l'IA, fait face à une opposition politique et soulève des préoccupations concernant l'implication gouvernementale dans le développement de l'IA, les conflits d'intérêts potentiels, et la concentration des capacités IA. La politique pourrait impacter significativement les structures de gouvernance de l'IA et la relation entre le gouvernement et le développement privé de l'IA.
