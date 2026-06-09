@@ -345,7 +345,8 @@
     "https://www.anthropic.com/news/expanding-project-glasswing",
     "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
     "https://www.anthropic.com/news/services-track-partner-hub",
-    "https://www.anthropic.com/research/making-claude-a-chemist"
+    "https://www.anthropic.com/research/making-claude-a-chemist",
+    "https://www.anthropic.com/research/agents-in-biology"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -774,7 +775,8 @@
     "https://deepmind.google/research/publications/141313/",
     "https://deepmind.google/research/publications/252981/",
     "https://deepmind.google/research/publications/253391/",
-    "https://deepmind.google/research/publications/231466/"
+    "https://deepmind.google/research/publications/231466/",
+    "https://deepmind.google/research/publications/146950/"
   ],
   "IAPS (Institute for AI Policy & Strategy)": [
     "https://www.iaps.ai/research/ai-decision-support-systems",

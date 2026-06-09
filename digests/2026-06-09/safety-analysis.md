@@ -1,0 +1,19 @@
+# Blogs & News (2026-06-09)
+
+## Top Stories
+
+**Anthropic Issues Self-Improvement Warning, FLI Calls for Pause**: The Future of Life Institute [released a statement](https://futureoflife.org/statement/statement-anthropic-warns-of-ai-self-improvement-risks/) highlighting Anthropic's warnings about AI self-improvement risks, with Anthropic reportedly stating "We are approaching a runaway to superintelligence that could threaten our shared human future." This represents a significant escalation in public warnings from a leading AI lab about near-term existential risks.
+
+**Import AI Covers "Reward Hacking Society" and RSI Data**: Jack Clark's latest [Import AI newsletter](https://importai.substack.com/p/import-ai-460-reward-hacking-society) (#460) examines reward hacking at a societal scale and includes new data from Anthropic on recursive self-improvement (RSI), alongside the provocative question "When will markets price the singularity?" This signals growing mainstream recognition of fundamental AI alignment challenges moving beyond lab settings.
+
+**UK AISI Releases "RealityTest" Research on AI Identity Disclosure**: The UK AI Safety Institute published new [research](https://www.aisi.gov.uk/research/realitytest-how-people-probe-ai-identity-and-whether-models-disclose-it) examining how people probe AI systems about their identity and whether models truthfully disclose when they are AI. This addresses critical questions about AI transparency and deception capabilities that are essential for maintaining human agency as AI systems become more sophisticated.
+
+**Safety-Usefulness Tradeoff Model Analysis**: A detailed [analysis on the Alignment Forum](https://www.alignmentforum.org/posts/mBsZTZxtjgCdN4CDA/efficient-tradeoffs-and-the-safety-usefulness-tradeoff-model) challenges the common assumption that developers make safety decisions based purely on cost-efficiency tradeoffs, exploring how different decision-making frameworks could lead to very different safety outcomes. This theoretical work could significantly influence how we design safety incentives and regulations.
+
+**Anthropic Advances AI Agents in Biology**: Anthropic published [research](https://www.anthropic.com/research/agents-in-biology) on making biological data infrastructure more agent-friendly, testing scientific research agents (including Claude) on biological tasks and identifying key infrastructure needs. This demonstrates how AI agents are beginning to operate in high-stakes scientific domains where errors could have significant real-world consequences.
+
+## Policy & Governance
+
+**European Commission Welcomes G7 Cybersecurity Declaration**: The European Commission [welcomed](https://digital-strategy.ec.europa.eu/en/news/european-commission-welcomes-g7-cybersecurity-declaration-strengthen-global-digital-resilience) a new G7 cybersecurity declaration aimed at strengthening global digital resilience, though specific details about AI-related security measures were not provided in the available excerpt. This suggests continued international coordination on digital security issues that increasingly intersect with AI safety concerns.
+
+**DeepMind Research on Human-AI Bargaining**: DeepMind published [research](https://deepmind.google/research/publications/146950/) comparing how humans, frontier LLMs, and custom agents behave in multi-agent bargaining scenarios, providing empirical data on how AI systems interact strategically with humans in market-like settings. This research is crucial for understanding how AI agents might behave in economic systems and what safeguards may be needed as they gain more autonomy.
