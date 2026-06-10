@@ -1,0 +1,19 @@
+# Blogs & News (2026-06-10)
+
+## Top Stories
+
+**[A Mike's-Eye View of ARC's Research](https://www.alignment.org/blog/a-mikes-eye-view-of-arcs-research/)** - ARC provides an updated technical overview of their alignment research agenda, highlighting progress on the Matching Sampling Principle (MSP) and how concrete technical problems have led to greater philosophical clarity on alignment challenges. This matters because ARC is one of the leading technical alignment research organizations, and their evolving research direction signals important shifts in how the field approaches alignment problems.
+
+**[Claude Fable 5 and Claude Mythos 5](https://www.anthropic.com/news/claude-fable-5-mythos-5)** - Anthropic has released Claude Fable 5, described as a "Mythos-class model that we've made safe for general use," representing their most capable publicly available model with state-of-the-art performance across software engineering, knowledge work, and scientific research. This release is significant because it demonstrates Anthropic's approach to safely deploying frontier AI capabilities while maintaining their constitutional AI safety framework.
+
+**[Efficient tradeoffs and the safety-usefulness tradeoff model](https://www.alignmentforum.org/posts/mBsZTZxtjgCdN4CDA/efficient-tradeoffs-and-the-safety-usefulness-tradeoff-model)** - A critical examination of the common assumption that AI developers make safety decisions based purely on cost-efficiency tradeoffs between safety and usefulness, exploring alternative models for how safety decisions are actually made. This analysis matters because understanding developer incentives and decision-making processes is crucial for designing effective AI governance and safety policies.
+
+**[MLSN #21: Political Manipulation and Indirect Prompt Injection](https://newsletter.mlsafety.org/p/mlsn-21-political-manipulation-and)** - The ML Safety Newsletter covers research on reducing political manipulation through consistency training and addresses indirect prompt injection vulnerabilities in AI systems. This is important because political manipulation and prompt injection represent two of the most pressing near-term AI safety challenges that could undermine democratic processes and system security.
+
+**[Three Labs With a Plan and A Memorandum](https://thezvi.substack.com/p/three-labs-with-a-plan-and-a-memorandum)** - Expert commentary from Zvi Mowshowitz analyzing the Claude Fable 5 release alongside broader trends in AI lab coordination and safety approaches, with coverage spanning multiple expert sources including [Import AI](https://importai.substack.com/p/import-ai-460-reward-hacking-society) and [Interconnects](https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety). This synthesis matters because it provides critical perspective on how major AI deployments fit into the broader competitive and safety landscape among frontier AI labs.
+
+## Policy & Governance
+
+**[AI alignment is a human problem](https://www.aisi.gov.uk/research/ai-alignment-is-a-human-problem)** - The UK AI Safety Institute has published research emphasizing the human dimensions of AI alignment challenges, though full details are not yet available. This matters because it signals government recognition that technical alignment solutions must account for human factors and social dynamics.
+
+**[What Do AI Standards Mean for Small and Medium Enterprises?](https://cset.georgetown.edu/article/what-do-ai-standards-mean-for-small-and-medium-enterprises/)** - Georgetown CSET examines how existing AI standards and best practices, typically designed for large organizations, can be adapted for smaller enterprises with limited resources. This is important because democratizing responsible AI deployment practices across organizations of all sizes is crucial for ensuring broad adoption of safety measures as AI becomes more widespread.
