@@ -1,0 +1,35 @@
+# Research Papers (2026-06-12)
+
+## Key Papers
+
+[**Understanding helpfulness and harmless tension in reward models**](https://arxiv.org/abs/2606.13209v1) investigates a fundamental challenge in RLHF alignment by studying reward models trained on helpfulness-only, harmlessness-only, and mixed objectives. The researchers find that mixed-objective models often underperform single-objective models, revealing interference between these alignment goals. This work provides crucial empirical evidence that the standard approach of jointly optimizing for helpfulness and harmlessness may be fundamentally flawed, suggesting new directions for alignment research.
+
+[**Who Pays the Price? Stakeholder-Centric Prompt Injection Benchmarking for Real-world Web Agents**](https://arxiv.org/abs/2606.13385v1) shifts from attack-centric to impact-centric evaluation of prompt injection vulnerabilities in deployed web agents. The authors analyze how different stakeholders bear varying costs from successful attacks, providing a more realistic assessment of security risks than traditional technical feasibility metrics. This stakeholder-centered approach is critical for understanding the real-world implications of AI security failures as agents become more widely deployed.
+
+[**Operadic consistency: a label-free signal for compositional reasoning failures in LLMs**](https://arxiv.org/abs/2606.13649v1) introduces a novel diagnostic for detecting reasoning failures in LLMs without ground truth labels, using operad theory to formalize compositional reasoning. The method checks whether a model's direct answer to a query matches its answer when composing the stated decomposition of that query, providing a mechanistic approach to identifying reasoning breakdowns. This offers a principled way to detect failures in complex reasoning tasks where traditional evaluation metrics may miss subtle but critical errors.
+
+[**Select and Improve: Understanding the Mechanics of Post-Training for Reasoning**](https://arxiv.org/abs/2606.13125v1) provides mechanistic insights into how reinforcement learning enhances reasoning capabilities in language models through controlled experiments with Qwen-2.5-1.5B on math problems. The study reveals two core mechanisms: strategy selection (choosing among existing approaches) and strategy improvement (refining solution quality), with supervised fine-tuning playing a crucial role in establishing the foundation for RL improvements. Understanding these mechanisms is essential for developing more effective alignment techniques for complex reasoning tasks.
+
+[**Order Is Not Control**](https://arxiv.org/abs/2606.12923v1) challenges fundamental assumptions in AI alignment by arguing that identifying order-inducing patterns is insufficient for achieving control over AI systems. The authors introduce receiver-gated response laws as a framework showing that control requires specific architectural properties beyond mere pattern recognition or interpretability. This theoretical contribution suggests that current approaches to AI steering and interpretability may be missing essential components needed for robust alignment.
+
+[**Exploring Systems-Thinking Approaches to Loss of Control Risk**](https://arxiv.org/abs/2606.13474v1) applies established systems-safety methods to analyze loss of control risks in internal deployments of agentic AI systems for coding and research. The work extends beyond model-level evaluations to examine sociotechnical control problems, including the inability to reliably constrain, audit, or halt AI-mediated changes to organizational processes. This systems perspective is crucial for understanding how AI safety risks manifest in real deployment contexts where technical and organizational factors interact.
+
+[**Mental-R1: Aligning LLM Reasoning for Mental Health Assessment**](https://arxiv.org/abs/2606.13176v1) proposes Cognitive Relative Policy Optimization (CRPO) to align LLM reasoning processes with human cognitive assessment patterns in mental health contexts. Unlike general post-training methods, CRPO specifically targets the alignment of reasoning processes with domain expertise, addressing the critical need for reliable AI systems in sensitive healthcare applications. This work demonstrates the importance of domain-specific alignment techniques for safety-critical applications.
+
+[**Beyond Runtime Enforcement: Shield Synthesis as Defensibility Analysis for Adversarial Networks**](https://arxiv.org/abs/2606.13621v1) reframes shielded reinforcement learning from runtime safety mechanisms to design-time analytical instruments that provide structural insights about system vulnerabilities. Rather than constraining actions at runtime, the authors propose using automata-theoretic machinery to analyze system defensibility against adversarial manipulation during development. This shift from reactive to proactive safety analysis offers a more fundamental approach to building robust AI systems.
+
+## Governance and Risk Assessment
+
+Several papers address critical governance challenges in AI deployment. [**EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments**](https://arxiv.org/abs/2606.13681v1) introduces benchmarks for evaluating agent performance in continuously changing environments, essential for real-world deployment scenarios where agents must adapt their knowledge and behavior over time.
+
+[**Automated reproducibility assessments in the social and behavioral sciences using large language models**](https://arxiv.org/abs/2606.13670v1) demonstrates that LLMs can automate scientific reproducibility evaluations, potentially transforming how we verify research integrity in an era where AI is increasingly used in scientific workflows.
+
+[**Democracy in the Era of Artificial Intelligence**](https://arxiv.org/abs/2606.13026v1) provides a comprehensive analysis of AI's dual impact on democratic processes, examining both opportunities for enhanced participation and risks from biased, manipulative algorithms that could influence election outcomes.
+
+## Emerging Safety Challenges
+
+[**One Polluted Page Is Enough: Evaluating Web Content Pollution in Generative Recommenders**](https://arxiv.org/abs/2606.13610v1) reveals how search-augmented LLMs can become unwitting promoters of fake products when consuming polluted web content, highlighting new attack vectors in AI systems that interact with untrusted information sources.
+
+[**PI-Hunter: Automated Red-Teaming for Exposing and Localizing Prompt Injections**](https://arxiv.org/abs/2606.12737v1) addresses security risks in agentic LLM systems by developing automated methods to identify and localize prompt injection vulnerabilities, particularly important as agents increasingly interact with external tools and untrusted environments.
+
+These developments collectively illustrate the field's evolution toward more sophisticated understanding of alignment challenges, moving beyond simple capability metrics to address the complex sociotechnical realities of AI deployment in safety-critical contexts.
