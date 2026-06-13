@@ -349,7 +349,10 @@
     "https://www.anthropic.com/research/agents-in-biology",
     "https://www.anthropic.com/news/claude-fable-5-mythos-5",
     "https://www.anthropic.com/news/claude-corps",
-    "https://www.anthropic.com/news/dxc-anthropic-alliance"
+    "https://www.anthropic.com/news/dxc-anthropic-alliance",
+    "https://www.anthropic.com/news/anthropic-public-record",
+    "https://www.anthropic.com/news/fable-mythos-access",
+    "https://www.anthropic.com/news/tcs-anthropic-partnership"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -779,7 +782,8 @@
     "https://deepmind.google/research/publications/252981/",
     "https://deepmind.google/research/publications/253391/",
     "https://deepmind.google/research/publications/231466/",
-    "https://deepmind.google/research/publications/146950/"
+    "https://deepmind.google/research/publications/146950/",
+    "https://deepmind.google/research/publications/239142/"
   ],
   "IAPS (Institute for AI Policy & Strategy)": [
     "https://www.iaps.ai/research/ai-decision-support-systems",
