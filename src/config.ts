@@ -2,7 +2,7 @@ import { readFileSync } from "fs";
 import yaml from "js-yaml";
 import { join } from "path";
 
-export type Tier = 1 | 2 | 3;
+export type Tier = 1 | 2 | 3 | 4;
 
 export interface RssFeed {
   name: string;

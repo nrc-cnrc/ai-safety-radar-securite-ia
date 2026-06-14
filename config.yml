@@ -211,44 +211,44 @@ rss_feeds:
   # Community forums
   - name: Alignment Forum
     url: https://www.alignmentforum.org/feed.xml
-    tier: 2
+    tier: 3
   - name: LessWrong (AI tag)
     url: https://www.lesswrong.com/feed.xml?view=community-rss&karmaThreshold=30
-    tier: 2
-  # Substacks
+    tier: 3
+  # Substacks / Expert newsletters
   - name: Import AI (Jack Clark)
     url: https://importai.substack.com/feed
-    tier: 2
+    tier: 3
   - name: Hyperdimensional (Dean Ball)
     url: https://www.hyperdimensional.co/feed
-    tier: 2
+    tier: 3
   - name: Don't Worry About the Vase (Zvi Mowshowitz)
     url: https://thezvi.substack.com/feed
-    tier: 2
+    tier: 3
   - name: The Cognitive Revolution (Nathan Labenz)
     url: https://cognitiverevolution.substack.com/feed
-    tier: 2
+    tier: 3
   - name: Planned Obsolescence (Ajeya Cotra & Kelsey Piper)
     url: https://www.planned-obsolescence.org/feed
-    tier: 2
+    tier: 3
   - name: Miles Brundage
     url: https://milesbrundage.substack.com/feed
-    tier: 2
+    tier: 3
   - name: AI Safety Newsletter (CAIS)
     url: https://newsletter.safe.ai/feed
-    tier: 2
+    tier: 3
   - name: ML Safety Newsletter
     url: https://newsletter.mlsafety.org/feed
-    tier: 2
+    tier: 3
   - name: Interconnects (Nathan Lambert)
     url: https://www.interconnects.ai/feed
-    tier: 2
+    tier: 3
   - name: AI Snake Oil (Narayanan & Kapoor)
     url: https://aisnakeoil.substack.com/feed
-    tier: 2
+    tier: 3
   - name: AI Safety & Governance (Victor Akinwande)
     url: https://www.safeai.news/feed
-    tier: 2
+    tier: 3
   # AI Safety Research Labs
   - name: METR
     url: https://metr.org/feed.xml
@@ -358,7 +358,7 @@ aisi_websites:
 
 # Hacker News search keywords
 hn_keywords:
-  tier: 3
+  tier: 4
   min_points: 20
   keywords:
     - activation steering
@@ -394,7 +394,7 @@ hn_keywords:
     - value alignment
 
 # GitHub activity tier
-github_tier: 3
+github_tier: 4
 
 # Supported languages (en is default, fr planned)
 languages:

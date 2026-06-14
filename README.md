@@ -148,8 +148,9 @@ All sources are configured in `config.yml`:
 
 Sources are annotated with a credibility tier used by the LLM when prioritizing content:
 - **Tier 1**: Government AISIs, peer-reviewed journals, established think tanks (RAND, Georgetown CSET, Ada Lovelace Institute)
-- **Tier 2**: AI lab blogs (Anthropic, OpenAI, DeepMind), safety research orgs (METR, ARC, MIRI, Apollo, Epoch), preprints / non-peer-reviewed papers, expert newsletters, LessWrong
-- **Tier 3**: Hacker News, GitHub activity, Actually Relevant
+- **Tier 2**: AI lab blogs (Anthropic, OpenAI, DeepMind), safety research orgs (METR, ARC, MIRI, Apollo, Epoch), ArXiv preprints
+- **Tier 3**: Expert newsletters & commentary (Import AI, AI Snake Oil, Interconnects, Zvi, etc.), Alignment Forum, LessWrong — synthesize research rather than produce it
+- **Tier 4**: Hacker News, GitHub activity, Actually Relevant
 
 ---
 

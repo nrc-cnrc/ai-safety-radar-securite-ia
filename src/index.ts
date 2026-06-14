@@ -108,13 +108,13 @@ async function main() {
     const content = `# Blogs & News (${date})\n\n${analysisPolicyReport}`;
     saveReport(date, "safety-analysis.md", content);
     enFiles.push({ filename: "safety-analysis.md", content });
-    sections.push(`## Blogs & News [Tier 1-2]\n\n${analysisPolicyReport}`);
+    sections.push(`## Blogs & News [Tier 1-3]\n\n${analysisPolicyReport}`);
   }
   if (communityToolsReport) {
     const content = `# Community & Tools (${date})\n\n${communityToolsReport}`;
     saveReport(date, "safety-community.md", content);
     enFiles.push({ filename: "safety-community.md", content });
-    sections.push(`## Community & Tools [Tier 3]\n\n${communityToolsReport}`);
+    sections.push(`## Community & Tools [Tier 4]\n\n${communityToolsReport}`);
   }
 
   // Load recent daily briefs for deduplication context (last 6 days)

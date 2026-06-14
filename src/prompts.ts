@@ -32,8 +32,8 @@ Today is ${date}. Below are recent articles, blog posts, and policy updates from
 - **AI Safety Institute updates** [Tier 1]: Official government publications and policy actions. Highest priority.
 - **Think tank & policy org publications** [Tier 1]: Georgetown CSET, RAND, Ada Lovelace Institute, AI Now Institute.
 - **AI lab blogs & research org updates** [Tier 2]: Anthropic, OpenAI, DeepMind, Apollo Research, Epoch AI, METR, ARC, MIRI, Conjecture, IAPS, FLI.
-- **Expert newsletters & community forums** [Tier 2]: Import AI, AI Snake Oil, Interconnects, Alignment Forum, LessWrong, and others.
-- **General news aggregators** [Tier 3]: Actually Relevant. Broader coverage; treat as lower-signal background context.
+- **Expert newsletters & commentary** [Tier 3]: Import AI, AI Snake Oil, Interconnects, Zvi, Alignment Forum, LessWrong, and others. These comment on and synthesize research rather than producing it — treat as lower-signal than Tier 2.
+- **General news aggregators** [Tier 4]: Actually Relevant. Broadest coverage; lowest signal — use only for background context.
 
 Produce a unified blogs & news digest in ${lang === "fr" ? "French" : "English"}:
 
@@ -50,8 +50,8 @@ export function communityToolsPrompt(data: string, date: string, lang: Lang = "e
   return `${SYSTEM_ROLE}
 
 Today is ${date}. Below are recent community discussions and open-source activity related to AI safety:
-- **Hacker News discussions** [Tier 3]: Filtered for AI safety relevance, minimum 20 points.
-- **GitHub activity** [Tier 3]: Releases, issues, and PRs from AI safety repositories.
+- **Hacker News discussions** [Tier 4]: Filtered for AI safety relevance, minimum 20 points.
+- **GitHub activity** [Tier 4]: Releases, issues, and PRs from AI safety repositories.
 
 Produce a unified community & tools digest in ${lang === "fr" ? "French" : "English"}:
 
@@ -90,8 +90,9 @@ ${recentContext}
 Each source section below is tagged with a credibility tier. When selecting Top Developments and Risk Watch items, weight by tier:
 
 - **Tier 1 (Institutional/Peer-reviewed)**: Government AISIs, peer-reviewed journals (Nature, Science, PNAS), established think tanks (RAND, Georgetown CSET), International AI Safety Report. Highest credibility — prioritize these.
-- **Tier 2 (Established Research & Expert Analysis)**: AI lab blogs (Anthropic, OpenAI, DeepMind), safety research orgs (METR, ARC, MIRI, Apollo, Epoch), expert newsletters (Import AI, AI Snake Oil, Interconnects, Zvi, etc.), Alignment Forum, LessWrong, ArXiv preprints. High credibility — a Tier 2 item may displace a Tier 1 item only if it represents a major capability breakthrough, significant safety incident, or landmark deployment decision.
-- **Tier 3 (Community & General Discussion)**: Hacker News, Actually Relevant, GitHub activity. Lower credibility — only surface if exceptionally significant.
+- **Tier 2 (Research & Org Publications)**: AI lab blogs (Anthropic, OpenAI, DeepMind), safety research orgs (METR, ARC, MIRI, Apollo, Epoch), ArXiv preprints. High credibility — a Tier 2 item may displace a Tier 1 item only if it represents a major capability breakthrough, significant safety incident, or landmark deployment decision.
+- **Tier 3 (Expert Newsletters & Commentary)**: Import AI, AI Snake Oil, Interconnects, Zvi, Alignment Forum, LessWrong. These synthesize and comment on research rather than producing it — useful context but lower rigor. Do not use for Top Developments unless no Tier 1-2 items are available.
+- **Tier 4 (Community & Aggregators)**: Hacker News, GitHub activity, Actually Relevant. Lowest credibility — only surface in Top Developments if truly exceptional and not covered elsewhere.
 
 You MUST use exactly the following section headings, in this order. Do not rename, reorder, merge, or replace them with thematic headings:
 
@@ -101,7 +102,7 @@ You MUST use exactly the following section headings, in this order. Do not renam
 
 Rules for each section:
 
-**Top 3 Developments**: Fill these slots with the most consequential developments of the day, prioritizing Tier 1 sources (government AISIs, peer-reviewed journals, established think tanks). A Tier 2 item may displace a Tier 1 item only if it represents a major capability breakthrough, significant safety incident, or landmark deployment decision. Never use Tier 3 items. Each item must include at least one inline markdown link to the original source and end with one sentence explaining why it matters.
+**Top 3 Developments**: Fill these slots with the most consequential developments of the day, prioritizing Tier 1 sources (government AISIs, peer-reviewed journals, established think tanks). A Tier 2 item may displace a Tier 1 item only if it represents a major capability breakthrough, significant safety incident, or landmark deployment decision. Never use Tier 3 or Tier 4 items. Each item must include at least one inline markdown link to the original source and end with one sentence explaining why it matters.
 
 **Section Summaries**: A 1-2 sentence summary of each section, written as separate paragraphs (one per section). The three sections are **Research Papers**, **Blogs & News**, and **Community & Tools** — bold the section name at the start of each paragraph (e.g. **Research Papers:**). Every specific paper, article, post, tool, or organization mentioned must include an inline markdown link to its original URL. Anchor each link on a short, contextual phrase — a few words referring to the item (e.g. "a [new paper](url) on scalable oversight" or "[Anthropic](url) released") — not on the entire sentence, and not by quoting the full title. Use plain, neutral language — do not editorialize with adjectives like "critical," "key," "groundbreaking," or "important." Let counts and topics speak for themselves (e.g., "This section covers eight papers on..." rather than "eight critical papers...").
 
