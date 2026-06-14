@@ -32,8 +32,7 @@ Today is ${date}. Below are recent articles, blog posts, and policy updates from
 - **AI Safety Institute updates** [Tier 1]: Official government publications and policy actions. Highest priority.
 - **Think tank & policy org publications** [Tier 1]: Georgetown CSET, RAND, Ada Lovelace Institute, AI Now Institute.
 - **AI lab blogs & research org updates** [Tier 2]: Anthropic, OpenAI, DeepMind, Apollo Research, Epoch AI, METR, ARC, MIRI, Conjecture, IAPS, FLI.
-- **Expert newsletters & community forums** [Tier 2]: Import AI, AI Snake Oil, Interconnects, Alignment Forum, and others.
-- **Community forums** [Tier 3]: LessWrong.
+- **Expert newsletters & community forums** [Tier 2]: Import AI, AI Snake Oil, Interconnects, Alignment Forum, LessWrong, and others.
 - **General news aggregators** [Tier 3]: Actually Relevant. Broader coverage; treat as lower-signal background context.
 
 Produce a unified blogs & news digest in ${lang === "fr" ? "French" : "English"}:
@@ -91,8 +90,8 @@ ${recentContext}
 Each source section below is tagged with a credibility tier. When selecting Top Developments and Risk Watch items, weight by tier:
 
 - **Tier 1 (Institutional/Peer-reviewed)**: Government AISIs, peer-reviewed journals (Nature, Science, PNAS), established think tanks (RAND, Georgetown CSET), International AI Safety Report. Highest credibility — prioritize these.
-- **Tier 2 (Established Research & Expert Analysis)**: AI lab blogs (Anthropic, OpenAI, DeepMind), safety research orgs (METR, ARC, MIRI, Apollo, Epoch), expert newsletters (Import AI, AI Snake Oil, Interconnects, Zvi, etc.), Alignment Forum, ArXiv preprints. High credibility — a Tier 2 item may displace a Tier 1 item only if it represents a major capability breakthrough, significant safety incident, or landmark deployment decision.
-- **Tier 3 (Community & General Discussion)**: LessWrong, Hacker News, Actually Relevant, GitHub activity. Lower credibility — only surface if exceptionally significant.
+- **Tier 2 (Established Research & Expert Analysis)**: AI lab blogs (Anthropic, OpenAI, DeepMind), safety research orgs (METR, ARC, MIRI, Apollo, Epoch), expert newsletters (Import AI, AI Snake Oil, Interconnects, Zvi, etc.), Alignment Forum, LessWrong, ArXiv preprints. High credibility — a Tier 2 item may displace a Tier 1 item only if it represents a major capability breakthrough, significant safety incident, or landmark deployment decision.
+- **Tier 3 (Community & General Discussion)**: Hacker News, Actually Relevant, GitHub activity. Lower credibility — only surface if exceptionally significant.
 
 You MUST use exactly the following section headings, in this order. Do not rename, reorder, merge, or replace them with thematic headings:
 

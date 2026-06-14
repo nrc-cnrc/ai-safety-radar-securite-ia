@@ -214,7 +214,7 @@ rss_feeds:
     tier: 2
   - name: LessWrong (AI tag)
     url: https://www.lesswrong.com/feed.xml?view=community-rss&karmaThreshold=30
-    tier: 3
+    tier: 2
   # Substacks
   - name: Import AI (Jack Clark)
     url: https://importai.substack.com/feed
