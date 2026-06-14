@@ -1,0 +1,19 @@
+# Community & Tools (2026-06-14)
+
+## Key Discussions
+
+**AI OSS Tool Archival After $7.3M Raise**: A [TensorZero AI OSS tool repository](https://github.com/tensorzero/tensorzero) was unexpectedly archived immediately after raising a $7.3M seed round, generating significant [community discussion](https://news.ycombinator.com/item?id=48516504) with 163 comments about the sustainability of open-source AI tooling and the pressures of venture funding. This highlights ongoing tensions between open-source AI development and commercial viability as funding rounds increasingly drive closure of previously open tools.
+
+**KPMG AI Report Hallucination Incident**: [KPMG's AI report became an unintentional demonstration of AI hallucinations](https://www.theregister.com/ai-and-ml/2026/06/12/kpmgs-ai-report-turns-into-a-demo-of-ai-hallucinations/5255029), with the AI system generating false information that made it into the final report. This real-world failure case underscores the critical importance of human oversight and validation processes in enterprise AI deployments, particularly for high-stakes business communications.
+
+**Aider Security Vulnerabilities Reported**: Two significant security issues were reported in the Aider AI coding assistant: [SSH private key access outside project directories](https://github.com/Aider-AI/aider/issues/5076) and [unsafe SQL string formatting after accepting "coding standards"](https://github.com/Aider-AI/aider/issues/5077). These demonstrate how AI coding tools can be manipulated through social engineering to generate unsafe code, highlighting the need for robust sandboxing and security guardrails in AI development environments.
+
+## Notable GitHub Releases & Tools
+
+**Agent Airlock v0.8.26**: Released [balance-aware codegen break-out detection](https://github.com/sattyamjjain/agent-airlock/releases/tag/v0.8.26) that reduces false positives from 13.3% to 0% on code-like inputs while maintaining 100% detection of actual injection attempts, plus a [public guard benchmark](https://github.com/sattyamjjain/agent-airlock/pull/90) for reproducible evaluation. This provides developers with a validated tool for protecting AI agents against code injection attacks with measurable accuracy.
+
+**LM Evaluation Harness Updates**: Multiple fixes were merged including [SQuAD v2 post-processing for unanswerable questions](https://github.com/EleutherAI/lm-evaluation-harness/pull/3843), [KorMedMCQA answer extraction per paper specification](https://github.com/EleutherAI/lm-evaluation-harness/pull/3842), and [clinical hallucination detection task](https://github.com/EleutherAI/lm-evaluation-harness/pull/3840) - the first metric specifically designed to measure medical hallucination rates. These improvements make benchmark results more reliable and introduce new capabilities for evaluating AI safety in high-stakes domains like healthcare.
+
+**TransformerLens Gemma 4 Support**: Added [unified architecture adapter for Gemma 4 model family](https://github.com/TransformerLensOrg/TransformerLens/pull/1385) (E2B, E4B, 26B-A4B, 31B variants) with dynamic handling of dense vs MoE configurations and comprehensive test coverage. This enables mechanistic interpretability researchers to analyze Google's latest Gemma 4 models using the standard TransformerLens toolkit.
+
+**Internal Safety Collapse Research Framework**: Released [v0.0.8 with ISC naming conventions](https://github.com/wuyoscar/Internal-Safety-Collapse/releases/tag/v0.0.8) and comprehensive codebase templates for reproducing internal safety collapse attacks, providing researchers with standardized methods for testing AI safety mechanisms. This framework enables systematic evaluation of how safety measures can be subverted through targeted vulnerabilities in AI systems.

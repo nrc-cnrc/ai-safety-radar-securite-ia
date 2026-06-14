@@ -1,0 +1,18 @@
+# Blogs & News (2026-06-14)
+
+## Principales actualités
+
+**Google DeepMind révèle que le SFT génère la plupart des propriétés de sécurité dans les modèles Gemini**  
+L'équipe d'interprétabilité des modèles de langage de Google DeepMind [a publié des résultats](https://www.alignmentforum.org/posts/nLrrYweeFxgXACSmS/sft-drives-gemini-s-safety-properties-1) montrant que la plupart des propriétés liées à la sécurité dans les modèles Gemini proviennent de la combinaison du pré-entraînement et du fine-tuning supervisé (SFT), plutôt que de l'apprentissage par renforcement ou d'autres phases d'entraînement. Cela remet en question les idées reçues sur l'origine des propriétés de sécurité dans les modèles de langage modernes et pourrait considérablement influencer l'approche des laboratoires d'IA concernant l'entraînement à la sécurité.
+
+**De nouveaux "agents de différenciation" peuvent identifier de manière fiable les différences comportementales entre modèles d'IA**  
+Les chercheurs de Google DeepMind [ont démontré](https://www.alignmentforum.org/posts/qi4mNbZYAFDYwfRba/building-and-evaluating-model-diffing-agents) que des agents d'IA simples peuvent identifier systématiquement des différences comportementales intéressantes entre des modèles distincts, allant au-delà des comparaisons statiques de jeux de données vers une analyse comportementale dynamique. Cette technique pourrait devenir cruciale pour les évaluations de sécurité car elle permet une compréhension plus complète de la façon dont les modifications de modèles affectent le comportement.
+
+**Le gouvernement américain classe le Claude Fable 5 d'Anthropic sous contrôle des exportations**  
+Le ministère du Commerce [aurait classé](https://thezvi.substack.com/p/american-government-takes-down-claude) les nouveaux modèles Claude Fable 5 et Mythos 5 d'Anthropic sous contrôle des exportations, coupant l'accès aux ressortissants étrangers même aux États-Unis, apparemment en réponse à un jailbreak spécifique identifié par Amazon. Cela marque une escalade significative dans la surveillance gouvernementale des systèmes d'IA avancés et établit un précédent pour des réponses réglementaires rapides aux progrès de capacités.
+
+**L'apprentissage continu pose de nouveaux défis de sécurité pour les systèmes d'IA déployés**  
+Des chercheurs [ont analysé](https://www.lesswrong.com/posts/j2zBqt7AksoEoHXNp/how-might-continual-learning-affect-safety-and-alignment) comment l'apprentissage continu pourrait compromettre les approches de sécurité actuelles en permettant des changements d'objectifs et de valeurs après déploiement et en éliminant l'« avantage du dernier arrivé » sur lequel s'appuient les interventions de sécurité actuelles. Cela souligne une lacune critique dans les cadres de sécurité alors que les systèmes d'IA deviennent plus adaptatifs et autonomes après déploiement.
+
+**Le débat s'intensifie autour des scénarios de « désalignement flagrant »**  
+Une nouvelle analyse [explore](https://www.alignmentforum.org/posts/DZaZ3fqHnvfLCftPu/sympathy-for-both-sides-of-the-egregious-misalignment-debate) la fracture croissante entre les chercheurs qui s'attendent à un désalignement catastrophique de la superintelligence (comme Yudkowsky et Soares) et la plupart des chercheurs en LLM qui sont plus optimistes quant aux perspectives d'alignment. Ce désaccord fondamental sur les trajectoires de risque de l'IA continue de façonner les priorités de recherche et les discussions politiques dans tout le domaine.
