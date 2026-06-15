@@ -1,0 +1,13 @@
+# Blogs & Actualités (2026-06-15)
+
+## Articles principaux
+
+**Google DeepMind révèle le rôle central du SFT dans la sécurité de l'IA** - L'équipe d'interprétabilité des modèles de langage de Google DeepMind a publié deux découvertes significatives : [SFT Drives Gemini's Safety Properties](https://www.alignmentforum.org/posts/nLrrYweeFxgXACSmS/sft-drives-gemini-s-safety-properties-1) montre que la plupart des propriétés liées à la sécurité dans les modèles Gemini proviennent du supervised fine-tuning (SFT) combiné au pretraining, plutôt que des phases d'apprentissage par renforcement, tandis que [Why Do Naive SFT Filters For Safety Properties Fail?](https://www.alignmentforum.org/posts/wyZRNgpeiPeRXB6eT/why-do-naive-sft-filters-for-safety-properties-fail) démontre que le filtrage des données d'entraînement SFT pour éliminer les propriétés indésirables fonctionne étonnamment mal. Ces découvertes remettent en question les hypothèses courantes sur l'origine des propriétés de sécurité dans les systèmes d'IA modernes et suggèrent que les approches actuelles de filtrage des données peuvent être fondamentalement inadéquates.
+
+**L'action gouvernementale contre Claude soulève des préoccupations de gouvernance** - Zvi Mowshowitz rapporte sur [American Government Takes Down Claude Fable](https://thezvi.substack.com/p/american-government-takes-down-claude), décrivant ce qui semble être une action gouvernementale contre le système Claude d'Anthropic annoncée tard vendredi soir. Cela représente une escalade potentielle de l'intervention gouvernementale directe dans les décisions de développement et de déploiement de l'IA.
+
+**La gouvernance de l'IA entre en territoire inexploré** - L'article de Nathan Lambert [Welcome to the AGI era of AI governance](https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance) soutient que nous avons franchi une « porte à sens unique » vers les défis de gouvernance au niveau AGI sans préparation adéquate. Cette analyse souligne l'écart croissant entre l'avancement des capacités de l'IA et la préparation à la gouvernance à un point d'inflexion critique.
+
+## Politique et gouvernance
+
+**L'UE étend son infrastructure de gouvernance de l'IA** - La Commission européenne a annoncé qu'elle [recherche des universitaires de premier plan pour le conseil consultatif académique de haut niveau RAISE](https://digital-strategy.ec.europa.eu/en/news/commission-seeks-leading-academics-raise-high-level-academic-advisory-board), étendant sa capacité consultative académique pour le développement de politiques d'IA. Cette démarche signale l'effort continu de l'UE pour construire une capacité institutionnelle robuste pour la gouvernance de l'IA alors que les systèmes deviennent plus puissants et conséquents.
