@@ -1,0 +1,17 @@
+# Blogs & News (2026-06-16)
+
+## Top Stories
+
+**Google DeepMind advances trait instillation through synthetic document training.** The [Synthetic document finetuning for instilling positive traits](https://www.alignmentforum.org/posts/GTYJRLhqztxKF2v5R/synthetic-document-finetuning-for-instilling-positive-traits) research from DeepMind's interpretability team demonstrates a method for training Gemini 3 Flash to exhibit desired traits by first midtraining on documents describing those properties, then finetuning on synthetic chat data where the model demonstrates them. This represents a concrete advance in value alignment techniques, though the effectiveness and robustness of such trait instillation remains to be thoroughly evaluated.
+
+**Safety filtering during supervised fine-tuning shows surprising limitations.** DeepMind's interpretability team published [Why Do Naive SFT Filters For Safety Properties Fail?](https://www.alignmentforum.org/posts/wyZRNgpeiPeRXB6eT/why-do-naive-sft-filters-for-safety-properties-fail), investigating why filtering out undesirable outputs during supervised fine-tuning often performs poorly despite seeming like a natural safety intervention. This finding challenges a common assumption about safety training and highlights gaps in our understanding of how safety properties emerge during training.
+
+**"Alignment is not on track" assessment raises concerns about progress.** Jack Clark's [Import AI 461](https://importai.substack.com/p/import-ai-461-alignment-is-not-on) features analysis suggesting that AI alignment research is not keeping pace with capability advances, alongside coverage of FrontierCode and synthetic research interns. This assessment adds to growing concerns about the alignment-capability gap as AI systems become more powerful.
+
+**US government forces Anthropic to disable access to advanced models.** Zvi Mowshowitz reports in [The Once And Future Fable #2](https://thezvi.substack.com/p/the-once-and-future-fable-2) that the US government has compelled Anthropic to shut down access to their Fable and Mythos systems on Friday evening. This represents a significant escalation in government intervention with AI systems and suggests concerning developments regarding these particular models' capabilities or safety properties.
+
+**AGI governance era declared as regulatory frameworks lag capabilities.** Nathan Lambert argues in [Welcome to the AGI era of AI governance](https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance) that we've crossed a one-way threshold into AGI-level governance challenges without adequate preparation or frameworks. This highlights the urgency of developing governance structures that can handle increasingly powerful AI systems before they arrive, not after.
+
+## Policy & Governance
+
+**DeepMind research examines political dimensions of AI consciousness debates.** The paper [Artificial Minds, Human Disagreement: The Politics of AI Consciousness](https://deepmind.google/research/publications/248131/) explores how future disagreements about AI consciousness could create deep moral and political divisions, with some developing emotional bonds while others dismiss the concept entirely. This research is crucial for anticipating governance challenges around AI rights and moral status as systems become more sophisticated and anthropomorphic.
