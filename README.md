@@ -164,7 +164,7 @@ English by default. Add `fr` to the `languages` list in `config.yml` to generate
 
 | Workflow | When |
 |---|---|
-| Daily Digest | Every morning at approximately 5 AM ET - Github Actions are often queued and delayed|
-| Weekly Rollup | Every Monday at approximately 6 AM ET |
+| Daily Digest | Every morning at **approximately** 5 AM ET - Github Actions are often queued and delayed|
+| Weekly Rollup | Every Monday at **approximately** 6 AM ET |
 
 ---
