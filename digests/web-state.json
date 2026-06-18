@@ -353,7 +353,24 @@
     "https://www.anthropic.com/news/anthropic-public-record",
     "https://www.anthropic.com/news/fable-mythos-access",
     "https://www.anthropic.com/news/tcs-anthropic-partnership",
-    "https://www.anthropic.com/research/claude-code-expertise"
+    "https://www.anthropic.com/research/claude-code-expertise",
+    "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+    "https://www.anthropic.com/research/attack-navigator",
+    "https://www.anthropic.com/research/biorisk",
+    "https://www.anthropic.com/research/claude-4-cyber",
+    "https://www.anthropic.com/research/critical-infrastructure-defense",
+    "https://www.anthropic.com/research/cyber-competitions",
+    "https://www.anthropic.com/research/cyber-toolkits",
+    "https://www.anthropic.com/research/cyber-toolkits-update",
+    "https://www.anthropic.com/research/exploit",
+    "https://www.anthropic.com/research/exploit-evals",
+    "https://www.anthropic.com/research/mythos-preview",
+    "https://www.anthropic.com/research/n-days",
+    "https://www.anthropic.com/research/nuclear-safeguards-for-ai",
+    "https://www.anthropic.com/research/property-based-testing",
+    "https://www.anthropic.com/research/smart-contracts",
+    "https://www.anthropic.com/research/team/frontier-red-team",
+    "https://www.anthropic.com/research/zero-days"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -428,7 +445,11 @@
     "https://www.apolloresearch.ai/blog/tag/insider-risk/",
     "https://www.apolloresearch.ai/blog/tag/misalignment/",
     "https://www.apolloresearch.ai/blog/tag/national-security/",
-    "https://www.apolloresearch.ai/blog/tag/evaluations/"
+    "https://www.apolloresearch.ai/blog/tag/evaluations/",
+    "https://www.apolloresearch.ai/blog/science_category/science-of-scheming/",
+    "https://www.apolloresearch.ai/blog/science_category/evaluations/",
+    "https://www.apolloresearch.ai/blog/science_category/interpretability/",
+    "https://www.apolloresearch.ai/blog/science_category/notes/"
   ],
   "Epoch AI": [
     "https://epoch.ai/blog/a-compute-based-framework-for-thinking-about-the-future-of-ai",

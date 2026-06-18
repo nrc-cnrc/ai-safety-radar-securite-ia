@@ -1,0 +1,19 @@
+# Blogs & News (2026-06-18)
+
+## Top Stories
+
+**[Predicting LLM Safety Before Release by Simulating Deployment](https://www.alignmentforum.org/posts/xPXJfgqFTvuJxGZbE/predicting-llm-safety-before-release-by-simulating)** - Alignment Forum research describes a new method for simulating model deployments before they happen, complementing existing pre-deployment safety reviews that include targeted evaluations and red-teaming. This represents a potentially important advance in pre-deployment safety assessment that could help labs identify risks before models reach real-world use.
+
+**[Several frontier models are substantially prefill aware](https://www.lesswrong.com/posts/iMds4tTpMH4pSHEej/several-frontier-models-are-substantially-prefill-aware)** - New research shows that several frontier models demonstrate "prefill awareness" - the ability to detect information in their context that they weren't explicitly trained to notice, even under conservative testing conditions. This finding has significant implications for AI safety as it suggests models may have situational awareness capabilities that could complicate alignment efforts.
+
+**[Mapping AI-enabled cyber threats: Insights from the LLM ATT&CK Navigator](https://www.anthropic.com/research/attack-navigator)** - Anthropic's Frontier Red Team published analysis mapping real-world AI-weaponized cyberattacks onto the MITRE ATT&CK framework, revealing patterns that challenge traditional cybersecurity assumptions. This work provides crucial intelligence on how threat actors are actually deploying AI systems maliciously, informing both defensive strategies and AI governance approaches.
+
+**[AI models are showing a greater ability to find and exploit vulnerabilities on realistic cyber ranges](https://www.anthropic.com/research/cyber-toolkits-update)** - Anthropic reports that current Claude models can now conduct multistage cyberattacks using only standard open-source tools, whereas previous generations required custom tooling. This represents a significant lowering of barriers to autonomous AI-enabled cyber operations and highlights the rapid advancement in AI cyber capabilities.
+
+**[Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem](https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem)** - Anthropic expanded internationally with a Seoul office and signed an MOU with Korea's Ministry of Science and ICT to advance AI safety. This expansion reflects the growing global dimension of AI safety governance and the need for international coordination on frontier AI development.
+
+## Policy & Governance
+
+**[AI Now Co-Executive Director Sarah Myers West Testifies Before Senate Banking Committee](https://ainowinstitute.org/general/ai-now-co-executive-director-sarah-myers-west-testifies-before-senate-banking-committee)** - AI Now's Sarah Myers West testified before the U.S. Senate Banking Committee on "AI and the American Dream," highlighting risks the AI industry poses to the U.S. economy and broader public. This testimony adds to the growing congressional focus on AI's economic implications beyond just technical safety concerns.
+
+**[The European Innovation Council opens to defence and dual-use technologies](https://digital-strategy.ec.europa.eu/en/news/european-innovation-council-opens-defence-and-dual-use-technologies)** - The European Innovation Council announced it will now support defense and dual-use technology development, marking a significant policy shift. This change reflects growing recognition in Europe that AI governance must address dual-use applications and military implications alongside civilian uses.
