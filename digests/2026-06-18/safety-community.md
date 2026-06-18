@@ -2,28 +2,34 @@
 
 ## Key Discussions
 
-### Anthropic's Safety Leadership in Government Relations
-[The hacker sent by Anthropic to calm the government's nerves about AI safety](https://www.wsj.com/tech/ai/anthropic-mythos-safety-nicholas-carlini-20bceaa3) generated significant community discussion (77 points, 79 comments) about Anthropic's approach to AI safety advocacy in policy circles. This matters because it reflects growing industry engagement with government oversight and the role of AI safety researchers in shaping regulatory frameworks.
+**1. [The hacker sent by Anthropic to calm the government's nerves about AI safety](https://www.wsj.com/tech/ai/anthropic-mythos-safety-nicholas-carlini-20bceaa3)** (78 points, 79 comments)
+The WSJ profiled Nicholas Carlini's role in government AI safety discussions, sparking debate about industry-government relations in AI governance. This matters because it highlights the ongoing tension between corporate AI development and regulatory oversight.
 
-### Third-Party Safety Rails Critical Vulnerability
-The [NVIDIA NeMo Guardrails project](https://github.com/NVIDIA-NeMo/Guardrails/issues/2045) exposed a fundamental safety issue where rails that call external safety services "fail open" - meaning when the safety backend is down, everything is allowed through rather than blocked. This matters because it demonstrates a dangerous default that undermines the entire safety premise of using guardrails.
+**2. [Third-party safety rails FAIL OPEN on backend error](https://github.com/NVIDIA-NeMo/Guardrails/issues/2045)**
+A critical safety vulnerability was reported in NVIDIA NeMo Guardrails where external safety service failures default to "allow everything" rather than failing safe. This matters because fail-open behaviors in safety systems can bypass critical protections when infrastructure is unreliable.
 
-### Model Evaluation Infrastructure Challenges
-Discussion around [LM Evaluation Harness promptsource integration failures](https://github.com/EleutherAI/lm-evaluation-harness/issues/3365) and fixes highlights ongoing challenges in evaluation tooling reliability. This matters because robust evaluation infrastructure is critical for AI safety research and model comparison.
+**3. [Anthropic Cookbook Multi-Agent Proposals](https://github.com/anthropics/anthropic-cookbook/issues/716-723)**
+Eight new cookbook proposals were submitted covering advanced agent patterns: symbolic state notation, deterministic guardrails, agent self-observation, credit attribution across sub-agents, and context handoffs. This matters because it represents a systematic approach to scaling agent capabilities while maintaining safety and reliability.
+
+**4. [Langfuse Session-boundary Behavioral Drift Monitoring RFC](https://github.com/langfuse/langfuse/issues/12873)**
+A detailed proposal for tracking behavioral drift in long-running agents when context compression occurs across session boundaries - a critical but under-measured failure mode. This matters because context compression effects are a significant source of quality degradation in production agent systems.
+
+**5. [ZIRAN v0.33.0 Detection Depth Release](https://github.com/taoq-ai/ziran/releases/tag/v0.33.0)**
+Major release adding detection-accuracy benchmarks, pentest-vs-scanner regression testing, and many-shot jailbreaking attack categories with ground truth evaluation. This matters because it demonstrates the evolution from proof-of-concept security tools to measurement-driven, benchmarked systems.
 
 ## Notable GitHub Releases & Tools
 
-### VeRL-Omni v0.3.0 - Multimodal RL Training Platform
-[Alibaba's ROLL project](https://github.com/alibaba/ROLL/releases/tag/v0.3.0) released major updates including Video/Audio RLVR training, AgentRunner 2.0, and enhanced hardware support for NPU/AMD. This enables researchers to apply reinforcement learning from human feedback to multimodal models including video generation. This matters because it democratizes access to advanced RLHF techniques beyond text-only models.
+**[OpenLeash v0.24.0](https://github.com/openleash/openleash/releases/tag/v0.24.0)**
+Added real-time agent activity monitoring with Server-Sent Events, providing live visibility into agent approvals and actions through a chat-style drawer interface. This enables better oversight of autonomous agent operations.
 
-### MLflow v3.14.0 - Agent Onboarding Automation  
-[MLflow's latest release](https://github.com/mlflow/mlflow/releases/tag/v3.14.0) introduced one-command agent setup with `mlflow agent setup` that automatically configures tracing for coding agents like Claude Code and Cursor. This matters because it significantly lowers the barrier to observability for AI agent deployments, which is crucial for safety monitoring.
+**[ROLL v0.3.0](https://github.com/alibaba/ROLL/releases/tag/v0.3.0)**
+Major update to Alibaba's RL framework adding Video RLVR training, AgentRunner 2.0 abstraction, Multi-Teacher OPD, and OpenTelemetry observability support. This enables more sophisticated reinforcement learning workflows for multimodal AI systems.
 
-### Langfuse v3.190.0 - Enhanced Observability
-[Langfuse v3.190.0](https://github.com/langfuse/langfuse/releases/tag/v3.190.0) added shadow query validation, improved blob export performance monitoring, and enhanced rate limiting for legacy APIs. This matters because better observability tooling enables more effective monitoring of AI system behavior in production.
+**[Promptfoo v0.121.18](https://github.com/promptfoo/promptfoo/pull/9775)**
+Added Moonshot (Kimi) provider support and improved evaluation capabilities, continuing the expansion of supported AI providers for testing and evaluation workflows. This matters because comprehensive provider support is essential for model comparison and selection.
 
-### Promptfoo v0.121.18 - Expanded Provider Support
-[Promptfoo's release](https://github.com/promptfoo/promptfoo/releases/tag/0.121.18) added Moonshot (Kimi) provider support and improved evaluation infrastructure. This matters because broader model provider support enables more comprehensive safety evaluations across different AI systems.
+**[VeRL-Omni Updates](https://github.com/verl-project/verl-omni/pull/178)**
+Added Stable Diffusion 3.5 support for FlowGRPO training as a fast convergence test, providing a standardized way to verify package upgrades and refactors in diffusion model training pipelines. This enables more reliable development workflows for generative AI training.
 
-### ZIRAN v0.33.0 - Enhanced Security Testing
-[ZIRAN v0.33.0](https://github.com/taoq-ai/ziran/releases/tag/v0.33.0) introduced many-shot jailbreaking detection, detection accuracy benchmarks, and pentest-vs-scanner regression testing. This matters because it provides concrete tools for measuring and improving AI security defenses against sophisticated attacks.
+**[Medical AI Failure Atlas - Turkish Health AI Safety Outreach](https://github.com/v0id-lab/medical-ai-failure-atlas/releases/tag/turkiye-health-ai-safety-outreach-roadmap-20260618)**
+Comprehensive outreach materials for Turkish healthcare AI safety, including TEKNOFEST competition guidance and institutional readiness frameworks. This matters because it demonstrates localized approaches to AI safety in critical domains like healthcare.

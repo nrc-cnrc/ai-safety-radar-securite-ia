@@ -2,28 +2,34 @@
 
 ## Discussions clés
 
-### Leadership d'Anthropic en matière de sécurité dans les relations gouvernementales
-[The hacker sent by Anthropic to calm the government's nerves about AI safety](https://www.wsj.com/tech/ai/anthropic-mythos-safety-nicholas-carlini-20bceaa3) a généré des discussions importantes au sein de la communauté (77 points, 79 commentaires) sur l'approche d'Anthropic concernant le plaidoyer pour la sécurité de l'IA dans les cercles politiques. Ceci est important car cela reflète l'engagement croissant de l'industrie avec la surveillance gouvernementale et le rôle des chercheurs en sécurité de l'IA dans l'élaboration des cadres réglementaires.
+**1. [The hacker sent by Anthropic to calm the government's nerves about AI safety](https://www.wsj.com/tech/ai/anthropic-mythos-safety-nicholas-carlini-20bceaa3)** (78 points, 79 commentaires)
+Le WSJ a dressé le portrait du rôle de Nicholas Carlini dans les discussions gouvernementales sur la sécurité de l'IA, suscitant un débat sur les relations industrie-gouvernement dans la gouvernance de l'IA. Ceci importe car cela met en lumière la tension continue entre le développement d'IA par les entreprises et la surveillance réglementaire.
 
-### Vulnérabilité critique des garde-fous de sécurité tiers
-Le [projet NVIDIA NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails/issues/2045) a révélé un problème de sécurité fondamental où les garde-fous qui appellent des services de sécurité externes « échouent en mode ouvert » - c'est-à-dire que lorsque le backend de sécurité est en panne, tout est autorisé à passer plutôt que d'être bloqué. Ceci est important car cela démontre un défaut par défaut dangereux qui compromet toute la prémisse de sécurité de l'utilisation des guardrails.
+**2. [Third-party safety rails FAIL OPEN on backend error](https://github.com/NVIDIA-NeMo/Guardrails/issues/2045)**
+Une vulnérabilité de sécurité critique a été signalée dans NVIDIA NeMo Guardrails où les échecs des services de sécurité externes sont définis par défaut sur "autoriser tout" plutôt que d'échouer de manière sécurisée. Ceci importe car les comportements fail-open dans les systèmes de sécurité peuvent contourner les protections critiques lorsque l'infrastructure n'est pas fiable.
 
-### Défis de l'infrastructure d'évaluation des modèles
-Les discussions autour des [échecs d'intégration de promptsource dans LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness/issues/3365) et leurs corrections mettent en évidence les défis persistants dans la fiabilité des outils d'évaluation. Ceci est important car une infrastructure d'évaluation robuste est critique pour la recherche en sécurité de l'IA et la comparaison de modèles.
+**3. [Anthropic Cookbook Multi-Agent Proposals](https://github.com/anthropics/anthropic-cookbook/issues/716-723)**
+Huit nouvelles propositions de cookbook ont été soumises couvrant des modèles d'agents avancés : notation d'état symbolique, guardrails déterministes, auto-observation d'agents, attribution de crédit entre sous-agents, et transferts de contexte. Ceci importe car cela représente une approche systématique pour faire évoluer les capacités des agents tout en maintenant la sécurité et la fiabilité.
 
-## Sorties GitHub et outils notables
+**4. [Langfuse Session-boundary Behavioral Drift Monitoring RFC](https://github.com/langfuse/langfuse/issues/12873)**
+Une proposition détaillée pour suivre la dérive comportementale dans les agents de longue durée lorsque la compression de contexte se produit aux frontières des sessions - un mode de défaillance critique mais sous-mesuré. Ceci importe car les effets de compression de contexte sont une source significative de dégradation de qualité dans les systèmes d'agents en production.
 
-### VeRL-Omni v0.3.0 - Plateforme d'entraînement RL multimodale
-Le [projet ROLL d'Alibaba](https://github.com/alibaba/ROLL/releases/tag/v0.3.0) a publié des mises à jour majeures incluant l'entraînement Video/Audio RLVR, AgentRunner 2.0, et un support matériel amélioré pour NPU/AMD. Cela permet aux chercheurs d'appliquer l'apprentissage par renforcement à partir de commentaires humains aux modèles multimodaux incluant la génération vidéo. Ceci est important car cela démocratise l'accès aux techniques RLHF avancées au-delà des modèles texte uniquement.
+**5. [ZIRAN v0.33.0 Detection Depth Release](https://github.com/taoq-ai/ziran/releases/tag/v0.33.0)**
+Version majeure ajoutant des benchmarks de précision de détection, des tests de régression pentest-vs-scanner, et des catégories d'attaques de jailbreaking many-shot avec évaluation ground truth. Ceci importe car cela démontre l'évolution des outils de sécurité proof-of-concept vers des systèmes basés sur les mesures et benchmarkés.
 
-### MLflow v3.14.0 - Automatisation de l'intégration des agents
-[La dernière version de MLflow](https://github.com/mlflow/mlflow/releases/tag/v3.14.0) a introduit la configuration d'agents en une commande avec `mlflow agent setup` qui configure automatiquement le traçage pour les agents de codage comme Claude Code et Cursor. Ceci est important car cela réduit considérablement les barrières à l'observabilité pour les déploiements d'agents IA, ce qui est crucial pour la surveillance de sécurité.
+## Sorties GitHub & Outils notables
 
-### Langfuse v3.190.0 - Observabilité renforcée
-[Langfuse v3.190.0](https://github.com/langfuse/langfuse/releases/tag/v3.190.0) a ajouté la validation de requêtes fantômes, la surveillance des performances d'exportation de blobs améliorée, et une limitation de débit renforcée pour les API héritées. Ceci est important car de meilleurs outils d'observabilité permettent une surveillance plus efficace du comportement des systèmes IA en production.
+**[OpenLeash v0.24.0](https://github.com/openleash/openleash/releases/tag/v0.24.0)**
+Ajout du monitoring d'activité d'agents en temps réel avec Server-Sent Events, fournissant une visibilité en direct des approbations et actions d'agents via une interface drawer de style chat. Cela permet une meilleure supervision des opérations d'agents autonomes.
 
-### Promptfoo v0.121.18 - Support de fournisseurs élargi
-[La version de Promptfoo](https://github.com/promptfoo/promptfoo/releases/tag/0.121.18) a ajouté le support du fournisseur Moonshot (Kimi) et amélioré l'infrastructure d'évaluation. Ceci est important car un support plus large de fournisseurs de modèles permet des évaluations de sécurité plus complètes à travers différents systèmes IA.
+**[ROLL v0.3.0](https://github.com/alibaba/ROLL/releases/tag/v0.3.0)**
+Mise à jour majeure du framework RL d'Alibaba ajoutant l'entraînement Video RLVR, l'abstraction AgentRunner 2.0, Multi-Teacher OPD, et le support d'observabilité OpenTelemetry. Cela permet des workflows d'apprentissage par renforcement plus sophistiqués pour les systèmes d'IA multimodaux.
 
-### ZIRAN v0.33.0 - Tests de sécurité améliorés
-[ZIRAN v0.33.0](https://github.com/taoq-ai/ziran/releases/tag/v0.33.0) a introduit la détection de jailbreaking many-shot, des benchmarks de précision de détection, et des tests de régression pentest-vs-scanner. Ceci est important car cela fournit des outils concrets pour mesurer et améliorer les défenses de sécurité IA contre les attaques sophistiquées.
+**[Promptfoo v0.121.18](https://github.com/promptfoo/promptfoo/pull/9775)**
+Ajout du support du provider Moonshot (Kimi) et amélioration des capacités d'évaluation, poursuivant l'expansion des providers d'IA supportés pour les workflows de test et d'évaluation. Ceci importe car le support complet des providers est essentiel pour la comparaison et sélection de modèles.
+
+**[VeRL-Omni Updates](https://github.com/verl-project/verl-omni/pull/178)**
+Ajout du support Stable Diffusion 3.5 pour l'entraînement FlowGRPO comme test de convergence rapide, fournissant une méthode standardisée pour vérifier les mises à jour de packages et refactorisations dans les pipelines d'entraînement de modèles de diffusion. Cela permet des workflows de développement plus fiables pour l'entraînement d'IA générative.
+
+**[Medical AI Failure Atlas - Turkish Health AI Safety Outreach](https://github.com/v0id-lab/medical-ai-failure-atlas/releases/tag/turkiye-health-ai-safety-outreach-roadmap-20260618)**
+Matériaux de sensibilisation complets pour la sécurité de l'IA de santé turque, incluant des conseils pour la compétition TEKNOFEST et des frameworks de préparation institutionnelle. Ceci importe car cela démontre des approches localisées de la sécurité de l'IA dans des domaines critiques comme la santé.
