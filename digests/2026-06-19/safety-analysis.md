@@ -1,0 +1,15 @@
+# Blogs & News (2026-06-19)
+
+## Top Stories
+
+**Google DeepMind Releases First AI Control Roadmap**: Google DeepMind published their [AI Control Roadmap (v0.1)](https://www.alignmentforum.org/posts/hEtkyKGoPpFeWnKkX/gdm-ai-control-roadmap), outlining their plan for implementing internal guardrails to catch potential adversarial behavior by AI agents as they become harder to oversee and contain. The roadmap adopts cybersecurity-inspired threat modeling and focuses on system-level mitigations to limit harm from misaligned AI systems. This represents the first major AI lab to publicly commit to a comprehensive control framework for managing increasingly autonomous AI systems.
+
+**US Government Forces Global Shutdown of Anthropic Models**: According to a [German tech publication report](https://www.heise.de/news/KI-Update-kompakt-KI-Redenschreiber-Fable-Mythos-Sperre-KI-Sorgen-Apple-KI-11331865.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag), the US government ordered Anthropic to disable two of their top models worldwide, though specific details about which models or the rationale remain unclear from available sources. This marks an unprecedented use of government authority to force a global AI model shutdown, potentially signaling new enforcement mechanisms for AI governance.
+
+**Anthropic Advances Robotic AI Capabilities**: Anthropic released results from [Project Fetch Phase Two](https://www.anthropic.com/research/project-fetch-phase-two), showing how Claude helped non-robotics experts perform sophisticated tasks with robotic quadrupeds, with teams using Claude Opus 4.1 substantially outperforming control groups. This demonstrates significant progress in AI-assisted robotics and raises questions about the implications of democratizing advanced robotic capabilities through frontier AI models.
+
+**New Research on Distillation Security Dilemma**: A [LessWrong analysis](https://www.lesswrong.com/posts/gsoLoKY4Spzc3PEb6/the-distillation-double-bind-distilling-misaligned-models) identified a fundamental problem with distilling potentially misaligned AI models - either misalignment transfers to the student model, or it doesn't transfer but the student loses key capabilities, creating a "double bind" for AI safety researchers. This highlights a core challenge in AI safety research around how to safely extract capabilities from potentially dangerous models.
+
+## Policy & Governance
+
+**UK AISI Releases Engineering Playbook**: The UK AI Safety Institute published their [Engineering Playbook](https://www.aisi.gov.uk/blog/releasing-aisis-engineering-playbook), though detailed contents weren't available in the source material. This represents continued institutional development of AI safety evaluation capabilities within government agencies, potentially providing standardized methodologies for assessing AI systems.
