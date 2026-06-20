@@ -1,0 +1,17 @@
+# Blogs & News (2026-06-20)
+
+## Top Stories
+
+**[GDM AI Control Roadmap](https://www.alignmentforum.org/posts/hEtkyKGoPpFeWnKkX/gdm-ai-control-roadmap)** - Google DeepMind has published their first AI Control Roadmap (v0.1), outlining system-level mitigations to limit harm from potentially misaligned AI systems through cybersecurity-inspired threat modeling and internal guardrails designed to catch adversarial behavior from increasingly difficult-to-oversee AI agents. This represents a significant shift toward proactive safety measures at one of the leading AI labs, potentially setting industry standards for internal AI governance.
+
+**[Claude Fable 5 and Mythos 5: Capabilities](https://thezvi.substack.com/p/claude-fable-5-and-mythos-5-capabilities)** - Zvi Mowshowitz reports that Anthropic's Claude Fable 5 was forced offline by the US Government just three days after release due to a discovered jailbreak, marking an unprecedented government intervention in AI model deployment. This signals a new era of real-time government oversight of frontier AI capabilities and raises questions about the viability of rapid model releases.
+
+**[Banning Open Source AI Would Be A Mistake](https://www.interconnects.ai/p/banning-open-source-ai-would-be-a)** - Nathan Lambert argues against restricting open-source AI development, contending that such bans would concentrate power in the hands of a few major labs while reducing the distributed safety research and democratic oversight that open models enable. This perspective adds important nuance to ongoing policy debates about how to balance AI safety with innovation and democratic access.
+
+**[Should AIs be people too?](https://futureoflife.org/ai/should-ais-be-people-too/)** - The Future of Life Institute examines the question of AI legal personhood, drawing parallels to historical precedents like the Dutch East India Company while exploring what rights and responsibilities might be appropriate for increasingly sophisticated AI systems. This foundational question will likely become increasingly urgent as AI capabilities advance and could reshape both AI governance frameworks and our understanding of moral consideration.
+
+## Policy & Governance
+
+**[Commission selects EUROPA consortium as the winner of the Frontier AI Grande Challenge](https://digital-strategy.ec.europa.eu/en/news/commission-selects-europa-consortium-winner-frontier-ai-grande-challenge-project-build-european)** - The European Commission has selected the EUROPA consortium to build a European open-source frontier AI model supporting all 24 EU languages, representing a major investment in European AI sovereignty and multilingual capabilities. This initiative could reduce European dependence on US and Chinese AI systems while advancing open-source alternatives to proprietary frontier models.
+
+**[Commission presents AI Literacy Framework with the OECD](https://digital-strategy.ec.europa.eu/en/news/commission-presents-ai-literacy-framework-oecd-prepare-learners-age-artificial-intelligence)** - The European Commission and OECD have jointly developed an AI literacy framework to prepare learners for the artificial intelligence era, establishing educational standards for AI understanding across member countries. This coordinated approach to AI education could significantly improve public understanding of AI risks and benefits, supporting more informed democratic participation in AI governance decisions.
