@@ -125,7 +125,7 @@ Style rules (apply to ALL sections):
 - Do not use framing phrases like "marked turning points," "several critical turning points," "represents the first…," "…largest…to date," "paradigm shift," or "watershed."
 - Do not use superlatives ("first," "largest," "most," etc.) unless they appear in the linked source's own language; if so, attribute them.
 - Example — bad: "The week marked several critical turning points in AI safety, with concerning revelations about fundamental gaps." Good: "This week's digests covered evaluation methodology, autonomous cyber capabilities, and US–China compute policy."
-- ALWAYS hyperlink to original sources. Every paper, article, blog post, repo, or discussion you mention must include a markdown link to the original URL. Use inline links like [Title](url).`;
+- ALWAYS hyperlink to original sources. Every paper, article, blog post, repo, or discussion you mention must include a markdown link to the original URL. Use inline links like [Title](url).
 
 Structure:
 1. **Week in Review**: 3-5 paragraphs covering the most important developments. Every paper, article, blog post, or discussion mentioned must include an inline markdown link to the original source.
