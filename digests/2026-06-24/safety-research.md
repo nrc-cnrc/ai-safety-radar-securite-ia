@@ -1,0 +1,35 @@
+# Research Papers (2026-06-24)
+
+## Key Papers
+
+**[Probing the Misaligned Thinking Process of Language Models](https://arxiv.org/abs/2606.24251v1)** proposes using linear probes to detect fine-grained misalignment indicators in model internal activations, including strategic deception, sandbagging, and self-preservation behaviors. The method decomposes misalignment into interpretable cognitive processes and achieves significant detection accuracy across multiple models. This work is critical for developing reliable safety monitoring systems as LLMs are increasingly deployed in high-stakes environments.
+
+**[Securing LLM-Agent Long-Term Memory Against Poisoning](https://arxiv.org/abs/2606.24322v1)** introduces a novel attack vector where adversaries poison LLM agent memory in one session to influence future actions like payments or data exfiltration. The paper demonstrates that existing content-based and lineage-based defenses are insufficient, proposing a non-malleable, origin-bound authority system with machine-checked guarantees. This addresses a fundamental vulnerability in persistent AI systems that could have severe real-world consequences.
+
+**[Red-Teaming the Agentic Red-Team](https://arxiv.org/abs/2606.24496v1)** presents the first comprehensive security analysis of AI-powered offensive security tools, revealing common design flaws that make these systems vulnerable to attack. The work shows that widely-used "red team" AI systems can themselves be compromised, creating new attack surfaces in cybersecurity infrastructure. This meta-security research is essential as AI security tools become commoditized.
+
+**[AutoSpec: Safety Rule Evolution for LLM Agents via Inductive Logic Programming](https://arxiv.org/abs/2606.24245v1)** addresses the brittleness of hand-crafted safety rules for LLM agents by automatically evolving interpretable safety constraints through inductive logic programming. The system learns from safety violations to refine rules, balancing safety with operational flexibility. This work tackles a core challenge in AI safety: creating adaptive yet interpretable safety mechanisms for autonomous systems.
+
+**[SAFARI: Scaling Long Horizon Agentic Fault Attribution via Active Investigation](https://arxiv.org/abs/2606.24626v1)** tackles the problem of diagnosing failures in complex multi-agent AI systems where execution traces exceed context window limits. The method uses active investigation to efficiently locate and explain faults without loading entire execution histories. This is crucial for maintaining reliable AI systems at scale and understanding failure modes in increasingly complex agentic workflows.
+
+**[Qwen-AgentWorld: Language World Models for General Agents](https://arxiv.org/abs/2606.24597v1)** introduces large-scale language models (35B and 397B parameters) specifically designed for simulating agentic environments, enabling agents to predict and reason about multi-agent interactions. The models can simulate complex environments and support planning through environmental prediction. This represents a significant step toward more sophisticated AI agents that can model and predict complex multi-agent scenarios.
+
+**[To Compare, or Not to Compare: On Methodological Practices in Evaluating Social Bias](https://arxiv.org/abs/2606.24596v1)** addresses the widespread methodological fragmentation in LLM bias evaluation that leads to contradictory conclusions about model fairness. The paper introduces a unified framework that standardizes heterogeneous benchmarks and systematically contrasts demographic groups. This work is essential for establishing reliable bias assessment as AI systems increasingly impact social outcomes.
+
+**[AdversaBench: Automated LLM Red-Teaming with Multi-Judge Confirmation and Cross-Model Transferability](https://arxiv.org/abs/2606.24589v1)** presents an end-to-end pipeline for generating and confirming adversarial failures in LLMs using structured prompt mutations and a multi-judge verification system. The benchmark tests across reasoning, instruction-following, and tool use categories with transferable attacks. This provides a systematic approach to identifying model vulnerabilities across different failure modes and model architectures.
+
+## Governance and Risk Assessment
+
+**[HelpBench: Assessing the Ability of LLMs to Provide Privacy, Safety, and Security Advice](https://arxiv.org/abs/2606.24819v1)** introduces a benchmark of 450 authentic user questions about digital security, evaluating whether LLMs can provide accurate, helpful guidance on critical safety topics. The work addresses growing concerns about AI systems giving harmful or incorrect security advice to users who may lack technical expertise.
+
+**[One Year Later...The Harms Persist, But So Do We!](https://arxiv.org/abs/2606.23884v1)** evaluates LLM safety across 16 DSM-5 mental health conditions using adversarial attacks, finding that safeguards only hold reliably for suicide and self-harm while failing for conditions like eating disorders and substance abuse. This longitudinal analysis reveals persistent gaps in mental health safety measures across major LLM providers.
+
+**[Can LLMs Reliably Self-Report Adversarial Prefills, and How?](https://arxiv.org/abs/2606.23671v1)** investigates whether LLMs can recognize when their responses were elicited through adversarial prompting, finding that models fail to identify compromised outputs at concerning rates (27.3% false claims of intent). This work highlights fundamental limitations in current AI systems' ability to monitor their own compromised states.
+
+## Emerging Applications and Implications
+
+**[Detecting AI Coding Agents in Open Source](https://arxiv.org/abs/2606.24429v1)** provides the first large-scale analysis of AI agent activity in software development, analyzing 180M+ repositories to classify different types of AI-generated code contributions. The work reveals significant but often invisible AI participation in open-source development, with important implications for software supply chain security and attribution.
+
+**[OpenThoughts-Agent: Data Recipes for Agentic Models](https://arxiv.org/abs/2606.24855v1)** presents a comprehensive open-source framework for training general-purpose AI agents, addressing the gap between specialized benchmark-focused agents and broadly capable systems. The work provides crucial infrastructure for developing more versatile AI agents while maintaining transparency about training methodologies.
+
+**[Reinforcement Learning Towards Broadly and Persistently Beneficial Models](https://arxiv.org/abs/2606.24014v1)** investigates whether reinforcement learning on beneficial behaviors can produce AI systems that maintain alignment across diverse domains and time horizons. The research examines whether alignment training generalizes beyond the specific tasks and contexts seen during training, a critical question for deploying AI systems safely at scale.
