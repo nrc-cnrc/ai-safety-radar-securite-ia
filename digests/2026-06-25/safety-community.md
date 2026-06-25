@@ -2,18 +2,34 @@
 
 ## Key Discussions
 
-**Trust Layers and Governance for AI Agents**: Multiple communities are converging on deterministic governance patterns for AI function calling. [Anthropic's cookbook](https://github.com/anthropics/claude-cookbooks/pull/711) and [OpenAI's cookbook](https://github.com/openai/openai-cookbook/pull/2793) both added "trust middleware" recipes that validate tool calls, enforce policy deterministically, and route consequential actions to human-in-the-loop approval. This represents a maturation of AI safety thinking—moving from hoping models behave to building systems that enforce correct behavior.
+### Anthropic and OpenAI Cookbooks Expand Trust Mechanisms
+The [Anthropic Claude Cookbooks](https://github.com/anthropics/claude-cookbooks/pull/711) and [OpenAI Cookbook](https://github.com/openai/openai-cookbook/pull/2793) both added nearly identical "trust middleware guardrails" recipes showing deterministic policy validation, human-in-the-loop routing, and inspectable execution traces for agent loops. This signals growing industry consensus around the need for systematic guardrails in tool-calling agents.
 
-**GPU Memory Management for Local AI**: The [fak project](https://github.com/anthony-chaudhary/fak/issues/362) exposed a critical gap in local GPU inference—single allocations over device limits (2GB on many consumer GPUs) aren't detected until runtime, causing 7B+ model panics. Combined with [session compaction strategies](https://github.com/anthony-chaudhary/fak/issues/774) to manage 100k+ token contexts, this highlights the practical engineering challenges of running capable models locally.
+### EleutherAI Evaluation Harness Cache Key Bug Discovered
+A critical issue was found in the [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness/issues/3881) where request caching ignores generation parameters, causing silent reuse of cached results across different sampling settings. This could invalidate benchmark results when `--cache_requests` is enabled with varying temperature or other generation parameters. Multiple fixes are in progress to include generation_kwargs in cache keys.
 
-**Evaluation Infrastructure Bugs**: [EleutherAI's evaluation harness](https://github.com/EleutherAI/lm-evaluation-harness/issues/3881) discovered that cached requests ignore generation parameters, silently reusing results across different sampling settings. Separately, [KorMedMCQA implementation](https://github.com/EleutherAI/lm-evaluation-harness/issues/3103) wasn't extracting answer choices properly, leading to zero scores for some models. These issues underscore how subtle bugs in evaluation infrastructure can invalidate research results.
+### AgentLens Launches Comprehensive Eval Stack
+[AgentLens released v0.19.0](https://github.com/agentkitai/agentlens/releases/tag/v0.19.0) with a complete evaluation infrastructure including LLM-as-judge scoring, evaluator catalogs, CI/CD eval gates, and agenteval federation. The system provides tamper-evident audit trails for compliance evals and can gate deployments on pass rates. This represents a significant advancement in production AI agent governance.
+
+### Gemma Repository Fixes Critical Attention Implementation
+[Google's Gemma repository](https://github.com/google-deepmind/gemma/pull/668) fixed a subtle bug in Grouped Query Attention (GQA) where float division was used instead of integer division, causing silent truncation and potential runtime failures when query heads weren't evenly divisible by KV heads. This type of mathematical error in attention mechanisms could cause silent model degradation.
+
+### NVIDIA Guardrails Adds Agent Threat Rules Detection
+[NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails/pull/1996) integrated Agent Threat Rules (ATR), an open MIT-licensed detection standard for AI agent attacks, covering prompt injection, jailbreak attempts, tool poisoning, and MCP attacks. This follows similar integrations in Cisco AI Defense and Microsoft's governance toolkit, indicating ATR's emergence as a standard.
 
 ## Notable GitHub Releases & Tools
 
-**Orbit v2.7.8**: [Schmitech's Orbit](https://github.com/schmitech/orbit/releases/tag/v2.7.8) reduced startup noise by downgrading ~700 per-component initialization log messages, addressing observability pollution that made debugging harder. This enables cleaner production logging for AI applications that need to monitor actual runtime behavior rather than startup chatter.
+### TransformerLens Expands Architecture Support
+[TransformerLens](https://github.com/TransformerLensOrg/TransformerLens/pull/1442) added BART encoder-decoder adapter support, extending interpretability tooling beyond decoder-only models. The project also added adapters for GLM-5 DSA (sparse attention + MoE) and other novel architectures. This enables mechanistic interpretability research on a broader range of transformer variants including encoder-decoder and hybrid architectures.
 
-**DHMS v1.3 Runtime Adapter**: [MkaliezZ's DHMS engine](https://github.com/MkaliezZ/dhms-engine/releases/tag/v1.3.0-runtime-adapter-boundary-public-evidence-package) released a public evidence package for AI agent execution fusing—a protocol for intercepting and validating SQL, File, and HTTP operations before they execute. This provides a reproducible audit trail for agent actions, addressing the "what did my agent actually do" problem.
+### Aider AI Improves Error Handling
+[Aider](https://github.com/Aider-AI/aider/pull/5325) fixed several critical error handling issues including circular import problems with litellm and scipy binary incompatibilities on macOS. The fixes provide clearer error messages and graceful degradation when dependencies fail. This matters because unclear error messages in AI coding tools can significantly impact developer productivity.
 
-**Phoenix v17.12.0**: [Arize's Phoenix](https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v17.12.0) added a direct server agent endpoint and terminal UI (TUI) for the PXI agent, making AI agent interactions more accessible through both programmatic and command-line interfaces. This democratizes access to agent capabilities beyond web-only interfaces.
+### Langfuse Enhances Tracing UI
+[Langfuse v3.198.0](https://github.com/langfuse/langfuse/releases/tag/v3.198.0) shipped improved trace visualization with resizable peek views, persistent time filters, and subtree wall-clock duration display for async operations. The UI improvements address common pain points in observability workflows where misleading duration metrics and lost filter state disrupted analysis workflows.
 
-**Langfuse v3.198.0**: [Langfuse](https://github.com/langfuse/langfuse/releases/tag/v3.198.0) introduced nested AND/OR filter expressions for events and custom JSON extractors per observation, enabling more sophisticated querying and monitoring of AI system behavior. This allows teams to build complex observability queries that match their specific debugging and analysis needs.
+### OpenAI Cookbook Adds Cost Control Examples
+The [OpenAI Cookbook](https://github.com/openai/openai-cookbook/pull/2634) added examples for controlling costs in iterative refinement and multi-agent workflows, showing how to prevent unbounded spending when context grows over multiple turns. This addresses a critical production concern as context accumulation can lead to exponentially increasing API costs.
+
+### Comet Opik Optimizes Performance
+[Opik 2.1.3](https://github.com/comet-ml/opik/releases/tag/2.1.3) replaced a backtracking regex with a linear scanner for base64 attachment detection, fixing CPU pinning issues on large trace payloads. The optimization prevents super-linear regex performance degradation that could impact system stability under high load.
