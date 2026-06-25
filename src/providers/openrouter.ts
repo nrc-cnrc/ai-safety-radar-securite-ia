@@ -9,6 +9,8 @@ export class OpenRouterProvider implements LlmProvider {
     this.client = new OpenAI({
       baseURL: "https://openrouter.ai/api/v1",
       apiKey: process.env.OPENROUTER_API_KEY,
+      timeout: 120_000,
+      maxRetries: 2,
       defaultHeaders: {
         "HTTP-Referer": "https://github.com/ygauthie/ai-safety-radar-securite-ia",
         "X-Title": "AI Safety Daily Digest",
@@ -18,11 +20,16 @@ export class OpenRouterProvider implements LlmProvider {
   }
 
   async summarize(prompt: string, maxTokens = 4096): Promise<string> {
-    const response = await this.client.chat.completions.create({
+    const stream = await this.client.chat.completions.create({
       model: this.model,
       max_tokens: maxTokens,
       messages: [{ role: "user", content: prompt }],
+      stream: true,
     });
-    return response.choices[0]?.message?.content || "";
+    let out = "";
+    for await (const chunk of stream) {
+      out += chunk.choices[0]?.delta?.content ?? "";
+    }
+    return out;
   }
 }
