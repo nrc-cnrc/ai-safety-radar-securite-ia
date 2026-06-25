@@ -1,1 +1,19 @@
-*Report generation failed after retries.*
+# Communauté et outils (2026-06-25)
+
+## Discussions clés
+
+**Couches de confiance et gouvernance pour les agents IA** : Plusieurs communautés convergent vers des modèles de gouvernance déterministes pour l'appel de fonctions par l'IA. [Le cookbook d'Anthropic](https://github.com/anthropics/claude-cookbooks/pull/711) et [le cookbook d'OpenAI](https://github.com/openai/openai-cookbook/pull/2793) ont tous deux ajouté des recettes de "middleware de confiance" qui valident les appels d'outils, appliquent les politiques de manière déterministe, et dirigent les actions importantes vers une approbation humaine dans la boucle. Cela représente une maturation de la réflexion sur la sécurité de l'IA—passant de l'espoir que les modèles se comportent bien à la construction de systèmes qui garantissent un comportement correct.
+
+**Gestion de la mémoire GPU pour l'IA locale** : Le [projet fak](https://github.com/anthony-chaudhary/fak/issues/362) a exposé une lacune critique dans l'inférence GPU locale—les allocations uniques dépassant les limites de l'appareil (2 Go sur de nombreux GPU grand public) ne sont pas détectées avant l'exécution, causant des paniques sur les modèles 7B+. Combiné avec les [stratégies de compactage de session](https://github.com/anthony-chaudhary/fak/issues/774) pour gérer des contextes de plus de 100k tokens, cela souligne les défis d'ingénierie pratiques pour exécuter des modèles performants localement.
+
+**Bugs dans l'infrastructure d'évaluation** : [Le harness d'évaluation d'EleutherAI](https://github.com/EleutherAI/lm-evaluation-harness/issues/3881) a découvert que les requêtes en cache ignorent les paramètres de génération, réutilisant silencieusement les résultats entre différents paramètres d'échantillonnage. Séparément, l'[implémentation KorMedMCQA](https://github.com/EleutherAI/lm-evaluation-harness/issues/3103) n'extrayait pas correctement les choix de réponse, conduisant à des scores de zéro pour certains modèles. Ces problèmes soulignent comment des bugs subtils dans l'infrastructure d'évaluation peuvent invalider les résultats de recherche.
+
+## Sorties GitHub et outils notables
+
+**Orbit v2.7.8** : [Orbit de Schmitech](https://github.com/schmitech/orbit/releases/tag/v2.7.8) a réduit le bruit au démarrage en diminuant le niveau de ~700 messages de log d'initialisation par composant, s'attaquant à la pollution d'observabilité qui rendait le débogage plus difficile. Cela permet une journalisation de production plus propre pour les applications IA qui doivent surveiller le comportement réel d'exécution plutôt que le bavardage de démarrage.
+
+**DHMS v1.3 Runtime Adapter** : [Le moteur DHMS de MkaliezZ](https://github.com/MkaliezZ/dhms-engine/releases/tag/v1.3.0-runtime-adapter-boundary-public-evidence-package) a publié un package de preuves publiques pour la fusion d'exécution d'agents IA—un protocole pour intercepter et valider les opérations SQL, de fichiers et HTTP avant leur exécution. Cela fournit une piste d'audit reproductible pour les actions d'agents, s'attaquant au problème "qu'est-ce que mon agent a réellement fait".
+
+**Phoenix v17.12.0** : [Phoenix d'Arize](https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v17.12.0) a ajouté un endpoint d'agent serveur direct et une interface utilisateur terminale (TUI) pour l'agent PXI, rendant les interactions avec les agents IA plus accessibles via des interfaces programmatiques et en ligne de commande. Cela démocratise l'accès aux capacités d'agents au-delà des interfaces web uniquement.
+
+**Langfuse v3.198.0** : [Langfuse](https://github.com/langfuse/langfuse/releases/tag/v3.198.0) a introduit des expressions de filtre AND/OR imbriquées pour les événements et des extracteurs JSON personnalisés par observation, permettant des requêtes et une surveillance plus sophistiquées du comportement des systèmes IA. Cela permet aux équipes de construire des requêtes d'observabilité complexes qui correspondent à leurs besoins spécifiques de débogage et d'analyse.

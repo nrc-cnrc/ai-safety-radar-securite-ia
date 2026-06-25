@@ -1,1 +1,23 @@
-*Report generation failed after retries.*
+# Blogs & News (25-06-2026)
+
+## Actualités principales
+
+**Anthropic publie une série complète de recherches sur les capacités cyber**
+Anthropic a publié une série d'études approfondies documentant les capacités de cybersécurité de ses modèles d'IA, incluant [la cartographie des menaces cyber activées par l'IA](https://www.anthropic.com/research/attack-navigator), [des évaluations cyber détaillées de Claude 4](https://www.anthropic.com/research/claude-4-cyber), et des recherches montrant que [les LLM équipés de boîtes à outils cyber peuvent mener des opérations multi-étapes](https://www.anthropic.com/research/cyber-toolkits) sur des réseaux de taille professionnelle. Plus remarquable encore, leurs derniers travaux démontrent que [les modèles Claude actuels peuvent désormais réussir des attaques multi-étapes en utilisant uniquement des outils standards](https://www.anthropic.com/research/cyber-toolkits-update), éliminant le besoin d'outils personnalisés requis par les générations précédentes. Cette recherche fournit une transparence cruciale sur les capacités d'IA à double usage qui pourraient considérablement réduire les barrières aux cyberattaques sophistiquées.
+
+**Claude Tag introduit l'intégration d'équipes IA**
+Anthropic a lancé [Claude Tag](https://www.anthropic.com/news/introducing-claude-tag), permettant à Claude de rejoindre les canaux Slack en tant que membre d'équipe avec accès à des outils, données et bases de code sélectionnés. Le système permet à Claude de construire du contexte à partir des conversations de canal et de gérer les tâches déléguées pendant que les membres de l'équipe se concentrent ailleurs. Ceci représente un pas significatif vers des agents IA persistants dans les environnements de travail, soulevant des questions importantes sur l'autonomie de l'IA et la supervision dans les contextes professionnels.
+
+**LessWrong discute des questions stratégiques de sécurité de l'IA**
+La communauté de sécurité de l'IA débat activement de questions stratégiques fondamentales, incluant [les arguments pour mettre en œuvre des pauses IA dès que possible](https://www.lesswrong.com/posts/mEhS4wYTy9JXEpe9p/ai-pause-the-case-for-asap) plutôt que d'attendre des systèmes plus avancés, et [l'examen de l'influence du mouvement e/acc](https://www.lesswrong.com/posts/3hwrWDf7wiqASDzBz/what-is-up-with-e-acc) sur le discours IA malgré les questions sur son soutien substantiel. Ces discussions reflètent les tensions continues au sein de la communauté IA concernant les calendriers de développement et les stratégies de gestion des risques.
+
+**L'AISI britannique publie un manuel d'ingénierie**
+L'Institut britannique de sécurité de l'IA a publié son [Manuel d'ingénierie](https://www.aisi.gov.uk/blog/releasing-aisis-engineering-playbook), fournissant des orientations méthodologiques pour l'évaluation et les tests de sécurité de l'IA. Ceci représente une étape importante dans la standardisation des approches gouvernementales d'évaluation de la sécurité de l'IA et pourrait influencer les pratiques d'évaluation dans d'autres instituts nationaux de sécurité de l'IA.
+
+## Politique et gouvernance
+
+**La Commission européenne fait progresser la mise en œuvre de l'AI Act**
+La Commission européenne a annoncé que le [Forum consultatif de l'AI Act a tenu sa réunion de lancement](https://digital-strategy.ec.europa.eu/en/news/ai-act-advisory-forum-convenes-its-kick-meeting), marquant un jalon clé dans la mise en œuvre du cadre réglementaire complet de l'UE sur l'IA. De plus, la Commission [a sélectionné le consortium EUROPA](https://digital-strategy.ec.europa.eu/en/news/commission-selects-europa-consortium-winner-frontier-ai-grand-challenge-project-build-european-open) pour construire un modèle d'IA frontier européen open-source supportant les 24 langues de l'UE. Ces développements signalent l'engagement de l'Europe à la fois pour réguler le développement de l'IA et maintenir la souveraineté technologique dans le paysage de l'IA.
+
+**Anthropic étend sa présence en Corée avec un partenariat de sécurité**
+Anthropic [a ouvert un bureau à Séoul et signé un protocole d'accord avec le ministère coréen des Sciences et des TIC](https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem) pour faire progresser la recherche en sécurité de l'IA et les partenariats dans l'écosystème IA coréen. Cette expansion démontre comment les laboratoires d'IA de premier plan s'engagent de plus en plus directement avec les gouvernements nationaux sur les initiatives de sécurité, créant potentiellement de nouveaux modèles de coopération en gouvernance internationale de l'IA.
