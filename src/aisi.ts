@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { join } from "path";
 import { loadConfig } from "./config.js";
-import { daysAgo, formatDate } from "./date.js";
+import { daysAgo, formatDate, FRESHNESS_DAYS, isRecent, extractPublishDate } from "./date.js";
 
 export interface AisiItem {
   institute: string;
@@ -55,11 +55,14 @@ export async function fetchAisi(): Promise<AisiItem[]> {
       for (const scrapeUrl of scrapeUrls) {
         pageUrls.push(...await scrapePageLinks(scrapeUrl, site.name));
       }
-      for (const item of pageUrls) {
-        if (!knownUrls.has(item.url)) {
-          items.push(item);
-        }
-        foundUrls.push(item.url);
+      for (const item of pageUrls) foundUrls.push(item.url);
+
+      // Scraped index links carry no date, so a newly-listed URL can still point
+      // to old content. Fetch each new candidate and keep only recent ones.
+      const newCandidates = pageUrls.filter((it) => !knownUrls.has(it.url));
+      for (const item of newCandidates.slice(0, 15)) {
+        if (await isRecentArticle(item.url)) items.push(item);
+        await new Promise((r) => setTimeout(r, 200));
       }
 
       // Update state with all URLs we've ever seen
@@ -159,4 +162,19 @@ async function scrapePageLinks(url: string, institute: string): Promise<AisiItem
     console.error(`[aisi] Scrape error for ${institute}:`, e);
   }
   return items.slice(0, 10);
+}
+
+// Fetch a scraped link's page and decide whether it was published recently.
+// Pages without a detectable date are treated as not recent (excluded).
+async function isRecentArticle(url: string): Promise<boolean> {
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": "AI-Safety-Daily-Brief/1.0" },
+    });
+    if (!res.ok) return false;
+    const html = await res.text();
+    return isRecent(extractPublishDate(html), FRESHNESS_DAYS);
+  } catch {
+    return false;
+  }
 }
