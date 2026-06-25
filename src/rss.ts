@@ -136,8 +136,11 @@ function parseRssXml(xml: string, source: string, since: Date): RssItem[] {
       if (hrefMatch) link = hrefMatch[1];
     }
 
+    // Drop items older than the cutoff, and items with no parseable date
+    // (an undated item could be arbitrarily old).
     const pubDate = get(["pubDate", "published", "updated"]);
-    if (pubDate && new Date(pubDate) < since) continue;
+    const ts = new Date(pubDate).getTime();
+    if (isNaN(ts) || ts < since.getTime()) continue;
 
     if (title && link) {
       items.push({ source, title, link, description, pubDate });

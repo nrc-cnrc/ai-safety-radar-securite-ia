@@ -100,8 +100,10 @@ function parseRssXml(
       if (hrefMatch) link = hrefMatch[1];
     }
 
+    // Drop items older than the cutoff, and items with no parseable date.
     const pubDate = get(["pubDate", "published", "updated", "dc:date"]);
-    if (pubDate && new Date(pubDate) < since) continue;
+    const ts = new Date(pubDate).getTime();
+    if (isNaN(ts) || ts < since.getTime()) continue;
 
     if (!title || !link) continue;
 
