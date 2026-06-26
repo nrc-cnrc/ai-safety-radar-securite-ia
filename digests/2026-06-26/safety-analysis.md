@@ -1,0 +1,11 @@
+# Blogs & News (2026-06-26)
+
+## Top Stories
+
+**[Exploration: fine-tuning with parameter decomposition](https://www.lesswrong.com/posts/ieoWstubDQWLrMnhH/exploration-fine-tuning-with-parameter-decomposition)** - Researchers demonstrated they could destroy a 67M-parameter language model's ability to predict German text by fine-tuning just a single scalar value in a German-related parameter component, outperforming traditional LoRA fine-tuning methods at small token budgets. This research matters because it suggests more precise and interpretable ways to modify AI model capabilities, which could be crucial for alignment research and understanding how to safely edit model behaviors.
+
+**[AI #174: You're It](https://thezvi.substack.com/p/ai-174-youre-it)** - Zvi Mowshowitz's latest AI newsletter discusses developments around the Fable AI system, which remains "in limbo" with renewed hope for recovery, and references a new capabilities analysis post. This matters because Zvi's commentary often provides early signals on important AI developments and capability assessments that influence safety discourse.
+
+**[Alignment & Succession: The Ideology of Successionism](https://www.lesswrong.com/posts/TgxkX5uwpqpQDDmMz/alignment-and-succession-the-ideology-of-successionism)** - This post explores "successionism" as an ideological framework for thinking about AI alignment and governance, examining fundamental questions about how we should structure technology development and control. This matters because it attempts to provide a coherent philosophical foundation for approaches to AI governance beyond traditional regulatory frameworks.
+
+**[Nearly 400 US publishers sue OpenAI and Microsoft](https://www.heise.de/news/ChatGPT-und-Copilot-US-Verlage-reichen-naechste-Klage-wegen-KI-Training-ein-11344362.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** - A massive coalition of nearly 400 US news sites from 33 states has filed suit against Microsoft and OpenAI, alleging unauthorized copying of content for training ChatGPT and Copilot, joining previous lawsuits from major publishers. This matters because the outcome could establish crucial legal precedents for AI training data rights and potentially reshape how AI companies acquire training data going forward.
