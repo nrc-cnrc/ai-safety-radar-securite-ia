@@ -1,0 +1,15 @@
+# Blogs et actualités (2026-06-29)
+
+## Principales nouvelles
+
+**[GPT-5.6: The System Card](https://thezvi.substack.com/p/gpt-56-the-system-card)** - Zvi Mowshowitz analyse la system card d'OpenAI pour GPT-5.6, fournissant des perspectives sur les capacités et les considérations de sécurité de ce modèle non publié. Ceci importe car les system cards sont des documents de transparence cruciaux qui révèlent comment les laboratoires pensent les évaluations de sécurité et les décisions de déploiement pour les modèles de pointe.
+
+**[Do LLMs Have Desires?](https://www.lesswrong.com/posts/8GvYyqDuQDJnEAky3/do-llms-have-desires)** - Recherche examinant si les LLM démontrent de véritables préférences en testant s'ils modulent la qualité de leur sortie selon le contexte, révélant que les modèles ajustent effectivement leurs efforts en réponse au jeu de rôle et aux exhortations. Ceci importe car comprendre si les LLM ont de véritables préférences par rapport à des comportements appris est crucial pour la recherche en alignment et la prédiction du comportement d'IA avancées.
+
+**[Agents as Webs of Beliefs](https://www.lesswrong.com/posts/M39Z2CvyfaxZdaxR4/agents-as-webs-of-beliefs)** - Un cadre théorique unifiant les croyances, objectifs et actions comme composants interconnectés d'agents intelligents, s'appuyant sur la recherche en inférence active et fondements d'agents. Ceci importe car développer de meilleurs modèles théoriques d'agentivité pourrait améliorer notre capacité à comprendre et aligner les systèmes d'IA avancés.
+
+**[Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem](https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside)** - Nathan Lambert évalue les récentes sorties de modèles ouverts et les motivations stratégiques derrière le choix des entreprises de publier des modèles ouvertement versus les garder propriétaires. Ceci importe car la dynamique modèles ouverts versus fermés impacte significativement les approches de gouvernance de l'IA et la distribution des capacités avancées.
+
+## Politique et gouvernance
+
+**[OpenAI narrows GPT-5.6 partners after US request](https://www.heise.de/news/US-Regierung-laesst-Zugang-zu-neuer-KI-von-OpenAI-beschraenken-11346768.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag)** - Le gouvernement américain aurait demandé à OpenAI de restreindre l'accès en avant-première à GPT-5.6 à un petit groupe de partenaires américains de confiance, OpenAI avertissant qu'un mauvais usage en plusieurs étapes pourrait encore être possible malgré les garde-fous. Ceci importe car cela représente une intervention gouvernementale directe dans les décisions de déploiement d'IA et suggère que les officiels considèrent GPT-5.6 comme présentant des risques significatifs de sécurité nationale ou de sûreté.
