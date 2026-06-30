@@ -1,0 +1,13 @@
+# Blogs & News (2026-06-30)
+
+## Top Stories
+
+**[GPT-5.6: The System Card](https://thezvi.substack.com/p/gpt-56-the-system-card)** - Zvi Mowshowitz analyzes OpenAI's system card for GPT-5.6, providing insights into the model's capabilities and safety measures while the general release remains pending. This matters because system cards are often the most detailed public documentation of how frontier AI systems are evaluated for safety risks and deployed with mitigations.
+
+**[AI will make biological extinction risks worse before it makes them better](https://www.lesswrong.com/posts/xdsvtuZBFipZYGjvb/ai-will-make-biological-extinction-risks-worse-before-it)** - A LessWrong post argues against rushing AI development to counter biological risks, claiming that AI will initially increase synthetic biology threats before potentially solving them with aligned superintelligence. This highlights a critical timing problem in AI safety where acceleration arguments may backfire by amplifying other catastrophic risks.
+
+**[WSJ Article Claiming China Has Matched Anthropic Is Obvious Nonsense](https://thezvi.substack.com/p/wsj-article-claiming-china-has-matched)** - Zvi Mowshowitz debunks misleading Wall Street Journal reporting about Chinese AI capabilities matching Anthropic's models, calling the headline "outright false" and the story "heavily misleading." This matters because inaccurate reporting on AI capabilities can distort policy decisions and international competition dynamics around AI governance.
+
+**[Real-Time Group Dynamics with LLM Facilitation: Evidence from a Charity Allocation Task](https://deepmind.google/research/publications/224297/)** - Google DeepMind published research (N=879) examining how large language models affect collective decision-making in real-time group deliberation tasks with economic incentives. This is significant because it provides empirical evidence for how AI systems might influence democratic processes and group coordination as they become more integrated into civic and workplace decision-making.
+
+**[$1M AI x-risk grant round is live on grantmaking.ai](https://www.lesswrong.com/posts/hDQZZzYkcipgaZfxy/usd1m-ai-x-risk-grant-round-is-live-on-grantmaking-ai-apply)** - A new $1 million grant round is distributing $5k-$50k awards for AI existential risk reduction projects, with applications due by July 13th for priority review and funding decisions by July 28th. This represents a significant infusion of resources into the AI safety ecosystem at a time when more researchers and projects are seeking funding to work on alignment and governance challenges.
