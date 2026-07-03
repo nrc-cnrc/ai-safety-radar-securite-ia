@@ -1,0 +1,15 @@
+# Blogs & News (03-07-2026)
+
+## Principales actualités
+
+**[Lorsqu'ils jouent un rôle, les modèles croient-ils ce qu'ils disent ?](https://www.lesswrong.com/posts/EJQngix4rAgpPDTpT/when-role-playing-do-models-believe-what-they-say)** - Recherche examinant si les modèles d'IA intériorisent réellement les croyances des personas qu'ils incarnent, en utilisant des méthodes comme le prompting, le fine-tuning, et des scénarios de misalignment émergent, mesurés par des sondes de vérité et des tests comportementaux. Ceci est important car comprendre la différence entre la performance de surface et la représentation interne des croyances est crucial pour l'alignment de l'IA et la détection de la tromperie.
+
+**[Plus de détails sur les protections cyber de Fable 5 et notre framework de jailbreak](https://www.anthropic.com/news/fable-safeguards-jailbreak-framework)** - Anthropic a redéployé Claude Fable 5 mondialement avec des protections de cybersécurité renforcées, incluant des classificateurs de sécurité IA conçus pour détecter et bloquer les applications de cybersécurité potentiellement dangereuses. Ceci représente une implémentation concrète de mesures de sécurité pour les systèmes d'IA de pointe qui pourrait établir des précédents pour les standards de sécurité à l'échelle de l'industrie.
+
+**[Je n'arrive pas à penser à de bonnes interventions pour garantir l'accès aux modèles tiers](https://www.lesswrong.com/posts/iEhqyMGGD4BHQapLA/i-can-t-think-of-great-interventions-for-ensuring-third)** - Analyse de l'écart grandissant entre l'accès interne des laboratoires aux modèles d'IA versus l'accès des chercheurs en sécurité externes, arguant que ce problème de "parité d'accès aux modèles" compromet les capacités cruciales de recherche en sécurité et d'audit. Ceci souligne un défi de gouvernance fondamental qui pourrait limiter notre capacité à assurer la sécurité de l'IA à mesure que les modèles deviennent plus puissants.
+
+**[Claude Sonnet 5 n'est pas de pointe mais a ses utilités](https://thezvi.substack.com/p/claude-sonnet-5-is-not-frontier-but)** - Commentaire sur la dernière version de modèle d'Anthropic, notant que bien qu'il ne s'agisse pas d'un système de pointe, il démontre des améliorations continues de capacités et de nouveaux modèles de déploiement. Ceci est important pour suivre les trajectoires de capacités de l'IA et comprendre comment les laboratoires équilibrent performance et considérations de sécurité dans leurs stratégies de publication.
+
+## Politique et gouvernance
+
+**[Vous pouvez maintenant tirer la sonnette d'alarme sur les mauvais comportements de l'IA](https://cset.georgetown.edu/article/you-can-now-sound-the-alarm-on-ai-behaving-badly/)** - Georgetown CSET met en avant le lancement de FLARE-AI, une nouvelle plateforme participative pour signaler les comportements nocifs de l'IA et les défauts des modèles, créant un système centralisé pour la transparence et la responsabilité. Ceci représente une étape importante vers la construction d'une infrastructure pour le signalement d'incidents IA et pourrait informer les approches réglementaires de surveillance de la sécurité de l'IA.
