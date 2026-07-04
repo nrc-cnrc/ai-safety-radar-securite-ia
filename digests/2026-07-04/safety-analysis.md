@@ -1,0 +1,11 @@
+# Blogs & News (2026-07-04)
+
+## Top Stories
+
+**[Pragmatic FDT, and predictors as game theory](https://www.alignmentforum.org/posts/SdGbWkCZgCN7EGBxM/pragmatic-fdt-and-predictors-as-game-theory-1)** - An academic decision theorist responds to recent criticism of Functional Decision Theory (FDT), addressing the gap between rationalist enthusiasm and academic skepticism around this framework for AI decision-making. This matters because decision theory frameworks could significantly influence how advanced AI systems make choices in complex strategic situations.
+
+**[I think alignment work is more promising than control work](https://www.lesswrong.com/posts/dmHbogCFbSp95J3Lz/i-think-alignment-work-is-more-promising-than-control-work)** - A researcher argues that alignment approaches may scale better than control methods for managing advanced AI systems, challenging the current emphasis on control-based safety strategies. This matters because it could shift resource allocation between two major AI safety research paradigms at a critical juncture.
+
+**[Claude's extended thinking](https://www.anthropic.com/news/visible-extended-thinking)** - Anthropic releases Claude 3.7 Sonnet with a toggleable "extended thinking mode" that allows users to direct the model to apply more cognitive effort to complex problems, similar to human deliberation processes. This matters because it represents a significant step toward AI systems that can adaptively allocate computational resources based on task difficulty, with implications for both capability and interpretability.
+
+**[(Don't fear) the strangelet](https://www.lesswrong.com/posts/cBnCCKwwjQ4zZpeNQ/don-t-fear-the-strangelet)** - A technical analysis examining exotic physics risks from advanced technology, focusing on scenarios where novel physics could enable destructive capabilities beyond traditional nuclear weapons but below universe-ending threats. This matters because it explores the middle ground of catastrophic risks that advanced AI systems might enable through breakthrough physics discoveries.
