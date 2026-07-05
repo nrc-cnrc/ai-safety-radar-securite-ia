@@ -1,0 +1,23 @@
+# Communauté & Outils (2026-07-05)
+
+## Discussions clés
+
+**Mises à jour de sécurité et de fonctionnalités d'OpenAI Cookbook** : Plusieurs pull requests se concentrent sur l'amélioration de la sécurité, incluant un [correctif de haute gravité pour les clés API](https://github.com/openai/openai-cookbook/pull/2657) et l'ajout d'un [notebook de détection d'hallucinations](https://github.com/openai/openai-cookbook/pull/2629) utilisant le détecteur styxx à 9 signaux validé sur 8 benchmarks. Ceci importe car cela démontre le renforcement actif des ressources de développement IA largement utilisées et fournit des outils pratiques pour détecter les défaillances de modèles.
+
+**Problèmes de robustesse d'Aider AI Coding Assistant** : Plusieurs rapports de bugs soulignent des défaillances critiques dans [Aider v0.86.2](https://github.com/Aider-AI/aider/issues/5401), incluant des exceptions non capturées et une [corruption du formatage des modèles de raisonnement](https://github.com/Aider-AI/aider/issues/5396) lors de l'utilisation de modèles Ollama locaux avec des blocs de réflexion. Ceci importe car cela révèle des lacunes de fiabilité dans les outils de codage assistés par IA qui pourraient saper la confiance et la productivité des développeurs.
+
+**Expansion de l'architecture TransformerLens** : Le développement actif inclut des adaptateurs pour [Audio Spectrogram Transformer](https://github.com/TransformerLensOrg/TransformerLens/pull/1484), [Cohere2](https://github.com/TransformerLensOrg/TransformerLens/pull/1485), et [les modèles de langage par diffusion BD3LM](https://github.com/TransformerLensOrg/TransformerLens/pull/1479), élargissant les outils d'interprétabilité mécaniste à de nouvelles architectures. Ceci importe car cela élargit la gamme de modèles qui peuvent être analysés pour leurs mécanismes internes pertinents à la sécurité.
+
+**Outils d'audit de sécurité pour agents** : Nouvelles versions d'[agent-audit](https://github.com/worksOnMyFridge/agent-audit) et d'[agent-airlock](https://github.com/sattyamjjain/agent-airlock/releases/tag/v0.8.41) fournissent des frameworks d'évaluation de sécurité structurés et le renforcement du protocole MCP pour les systèmes d'agents. Ceci importe car cela répond au besoin critique d'évaluation systématique de la sécurité des systèmes IA de plus en plus autonomes.
+
+## Versions et outils GitHub notables
+
+**Agent-Airlock v0.8.41** : Version publiée [MCP 2026-07-28 renforcement final-spec](https://github.com/sattyamjjain/agent-airlock/releases/tag/v0.8.41) avec validation OAuth SEP-2468 et métriques ToolPrivBench OPUR pour mesurer les taux d'utilisation d'outils sur-privilégiés. Cela permet aux développeurs d'appliquer les principes de moindre privilège dans les déploiements d'agents, réduisant la surface d'attaque et l'utilisation accidentelle de capacités.
+
+**AetherLab Community v0.4.0** : [Refonte complète du SDK autour de l'API Guardrails réelle](https://github.com/AetherLabCo/aetherlab-community/releases/tag/v0.4.0), remplaçant les versions précédentes qui fabriquaient les résultats côté client. Cela fournit aux développeurs des capacités authentiques d'évaluation de sécurité de contenu plutôt que des implémentations factices.
+
+**SV-Gap v0.3.0-alpha.3** : Publication d'un [framework d'évaluation de génération SystemVerilog neutre en modèle](https://github.com/shsridhar-beep/svgap/releases/tag/v0.3.0-alpha.3) qui sépare la génération de l'évaluation et se connecte à tout générateur via stdin/stdout. Cela permet l'évaluation systématique de conceptions matérielles générées par IA, adressant les lacunes critiques de sécurité dans la conception de puces assistée par IA.
+
+**Sophia AGI v0.12.0** : Ajout de [machinerie d'entraînement d'intelligence](https://github.com/tomyimkc/sophia-agi/releases/tag/v0.12.0) avec moteur de seed ASI epiplexity×CVOCA, bien que notant explicitement que `canClaimAGI` reste faux. Cela démontre la recherche continue sur les architectures IA avancées tout en maintenant des déclarations claires de limites de capacités.
+
+**Hypothèse d'existence de l'information v1.1** : Publication de [collections de chapitres structurés](https://github.com/jacob-sha/Information-Existence-Hypothesis/releases/tag/v1.1) en chinois et anglais avec des standards de terminologie officiels sous licence CC BY 4.0. Cela fournit un framework théorique formel pour comprendre l'existence basée sur l'information qui peut informer la recherche en alignment IA.
