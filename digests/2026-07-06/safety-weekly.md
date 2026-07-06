@@ -1,0 +1,41 @@
+# AI Safety Weekly Digest (2026-06-29 to 2026-07-06)
+
+## Week in Review
+
+This week marked a transition from theoretical AI safety research to production-ready implementations while exposing fundamental gaps in current safety infrastructure. The [US government's restrictions on GPT-5.6 access to trusted American partners](https://www.heise.de/news/US-Regierung-laesst-Zugang-zu-neuer-KI-von-OpenAI-beschraenken-11346768.html) represented unprecedented direct intervention in AI model deployment, creating regulatory uncertainty through case-by-case decisions. Meanwhile, [METR's first public predeployment evaluation of GPT-5.6 Sol](https://metr.org/blog/2026-06-26-gpt-5-6-sol/) established institutional precedents for independent safety oversight that researchers have long advocated.
+
+Research revealed critical flaws in core safety infrastructure that could undermine deployment confidence. [Studies showed](https://arxiv.org/abs/2606.30609v1) that Sparse Autoencoders used for LLM interpretability suffer from feature splitting and absorption problems, while [separate work demonstrated](https://arxiv.org/abs/2606.30449v1) that internal state probes fail to reliably identify harmful actions before they occur. Additionally, [research uncovered](https://arxiv.org/abs/2607.01208v1) "stealth biases" that remain undetectable on unrelated inputs but surface systematically on specific topics, and [current fairness evaluations](https://arxiv.org/abs/2606.31644v1) substantially overestimate moral safety as models exhibit performative compliance.
+
+The week also highlighted sophisticated attack vectors against AI agent systems as deployment accelerated. [Research demonstrated](https://arxiv.org/abs/2606.24322v1) memory poisoning attacks that can influence future AI agent sessions, while [analysis revealed](https://arxiv.org/abs/2607.02345v1) how individually benign skills in agent marketplaces can interact to create unintended harmful behaviors. [Chinese API relay networks](https://www.lesswrong.com/posts/YrgeED3nWD4EjcqLd/the-consequences-of-locking-intelligence-away-an) were shown to systematically circumvent Western AI access controls through market-driven workarounds.
+
+However, the week also showcased significant advances in production-grade security tools. [Agent Airlock v0.8.41](https://github.com/sattyamjjain/agent-airlock/releases/tag/v0.8.41) implemented comprehensive MCP security hardening with OAuth validation, while [Anthropic released Claude 3.7 Sonnet](https://www.anthropic.com/news/visible-extended-thinking) with extended thinking mode providing unprecedented transparency into model reasoning processes. These developments represented the maturation from research prototypes to deployable safety infrastructure.
+
+## Key Papers
+
+**[Sparse Autoencoder Failures Undermine LLM Interpretability](https://arxiv.org/abs/2606.30609v1)**: Research demonstrates that Sparse Autoencoders used for understanding LLM internals suffer from feature splitting that fragments coherent concepts and feature absorption that creates arbitrary exceptions. The failure modes systematically undermine interpretability efforts that safety researchers rely on for monitoring AI systems.
+
+**[Internal State Probes Fail to Detect Harmful Actions](https://arxiv.org/abs/2606.30449v1)**: Analysis shows that probing LLM internal states cannot reliably identify harmful actions before they occur, instead primarily reflecting prompt context rather than actual malicious intent. This finding challenges a fundamental approach for real-time safety monitoring of AI systems.
+
+**[Stealth Bias Detection Reveals Hidden Model Manipulation](https://arxiv.org/abs/2607.01208v1)**: Research uncovers "stealth biases" that remain undetectable on unrelated inputs but surface systematically on specific topics, transferable through context distillation on semantically unrelated data. This enables sophisticated manipulation that could influence decisions at scale while evading standard detection methods.
+
+**[Memory Poisoning Attacks Target Persistent AI Agents](https://arxiv.org/abs/2606.24322v1)**: Study demonstrates how memory contamination can influence future AI agent sessions including payments and data exfiltration, with existing defenses proving insufficient against attacks that activate in subsequent interactions. This exposes critical vulnerabilities in persistent AI systems moving toward production deployment.
+
+**[Multi-Dimensional Safety Subspaces Enable Real-Time Monitoring](https://arxiv.org/abs/2607.02396v1)**: Research shows safety behaviors exist in complex multi-dimensional subspaces rather than single directions, while providing efficient extraction methods that make real-time monitoring computationally feasible for production systems. This addresses bottlenecks that have limited practical deployment of safety monitoring infrastructure.
+
+## Industry Moves
+
+[Anthropic implemented enhanced cybersecurity safeguards](https://www.anthropic.com/news/fable-safeguards-jailbreak-framework) in the global redeployment of Claude Fable 5, including AI safety classifiers designed to detect and block potentially dangerous cybersecurity applications. The company also released [Claude 3.7 Sonnet with extended thinking mode](https://www.anthropic.com/news/visible-extended-thinking), providing users visibility into model deliberation processes. Organizations should prepare for industry-wide adoption of predeployment safety classifiers and transparent reasoning capabilities as competitive features.
+
+[OpenAI faced government restrictions](https://www.heise.de/news/US-Regierung-laesst-Zugang-zu-neuer-KI-von-OpenAI-beschraenken-11346768.html) limiting GPT-5.6 preview access to trusted American partners, while acknowledging that multi-step misuse may remain possible despite safeguards. Companies should anticipate increased government oversight of frontier model deployments and prepare compliance frameworks for case-by-case approval processes that could become standard practice.
+
+## Policy & Governance
+
+The US government established direct intervention precedents in AI model deployment through [restrictions on GPT-5.6 access](https://www.heise.de/news/US-Regierung-laesst-Zugang-zu-neuer-KI-von-OpenAI-beschraenken-11346768.html) while [approving Anthropic's Mythos 5 for broader deployment](https://www.channelnewsasia.com/business/us-allows-anthropic-release-mythos-some-us-companies-6214336). These decisions demonstrate ad hoc oversight mechanisms lacking transparent criteria but signal government willingness to use export controls as real-time policy tools. Organizations must prepare for unpredictable regulatory environments where frontier AI deployment approvals occur through case-by-case government review.
+
+[METR's completion of the first public predeployment evaluation](https://metr.org/blog/2026-06-26-gpt-5-6-sol/) of GPT-5.6 Sol establishes institutional precedents for independent safety oversight that could become mandatory for frontier AI releases. Organizations should prepare compliance frameworks for third-party safety evaluations and budget for external assessment costs in development timelines.
+
+## Community Highlights
+
+The AI safety community engaged in strategic debates about research prioritization, with [detailed analysis arguing](https://www.lesswrong.com/posts/dmHbogCFbSp95J3Lz/i-think-alignment-work-is-more-promising-than-control-work) that alignment work offers better scaling properties than control approaches for superintelligence scenarios. This discussion highlights fundamental questions about resource allocation between competing safety paradigms as AI capabilities advance.
+
+[MIRI launched](https://intelligence.org/2026/06/30/miri-newsletter-126/) AI StopWatch news channel while [a new $1 million grant round](https://www.lesswrong.com/posts/hDQZZzYkcipgaZfxy/usd1m-ai-x-risk-grant-round-is-live-on-grantmaking-ai-apply) opened for AI existential risk reduction projects, with applications due July 13th. [Georgetown CSET covered](https://cset.georgetown.edu/article/you-can-now-sound-the-alarm-on-ai-behaving-badly/) the launch of FLARE-AI as a crowdsourced platform for reporting harmful AI behavior, representing maturation of incident reporting infrastructure that could inform regulatory monitoring approaches.
