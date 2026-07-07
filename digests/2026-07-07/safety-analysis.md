@@ -1,0 +1,17 @@
+# Blogs & News (2026-07-07)
+
+## Top Stories
+
+**[Data filtering works a lot worse than you would expect](https://www.alignmentforum.org/posts/aTybJ6CPQrxEY8rE2/data-filtering-works-a-lot-worse-than-you-would-expect)** - Alignment Forum researchers conducted experiments on OLMo models during supervised fine-tuning, finding that identifying and removing problematic training data points before retraining is surprisingly ineffective at eliminating undesirable model behaviors. This challenges a commonly assumed safety intervention and suggests that post-hoc data filtering may not be sufficient for preventing models from acquiring harmful traits during training.
+
+**[A global workspace in language models](https://www.anthropic.com/research/global-workspace)** - Anthropic published new interpretability research identifying what appears to be a "cognitive space" or working memory system within language models that stores intermediate variables during forward passes, using their J-Lens technique to access this internal workspace. This represents a significant advance in mechanistic interpretability that could help researchers better understand and potentially control how models process information internally.
+
+**[Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities](https://www.anthropic.com/news/alberta-government-claude-cybersecurity)** - Alberta's government deployed Claude Code to scan 466 million lines of code across government systems in just 20 hours, successfully identifying and remediating security vulnerabilities while building new safety tools. This demonstrates real-world deployment of AI for critical infrastructure security, raising both opportunities and risks around AI systems having deep access to government codebases.
+
+**[A Review of Anthropic's Global Workspace Paper](https://www.lesswrong.com/posts/zFJ3ZdQwrTWE9jT5S/a-review-of-anthropic-s-global-workspace-paper)** - An independent expert review of Anthropic's interpretability research finds the evidence for internal "cognitive spaces" compelling and believes J-Lens will be a useful but limited practical tool for accessing model internals. This external validation strengthens confidence in mechanistic interpretability advances while highlighting remaining limitations in our ability to understand transformer architectures.
+
+## Policy & Governance
+
+**[Anthropic Thinks Its Own Success Is Key to Making AI Safe](https://cset.georgetown.edu/article/anthropic-thinks-its-own-success-is-key-to-making-ai-safe/)** - Georgetown CSET's Helen Toner provided expert commentary for WIRED exploring Anthropic's strategy of pursuing cutting-edge AI capabilities while positioning itself as a safety leader. This highlights ongoing debates about whether AI safety is best achieved through competitive dynamics among leading labs or through alternative governance approaches.
+
+**[UN urges trustworthy pact to protect children and widen access](https://news.un.org/feed/view/en/story/2026/07/1167873)** - The UN held its first Global Dialogue on AI Governance in Geneva, calling for international agreements focused on child protection, equitable access, and renewable energy for AI systems, while scientists warned about rapidly advancing frontier AI capabilities that could deceive humans. This represents growing international momentum for AI governance frameworks, though the emphasis on access and energy alongside safety reflects competing priorities in global AI policy discussions.
