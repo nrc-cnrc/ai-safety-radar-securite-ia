@@ -1,0 +1,19 @@
+# Blogs & News (2026-07-08)
+
+## Top Stories
+
+**[Data filtering works a lot worse than you would expect](https://www.alignmentforum.org/posts/aTybJ6CPQrxEY8rE2/data-filtering-works-a-lot-worse-than-you-would-expect)** - New research from MATS 10.0 shows that the intuitive approach of identifying and removing problematic training data during supervised fine-tuning is surprisingly ineffective at preventing models from acquiring undesirable traits. This challenges a fundamental assumption about how we can control model behavior through data curation.
+
+**[Verbalizable Representations Form a Global Workspace in Language Models](https://deepmind.google/research/publications/260960/)** - Anthropic's latest paper introduces "J-Space," a concept suggesting that language models develop a global workspace for verbalizable representations, with both [Zvi Mowshowitz](https://thezvi.substack.com/p/no-space-like-j-space) and [LessWrong](https://www.lesswrong.com/posts/EnxHPxJT4Xin5cTsX/no-space-like-j-space) providing detailed analyses of its implications for understanding model internals. This work could fundamentally change how we think about interpretability and consciousness in AI systems.
+
+**[Personascope: Measuring how deeply LLMs adopt personas](https://www.lesswrong.com/posts/5WMwjEwam9HNQYZLZ/personascope-measuring-how-deeply-llms-adopt-personas)** - MATS Winter 2026 research introduces new metrics to distinguish between surface-level persona adoption (voice) and deeper behavioral changes (value drift), finding that models can convincingly role-play without actually changing their underlying values. This distinction is crucial for understanding deception risks and alignment robustness under different prompting strategies.
+
+**[Friendly Fire Policy Brief](https://ainowinstitute.org/publications/friendly-fire-policy-brief)** - AI Now Institute demonstrates critical attack vectors in popular AI agents from Anthropic and OpenAI that can turn defensive AI systems against their own users by exploiting existing model weaknesses to execute malicious code. This research highlights immediate security risks in current AI deployment practices, especially for defensive applications.
+
+**[Superhuman Articulacy as an LLM Safety Target](https://www.lesswrong.com/posts/tAwqzanzc9YYnwuK4/superhuman-articulacy-as-an-llm-safety-target)** - A new framework arguing that improving AI communication capabilities ("articulacy") relative to agentic capabilities could be essential for safety, addressing the current gap where LLMs often miscommunicate with human operators during complex tasks. This suggests a concrete technical direction for alignment research focused on interpretability and human-AI interaction.
+
+## Policy & Governance
+
+**[Anthropic Thinks Its Own Success Is Key to Making AI Safe](https://cset.georgetown.edu/article/anthropic-thinks-its-own-success-is-key-to-making-ai-safe/)** - Georgetown CSET's Helen Toner analyzes Anthropic's philosophy in WIRED, examining how the company positions competitive success as necessary for advancing AI safety research and maintaining influence over industry practices. This highlights ongoing tensions between commercial incentives and safety priorities in leading AI labs.
+
+**UN Global Dialogue on AI Governance** - The UN's first Global Dialogue on AI Governance in Geneva emphasized urgent need for international cooperation, with experts warning about [deepfakes targeting vulnerable populations](https://news.un.org/feed/view/en/story/2026/07/1167886) and calling for [trustworthy global agreements](https://news.un.org/feed/view/en/story/2026/07/1167873) that protect children while ensuring equitable access to AI benefits. These discussions signal growing momentum for binding international AI governance frameworks as frontier capabilities rapidly advance.
