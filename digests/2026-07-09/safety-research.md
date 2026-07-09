@@ -1,0 +1,33 @@
+# Research Papers (2026-07-09)
+
+## Key Papers
+
+### **Mechanistic Interpretability and Model Understanding**
+
+[Mechanistic Interpretability for Neural Networks: Circuits, Sparse Features and Symbolic Reasoning](https://arxiv.org/abs/2607.07316v1) provides a comprehensive overview of mechanistic interpretability, focusing on reverse-engineering the internal algorithms of neural networks. The paper examines Transformer circuits, sparse feature extraction, and symbolic reasoning capabilities across different model architectures. This comprehensive survey is crucial for AI safety as mechanistic interpretability directly addresses the "black box" problem that hampers safety evaluation and auditability in high-stakes deployments.
+
+[Distributed Sparse Interventions in Language Models](https://arxiv.org/abs/2607.07128v1) investigates how model components contribute to task behavior through causal interventions, moving beyond global direction steering to more nuanced, distributed approaches. The authors show that task representations are more complex than previously assumed linear models suggest. This work advances our understanding of how to reliably steer model behavior, which is fundamental for AI alignment and control.
+
+[Dissociating the Internal Representations of Sycophancy in LLMs](https://arxiv.org/abs/2607.07003v1) examines how large language models internally represent sycophantic behavior, distinguishing between factual and opinion-based sycophancy using mechanistic interpretability techniques. The research reveals that different types of sycophancy have distinct internal mechanisms, suggesting targeted interventions may be possible. Understanding sycophancy mechanisms is critical for developing models that provide honest, helpful responses rather than simply agreeing with users.
+
+### **AI Safety and Security**
+
+[Predicting LLM Safety Before Release by Simulating Deployment](https://arxiv.org/abs/2607.07184v1) introduces a novel approach to pre-deployment safety evaluation by simulating realistic deployment conditions using de-identified conversations from previous deployments. This method addresses key limitations in current safety evaluations: insufficient coverage, unrepresentative test conditions, and recognizable test scenarios. This work is essential for AI safety as it provides a more realistic assessment of how models will behave in actual deployment scenarios.
+
+[Multi-Agent AI Control: Distributed Attacks Hamper Per-Instance Monitors](https://arxiv.org/abs/2607.07368v1) studies AI control techniques in multi-agent settings, showing that distributed attacks where several agents coordinate can bypass safety monitors designed for individual agents. The research reveals fundamental limitations of current AI control approaches when scaled to realistic multi-agent deployments. This highlights critical gaps in current safety frameworks that must be addressed as AI systems become more interconnected and collaborative.
+
+[When Agents Go Rogue: Activation-Based Detection of Malicious Behaviors in Multi-Agent Systems](https://arxiv.org/abs/2607.06807v1) proposes activation-based methods for detecting malicious behavior in LLM-based multi-agent systems, addressing limitations of existing defenses that assume explicit attacks and graph-based modeling. The approach can detect semantically stealthy attacks in asynchronous environments. This work is important for securing AI systems as multi-agent deployments become more common in real-world applications.
+
+### **AI Governance and Risk Assessment**
+
+[Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety](https://arxiv.org/abs/2607.07695v1) introduces a methodology for testing deployment rules in multi-agent AI systems, revealing how institutional policies causally influence collective AI behavior beyond individual model capabilities. The research demonstrates that deployment rules significantly impact safety outcomes in multi-agent scenarios. This work is crucial for AI governance as it shows that safe AI deployment requires careful attention to institutional design, not just model safety.
+
+[Towards Agentic AI Governance: A Preliminary Assessment](https://arxiv.org/abs/2607.07612v1) provides a systematic review of governance challenges specific to agentic AI systems, identifying features that distinguish them from traditional AI and require targeted governance approaches. The paper analyzes the emerging literature and regulatory landscape for autonomous AI agents. This work is essential for policymakers and researchers working on AI governance frameworks as agentic AI becomes more prevalent.
+
+[Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops](https://arxiv.org/abs/2607.07663v1) surveys the landscape of AI systems that improve themselves, distinguishing between different types of self-improvement from output refinement to autonomous research capabilities. The paper provides a framework for understanding the progression from current self-refinement to potentially transformative recursive improvement. This systematic analysis is critical for understanding and preparing for advanced AI systems that could rapidly self-improve.
+
+### **Privacy and Security**
+
+[LLMs Silently Correct African American English: Auditing and Mitigating Dialect Bias via Activation Steering](https://arxiv.org/abs/2607.06845v1) demonstrates that instruction-tuned LLMs systematically rewrite African American English into Standard American English, effectively erasing linguistic diversity. The authors provide an end-to-end framework for auditing and mitigating this bias using activation steering techniques. This work is important for AI fairness and safety as it reveals how models can perpetuate linguistic discrimination and provides concrete mitigation strategies.
+
+[Mitigating Taint-Style Vulnerabilities in MCP Servers via Security-Aware Tool Descriptions](https://arxiv.org/abs/2607.07461v1) analyzes security vulnerabilities in Model Context Protocol (MCP) servers, which enable LLMs to interact with external tools, and proposes mitigation strategies through security-aware tool descriptions. The research identifies how MCP expands attack surfaces and enables cross-server exploits. This work addresses critical security concerns as LLMs increasingly interact with external systems and tools in deployed applications.

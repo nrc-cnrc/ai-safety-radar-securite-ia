@@ -380,7 +380,8 @@
     "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
     "https://www.anthropic.com/news/visible-extended-thinking",
     "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
-    "https://www.anthropic.com/research/global-workspace"
+    "https://www.anthropic.com/research/global-workspace",
+    "https://www.anthropic.com/research/off-switch-dual-use"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -1023,6 +1024,7 @@
     "https://palisaderesearch.org/blog/ai-control-palisade-2026",
     "https://palisaderesearch.org/blog/shutdown-resistance-on-robots",
     "https://palisaderesearch.org/blog/announcing-our-new-youtube-channel",
-    "https://palisaderesearch.org/blog/self-replication"
+    "https://palisaderesearch.org/blog/self-replication",
+    "https://palisaderesearch.org/blog/four-corners-loss-of-control"
   ]
 }

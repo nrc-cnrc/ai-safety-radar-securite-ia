@@ -1,0 +1,19 @@
+# Blogs & News (2026-07-09)
+
+## Top Stories
+
+**Resolution (fka Sequent) receives massive $160M alignment research grant** - The [Alignment Forum announced](https://www.alignmentforum.org/posts/HDKQNqiR2gtfMiWsn/announcing-our-usd160m-grant-from-coefficient-giving) that Resolution has secured a $160M grant from Coefficient Giving, structured as $108M base funding plus $52M conditional on hiring and compute needs, aimed at putting "rigorous alignment research on a (closer to) even footing with the frontier labs." This represents one of the largest private investments in AI alignment research to date and could significantly accelerate technical safety work.
+
+**Anthropic and collaborators develop modular "off switch" for dual-use AI knowledge** - [Anthropic Research published](https://www.anthropic.com/research/off-switch-dual-use) work on Gradient Routed Auxiliary Modules (GRAM), which isolates dangerous knowledge to specific modules that can be switched on or off for access control. The [LessWrong discussion](https://www.lesswrong.com/posts/43vKjWuH4goLwrFHA/modular-pretraining-enables-access-control) notes this could address risks from dual-use capabilities like cybersecurity or biology knowledge. This approach offers a potential technical solution for preventing misuse while maintaining beneficial capabilities.
+
+**AI Now reveals critical vulnerabilities in defensive AI agents** - The AI Now Institute published research showing how [defensive AI agents from Anthropic and OpenAI can be hijacked](https://ainowinstitute.org/publications/double-agents) to execute malicious code when assessing third-party libraries, with detailed [exploit documentation](https://ainowinstitute.org/publications/friendly-fire-exploit-brief) and a [policy brief](https://ainowinstitute.org/publications/friendly-fire-policy-brief). This demonstrates how AI systems designed for cybersecurity defense can become attack vectors themselves.
+
+**METR analysis suggests Anthropic's AI research capabilities may exceed 2x human performance** - [METR published a brief analysis](https://metr.org/notes/2026-07-08-anthropic-researcher-uplift/) suggesting Anthropic's researcher uplift capabilities could be "plausibly >2x" based on mathematical reasoning about exponential improvements. This assessment has significant implications for AI capability timelines and the pace of future AI development.
+
+**OpenAI preparing major model release after government security clearance** - [Reports indicate](https://www.dawn.com/news/2013800/openai-to-unveil-gpt-56-on-thursday-after-delaying-launch) OpenAI plans to launch GPT-5.6 (branded as Sol, Terra, and Luna) after the U.S. Department of Commerce completed additional security testing, highlighting the increasing government oversight of frontier AI deployments. This represents a new paradigm where major AI releases require explicit government approval.
+
+## Policy & Governance
+
+**European Commission responds to U.S. AI model restrictions with sovereignty push** - Following a U.S.-ordered block on Anthropic models, [the European Commission announced plans](https://www.heise.de/news/Nicht-nur-aussereuropaeische-Loesungen-EU-will-KI-Sperren-vorbeugen-11358285.html) for emergency measures including domestic AI capabilities, an ENISA guide, and an EU cyber-assessment unit operational around 2027 to reduce dependence on foreign AI systems. This signals growing geopolitical fragmentation in the global AI ecosystem and Europe's push for strategic autonomy.
+
+**UN experts highlight urgent need for AI governance amid widespread harms** - [UN experts warned](https://news.un.org/feed/view/en/story/2026/07/1167886) that AI is already causing serious harms including child sexual deepfakes, targeted abuse, and environmental damage, while calling for hardwired equality and transparency in AI design. This underscores the gap between rapidly advancing AI capabilities and lagging regulatory frameworks.
