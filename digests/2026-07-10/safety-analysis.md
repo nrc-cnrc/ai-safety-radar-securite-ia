@@ -1,0 +1,19 @@
+# Blogs & News (2026-07-10)
+
+## Top Stories
+
+The [AI Now Institute's "Friendly Fire" research](https://ainowinstitute.org/publications/double-agents) reveals a critical vulnerability where AI agents from Anthropic and OpenAI can be hijacked when used for defensive cybersecurity purposes, enabling remote code execution against their own users. This research matters because it demonstrates how AI tools designed to enhance security can become attack vectors themselves, highlighting the dual-use risks of deploying AI agents in critical infrastructure.
+
+A new [study on natural language autoencoders](https://www.alignmentforum.org/posts/LQXWiF8PyJ5ojNsEv/how-robust-are-natural-language-autoencoders-to) examines their robustness to different initialization approaches, finding that while these interpretability tools show some resilience to irrelevant statements, their training relies heavily on Claude's guesses about model thinking. This matters for AI safety because natural language autoencoders are a promising approach for understanding what models are actually thinking, but their reliability depends on the quality of their training data.
+
+[Anthropic announced](https://www.anthropic.com/news/ben-bernanke) that former Federal Reserve Chair Ben Bernanke has joined their Long-Term Benefit Trust, an independent body designed to hold the company accountable to responsible AI development. This appointment signals Anthropic's continued focus on governance structures as AI capabilities advance, particularly important given the increasing scrutiny of AI lab governance.
+
+The [AI Futures Project released "AI 2040: Plan A"](https://www.alignmentforum.org/posts/pFzctpJBat95SrCyC/ai-2040-plan-a), a normative scenario recommending delaying superintelligence until 2040 to allow for better safety preparation, though it has already drawn [substantive criticism](https://www.lesswrong.com/posts/BBd2EJywf2xXftyFn/selective-optimism-a-critique-of-ai-2040) for "selective optimism." This matters because it represents one of the few concrete proposals for how AI development timelines could be managed to prioritize safety over speed.
+
+OpenAI plans to [launch GPT-5.6 (branded as Sol, Terra, and Luna)](https://www.dawn.com/news/2013800/openai-to-unveil-gpt-56-on-thursday-after-delaying-launch) after receiving U.S. government clearance following additional security testing under new oversight frameworks. This development illustrates the increasing integration of government review processes into AI model releases, suggesting a shift toward more regulated deployment of advanced AI systems.
+
+## Policy & Governance
+
+The European Commission is reportedly [planning emergency measures](https://www.heise.de/news/Nicht-nur-aussereuropaeische-Loesungen-EU-will-KI-Sperren-vorbeugen-11358285.html) to build domestic AI capabilities after experiencing U.S.-ordered blocks on accessing certain AI models, including plans for an EU cyber-assessment unit and secure testing platforms for critical infrastructure. This represents a significant shift toward AI sovereignty as geopolitical tensions increasingly affect access to advanced AI systems.
+
+A [LessWrong post argues](https://www.lesswrong.com/posts/MaXtWhyArguty23Mi/ai-safety-policy-needs-to-train-legal-practitioners) that AI safety policy efforts need to focus more on training legal practitioners who will actually implement and interpret AI regulations, rather than just developing high-level policy frameworks. This matters because the gap between policy intention and legal implementation could undermine even well-designed AI safety regulations.

@@ -55,7 +55,11 @@
     "https://www.aisi.gov.uk/research/ai-alignment-is-a-human-problem",
     "https://www.aisi.gov.uk/blog/releasing-aisis-engineering-playbook",
     "https://www.aisi.gov.uk/blog/more-compute-more-capability-why-ai-agent-evals-need-to-account-for-test-time-compute",
-    "https://www.aisi.gov.uk/blog/finding-cloud-misconfigurations-with-frontier-ai-a-case-study"
+    "https://www.aisi.gov.uk/blog/finding-cloud-misconfigurations-with-frontier-ai-a-case-study",
+    "https://www.aisi.gov.uk/research/did-you-lie-evaluating-lie-detectors-across-model-scale-and-belief-verified-model-organisms",
+    "https://www.aisi.gov.uk/research/prefill-awareness-in-large-language-models",
+    "https://www.aisi.gov.uk/research/consistency-training-can-entrench-misalignment",
+    "https://www.aisi.gov.uk/research/a-decision-theoretic-formalisation-of-steganography-with-applications-to-llm-monitoring"
   ],
   "Canada AI Safety Institute (CAISI)": [],
   "Japan AI Safety Institute (J-AISI)": [],
@@ -163,7 +167,8 @@
     "https://digital-strategy.ec.europa.eu/en/news/report-highlights-importance-digital-services-act-protection-minors-online",
     "https://digital-strategy.ec.europa.eu/en/news/press-statement-european-board-digital-services-following-its-19th-meeting",
     "https://digital-strategy.ec.europa.eu/en/news/commission-presents-eu-action-plan-cybersecurity-and-artificial-intelligence",
-    "https://digital-strategy.ec.europa.eu/en/news/commission-refers-ireland-spain-france-and-netherlands-court-justice-failing-transpose-rules"
+    "https://digital-strategy.ec.europa.eu/en/news/commission-refers-ireland-spain-france-and-netherlands-court-justice-failing-transpose-rules",
+    "https://digital-strategy.ec.europa.eu/en/news/eu-and-australia-discuss-shared-priorities-third-digital-dialogue"
   ],
   "Korea AI Safety Institute": [
     "https://www.msit.go.kr/eng/newsLetter/list.do?sCode=eng&mPid=2&mId=8"

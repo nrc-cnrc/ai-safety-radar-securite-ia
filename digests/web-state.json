@@ -381,7 +381,11 @@
     "https://www.anthropic.com/news/visible-extended-thinking",
     "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
     "https://www.anthropic.com/research/global-workspace",
-    "https://www.anthropic.com/research/off-switch-dual-use"
+    "https://www.anthropic.com/research/off-switch-dual-use",
+    "https://www.anthropic.com/news/ben-bernanke",
+    "https://www.anthropic.com/news/hard-questions",
+    "https://www.anthropic.com/news/reflect-with-claude",
+    "https://www.anthropic.com/news/ust-claude"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -461,7 +465,8 @@
     "https://www.apolloresearch.ai/blog/science_category/evaluations/",
     "https://www.apolloresearch.ai/blog/science_category/interpretability/",
     "https://www.apolloresearch.ai/blog/science_category/notes/",
-    "https://www.apolloresearch.ai/blog/product_category/monitoring/"
+    "https://www.apolloresearch.ai/blog/product_category/monitoring/",
+    "https://www.apolloresearch.ai/blog/monitoring_category/monitoring/"
   ],
   "Epoch AI": [
     "https://epoch.ai/blog/a-compute-based-framework-for-thinking-about-the-future-of-ai",
