@@ -1,0 +1,17 @@
+# Communauté & Outils (2026-07-11)
+
+## Discussions clés
+
+**Proposition d'une métrique behavioral_drift pour détecter l'effondrement silencieux de modèle** - La communauté du harnais d'évaluation EleutherAI discute d'[une nouvelle métrique d'évaluation](https://github.com/EleutherAI/lm-evaluation-harness/issues/3924) qui détecterait quand les sorties d'un modèle se dégradent en motifs répétitifs malgré le maintien des scores de perplexité. La proposition inclut des preuves issues d'un fine-tuning de 6 rounds où la perte s'améliorait mais les sorties devenaient du charabia répétitif. Cela adresse un angle mort critique où les benchmarks standards manquent la dégradation de la qualité des sorties.
+
+**Intégration de lentille jacobienne (J-lens) proposée pour TransformerLens** - Un membre de la communauté a demandé [un support de première classe pour la technique de lentille jacobienne](https://github.com/TransformerLensOrg/TransformerLens/issues/1505) issue de l'article d'Anthropic de juillet 2026 sur les représentations verbalisables formant un espace de travail global dans les modèles de langue. Cela permettrait de charger les lentilles publiées, de les ajuster nativement, et de réaliser des interventions via l'API TransformerLens.
+
+**Implémentation d'un serveur d'autorisation OAuth2 dans Phoenix** - Le Phoenix d'Arize [devient un serveur d'autorisation OAuth2](https://github.com/Arize-ai/phoenix/pull/14175), permettant aux outils CLI et plateformes d'agents d'obtenir des jetons via le flux standard authorization-code + PKCE plutôt que par provisioning manuel de clés API. Cela représente une étape significative vers des outils d'observabilité IA prêts pour la production avec des flux d'authentification appropriés.
+
+## Versions GitHub & Outils notables
+
+**Yana-AI v0.43.2** - Sortie d'une nouvelle version avec [des corrections de mise en page responsive](https://github.com/yanacuti1121/Yana-AI/releases/tag/v0.43.2) adressant les problèmes d'affichage mobile et de fenêtres étroites, plus des améliorations du bouton de lecture TTS et la publication de confiance OIDC pour npm. Cela permet de meilleures expériences d'assistant IA sur différentes tailles d'écran et améliore la sécurité du workflow de développement.
+
+**Arize Phoenix v17.25.0 & v17.26.0** - Deux sorties rapides incluant [des outils de configuration d'annotation avec validation d'approbation](https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v17.25.0) et [des capacités de rafraîchissement d'identifiants OAuth](https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v17.26.0), évoluant vers une observabilité IA de grade production avec authentification et contrôles de workflow appropriés. Ces versions permettent un déploiement prêt pour l'entreprise de systèmes de surveillance IA.
+
+**Gubernaut Validation v1.0.0** - Un [enregistrement de validation complet pour un contrôleur homéostatique déterministe](https://github.com/thegubernaut/Gubernaut_Validation/releases/tag/v1.0.0) pour agents LLM régulés par l'affect, incluant toutes les transcriptions, panels de juges, et données de validation scellées avec des résultats reproductibles. Cela fournit une implémentation de référence pour la régulation émotionnelle dans les agents IA avec des propriétés de sécurité vérifiables.
