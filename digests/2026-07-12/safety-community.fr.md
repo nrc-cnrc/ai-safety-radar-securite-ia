@@ -1,0 +1,23 @@
+# Communauté et outils (2026-07-12)
+
+## Discussions importantes
+
+**Rapports de vulnérabilité de sécurité dans l'infrastructure d'évaluation de l'IA** : Le [dépôt EleutherAI/lm-evaluation-harness a reçu un rapport de vulnérabilité de sécurité](https://github.com/EleutherAI/lm-evaluation-harness/issues/3926) concernant une potentielle exécution de code à distance, soulignant l'importance de la gestion sécurisée des frameworks d'évaluation largement utilisés pour l'assessment des modèles d'IA. Cela importe car une infrastructure d'évaluation compromise pourrait compromettre la fiabilité des évaluations de sécurité de l'IA dans toute la communauté de recherche.
+
+**Expansion de l'évaluation de sécurité de l'IA médicale** : Plusieurs PRs ont ajouté des tâches de sécurité de l'IA médicale aux frameworks d'évaluation, incluant les tâches [MedFailBench](https://github.com/EleutherAI/lm-evaluation-harness/pull/3918) et [Turkish Clinical Source Support](https://github.com/EleutherAI/lm-evaluation-harness/pull/3903) au LM Evaluation Harness, établissant un nouveau groupe de tâches `clinical_safety`. Ceci représente une infrastructure critique pour évaluer les systèmes d'IA dans des contextes médicaux à forts enjeux où les défaillances de sécurité peuvent avoir des conséquences graves dans le monde réel.
+
+**Problèmes d'implémentation des garde-fous de sortie** : Le [projet NeMo Guardrails a révélé une vulnérabilité critique d'analyse](https://github.com/NVIDIA-NeMo/Guardrails/issues/2044) où la fonction `is_content_safe()` pouvait incorrectement classer du contenu non sûr comme sûr en raison d'une inspection limitée des tokens, contournant potentiellement les garde-fous de sécurité du contenu, d'auto-vérification et de fact-checking. Cela démontre comment des bugs d'implémentation subtils peuvent créer des failles de sécurité significatives dans les systèmes de garde-fous de production.
+
+**Frameworks de sécurité pour agents IA** : Plusieurs dépôts ont introduit des frameworks de sécurité complets pour les agents IA, incluant le [routage d'autorité pour les agents utilisant des outils](https://github.com/openai/openai-cookbook/pull/2695) et la [détection Agent Threat Rules (ATR)](https://github.com/NVIDIA-NeMo/Guardrails/pull/1992) comme approche standardisée pour détecter les attaques d'agents IA. Ces développements indiquent une reconnaissance croissante que les systèmes d'IA agentiques nécessitent des mesures de sécurité spécialisées au-delà des approches traditionnelles de sécurité des LLM.
+
+## Sorties GitHub et outils notables
+
+**HaluCatch v1.8.6** : [Publié](https://github.com/CoderMoray/HaluCatch/releases/tag/v1.8.6) avec des capacités de détection d'hallucinations mises à jour, bien que les changements spécifiques soient documentés dans le changelog chinois. Cet outil permet aux développeurs d'identifier et d'atténuer les hallucinations dans le contenu généré par l'IA.
+
+**Claim Fidelity v0.1.0** : [Première version publique](https://github.com/submit77/claim-fidelity/releases/tag/v0.1.0) d'un artefact de recherche comportant une bibliothèque Lean 4 de 32 fichiers avec 99 déclarations de théorèmes, démontrant que les preuves valides par machine n'impliquent pas nécessairement un statut de licence de revendication. Ceci importe pour assurer la rigueur mathématique dans les arguments de sécurité de l'IA et les approches de vérification formelle.
+
+**gate.cat v0.4.11** : [Publié](https://github.com/BGMLAI/gate.cat/releases/tag/v0.4.11) avec une couverture étendue fermant 67 failles de sécurité après des tests adverses avec 444 commandes irréversibles concrètes sur 16 surfaces (AWS/GCP/Azure, Kubernetes, bases de données, etc.). Cet outil fournit une défense cruciale contre les actions dangereuses d'agents IA dans les environnements de production.
+
+**ContextLock v0.1.0** : [Première version](https://github.com/LutaElbert/contextlock/releases/tag/v0.1.0) d'un serveur MCP (Model Context Protocol) pour l'inspection sécurisée de dépôts, fournissant des compétences d'agent portables avec des garde-fous de sécurité intégrés. Cela permet aux agents IA d'interagir avec les bases de code tout en maintenant les frontières de sécurité.
+
+**Défi d'implémentation externe en chambre propre** : Le [protocole EMILIA a publié v1](https://github.com/emiliaprotocol/emilia-protocol/releases/tag/clean-room-kit-v1) comme ensemble d'entrée sans source pour l'implémentation de vérificateur indépendant, contenant des spécifications, des suites de conformité et des instructions d'implémentation. Ceci soutient les évaluations de sécurité reproductibles en permettant la vérification indépendante des protocoles cryptographiques.
