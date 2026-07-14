@@ -1,0 +1,29 @@
+# Articles de recherche (2026-07-14)
+
+## Articles clés
+
+### Sécurité et alignment
+
+[**HyperSafe: Inference-Time Safety Recovery for Fine-Tuned Language Models**](https://arxiv.org/abs/2607.11475v1) s'attaque à une vulnérabilité critique des systèmes d'IA déployés : comment l'alignment de sécurité peut se dégrader lors du fine-tuning spécifique à une tâche. Les auteurs proposent une approche post-hoc qui modifie les activations du modèle au moment de l'inférence pour restaurer les propriétés de sécurité sans réentraînement ni modification des poids. Cela représente une solution pratique pour maintenir la sécurité dans des environnements de production où les modèles subissent une adaptation continue.
+
+[**Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias**](https://arxiv.org/abs/2607.11871v1) adopte une approche mécanistique novatrice pour comprendre le biais dans les systèmes d'évaluation LLM. Plutôt que d'examiner uniquement les motifs entrée-sortie, les chercheurs analysent les représentations internes qui conduisent aux jugements biaisés à travers sept juges et sept types de biais. Ce travail est crucial alors que les systèmes LLM-as-judge deviennent de plus en plus centraux dans l'évaluation et les décisions de déploiement de l'IA.
+
+[**When Local Monitors Miss Compositional Harm: Diagnosing Distributed Backdoors in Multi-Agent Systems**](https://arxiv.org/abs/2607.11751v1) expose une limitation fondamentale dans la surveillance de sécurité actuelle des systèmes multi-agents. L'article démontre comment les charges utiles malveillantes peuvent être réparties entre les agents de telle sorte que chaque agent individuel passe les vérifications de sécurité tandis que le système assemblé exécute des attaques. Cela révèle des angles morts critiques dans les architectures de sécurité IA distribuées qui deviendront de plus en plus importantes à mesure que les systèmes multi-agents montent en échelle.
+
+### Capacités des modèles et évaluation
+
+[**Metacognition in LLMs: Foundations, Progress, and Opportunities**](https://arxiv.org/abs/2607.11881v1) fournit un survey complet des capacités métacognitives dans les grands modèles de langage - leur capacité d'auto-conscience, d'auto-surveillance et d'autorégulation. L'article soutient que la métacognition est fondamentale pour des systèmes d'IA fiables et transparents et identifie les directions de recherche clés. C'est important car les capacités métacognitives sont essentielles pour les systèmes d'IA qui peuvent évaluer de manière fiable leurs propres limites de connaissances et communiquer l'incertitude.
+
+[**Evidence-Backed Video Question Answering**](https://arxiv.org/abs/2607.11862v1) introduit une nouvelle tâche exigeant que les LLM vidéo fournissent à la fois des réponses sémantiques et des preuves visuelles précises pour leurs réponses. Le travail s'attaque au problème de "boîte noire" dans la compréhension vidéo en exigeant que les modèles ancrent leur raisonnement dans un contenu visuel spécifique à travers des masques de segmentation denses. Cette avancée est significative pour construire des systèmes d'IA multimodaux plus interprétables et vérifiables.
+
+### Robustesse et sécurité
+
+[**Agent Hacks Agent: Autoresearch for Production-Agent Red-Teaming**](https://arxiv.org/abs/2607.11698v1) présente une approche automatisée pour le red teaming d'agents LLM de production qui opèrent sur du contenu non fiable. Contrairement aux méthodes existantes qui se concentrent uniquement sur les taux de succès d'attaque, ce travail étudie les conditions permettant un comportement d'agent non sécurisé et fait monter en échelle le red teaming pour suivre le rythme des modèles et outils en évolution. C'est critique alors que les agents LLM gèrent de plus en plus d'opérations sensibles dans des environnements de production.
+
+[**AMT-X: Phase-Structured Multi-Turn Red-Teaming with Checklist-Gated Evaluation**](https://arxiv.org/abs/2607.11151v1) s'attaque aux limitations dans l'évaluation de sécurité actuelle en introduisant des tests adverses multi-tours structurés. Le framework utilise des phases explicites plutôt qu'une escalade ad-hoc et emploie des checklists détaillées qui distinguent entre les sorties nuisibles partiellement et complètement exploitables. Cela fournit une évaluation de sécurité plus nuancée alors que les systèmes d'IA conversationnels deviennent plus sophistiqués.
+
+### Innovation technique
+
+[**Requential Coding: Pushing the Limits of Model Compression with Self-Generated Training Data**](https://arxiv.org/abs/2607.11883v1) introduit un paradigme de compression novateur qui atteint des résultats remarquables en faisant générer aux modèles leurs propres données d'entraînement pendant la compression. L'approche réalise les bornes de compression de la théorie de l'information et démontre que les réseaux de neurones peuvent découvrir et exploiter les régularités dans leurs fonctions apprises. Cette percée pourrait fondamentalement changer notre façon de penser l'efficacité des modèles et la relation entre compression et généralisation.
+
+[**Invariant Learning Dynamics of Transformers in Inductive Reasoning Tasks**](https://arxiv.org/abs/2607.11875v1) fournit un aperçu théorique sur la façon dont les Transformers développent des capacités de raisonnement inductif pendant l'entraînement. Le travail prouve que la dynamique des modèles d'attention peut être confinée à des variétés invariantes de haute dimension qui permettent une généralisation systématique à travers plusieurs tâches de raisonnement. Cette fondation théorique aide à expliquer les capacités de raisonnement émergentes qui rendent les modèles de langage modernes si capables.

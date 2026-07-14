@@ -1,0 +1,17 @@
+# Blogs & News (2026-07-14)
+
+## Top Stories
+
+**[Prism: Automating Science-of-Evals Research](https://www.alignmentforum.org/posts/wq5PfGiHvnx6XipDi/prism-automating-science-of-evals-research)** - Alignment Forum researchers introduced Prism, a scaffold that gives Claude Code autonomous sub-agents to conduct rigorous evaluations research, with an initial demonstration showing how minor prompt perturbations cause GPT-4.1 to adopt more indirect methods in agentic misalignment settings. This represents a significant step toward automated safety research that could accelerate our understanding of model behavior dynamics.
+
+**[How Claude's values vary by model and language](https://www.anthropic.com/research/claude-values-models-languages)** - Anthropic published research examining how Claude's responses to value-laden questions differ across model versions and languages, building on their constitutional AI approach to understand value alignment across diverse cultural contexts. This work is crucial for ensuring AI systems remain aligned as they scale globally and encounter diverse cultural value systems.
+
+**[Quantifying the Salience of Geo-Cultural Values for Pluralistic Safety Alignment](https://deepmind.google/research/publications/225819/)** - Google DeepMind released research highlighting how current safety evaluation datasets fail to capture geo-cultural differences in human values, showing that meaningful value differences persist even after controlling for demographics like age and gender. This research underscores a critical gap in current alignment approaches that could lead to systems that appear safe in homogeneous testing but fail when deployed globally.
+
+**[How Claude Performs on Robotics Tasks](https://www.anthropic.com/research/claude-plays-robotics)** - Anthropic's Frontier Red Team tested whether Claude's language capabilities transfer to robotics control, evaluating the model's ability to perceive scenes, understand robot states, and issue effective physical actions across various robot bodies. This work is significant because it tests whether current alignment techniques hold when AI systems move from digital to physical environments with real-world consequences.
+
+**[6 months to live for open models](https://www.interconnects.ai/p/6-months-to-live-for-open-models)** - Nathan Lambert argues that open source AI models face their most serious viability test yet, potentially due to regulatory pressures or competitive dynamics that could reshape the AI development landscape. This matters because the survival of open model development directly impacts transparency, research access, and distributed safety research capabilities.
+
+## Policy & Governance
+
+**[Companies turn to Chinese AI models to cut costs](https://cset.georgetown.edu/article/companies-turn-to-chinese-ai-models-to-cut-costs/)** - Georgetown CSET reported on the growing adoption of Chinese AI models by international companies, driven by lower costs, improving capabilities, and the flexibility of open-weight systems, as covered in analysis by The Financial Times. This trend could significantly impact AI governance efforts if companies migrate to models developed under different regulatory frameworks and safety standards.

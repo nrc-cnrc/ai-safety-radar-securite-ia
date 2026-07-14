@@ -385,7 +385,9 @@
     "https://www.anthropic.com/news/ben-bernanke",
     "https://www.anthropic.com/news/hard-questions",
     "https://www.anthropic.com/news/reflect-with-claude",
-    "https://www.anthropic.com/news/ust-claude"
+    "https://www.anthropic.com/news/ust-claude",
+    "https://www.anthropic.com/research/claude-plays-robotics",
+    "https://www.anthropic.com/research/claude-values-models-languages"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -827,7 +829,13 @@
     "https://deepmind.google/research/publications/248131/",
     "https://deepmind.google/research/publications/224297/",
     "https://deepmind.google/research/publications/260960/",
-    "https://deepmind.google/research/publications/203490/"
+    "https://deepmind.google/research/publications/203490/",
+    "https://deepmind.google/research/publications/118251/",
+    "https://deepmind.google/research/publications/149262/",
+    "https://deepmind.google/research/publications/224397/",
+    "https://deepmind.google/research/publications/137741/",
+    "https://deepmind.google/research/publications/139779/",
+    "https://deepmind.google/research/publications/225819/"
   ],
   "IAPS (Institute for AI Policy & Strategy)": [
     "https://www.iaps.ai/research/ai-decision-support-systems",
