@@ -1,0 +1,25 @@
+# Communauté et Outils (2026-07-15)
+
+## Discussions clés
+
+**[Demis Hassabis a un plan pour exploiter l'IA en toute sécurité](https://twitter.com/demishassabis/status/2076957440109625718)** ([discussion HN](https://news.ycombinator.com/item?id=48904095)) - Cette publication Twitter du PDG de DeepMind a généré des discussions importantes (143 points, 192 commentaires) sur les approches de sécurité de l'IA et les stratégies de gouvernance. Le fort engagement suggère que la communauté débat activement des plans concrets d'implémentation de la sécurité proposés par les dirigeants des principales organisations de recherche en IA.
+
+**[Modèles de coordination d'agents sans mémoire partagée](https://github.com/anthropics/claude-cookbooks/pull/778)** - Une nouvelle pull request dans le cookbook d'Anthropic aborde la coordination d'agents dans des systèmes distribués en utilisant un consensus par bus de messages plutôt qu'un partage de mémoire dans un processus unique. Cela s'attaque à un défi critique de production où les agents doivent se coordonner sur plusieurs machines ou conteneurs.
+
+**[Jeu de données d'évaluation de l'épistémologie scientifique REFUTE](https://github.com/openai/evals/issues/1693)** - Plusieurs dépôts discutent de l'intégration du jeu de données REFUTE pour les tâches de critique scientifique et de calibration, apparaissant dans les évaluations d'OpenAI, le harness d'évaluation d'EleutherAI, et les discussions HELM. Cela représente un intérêt croissant pour l'évaluation de la capacité des systèmes d'IA à évaluer les affirmations scientifiques et la qualité des preuves.
+
+**[Problèmes du modèle Gemma-4-12B](https://github.com/google-deepmind/gemma/issues/727)** - Les utilisateurs signalent des problèmes critiques avec le nouveau modèle Gemma incluant des boucles de réflexion infinies, le non-respect des prompts système, et la perte de contexte dans les conversations multi-tours. Ces rapports soulignent les défis persistants pour assurer un comportement fiable dans les modèles axés sur le raisonnement.
+
+**[Détection Agent Threat Rules (ATR) dans NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails/pull/1996)** - Implémentation d'une détection complète des attaques d'agents couvrant l'injection de prompts, les tentatives de jailbreak, l'empoisonnement d'outils, et les attaques MCP. Cela répond à l'expansion de la surface d'attaque alors que les systèmes d'IA deviennent plus capables et autonomes.
+
+## Versions GitHub et Outils notables
+
+**[Groundlens v2026.7.14](https://github.com/groundlens-dev/groundlens/releases/tag/v2026.7.14)** - Une version majeure de la bibliothèque de validation de grounding qui la repositionne comme "première étape déterministe d'un pipeline à deux étapes" plutôt qu'un outil autonome de vérification factuelle, inclut la rétractation de métriques de performance précédemment revendiquées, et ajoute de nouveaux contrôles pour la détection de confabulation. Cette version démontre des pratiques de développement responsables en rétractant des capacités surestimées lorsque les preuves ne les soutiennent pas.
+
+**[Agent Airlock v0.8.47](https://github.com/sattyamjjain/agent-airlock/releases/tag/v0.8.47)** - Une version de métadonnées uniquement ajoutant des mots-clés de découverte PyPI comme "agent-security", "llm-security", et "tool-poisoning" pour améliorer la découvrabilité pour les développeurs construisant des systèmes d'agents sécurisés. Cela facilite la recherche d'outils de sécurité pour les développeurs dans l'écosystème d'agents en expansion rapide.
+
+**[Phoenix v18.0.0](https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v18.0.0)** - Une version majeure de la plateforme d'observabilité IA d'Arize introduisant des changements breaking dans la sémantique des filtres de plage temporelle de session, les capacités de serveur d'autorisation OAuth2, et les endpoints d'API REST pour la gestion des clés API. L'intégration OAuth permet la gestion automatisée des identifiants pour les flux de travail de développement IA.
+
+**[Implémentation TransformerLens Jacobian Lens](https://github.com/TransformerLensOrg/TransformerLens/pull/1507)** - Support de première classe pour la technique d'interprétabilité Jacobian lens du récent article d'Anthropic "Verbalizable Representations Form a Global Workspace in Language Models", incluant le chargement d'artefacts publiés, l'ajustement natif, et les capacités d'intervention. Cela fournit aux chercheurs un accès immédiat aux méthodes d'interprétabilité de pointe.
+
+**[ORAG v0.1.0-beta.1](https://github.com/shikanon/orag/releases/tag/v0.1.0-beta.1)** - Première version beta d'une plateforme RAG open-source avec des clés API machine, une autorisation par projet, et un support de conteneur multi-architecture, fournissant une infrastructure prête pour la production pour les systèmes de génération augmentée par récupération. Cela comble une lacune pour les organisations nécessitant des capacités RAG auto-hébergées avec des limites de sécurité appropriées.

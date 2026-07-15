@@ -387,7 +387,10 @@
     "https://www.anthropic.com/news/reflect-with-claude",
     "https://www.anthropic.com/news/ust-claude",
     "https://www.anthropic.com/research/claude-plays-robotics",
-    "https://www.anthropic.com/research/claude-values-models-languages"
+    "https://www.anthropic.com/research/claude-values-models-languages",
+    "https://www.anthropic.com/news/canadian-ai-research",
+    "https://www.anthropic.com/news/claude-for-teachers",
+    "https://www.anthropic.com/research/how-canada-uses-claude"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -468,7 +471,11 @@
     "https://www.apolloresearch.ai/blog/science_category/interpretability/",
     "https://www.apolloresearch.ai/blog/science_category/notes/",
     "https://www.apolloresearch.ai/blog/product_category/monitoring/",
-    "https://www.apolloresearch.ai/blog/monitoring_category/monitoring/"
+    "https://www.apolloresearch.ai/blog/monitoring_category/monitoring/",
+    "https://www.apolloresearch.ai/blog/member_group/monitoring-product/",
+    "https://www.apolloresearch.ai/blog/member_group/infrastructure-security/",
+    "https://www.apolloresearch.ai/blog/job_category/monitoring-product/",
+    "https://www.apolloresearch.ai/blog/job_category/infrastructure-security/"
   ],
   "Epoch AI": [
     "https://epoch.ai/blog/a-compute-based-framework-for-thinking-about-the-future-of-ai",
