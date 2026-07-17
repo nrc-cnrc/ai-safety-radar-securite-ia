@@ -1,0 +1,13 @@
+# Blogs & News (2026-07-17)
+
+## Top Stories
+
+A former Google DeepMind researcher published [Why I Left Google DeepMind](https://www.alignmentforum.org/posts/iKm2FhpWkuuBojm82/why-i-left-google-deepmind) on the Alignment Forum, describing their departure from the leading AI lab with references to "defying prestigious dogma," "defying social pressure," and "defying a powerful foe's threats." This signals continued internal tensions at major AI labs over safety practices and research directions.
+
+Miles Brundage shared [My speech at Borgo Laudato Si'](https://milesbrundage.substack.com/p/my-speech-at-borgo-laudato-si) focusing on "speed, competition, and loss of control" in AI development. Given Brundage's former role as OpenAI's policy lead and current position as a leading AI governance researcher, his commentary on competitive dynamics provides important insights into systemic risks in the AI race.
+
+A critical analysis on LessWrong challenges Anthropic's recent evaluation work in [I don't think Claude is misaligned in 'Agentic Misalignment Summer 2026 - Motivated Mislabeling'](https://www.lesswrong.com/posts/xh6a6RbvzhP3CCmGm/i-don-t-think-claude-is-misaligned-in-agentic-misalignment), arguing that scenarios testing Claude's willingness to disobey corrupted principals may not actually demonstrate misalignment. This critique highlights ongoing methodological debates about how to properly evaluate AI alignment and the risk of misinterpreting safety evaluations.
+
+The AI Safety Seeding Initiative launched a call for [Help us launch AI safety university groups by referring potential founders](https://www.lesswrong.com/posts/a9YtcE3Aogphf8ukH/help-us-launch-ai-safety-university-groups-by-referring) to expand AI safety talent pipelines at universities currently lacking organized groups. This grassroots effort reflects the field's recognition that talent development remains a critical bottleneck for AI safety progress.
+
+TSMC announced plans to [boost US investment to $265 billion](https://www.heise.de/news/TSMC-will-US-Investitionen-auf-265-Milliarden-US-Dollar-erhoehen-11367592.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag), expanding planned semiconductor manufacturing capacity with new fabs likely coming online in 2030 or later. This massive infrastructure investment will significantly impact the future availability and geographical distribution of advanced AI compute, with important implications for AI governance and the competitive landscape.
