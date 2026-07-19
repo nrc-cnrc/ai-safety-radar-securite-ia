@@ -1,0 +1,25 @@
+# Community & Tools (2026-07-19)
+
+## Key Discussions
+
+**Authority Control in AI Agents**: The most significant discussion centers around implementing **authority routing patterns** in Anthropic's cookbook, introducing ADVISE/EXECUTE/DEFER/STOP decision layers that govern whether agents are authorized to act before any tool execution. This represents a fundamental shift from capability-based to permission-based AI agent control, addressing the growing need for fine-grained authorization in autonomous systems. This matters because it establishes a new standard for responsible agent deployment where authorization decisions are separated from capability decisions.
+
+**Regulatory Compliance for AI Systems**: OpenAI's cookbook received contributions for **policy-as-code** enforcement in AI agents, specifically demonstrating pan-African fintech compliance rules attached at the tool layer rather than relying on prompt-level governance. The approach shows how regulatory requirements can be embedded directly into agent architectures through executable policy frameworks. This matters because it provides a concrete path for deploying AI agents in heavily regulated industries while maintaining compliance transparency and auditability.
+
+**Sandbox Identity Validation Hardening**: Firma AI's OpenFirma project underwent extensive security hardening with a series of pull requests addressing sandbox identity validation across host-runner, guest initialization, and local execution boundaries. The changes enforce UUIDv7 sandbox identities and validate attribution contracts at every trust boundary to prevent cross-sandbox attacks and identity spoofing. This matters because it demonstrates how AI safety infrastructure must be hardened against sophisticated attacks that could compromise sandbox isolation.
+
+**LLM Evaluation Infrastructure Evolution**: Multiple projects are advancing evaluation capabilities, with EleutherAI's lm-evaluation-harness fixing dataset compatibility issues for the new HuggingFace datasets v4.0+, and various projects like HELM, OpenAI evals, and Bergson adding new metrics and evaluation methods. The focus on reproducible, standardized evaluation infrastructure reflects the field's maturation toward more rigorous AI system assessment. This matters because reliable evaluation infrastructure is essential for measuring AI safety improvements and comparing system behaviors across different configurations.
+
+**Memory Management in AI Integrations**: Several critical memory leaks were identified and fixed, including unbounded memory growth in Opik's LangChain tracer and similar issues in other AI integration libraries. These represent a class of production safety issues where long-running AI systems gradually consume resources without bounds, eventually causing system failures. This matters because it highlights the importance of resource management in production AI deployments and the need for proper lifecycle management in AI integration tools.
+
+## Notable GitHub Releases & Tools
+
+**EleutherAI Bergson v0.13.0**: Released K-FAC (Kronecker-Factored Approximate Curvature) support for compressed Hessian computation, enabling more efficient second-order optimization methods for large language models while maintaining compatibility with existing gradient compression workflows. This enables researchers to apply advanced optimization techniques to large models without prohibitive memory overhead.
+
+**Arize Phoenix v19.1.0**: Added MCP (Model Context Protocol) server registration capability through `px setup mcp`, allowing Phoenix to integrate directly with coding agents for observability and evaluation workflows. This enables seamless integration between AI development tools and observability platforms, making it easier to monitor AI agent behavior in development environments.
+
+**Opik Multiple Releases**: Shipped critical production fixes including per-span size limits (v2.1.31+), concurrent dataset version write serialization, and LangChain tracer memory leak fixes. These releases address fundamental scalability and reliability issues that affect production AI deployments. This matters because it resolves several classes of silent failures that could compromise AI system reliability in production environments.
+
+**Goat-Flow v1.14.0**: Enhanced documentation and protocols for AI workflow management skills, focusing on boundary clarification and handoff procedures with preview upgrades and atomic replacements for safer deployment workflows. This enables more reliable AI workflow automation with better error handling and rollback capabilities.
+
+**Promptfoo Recent Updates**: Added PDF export for evaluation results, fixed conversation-relevance assertion thresholds, and enhanced red-team evaluation capabilities including MCP tool response poisoning detection. These improvements make AI safety evaluation more accessible and comprehensive. This matters because it provides practitioners with better tools for documenting and sharing AI safety evaluation results while expanding coverage of potential attack vectors.
