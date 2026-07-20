@@ -1,0 +1,23 @@
+# Communauté & Outils (2026-07-20)
+
+## Discussions Clés
+
+**[OpenAI evals ajoute une évaluation atr_prompt_injection](https://github.com/openai/evals/pull/1657)** - Une nouvelle évaluation de sécurité notée par modèle teste si les modèles refusent les attaques par prompt injection et injection indirecte sur 16 échantillons multilingues du corpus Agent Threat Rules detection. Ceci est important car cela fournit une évaluation standardisée pour une vulnérabilité de sécurité agentique critique de plus en plus importante alors que les systèmes d'IA acquièrent davantage de capacités autonomes.
+
+**[EleutherAI lm-evaluation-harness ajoute la tâche REFUTE soundness](https://github.com/EleutherAI/lm-evaluation-harness/pull/3821)** - Introduit une tâche d'évaluation sans juge qui teste la capacité des modèles à classer les arguments scientifiques comme solides ou défaillants en utilisant 74 vignettes de calibrage du dataset REFUTE. Ceci est significatif pour la sécurité de l'IA car cela mesure les capacités de raisonnement scientifique des modèles sans s'appuyer sur des juges LLM potentiellement biaisés.
+
+**[Benchmark false-positive d'Agent Audit Kit](https://github.com/sattyamjjain/agent-audit-kit/pull/476)** - Publie un taux de faux positifs mesuré pour les détections de sécurité HIGH/CRITICAL (2 sur 4 sur une tranche bénigne de 368 configurations), fournissant une transparence sur la précision de détection et établissant une base de référence honnête pour les outils de scan de sécurité des agents. Ceci est important car les taux de faux positifs sont cruciaux pour le déploiement pratique des outils de sécurité de l'IA.
+
+**[Correction d'agrégation des coûts d'expériences Langfuse](https://github.com/langfuse/langfuse/pull/15189)** - Corrige un bug critique où les calculs de coûts d'expérience n'incluaient que les coûts de span racine au lieu d'agréger sur les sous-arbres d'observation complets, menant à des coûts sévèrement sous-estimés dans les pipelines d'événements v4 où les vrais coûts se trouvent dans les générations imbriquées. Ceci est important pour la gouvernance de la sécurité de l'IA car un suivi précis des coûts est essentiel pour une gestion responsable des ressources et des contrôles budgétaires.
+
+**[Version MCPAudit 2.5.0 avec Proof Before Action](https://github.com/saagpatel/MCPAudit/releases/tag/v2.5.0)** - Livre Proof Before Action dans le cadre des capacités de scan de sécurité de MCPAudit, fournissant une gouvernance cryptographique et une provenance pour les workflows d'agents autonomes avec vérification liée à l'auteur et journalisation de transparence. Ceci est important pour la sécurité de l'IA car cela établit des pistes d'audit vérifiables pour les opérations d'agents à enjeux élevés.
+
+## Versions GitHub & Outils Notables
+
+**[Unplug AI v0.5.1](https://github.com/UnplugAI/Unplug/releases/tag/v0.5.1)** - Version de correction résolvant les problèmes d'empaquetage Python 3.13 et renforçant le catalogue de modèles intégré avec des révisions Hugging Face immuables, plus des façades d'API publiques stables pour réduire la fragilité des dépendances. Cela permet des déploiements d'IA préservant la vie privée plus fiables avec une meilleure sécurité de la chaîne d'approvisionnement.
+
+**[EleutherAI Bergson v0.13.0](https://github.com/EleutherAI/bergson/releases/tag/v0.13.0)** - Ajoute le support de sortie IVHP K-FAC compressé et corrige le débordement du stockage de gradient pour les modèles avec >537M paramètres suivis, permettant l'analyse de fonctions d'influence sur de plus grands modèles de langage. Ceci est important pour la recherche en sécurité de l'IA en rendant les outils d'interprétabilité mécaniste évolutifs aux modèles de taille production.
+
+**[AutoRAG v2.0.0](https://github.com/Marker-Inc-Korea/AutoRAG/releases/tag/v2.0.0)** - Version majeure transitionnant vers une structure de monorepo avec le nouvel agent bibliothécaire AutoRAG 2.0 comme projet principal et l'AutoRAG Python hérité déplacé vers un répertoire de maintenance. Cela permet une automatisation plus sophistiquée des systèmes RAG tout en préservant la compatibilité rétroactive.
+
+**[MCPAudit 2.5.0](https://github.com/saagpatel/MCPAudit/releases/tag/v2.5.0)** - Livre Proof Before Action avec des pistes d'audit cryptographiques, des workflows de publication immuables, et un scan de sécurité amélioré pour les serveurs Model Context Protocol. Ceci est important car cela fournit une gouvernance vérifiable pour les interactions d'outils d'agents IA, comblant une lacune de sécurité clé dans les systèmes agentiques.
