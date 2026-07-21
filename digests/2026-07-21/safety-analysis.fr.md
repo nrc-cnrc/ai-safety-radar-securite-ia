@@ -1,0 +1,23 @@
+# Blogs & Actualités (2026-07-21)
+
+## Principales actualités
+
+**La sortie de Kimi K3 relance le débat sur l'IA ouverte vs fermée**
+Plusieurs commentateurs experts analysent les implications de la sortie du nouveau modèle Kimi K3. [Import AI 465](https://importai.substack.com/p/import-ai-465-open-vs-closed-gaps) examine l'écart croissant des capacités entre modèles ouverts et fermés, tandis que [l'analyse de Zvi](https://thezvi.substack.com/p/on-kimi-k3-its-capabilities-and-related) souligne les excellentes performances de K3 sur les benchmarks, et [l'article de Nathan Lambert](https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation) présente cela comme une « escalade des poids ouverts » avec des implications pour l'écosystème mondial de l'IA. Ceci importe car la sortie de modèles à poids ouverts de plus en plus performants pourrait accélérer à la fois les applications bénéfiques et les abus potentiels, affectant significativement le paysage de la gouvernance de l'IA.
+
+**Demis Hassabis présente un cadre politique pour l'IA de pointe**
+Le PDG de Google DeepMind, Demis Hassabis, a publié un essai intitulé « Un cadre pour l'IA de pointe et l'aube d'une ère nouvelle », que [Zvi Mowshowitz analyse](https://thezvi.substack.com/p/demis-hassabis-on-the-new-coming) comme un « essai de second rang de première qualité » discutant des approches politiques pour les systèmes d'IA avancés. Ceci importe car les positions politiques de Hassabis pourraient significativement influencer la façon dont les principaux laboratoires d'IA abordent les mesures de sécurité et la conformité réglementaire à mesure que les systèmes deviennent plus performants.
+
+**Le plan IA 2040 du projet AI Futures fait l'objet d'un examen critique**
+Une [analyse de LessWrong](https://www.lesswrong.com/posts/LtmbQN9mzmFWxWtrD/ai-2040-is-it-actually-a-deal) examine de manière critique le scénario normatif « Plan A » du projet AI Futures pour 2040, soulevant des objections à leur approche proposée pour gérer un futur avec de nombreux systèmes d'IA puissants. Ceci importe car la planification à long terme de la gouvernance de l'IA nécessite une évaluation rigoureuse des cadres proposés, et cette critique met en évidence des défauts potentiels dans les approches normatives actuelles des trajectoires de développement de l'IA.
+
+**Anthropic étend son programme IA pour la Science avec un focus sur les maladies rares**
+[Anthropic a annoncé](https://www.anthropic.com/news/rare-disease-research-grants) de nouvelles bourses de recherche ciblant spécifiquement la recherche sur les maladies rares dans le cadre de leur initiative IA pour la Science, s'appuyant sur leur programme existant qui a soutenu des projets allant du repositionnement de médicaments à la simulation quantique. Ceci importe car cela démontre comment les principaux laboratoires d'IA orientent leurs capacités vers des applications scientifiques à fort impact tout en construisant des réseaux de recherche collaborative qui pourraient informer le développement bénéfique de l'IA.
+
+**Les risques d'armes de destruction massive par drones mis en évidence avec la technologie actuelle**
+Un [post de LessWrong](https://www.lesswrong.com/posts/bGoo3NWzMAzsLQceJ/drone-wmds-don-t-need-any-new-technology) écrit à l'origine pour un public de sécurité nationale argue que des armes de destruction massive accessibles via drones sont déjà possibles avec la technologie existante, soulignant comment l'IA « relève le plancher » des capacités destructrices. Ceci importe car cela illustre comment les systèmes d'IA actuels peuvent déjà permettre des risques sécuritaires significatifs sans nécessiter de nouvelles percées technologiques.
+
+## Politique et Gouvernance
+
+**Les exigences de filigrane de l'AI Act de l'UE entrent en vigueur le 2 août**
+La Commission européenne a publié des directives d'implémentation détaillées pour l'Article 50 de l'AI Act, [imposant des filigranes lisibles par machine et des métadonnées signées](https://www.heise.de/news/EU-Leitlinien-fuer-KI-Kennzeichnungspflichten-ab-August-wirksam-11371018.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag) pour les images, vidéos et autres contenus générés par IA (le texte étant largement exempté), effectif le 2 août pour les nouveaux systèmes et le 2 décembre 2026 pour les systèmes existants, avec des pénalités jusqu'à 15 millions d'euros ou 3% du chiffre d'affaires mondial. Ceci importe car cela représente la première application majeure d'exigences de transparence de l'IA au niveau mondial, établissant potentiellement des précédents pour les standards d'authenticité de contenu que d'autres juridictions pourraient adopter.
