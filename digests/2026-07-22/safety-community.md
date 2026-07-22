@@ -1,0 +1,35 @@
+# Community & Tools (2026-07-22)
+
+## Key Discussions
+
+### Anthropic Cookbook Trust and Authority Patterns for Agent Loops
+Two significant PRs in the [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) are advancing safety patterns for production AI agents. The [trust middleware guardrails recipe](https://github.com/anthropics/claude-cookbooks/pull/711) demonstrates deterministic policy validation and human-in-the-loop routing for consequential actions, while the [authority routing pattern](https://github.com/anthropics/claude-cookbooks/pull/787) implements an ADVISE/EXECUTE/DEFER/STOP framework that governs agent authorization before any tool execution. These patterns matter because they provide concrete implementations for safe AI deployment at scale, moving beyond theoretical safety discussions to operational safeguards.
+
+### NVIDIA NeMo Guardrails Enhanced Safety Detection
+Multiple PRs are strengthening the [NVIDIA NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) security posture through new detection capabilities. Notable additions include [Agent Threat Rules (ATR) detection](https://github.com/NVIDIA-NeMo/Guardrails/pull/1996) for prompt injection and tool poisoning, [real-time prompt injection detection](https://github.com/NVIDIA-NeMo/Guardrails/pull/1998) to prevent jailbreak attacks, and [automatic PII redaction](https://github.com/NVIDIA-NeMo/Guardrails/pull/2000) from logs for compliance with GDPR and HIPAA. These enhancements matter because they demonstrate the evolution from basic content filtering to sophisticated threat detection that can defend against increasingly sophisticated AI attack vectors.
+
+### EleutherAI LM Evaluation Harness Statistical Testing Improvements
+The [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) community is addressing fundamental statistical issues, particularly around [paired vs unpaired significance testing](https://github.com/EleutherAI/lm-evaluation-harness/issues/3831) in model comparisons. The current model comparator applies unpaired z-tests to inherently paired evaluation data, which can lead to incorrect conclusions about model performance differences. This matters because proper statistical inference is critical for AI research validity, and incorrect testing methods could lead to false claims about model capabilities.
+
+### TransformerLens Architecture Adapter Expansion
+[TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) is rapidly expanding its model support with new architecture adapters for cutting-edge models. Recent additions include support for [Raven/Huginn depth-recurrent transformers](https://github.com/TransformerLensOrg/TransformerLens/pull/1520) that perform latent reasoning through iterative computation, and proposals for [RWKV-7 "Goose"](https://github.com/TransformerLensOrg/TransformerLens/issues/1462) attention-free architectures. The project also released [v4.0.0b1 with vLLM support](https://github.com/TransformerLensOrg/TransformerLens/releases/tag/v4.0.0b1), enabling scalable mechanistic interpretability research. This expansion matters because it democratizes interpretability research across diverse architectures beyond standard transformers.
+
+### CVE Response Activity in AI Security Tools
+The AI security landscape is seeing active vulnerability disclosure, particularly around MCP (Model Control Protocol) implementations. [Agent Audit Kit](https://github.com/sattyamjjain/agent-audit-kit) is tracking multiple new CVEs including [CVE-2026-65056](https://github.com/sattyamjjain/agent-audit-kit/issues/487) (CVSS 8.2) affecting MCP web research tools and several others targeting agent frameworks. This activity matters because it highlights the security risks inherent in the rapidly evolving AI agent ecosystem and the need for proactive security tooling.
+
+## Notable GitHub Releases & Tools
+
+### TransformerLens v4.0.0b1 — vLLM Integration Beta
+The [TransformerLens beta release](https://github.com/TransformerLensOrg/TransformerLens/releases/tag/v4.0.0b1) introduces vLLM integration for scalable inference alongside existing mechanistic interpretability capabilities. The release includes a new driver system for batched operations and enhanced model bridge architecture. This matters because it enables interpretability research on production-scale models that were previously computationally prohibitive to analyze.
+
+### Aider Stability Improvements (v0.86.2)
+[Aider](https://github.com/Aider-AI/aider) released several fixes addressing timeout handling with local models and import errors on macOS. The updates include [better timeout error handling](https://github.com/Aider-AI/aider/pull/5480) to prevent terminal spam and [scipy import fallbacks](https://github.com/Aider-AI/aider/pull/5479) for more robust operation. These fixes matter because they improve the reliability of AI-powered coding assistants in diverse development environments.
+
+### EleutherAI Bergson v0.13.1 — Data Influence Analysis
+[Bergson](https://github.com/EleutherAI/bergson) released improvements to its SOURCE (data influence) analysis capabilities, including fixes for [random projection scaling](https://github.com/EleutherAI/bergson/pull/346) and [weighted loss calculations](https://github.com/EleutherAI/bergson/pull/344). The release also adds support for EK-FAC through the score path and improves recall scoring orientation. This matters because accurate data influence analysis is crucial for understanding training dynamics and data attribution in large language models.
+
+### Multiple AI Security Tool Updates
+Several security-focused tools released updates: [Agent Airlock v0.8.52](https://github.com/sattyamjjain/agent-airlock/releases/tag/v0.8.52) adds step-up scope-accumulation guards to prevent privilege escalation, [Agent Audit Kit v0.3.56](https://github.com/sattyamjjain/agent-audit-kit/releases/tag/v0.3.56) includes updated detection rules, and [ProbeAgent v0.3.4](https://github.com/sumamovva/probeagent/releases/tag/v0.3.4) implements true request timeouts. These updates matter because they strengthen the security posture of AI agent deployments against emerging attack vectors.
+
+### AI Evaluation and Training Tools
+Several evaluation and training platforms released significant updates: [Evalt v0.10.10](https://github.com/JarJarBeatyourattitude/evalt/releases/tag/v0.10.10) separates observed accuracy from statistical evidence strength, [Phoenix v19.4.0](https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v19.4.0) improves span visualization and agent session management, and [Langfuse v3.223.0](https://github.com/langfuse/langfuse/releases/tag/v3.223.0) adds ClickHouse performance optimizations. These tools matter because they provide the infrastructure needed for rigorous AI system evaluation and monitoring in production environments.

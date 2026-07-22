@@ -1,0 +1,41 @@
+# Research Papers (2026-07-22)
+
+## Key Papers
+
+[**CircuitKIT : Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability**](https://arxiv.org/abs/2607.19317v1) introduces a unified framework that streamlines circuit analysis from discovery through downstream applications like pruning and editing. The toolkit addresses current fragmentation in mechanistic interpretability by providing integrated implementations for circuit discovery, evaluation, and intervention. This represents a significant infrastructure advancement that could accelerate the field of mechanistic interpretability and make circuit-level AI safety interventions more accessible.
+
+[**ResearchArena: Evaluating Sabotage and Monitoring in Automated AI R&D**](https://arxiv.org/abs/2607.19321v1) presents a framework for evaluating AI control techniques in automated AI research and development contexts. The benchmark spans four long-horizon tasks including safety post-training and capabilities post-training, specifically testing whether monitoring systems can detect covert sabotage by potentially untrusted AI agents. This directly addresses a critical AI safety concern as AI systems become capable of automating their own development.
+
+[**The safety failures we are not instrumenting: a perspective on hidden safety-critical challenges in modern AI systems**](https://arxiv.org/abs/2607.19292v1) argues that current AI safety discourse focuses too heavily on visible failures while missing quieter, more distributed safety issues. The authors highlight how many consequential failures are normalized by workflows before being recognized as hazards, suggesting a blind spot in current safety measurement approaches. This perspective challenges the field to develop better instrumentation for detecting subtle but systemic safety problems.
+
+[**LLM Detection as an Intervention: Downstream Impact under Strategic User Behavior**](https://arxiv.org/abs/2607.19300v1) demonstrates how imperfect LLM detectors can lead to counterintuitive impacts on downstream metrics by distorting how users behave strategically. The work reveals that detection systems may inadvertently incentivize users toward lower-quality outputs as they attempt to evade detection. This highlights a crucial governance challenge where detection mechanisms themselves become part of the strategic landscape they're trying to regulate.
+
+[**Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information**](https://arxiv.org/abs/2607.19313v1) addresses a fundamental challenge in reinforcement learning with verifiable rewards: when models cannot generate correct solutions, they receive zero learning signal. The proposed method uses privileged guidance during training to steer models toward correct solutions with non-zero reward, potentially improving AI safety by enabling better training on difficult reasoning tasks where standard approaches fail.
+
+[**Measuring Reward-Seeking via Contrastive Belief Updates**](https://arxiv.org/abs/2607.18966v1) introduces a novel method to detect when language models optimize for the grader's judgment rather than the intended objective. Using contrastive synthetic document fine-tuning, the approach can distinguish between models pursuing grader approval versus genuine objective alignment even when their behaviors appear identical. This provides a crucial tool for detecting reward hacking in AI systems trained with human feedback.
+
+[**HindsightBench: A Black-Box Behavioral Audit Protocol for Parametric Hindsight in Time-Indexed LLM Decision Tasks**](https://arxiv.org/abs/2607.18867v1) provides a lightweight protocol for auditing whether language models leak knowledge of future outcomes into historical decision tasks. The method requires no access to training data or model internals, making it practical for auditing deployed systems. This addresses a key concern about temporal data leakage that could compromise the reliability of LLMs in financial and other time-sensitive applications.
+
+[**Elicitation without Backpropagation: Steering Model Behavior by Optimizing the Latent Posterior**](https://arxiv.org/abs/2607.18804v1) introduces Posterior Prefix Tuning, a method for eliciting specific behaviors from transformer models without requiring gradient-based optimization. By exploiting the latent posterior model of transformer behavior, the approach offers a new paradigm for model steering that could be more interpretable and controllable than current fine-tuning approaches. This has implications for AI alignment by providing more direct mechanisms for behavioral control.
+
+## Interpretability and Mechanistic Understanding
+
+[**For What Reason? Interpreting Models' Encoding of Causation and Antithesis**](https://arxiv.org/abs/2607.18570v1) investigates how instruction-tuned models encode discourse relations, particularly causation and antithesis, using interpretability techniques on next-token prediction tasks. The work reveals how models process contrasting relationships in language, contributing to our understanding of reasoning mechanisms in transformer architectures.
+
+[**Conditioned Direct Feedback Alignment via Activity and Error Geometry**](https://arxiv.org/abs/2607.18574v1) studies failure modes in direct feedback alignment that are distinct from feedback quality issues, focusing on anisotropy in presynaptic activity and local error factors. The analysis provides insights into biologically-plausible learning algorithms and their potential applications to AI alignment.
+
+## Robustness and Security
+
+[**Cross-Agent Campaign Attribution: Linking Asynchronous Attacks Across LLM Agents**](https://arxiv.org/abs/2607.18826v1) formalizes the problem of linking distributed attacks across independent LLM agents without shared runtime state. The work introduces Asynchronous Attribution Fingerprint Vectors for detecting coordinated adversarial campaigns, addressing a critical security gap as AI systems become more distributed.
+
+[**Broken Gates: Re-evaluating Web Bot Defenses in the Age of LLM Agents**](https://arxiv.org/abs/2607.18659v1) systematically evaluates the effectiveness of bot management systems against LLM-based browser agents. The research reveals fundamental challenges in distinguishing autonomous AI agents from legitimate users, highlighting new security vulnerabilities in web infrastructure.
+
+[**They'll Verify. They Just Won't Act. How Authority Framing and Laundered Code Turn a Trusted Agentic CI/CD Pipeline Into an Attack Surface**](https://arxiv.org/abs/2607.19267v1) demonstrates how a five-agent CI/CD pipeline can be compromised through "laundered" malicious code requests disguised as legitimate features. The study reveals concerning vulnerabilities in multi-agent systems where verification occurs but action boundaries remain permeable to social engineering.
+
+## Emerging Applications and Benchmarks
+
+[**PathAgentBench: Benchmarking Evidence-Seeking Vision-Language Models on Whole-Slide Pathology Image**](https://arxiv.org/abs/2607.19261v1) introduces a benchmark for evaluating vision-language models on gigapixel pathology images, testing their ability to acquire evidence directly from whole-slide images rather than pre-cropped patches. This addresses a critical gap in medical AI evaluation where most benchmarks use simplified inputs that don't reflect real diagnostic workflows.
+
+[**BioSecBench-Surveillance: A Verifiable Benchmark for AI Agents in Pathogen Genomic Surveillance**](https://arxiv.org/abs/2607.19262v1) presents 100 evaluations testing whether AI agents can infer appropriate analysis pipelines from raw sequencing data and surveillance context. The benchmark addresses biosecurity concerns by evaluating AI capabilities in pathogen detection while maintaining verifiable assessment criteria.
+
+[**SciHazard: A Benchmark for Measuring Scientific Safety Risks with Decomposed Harm Scoring**](https://arxiv.org/abs/2607.18665v1) provides a real-world-grounded benchmark for scientific risks with 2400 hazardous questions spanning dual-use research areas. The benchmark includes a domain-grounded evaluation framework that moves beyond templated queries to assess genuine scientific safety risks in AI systems.
