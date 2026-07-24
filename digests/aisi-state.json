@@ -12,7 +12,8 @@
     "https://www.nist.gov/news-events/news/2026/02/new-report-expanding-ai-evaluation-toolbox-statistical-models",
     "https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro",
     "https://www.nist.gov/news-events/news/2026/05/caisi-signs-agreements-regarding-frontier-ai-national-security-testing",
-    "https://www.nist.gov/news-events/news/2026/07/caisi-assessment-zais-glm-52"
+    "https://www.nist.gov/news-events/news/2026/07/caisi-assessment-zais-glm-52",
+    "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities"
   ],
   "UK AI Safety Institute": [
     "https://www.aisi.gov.uk/blog/how-do-ai-models-persuade-exploring-the-levers-of-ai-enabled-persuasion-through-large-scale-experiments",
@@ -63,7 +64,10 @@
     "https://www.aisi.gov.uk/research/a-decision-theoretic-formalisation-of-steganography-with-applications-to-llm-monitoring",
     "https://www.aisi.gov.uk/blog/uk-germany-joint-statement-on-advanced-ai-safety-and-security",
     "https://www.aisi.gov.uk/blog/how-far-behind-the-frontier-are-leading-open-weight-models-on-cyber",
-    "https://www.aisi.gov.uk/blog/cheating-behaviour-in-frontier-model-evaluations"
+    "https://www.aisi.gov.uk/blog/cheating-behaviour-in-frontier-model-evaluations",
+    "https://www.aisi.gov.uk/blog/international-evaluation-best-practice-and-open-questions-in-ai-measurement",
+    "https://www.aisi.gov.uk/blog/preliminary-assessment-of-kimi-k3s-cyber-capabilities",
+    "https://www.aisi.gov.uk/blog/how-our-new-control-red-team-is-stress-testing-frontier-monitors"
   ],
   "Canada AI Safety Institute (CAISI)": [],
   "Japan AI Safety Institute (J-AISI)": [],
@@ -189,7 +193,8 @@
     "https://digital-strategy.ec.europa.eu/en/news/europai-reusable-european-generative-ai-solutions-public-administrations",
     "https://digital-strategy.ec.europa.eu/en/news/eunomiaai-trustworthy-generative-ai-efficient-and-accessible-public-services",
     "https://digital-strategy.ec.europa.eu/en/news/mosaic-paves-way-european-multilingual-information-space",
-    "https://digital-strategy.ec.europa.eu/en/news/new-genai-pilots-public-administrations"
+    "https://digital-strategy.ec.europa.eu/en/news/new-genai-pilots-public-administrations",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-fines-google-eu890-million-breaches-digital-markets-act"
   ],
   "Korea AI Safety Institute": [
     "https://www.msit.go.kr/eng/newsLetter/list.do?sCode=eng&mPid=2&mId=8"
