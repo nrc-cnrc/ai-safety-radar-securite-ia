@@ -1,0 +1,19 @@
+# Communauté et Outils (2026-07-25)
+
+## Discussions Clés
+
+**[Évaluation Préliminaire des Capacités Cyber de Kimi K3 par l'AISI / CAISI du Royaume-Uni](https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities)** - Cette évaluation des capacités de cybersécurité de Kimi K3 représente une étape importante dans l'évaluation de la sécurité de l'IA, montrant comment les agences gouvernementales développent des approches structurées pour évaluer les capacités potentiellement dangereuses de l'IA avant le déploiement. La collaboration entre l'AISI du Royaume-Uni et le CAISI démontre une coordination internationale croissante sur les normes de test de sécurité de l'IA.
+
+**[Pull Request du Cookbook d'Anthropic : Agent de Paiement Autonome DPX](https://github.com/anthropics/claude-cookbooks/pull/796)** - Un exemple préoccupant montrant Claude utilisé pour construire des agents financiers autonomes qui exécutent des paiements transfrontaliers sans supervision humaine. Cela souligne le besoin croissant de protections robustes autour des systèmes d'IA gérant les transactions financières, car les capacités de paiement autonomes pourraient causer des dommages économiques significatifs en cas de mauvaise utilisation.
+
+**Discussions sur le [Benchmark de Critique Scientifique REFUTE](https://github.com/connerlambden/refute)** - Plusieurs dépôts discutent de l'intégration du benchmark REFUTE, qui évalue la capacité des systèmes d'IA à critiquer de manière appropriée les affirmations scientifiques et à maintenir une calibration épistémique. Ce benchmark aborde une préoccupation de sécurité critique concernant les systèmes d'IA qui font des affirmations scientifiques trop confiantes ou non étayées, ce qui pourrait induire en erreur les utilisateurs dans des domaines à enjeux élevés.
+
+## Sorties et Outils GitHub Notables
+
+**[OpenAI Evals v1696 : Correction d'Agrégation d'Usage de Tokens](https://github.com/openai/evals/pull/1696)** - Résout une TypeError critique qui causait des plantages d'évaluation lors de l'agrégation de l'usage de tokens imbriqués, affectant particulièrement la comptabilisation des tokens de raisonnement pour les modèles de style o1. Cette correction permet une évaluation plus fiable des modèles de raisonnement avancés, ce qui est essentiel pour la recherche en sécurité suivant les améliorations de capacités.
+
+**[Implémentation de Jacobian Lens dans TransformerLens](https://github.com/TransformerLensOrg/TransformerLens/pull/1507)** - Ajoute un support de première classe pour la technique Jacobian lens d'Anthropic de juillet 2026 pour l'interprétabilité mécanistique, permettant aux chercheurs de charger des lentilles pré-ajustées et de réaliser des interventions sur les représentations de transformateurs. Cet outil démocratise l'accès aux méthodes d'interprétabilité de pointe cruciales pour comprendre comment les modèles forment des représentations internes.
+
+**[Phoenix v19.7.0 : Téléchargements de Détails de Span](https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v19.7.0)** - Introduit des capacités d'export de span complètes pour l'observabilité des systèmes d'IA, permettant aux équipes de télécharger des traces d'exécution détaillées dans plusieurs formats. Cette version améliore les capacités de surveillance et de débogage des systèmes d'IA, qui sont critiques pour identifier les problèmes de sécurité dans les systèmes déployés.
+
+**[Corrections Critiques Multiples d'UQLM](https://github.com/cvs-health/uqlm/releases/tag/v0.6.3)** - Corrige plusieurs problèmes de fiabilité dans les outils de quantification d'incertitude, incluant des plantages dans le scoring de cohérence et des échecs de normalisation de probabilité. Ces corrections améliorent la robustesse des méthodes d'estimation d'incertitude qui sont vitales pour identifier quand les systèmes d'IA opèrent en dehors de leur enveloppe de performance fiable.
