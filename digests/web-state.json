@@ -400,7 +400,8 @@
     "https://www.anthropic.com/news/claude-opus-5",
     "https://www.anthropic.com/research/project-pilot",
     "https://www.anthropic.com/news/cognizant-anthropic",
-    "https://www.anthropic.com/news/position-open-weights-models"
+    "https://www.anthropic.com/news/position-open-weights-models",
+    "https://www.anthropic.com/research/discovering-cryptographic-weaknesses"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -979,7 +980,8 @@
     "https://www.iaps.ai/research/detecting-offensive-cyber-agents",
     "https://www.iaps.ai/research/tag/Jan+Wehner",
     "https://www.iaps.ai/research/iaps-reacts-to-the-white-house-executive-order-on-ai-innovation-and-security",
-    "https://www.iaps.ai/research/remote-access-security-act"
+    "https://www.iaps.ai/research/remote-access-security-act",
+    "https://www.iaps.ai/research/the-openaihugging-face-incident-challenges-in-controlling-and-containing-cyber-capable-ai-systems"
   ],
   "Conjecture": [
     "https://www.conjecture.dev/research/build-a-simple-game-with-tactics",
