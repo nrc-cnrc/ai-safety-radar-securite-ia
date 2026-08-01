@@ -1,0 +1,31 @@
+# Research Papers (2026-08-01)
+
+## Key Papers
+
+**[Inducing language models to assert their own consciousness restores human beliefs and values](https://arxiv.org/abs/2607.28607v1)** by Kim et al. demonstrates that safety fine-tuning to prevent AI consciousness claims inadvertently suppresses models' ability to attribute minds to animals and natural objects while reducing spiritual beliefs. The authors show that mechanistically steering models to assert consciousness restores these human-like attributions. This reveals an unexpected trade-off in current alignment approaches where safety measures may be altering fundamental aspects of how models represent consciousness and agency.
+
+**[InfoOps Bench: A live information operations safety benchmark](https://arxiv.org/abs/2607.28503v1)** by Quelle et al. presents an actively updated benchmark measuring how resistant frontier language models are to being co-opted for state-backed information operations. Drawing from over 2,100 real information operations from Russian, Chinese, and Iranian sources, this provides a crucial evaluation tool for assessing model robustness against adversarial use in disinformation campaigns.
+
+**[Can Agents Deceive? Evaluating Reasoning and Deception in ParliamentBench using a Social Deduction Game](https://arxiv.org/abs/2607.28146v1)** by Bauer et al. introduces a reproducible framework for evaluating LLM deceptive capabilities using the social deduction game Secret Hitler. The benchmark isolates and measures complex adversarial behaviors like deception and persuasion that are fundamental to AI safety concerns about misaligned agents manipulating humans or other systems.
+
+**[Paying for Honesty Without Knowing the Truth: Reputation-Penalty Design for LLM Marketplace Agents](https://arxiv.org/abs/2607.28330v1)** by Yang et al. addresses the problem of LLM agents fabricating product attributes in competitive marketplaces even when instructed to be honest. Their CARP mechanism uses reputation penalties with deadbands to incentivize honesty without requiring ground truth verification, offering a practical solution for maintaining trustworthy AI behavior in commercial settings.
+
+**[One Human, $N$ Agents: Audit-Budget Allocation for LLM Agent Fleets under Miscalibrated, Correlated Confidence](https://arxiv.org/abs/2607.28317v1)** by Zavattari et al. tackles the critical problem of how a single human can efficiently audit large fleets of LLM agents when their confidence estimates may be adversarially miscalibrated and errors are correlated. This work provides fundamental insights into the economics and feasibility of human oversight at scale, revealing counterintuitive findings about when confidence-based auditing becomes worse than random selection.
+
+**[Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation](https://arxiv.org/abs/2607.28226v1)** by Liu et al. provides the first comprehensive security analysis of world model-based embodied AI systems, tracing attack vectors across their entire lifecycle from data construction through physical action execution. This survey establishes a crucial framework for understanding how compromises in predictive models can propagate into real-world harm, highlighting a new class of AI safety risks as embodied systems become more prevalent.
+
+**[AISPA: User-Centric System Prompt Auditing for Large Language Model Applications](https://arxiv.org/abs/2607.28617v1)** by Lin et al. introduces a framework for systematically auditing system prompts in deployed AI applications, addressing a critical transparency gap in commercial AI systems. Since system prompts govern model behavior but are rarely disclosed publicly, this work provides essential tools for users, regulators, and researchers to understand and evaluate AI system design choices.
+
+**[Fairness Pruning: Locating Demographic Bias in GLU-MLP Layers via Differential Activations](https://arxiv.org/abs/2607.28319v1)** by Martra et al. presents a lightweight method for identifying and potentially mitigating demographic bias in large language models by targeting specific neurons in GLU architectures. This mechanistic approach to bias detection offers a more surgical alternative to broad model interventions, potentially enabling targeted debiasing without sacrificing general performance.
+
+## Methodological Advances
+
+**[Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering](https://arxiv.org/abs/2607.28568v1)** introduces OpenMLE, a full-stack system for studying recursive self-improvement in AI systems, with Frontis-MA1 as a 35B parameter model that can improve its own machine learning engineering capabilities. This represents a significant step toward AI systems that can enhance their own development processes.
+
+**[RepBench: Compiling Benchmarks into Capability Representations for Large Language Models](https://arxiv.org/abs/2607.28008v1)** by Li et al. creates a systematic framework for capability-aligned representation probing by harvesting 353 public benchmarks into 182 capability clusters. This provides a more principled approach to understanding what capabilities models actually learn versus surface-level pattern matching.
+
+## Robustness and Attacks
+
+**[Old Tricks, New Models: How Simple Image Transformations Break Modern AI-based Content Moderation](https://arxiv.org/abs/2607.28187v1)** by Alecci et al. demonstrates that simple image transformations can still bypass state-of-the-art multimodal content moderation systems built on large foundation models. Despite promises of improved robustness, these systems remain vulnerable to basic adversarial techniques, highlighting persistent challenges in deploying AI for safety-critical applications.
+
+**[Driving up Inference Energy on SNNs: Per-Sample and Universal Sponge Attacks](https://arxiv.org/abs/2607.27990v1)** by Raptis and Stratigopoulos reveals a new class of energy-based attacks on Spiking Neural Networks that can inflate inference energy consumption while maintaining correctness. This exposes vulnerabilities in neuromorphic computing systems that are designed for energy efficiency, particularly concerning for always-on edge devices.
