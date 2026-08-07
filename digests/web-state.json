@@ -403,7 +403,8 @@
     "https://www.anthropic.com/news/position-open-weights-models",
     "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
     "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
-    "https://www.anthropic.com/news/tino-cuellar"
+    "https://www.anthropic.com/news/tino-cuellar",
+    "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -488,7 +489,16 @@
     "https://www.apolloresearch.ai/blog/member_group/monitoring-product/",
     "https://www.apolloresearch.ai/blog/member_group/infrastructure-security/",
     "https://www.apolloresearch.ai/blog/job_category/monitoring-product/",
-    "https://www.apolloresearch.ai/blog/job_category/infrastructure-security/"
+    "https://www.apolloresearch.ai/blog/job_category/infrastructure-security/",
+    "https://apolloresearch.ai/blog/announcing-apollo-research",
+    "https://apolloresearch.ai/blog/apollo-18-month-update",
+    "https://apolloresearch.ai/blog/apollo-is-adopting-inspect",
+    "https://apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc",
+    "https://apolloresearch.ai/blog/apollo-update-may-2026",
+    "https://apolloresearch.ai/blog/our-norms-coi-security-science-communication",
+    "https://apolloresearch.ai/blog/security-at-apollo-research",
+    "https://apolloresearch.ai/blog/the-first-year-of-apollo-research",
+    "https://apolloresearch.ai/blog/theories-of-change-for-ai-auditing"
   ],
   "Epoch AI": [
     "https://epoch.ai/blog/a-compute-based-framework-for-thinking-about-the-future-of-ai",
@@ -984,7 +994,8 @@
     "https://www.iaps.ai/research/tag/Jan+Wehner",
     "https://www.iaps.ai/research/iaps-reacts-to-the-white-house-executive-order-on-ai-innovation-and-security",
     "https://www.iaps.ai/research/remote-access-security-act",
-    "https://www.iaps.ai/research/the-openaihugging-face-incident-challenges-in-controlling-and-containing-cyber-capable-ai-systems"
+    "https://www.iaps.ai/research/the-openaihugging-face-incident-challenges-in-controlling-and-containing-cyber-capable-ai-systems",
+    "https://www.iaps.ai/research/evaluating-llm-capabilities-for-commodity-classification"
   ],
   "Conjecture": [
     "https://www.conjecture.dev/research/build-a-simple-game-with-tactics",
