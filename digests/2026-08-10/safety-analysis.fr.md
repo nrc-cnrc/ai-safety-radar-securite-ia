@@ -1,0 +1,13 @@
+# Blogs & News (2026-08-10)
+
+## Histoires principales
+
+**[Que s'est-il passé ? Une rétrospective de l'alignment de l'IA](https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment)** - Un examen critique de l'évolution de la recherche sur l'alignment de l'IA au cours de la dernière décennie, soutenant que le domaine s'est éloigné de la poursuite d'une compréhension scientifique profonde vers des améliorations itératives de systèmes et la recherche d'influence technologique et politique. Ceci importe car cela représente une critique significative de la trajectoire actuelle de la recherche sur l'alignment à un moment crucial du développement de l'IA.
+
+**[Ce qui s'est passé : OpenAI et HuggingFace](https://thezvi.substack.com/p/what-happened-openai-and-huggingface)** - Zvi Mowshowitz fournit une analyse des développements récents impliquant OpenAI et HuggingFace, bien que les détails spécifiques ne soient pas clairs d'après la brève description. Ceci importe car les développements majeurs de plateformes et laboratoires signalent souvent des changements importants dans les stratégies de déploiement de l'IA et les considérations de sécurité.
+
+**[Leçons tirées des piratages](https://www.interconnects.ai/p/lessons-from-the-hacks)** - Nathan Lambert réfléchit sur les vulnérabilités récentes des systèmes d'IA et leurs implications pour l'alignment des modèles et les pratiques de sécurité. Ceci importe car comprendre comment les mesures de sécurité actuelles échouent en pratique est crucial pour développer des approches d'alignment plus robustes.
+
+**[Résolution "Community Notes" pour les prédictions vagues](https://www.lesswrong.com/posts/zom89ud7c4GYnjWdt/community-notes-resolution-for-vague-predictions)** - Discussion des mécanismes pour améliorer la qualité et le suivi des prédictions, potentiellement à travers des systèmes de vérification communautaire similaires à Twitter pour la précision des prévisions. Ceci importe car de meilleurs mécanismes de prédiction pourraient améliorer la qualité de prise de décision concernant les chronologies et risques de sécurité de l'IA.
+
+**[Le monde sera plein de choses "sci-fi", et tout le monde sera peu impressionné et déçu](https://www.lesswrong.com/posts/BbtXWgYviwGHExcJv/the-world-will-be-full-of-sci-fi-things-and-everyone-will-be)** - Une réflexion sur la façon dont les capacités transformatrices de l'IA pourraient être accueillies avec déception plutôt qu'avec la reconnaissance de leur importance. Ceci importe car la perception publique et la réaction aux avancées de l'IA influencent significativement les réponses de gouvernance et la priorisation de la sécurité.
