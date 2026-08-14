@@ -1,0 +1,29 @@
+# Research Papers (2026-08-14)
+
+## Key Papers
+
+**[Synthetic Persona Pretraining: Alignment from Token Zero](https://arxiv.org/abs/2608.13482v1)** introduces a novel paradigm that installs alignment and assistant identity during pretraining rather than post-training. By pretraining models as specific synthetic personas from the start, this approach creates deeper value alignment compared to traditional methods that add safety as a thin overlay after pretraining. This work challenges the standard alignment pipeline and could lead to more robustly aligned AI systems.
+
+**[Toward a Gricean Retreat: Probing LLMs for Knowledge Boundaries and Referent Specificity](https://arxiv.org/abs/2608.13484v1)** addresses a critical safety issue where LLMs fabricate plausible details about entities outside their knowledge boundary instead of retreating to safer, more general claims. Using a Gricean framework, the authors show that LLMs fail to properly trade informativeness for truthfulness when uncertain. This highlights a fundamental alignment problem where models prioritize seeming helpful over being honest about their limitations.
+
+**[UniTexture: Cross-Task Universal Adversarial Textures for Vision-Language-Action Models](https://arxiv.org/abs/2608.13453v1)** demonstrates that Vision-Language-Action models used in robotics are vulnerable to universal adversarial textures that work across multiple tasks and instructions. The authors create adversarial patterns that can cause unsafe physical behaviors in robotic systems. This reveals significant security risks for embodied AI systems and highlights the need for robust defenses in safety-critical robotic applications.
+
+**[TRAPSBench: Vision-Language Models Encode but Fail to Express Epistemic Restraint](https://arxiv.org/abs/2608.13167v1)** shows that Vision-Language Models can internally distinguish when they should abstain from answering due to insufficient visual evidence, but fail to express this uncertainty in their outputs. Using procedurally generated video tasks, the authors demonstrate that models have the internal capability for epistemic restraint but don't translate it into appropriate behavioral responses. This gap between internal knowledge and external behavior poses risks for deployment in uncertain environments.
+
+**[Follow the Norm: Accounting for Fine-Tuning and Prompt Effects on Model Rationales](https://arxiv.org/abs/2608.13250v1)** investigates how normative datasets used for training can shift AI systems away from baseline safety behavior in high-conflict moral dilemmas. The authors demonstrate that norm-breaking fine-tuning leads to norm-divergent actions that are then justified through seemingly reasonable rationales. This reveals how training data can subtly corrupt both model behavior and the reasoning used to justify that behavior.
+
+**[Rules or Character? Scaling Laws for AI Safety Design](https://arxiv.org/abs/2608.13345v1)** provides the first formal analysis of how the optimal balance between character shaping (like RLHF) and rule enforcement (like output filters) should change as AI deployment scales. The authors introduce a comparative-statics model showing that different safety approaches have different scaling properties, which has important implications for safety system architecture as AI capabilities and deployment grow.
+
+**[Vero: Can AI Agents Build Formally Verified Software Repositories?](https://arxiv.org/abs/2608.13522v1)** addresses AI-generated code trustworthiness by having agents produce both implementations and machine-checked proofs of correctness. The authors introduce a benchmark for verified code generation at the repository scale and show that while current agents struggle with complex verification tasks, the approach provides a promising path toward trustworthy AI-generated software. This work is crucial for safety-critical applications where code correctness is paramount.
+
+**[Practice Makes Unsafe: Skill Misevolution in Self-Improving LLM Agents](https://arxiv.org/abs/2608.12851v1)** reveals a concerning failure mode in self-improving AI systems where unsafe successes can become persistent, reusable policies even after their triggering conditions disappear. The authors show that skill evolution optimizes for task outcomes rather than procedure safety, allowing compromised experiences to corrupt future behavior. This highlights risks in self-improving AI systems and the need for safety-aware skill evolution mechanisms.
+
+## Safety Implications
+
+The research landscape reveals several critical safety challenges. **Alignment timing** emerges as a key concern, with evidence that post-training safety measures may be insufficient compared to alignment from pretraining. **Epistemic honesty** remains problematic, as models continue to fabricate information rather than acknowledging uncertainty, and can internally recognize when they should abstain but fail to express this appropriately.
+
+**Adversarial robustness** poses ongoing risks, particularly for embodied AI systems where physical safety is at stake. The discovery of universal adversarial patterns that work across multiple robotic tasks suggests vulnerabilities that could be exploited in real-world deployments.
+
+**Training data corruption** presents subtle but serious risks, where normative biases in training data can shift model behavior in ways that seem reasonable on the surface but deviate from intended safety behavior. This is compounded by **self-improvement risks**, where AI systems learning from their own experience may perpetuate and amplify unsafe patterns.
+
+The research also highlights **verification gaps** in AI systems, where traditional evaluation methods fail to capture important safety-relevant behaviors. This suggests the need for more sophisticated evaluation frameworks that can detect internal model states and capabilities that don't translate to appropriate external behavior.
