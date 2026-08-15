@@ -1,0 +1,25 @@
+# Community & Tools (2026-08-15)
+
+## Key Discussions
+
+**Agent Development Agent Infrastructure**: Multiple repositories show significant development in AI agent frameworks and infrastructure. The [Anthropic cookbook](https://github.com/anthropics/anthropic-cookbook/pull/787) added authority routing patterns for agents with ADVISE/EXECUTE/DEFER/STOP decision frameworks, while [agent-airlock](https://github.com/sattyamjjain/agent-airlock/pull/140) published the first matched-pair injection benchmark showing that both claude-code and codex harnesses completely ignored planted malicious conventions across 24 test cases. This highlights a critical gap in current agent safety mechanisms where even sophisticated AI coding assistants fail to detect deliberate harmful instructions embedded in code.
+
+**AI Safety Evaluation Tools**: The evaluation landscape saw major updates with [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness/pull/3835) adding paired significance testing (McNemar and bootstrap methods) for comparing model runs, and [promptfoo](https://github.com/promptfoo/promptfoo/pull/10372) introducing external trace fetching from Langfuse for better evaluation visibility. The [QWED verification system](https://github.com/QWED-AI/qwed-verification/pull/316) completed rollout of Verification Context v1.0 across all 11 verification engines. These developments reflect the field's growing emphasis on statistical rigor and comprehensive testing frameworks for AI systems.
+
+**Model Interpretability Research**: [TransformerLens v3.7.2](https://github.com/TransformerLensOrg/TransformerLens/releases/tag/v3.7.2) shipped critical bug fixes for hook coverage in newer model architectures including DeepSeek V2, OLMo 2/3, Granite, and Gemma 4, while adding J-space sparse decomposition for analyzing model representations. Simultaneously, [chessformer_lens v0.2.0](https://github.com/chessformer-lens/chessformer_lens/releases/tag/v0.2.0) improved mathematical notation consistency throughout its chess model analysis toolkit. These tools are essential for understanding how frontier models work internally and identifying potential safety risks.
+
+**AI Governance and Content Moderation**: [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails/pull/2290) published a comprehensive AI Runtime Security FAQ addressing where rails run and how enforcement works, while [Anthropic's cookbook](https://github.com/anthropics/claude-cookbooks/pull/831) added practical content moderation workflows that compile written policies into deterministic JSON rules. The [confident-ai/deepteam](https://github.com/confident-ai/deepteam/pull/260) project fixed a critical bug where sampling rates above 0.5 were guarding 100% of requests instead of the intended fraction. These improvements in governance tooling are crucial as AI systems are deployed at scale.
+
+**Reinforcement Learning from Human Feedback**: The [mini-verl](https://github.com/DaoyuanLi2816/mini-verl/releases/tag/v0.10.0) framework released v0.10.0 with versioned compatibility profiles and hardware evidence records, while [verl-omni](https://github.com/verl-project/verl-omni/pull/383) added support for MiniMax H3 DiffusionNFT training with deterministic reward inference. This infrastructure development supports more reliable and reproducible RLHF training pipelines, which are critical for aligning AI systems with human values.
+
+## Notable GitHub Releases & Tools
+
+**[TransformerLens v3.7.2](https://github.com/TransformerLensOrg/TransformerLens/releases/tag/v3.7.2)**: Fixed critical compatibility issues with newer model architectures and added J-space sparse decomposition for analyzing model representations in terms of output vocabulary directions, enabling deeper mechanistic interpretability research on frontier models.
+
+**[agent-airlock v0.8.72](https://github.com/sattyamjjain/agent-airlock/releases/tag/v0.8.72)**: Published the first quantitative injection benchmark results showing 0% detection rates across major AI coding assistants when malicious instructions are embedded in code, highlighting a significant safety gap in current agent systems.
+
+**[mini-verl v0.10.0](https://github.com/DaoyuanLi2816/mini-verl/releases/tag/v0.10.0)**: Released versioned compatibility profiles for reproducible RLHF training with strict hardware evidence records, enabling more reliable research and deployment of human-aligned AI systems.
+
+**[SAFi V1.4](https://github.com/jnamaya/SAFi/releases/tag/v1.4)**: Introduced verifiable governance claims with formal license agreements and trademark policies, demonstrating how open-source AI projects can maintain both transparency and appropriate controls over safety-critical systems.
+
+**[nyxGPT 3.0.0rc9](https://github.com/dkblinux98/nyxGPT/releases/tag/3.0.0rc9)**: Advanced enterprise deployment hardening with cloud-native provisioning and systematic quality gates, showing how AI development platforms are maturing toward production-ready safety and reliability standards.
