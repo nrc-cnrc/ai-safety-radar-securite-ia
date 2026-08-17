@@ -1,0 +1,11 @@
+# Blogs & News (2026-08-17)
+
+## Top Stories
+
+**[Does DiffusionGemma do latent reasoning?](https://www.alignmentforum.org/posts/QBuJ3suRZxrrxSTtv/does-diffusiongemma-do-latent-reasoning)** - Alignment Forum researchers are investigating whether Google DeepMind's DiffusionGemma model performs opaque reasoning during its multi-step diffusion process, building on work by Engels et al. that found the model maintains high monitorability despite generating text through multiple diffusion steps with uninterpretable vectors. This research matters because models with significant opaque serial depth could pose serious alignment challenges if we cannot monitor their internal reasoning processes.
+
+**[Q2.5 2026 Timelines Update: Uplift and Revenue](https://www.lesswrong.com/posts/ZPSsmRH5oMwLPXys4/q2-5-2026-timelines-update-uplift-and-revenue)** - A research group has updated their AI timelines forecasting model, finding slightly shorter timelines with improved confidence in their modeling approach, following their recent publication of "AI 2040: Plan A" on domestic AI regulation. This update matters because accurate timeline forecasting is crucial for coordinating AI safety research priorities and policy preparation timelines.
+
+**[Three thoughts on civilisational handoff](https://www.lesswrong.com/posts/mGLCMzHhjcWsMm6sR/three-thoughts-on-civilisational-handoff)** - A LessWrong post explores scenarios where humans delegate major civilizational decisions to AI systems, arguing that such handoffs might actually decelerate progress contrary to common intuitions, as AI systems might be more cautious about irreversible decisions. This analysis matters because understanding the dynamics of human-AI decision-making transitions is critical for maintaining meaningful human agency and avoiding premature or poorly-structured transfers of authority.
+
+**[On Dwarkesh Patel's Podcast With Ryan Greenblatt](https://thezvi.substack.com/p/on-dwarkesh-patels-podcast-with-ryan)** - Zvi Mowshowitz provides analysis of a podcast featuring Ryan Greenblatt, likely covering AI safety research and policy topics given Greenblatt's work on AI alignment at Anthropic. This commentary matters because expert synthesis of technical AI safety discussions helps bridge the gap between research developments and broader policy understanding.
