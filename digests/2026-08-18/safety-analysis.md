@@ -1,0 +1,13 @@
+# Blogs & News (2026-08-18)
+
+## Top Stories
+
+**[For Claude, capability and dispreferring CDT are the ~same thing. Much more so than for GPT.](https://www.lesswrong.com/posts/5T6GAsvLPFd3epJtd/for-claude-capability-and-dispreferring-cdt-are-the-same)** - New analysis reveals that Anthropic's Claude models show an almost perfect correlation between general capabilities and preference for evidential decision theory (EDT) over causal decision theory (CDT), a relationship that's much weaker in OpenAI's GPT models. This finding suggests fundamental differences in how different AI architectures or training approaches develop decision-theoretic reasoning, which could have significant implications for alignment strategies.
+
+**[Q2.5 2026 Timelines Update: Uplift and Revenue](https://www.lesswrong.com/posts/ZPSsmRH5oMwLPXys4/q2-5-2026-timelines-update-uplift-and-revenue)** - Researchers have updated their AI timelines forecasts with slightly shorter predictions but increased confidence due to improved modeling methodologies and a stronger evidence base. This represents a continued acceleration in expected AGI development timelines among forecasters who are actively tracking the space.
+
+**[Three thoughts on civilisational handoff](https://www.lesswrong.com/posts/mGLCMzHhjcWsMm6sR/three-thoughts-on-civilisational-handoff)** - Analysis explores the counterintuitive possibility that transferring decision-making authority to AI systems might actually decelerate rather than accelerate civilizational progress, challenging common assumptions about post-AGI development trajectories. This perspective offers important considerations for governance frameworks around when and how to delegate high-stakes decisions to AI systems.
+
+**[Import AI 469: Science AI; RSI simulator; and Zuck's technological pessimism](https://importai.substack.com/p/import-ai-469-science-ai-rsi-simulator)** - Jack Clark's latest newsletter highlights developments in autonomous AI researchers and recursive self-improvement simulators, marking the emergence of AI systems capable of conducting independent research. This represents a potential inflection point toward more autonomous AI development processes with significant implications for oversight and control.
+
+**[Teaching Everyone to Fish for Tokens](https://www.interconnects.ai/p/teaching-everyone-to-fish-for-tokens)** - Nathan Lambert analyzes Nvidia's strategic push to democratize AI model development, potentially shifting market dynamics away from centralized AI labs like Anthropic and OpenAI toward more distributed development. This trend could significantly impact AI governance by making advanced AI capabilities more widely accessible while potentially complicating oversight efforts.
