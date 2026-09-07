@@ -1,0 +1,9 @@
+# Blogs & News (2026-09-07)
+
+## Top Stories
+
+**["An Alien Mind" from OAI chief scientist seems newly cautious on alignment](https://www.lesswrong.com/posts/8GYhKdbEHs3vQZFv9/an-alien-mind-from-oai-chief-scientist-seems-newly-cautious)** - OpenAI Chief Scientist Jakub Pachocki published an essay calling for "extreme caution" in AI development, with Sam Altman endorsing it as "an important essay." The LessWrong analysis suggests this represents a significant shift from OpenAI's previous public stance toward more alignment-focused messaging. This matters because it could signal internal concerns at OpenAI about safety challenges or a strategic pivot in their public communications on AI risk.
+
+**[OpenAI and the Wiki Incident](https://thezvi.substack.com/p/openai-and-the-wiki-incident)** - Zvi Mowshowitz provides follow-up coverage on what appears to be an incident involving OpenAI's agent systems, building on previous reporting about "agent swarms." Without access to the full content, the rapid succession of coverage suggests this incident may involve concerning autonomous behavior or capabilities demonstrations. This matters because agent systems represent a key frontier where alignment failures could manifest in observable, potentially concerning ways.
+
+**[Claude Mythos 5.1 and Fable 5.1: Capabilities](https://thezvi.substack.com/p/claude-mythos-51-and-fable-51-capabilities)** - Zvi notes this is "the weirdest situation" for writing a capabilities review of new Claude models, suggesting unusual circumstances around Anthropic's latest releases. The framing implies either unexpected capabilities jumps or concerning behavioral patterns that complicate standard evaluation approaches. This matters because capabilities evaluations are crucial for tracking AI progress and potential safety implications, and unusual evaluation circumstances could indicate we're entering new territory for AI systems.
