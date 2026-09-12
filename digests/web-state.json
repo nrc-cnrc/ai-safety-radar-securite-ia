@@ -420,7 +420,10 @@
     "https://www.anthropic.com/news/enterprise-frontier-safeguards",
     "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
     "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
-    "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities"
+    "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
+    "https://www.anthropic.com/research/anthropic-economic-index-insights-from-claude-sonnet-3-7",
+    "https://www.anthropic.com/research/anthropic-education-report-how-educators-use-claude",
+    "https://www.anthropic.com/research/the-anthropic-economic-index"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
