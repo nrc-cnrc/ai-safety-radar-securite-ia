@@ -1,0 +1,19 @@
+# Community & Tools (2026-09-16)
+
+## Key Discussions
+
+**AI Regulation as Business Models**: The [discussion on Twitter](https://twitter.com/kevinnbass/status/2099621874279817638) about Anthropic's business model relationship to AI regulation sparked debate with 27 points on Hacker News. The conversation touches on the potential conflicts of interest when AI companies both develop technology and influence regulatory frameworks. This matters because it highlights growing scrutiny of how leading AI companies may shape governance in ways that benefit their competitive positions.
+
+**Pizza Bot AI Agent Framework**: A [new inbox system for background AI agents](https://github.com/pizza-bot-app/pizza-bot) gained 48 points and 31 comments on Hacker News. The project presents an interesting approach to managing autonomous AI agents that work asynchronously in the background. This matters because it addresses a key infrastructure challenge as AI agents become more prevalent in production environments.
+
+**Bond Market Impact on AI Investment**: While not directly AI-focused, the [discussion about global bond yields hitting 2008 highs](https://www.reuters.com/world/asia-pacific/bond-selloff-drives-us-benchmark-beyond-5-stocks-rattled-2026-09-15/) (162 points, 168 comments) reflects broader economic pressures that could significantly impact AI company valuations and funding. This matters because AI development remains capital-intensive, and tighter financial conditions could reshape the competitive landscape.
+
+## Notable GitHub Releases & Tools
+
+**OpenAI Cookbook Updates**: Recent pull requests in the [OpenAI cookbook](https://github.com/openai/openai-cookbook) include comprehensive [Agents API application walkthroughs](https://github.com/openai/openai-cookbook/pull/3106) and [agent optimization guides](https://github.com/openai/openai-cookbook/pull/3073). These provide step-by-step implementation guidance for developers building production agent systems. This matters because it lowers the barrier to entry for deploying sophisticated AI agents in real-world applications.
+
+**EleutherAI Evaluation Harness Improvements**: The [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) received multiple fixes including [improved few-shot caching](https://github.com/EleutherAI/lm-evaluation-harness/pull/4166) and [better group aggregation](https://github.com/EleutherAI/lm-evaluation-harness/pull/4172). The project also added support for [EconLogicQA](https://github.com/EleutherAI/lm-evaluation-harness/pull/4120), a new benchmark for economic sequential reasoning. This matters because reliable evaluation infrastructure is critical for measuring AI progress and ensuring fair comparisons across models.
+
+**Agent Safety Tools Growth**: Several repositories focused on AI agent safety saw active development, including updates to [agent-airlock](https://github.com/sattyamjjain/agent-airlock) for agent sandboxing and [rule-audit](https://github.com/hermes-labs-ai/rule-audit) for prompt security auditing. The [PipeRoll registry](https://github.com/piperoll/registry) added new incident tracking capabilities with [self-disclosed governance incidents](https://github.com/piperoll/registry/pull/61). This matters because it reflects growing awareness of AI safety risks and the development of practical tools to mitigate them.
+
+**MLflow Security Fixes**: The [MLflow project](https://github.com/mlflow/mlflow) patched multiple security vulnerabilities including [unauthorized artifact access](https://github.com/mlflow/mlflow/pull/25891) and [authentication bypass issues](https://github.com/mlflow/mlflow/pull/25892). These fixes address critical security gaps in a widely-used ML operations platform. This matters because MLflow's widespread adoption means these vulnerabilities could have affected numerous production AI systems.
