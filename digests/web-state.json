@@ -428,7 +428,8 @@
     "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
     "https://www.anthropic.com/news/accenture-embedded-evaluation",
     "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-    "https://www.anthropic.com/research/project-swap"
+    "https://www.anthropic.com/research/project-swap",
+    "https://www.anthropic.com/research/yes-claude-can-do-nine-loops"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -893,7 +894,8 @@
     "https://deepmind.google/research/publications/264392/",
     "https://deepmind.google/research/publications/118955/",
     "https://deepmind.google/research/publications/270149/",
-    "https://deepmind.google/research/publications/265605/"
+    "https://deepmind.google/research/publications/265605/",
+    "https://deepmind.google/research/publications/157938/"
   ],
   "IAPS (Institute for AI Policy & Strategy)": [
     "https://www.iaps.ai/research/ai-decision-support-systems",
