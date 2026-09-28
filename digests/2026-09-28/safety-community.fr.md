@@ -1,0 +1,21 @@
+# Communauté et Outils (2026-09-28)
+
+## Discussions Clés
+
+**LLM Evaluation Harness : Fuite de Données Few-shot** - [EleutherAI/lm-evaluation-harness issue #4145](https://github.com/EleutherAI/lm-evaluation-harness/issues/4145) a mis en évidence un problème critique d'intégrité d'évaluation où les exemples few-shot pouvaient inclure le document d'évaluation lui-même lorsque les tâches manquent de divisions d'entraînement séparées. Cela crée des scores de performance gonflés et compromet la validité des benchmarks. Ceci importe car cela mine la fiabilité des résultats d'évaluation largement utilisés dans la recherche sur la sécurité de l'IA.
+
+**Vulnérabilités de Sécurité d'Agent Airlock** - [sattyamjjain/agent-airlock PR #247](https://github.com/sattyamjjain/agent-airlock/pull/247) a traité plusieurs lacunes de sécurité où les outils générateurs pouvaient contourner les restrictions réseau et fuir des sorties non masquées en dehors de la limite d'isolation prévue. Les corrections implémentent des modèles de sécurité fail-closed pour la validation des outils et l'audit des arguments. Ceci importe car cela empêche les agents IA de contourner les contrôles de sécurité conçus pour contenir leurs actions.
+
+**Vulnérabilité de Traversée de Chemin OpenAI Cookbook** - [openai/openai-cookbook PR #3120](https://github.com/openai/openai-cookbook/pull/3120) a corrigé une vulnérabilité de traversée de chemin de gravité moyenne dans les harnesses d'évaluation en temps réel où des fichiers de jeux de données hostiles pouvaient manipuler les chemins du système de fichiers pour lire/écrire en dehors des répertoires prévus. Ceci importe car cela empêche les jeux de données malveillants de compromettre l'infrastructure d'évaluation et d'accéder à des fichiers sensibles.
+
+**Bug de Pagination de l'API d'Expérimentation LangFuse** - [langfuse/langfuse issue #17840](https://github.com/langfuse/langfuse/issues/17840) a identifié comment les expérimentations de longue durée pouvaient apparaître plusieurs fois à travers la pagination par curseur, menant potentiellement à des résultats d'analyse et de monitoring incorrects. Ceci importe car le suivi précis des expérimentations est essentiel pour le développement responsable de l'IA et le monitoring de sécurité.
+
+## Sorties GitHub et Outils Notables
+
+**QWED Finance v3.0.0** - [qwed-finance release](https://github.com/QWED-AI/qwed-finance/releases/tag/v3.0.0) introduit des reçus signés et un durcissement de sécurité fail-closed pour les outils de conformité financière, incluant la validation des charges utiles JSON et la désinfection des entrées pour prévenir les attaques par injection de guillemets. Cela permet des applications financières IA plus sécurisées avec des pistes d'audit appropriées.
+
+**Bergson v2.0.4** - [EleutherAI/bergson releases](https://github.com/EleutherAI/bergson/releases/tag/v2.0.4) apporte plusieurs corrections de performance et d'exactitude pour les calculs de fonctions d'influence, incluant la mise à l'échelle appropriée du Hessien sous réduction de perte et des améliorations de compatibilité multi-GPU. Cela permet une analyse d'attribution de données plus fiable pour la recherche sur la sécurité de l'IA.
+
+**Agent Arena 0.2.0** - [rbrus/agent-arena release](https://github.com/rbrus/agent-arena/releases/tag/v0.2.0) livre une plateforme d'évaluation d'agents prête pour la production avec support de scénarios Diplomacy et outillage de vérification croisée pour des évaluations d'agents IA vérifiables. Cela permet des tests standardisés d'interactions multi-agents et de capacités de raisonnement stratégique.
+
+**TransformerLens SVD Circuits** - Plusieurs PRs ([#1831](https://github.com/TransformerLensOrg/TransformerLens/pull/1831), [#1834](https://github.com/TransformerLensOrg/TransformerLens/pull/1834)) ajoutent des outils d'interprétabilité avancés incluant la décomposition en valeurs singulières des têtes d'attention en sous-fonctions et RelevanceLens pour une analyse basée sur les gradients améliorée. Cela permet aux chercheurs de mieux comprendre les mécanismes internes des modèles transformer pour la recherche sur l'alignment.
