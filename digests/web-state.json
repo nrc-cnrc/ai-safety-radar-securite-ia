@@ -429,7 +429,9 @@
     "https://www.anthropic.com/news/accenture-embedded-evaluation",
     "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
     "https://www.anthropic.com/research/project-swap",
-    "https://www.anthropic.com/research/yes-claude-can-do-nine-loops"
+    "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+    "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+    "https://www.anthropic.com/research/your-thoughts-on-ai"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -523,7 +525,8 @@
     "https://apolloresearch.ai/blog/our-norms-coi-security-science-communication",
     "https://apolloresearch.ai/blog/security-at-apollo-research",
     "https://apolloresearch.ai/blog/the-first-year-of-apollo-research",
-    "https://apolloresearch.ai/blog/theories-of-change-for-ai-auditing"
+    "https://apolloresearch.ai/blog/theories-of-change-for-ai-auditing",
+    "https://apolloresearch.ai/blog/embedded-evaluators-are-necessary-for-meaningful-external-testing"
   ],
   "Epoch AI": [
     "https://epoch.ai/blog/a-compute-based-framework-for-thinking-about-the-future-of-ai",
@@ -1033,7 +1036,8 @@
     "https://www.iaps.ai/research/tag/Cassia+King",
     "https://www.iaps.ai/research/tag/Hamish+Low",
     "https://www.iaps.ai/research/tag/Karson+Elmgren",
-    "https://www.iaps.ai/research/differential-automation-steering-automated-research-and-development-toward-safety-and-security"
+    "https://www.iaps.ai/research/differential-automation-steering-automated-research-and-development-toward-safety-and-security",
+    "https://www.iaps.ai/research/preparing-for-offensive-cyber-agents-piloting-ai-enabled-penetration-testing-and-red-teaming"
   ],
   "Conjecture": [
     "https://www.conjecture.dev/research/build-a-simple-game-with-tactics",
