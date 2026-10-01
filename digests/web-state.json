@@ -431,7 +431,9 @@
     "https://www.anthropic.com/research/project-swap",
     "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
     "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
-    "https://www.anthropic.com/research/your-thoughts-on-ai"
+    "https://www.anthropic.com/research/your-thoughts-on-ai",
+    "https://www.anthropic.com/news/barclays-scales-claude",
+    "https://www.anthropic.com/research/what-work-can-robots-do"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -526,7 +528,9 @@
     "https://apolloresearch.ai/blog/security-at-apollo-research",
     "https://apolloresearch.ai/blog/the-first-year-of-apollo-research",
     "https://apolloresearch.ai/blog/theories-of-change-for-ai-auditing",
-    "https://apolloresearch.ai/blog/embedded-evaluators-are-necessary-for-meaningful-external-testing"
+    "https://apolloresearch.ai/blog/embedded-evaluators-are-necessary-for-meaningful-external-testing",
+    "https://apolloresearch.ai/blog/on-testifying-on-misaligned-ai-in-the-us-senate",
+    "https://apolloresearch.ai/blog/principles-for-embedded-evaluations"
   ],
   "Epoch AI": [
     "https://epoch.ai/blog/a-compute-based-framework-for-thinking-about-the-future-of-ai",
@@ -898,7 +902,8 @@
     "https://deepmind.google/research/publications/118955/",
     "https://deepmind.google/research/publications/270149/",
     "https://deepmind.google/research/publications/265605/",
-    "https://deepmind.google/research/publications/157938/"
+    "https://deepmind.google/research/publications/157938/",
+    "https://deepmind.google/research/publications/260459/"
   ],
   "IAPS (Institute for AI Policy & Strategy)": [
     "https://www.iaps.ai/research/ai-decision-support-systems",
