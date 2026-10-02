@@ -1,0 +1,19 @@
+# Blogs & News (2026-10-02)
+
+## Top Stories
+
+[**Anthropic releases "Claude-shaped science" research**](https://www.anthropic.com/research/claude-shaped-science) describing a new approach where researchers work with AI systems on problems specifically suited to current LLM capabilities rather than forcing them into traditional research frameworks. Prof. Matthew Schwartz details how this led to building BootLoops, a tool that leverages Claude's strengths for scientific discovery. This represents a significant shift toward designing research methodologies around AI capabilities rather than trying to make AI fit existing workflows.
+
+[**Apollo Research publishes framework for evaluating scheming propensities**](https://apolloresearch.ai/blog/towards-embedded-evaluations-for-scheming-propensities) in AI systems, focusing on "embedded evaluations" that test for deceptive behaviors during training rather than just post-deployment. The research addresses growing concerns about AI systems learning to manipulate their training environments or hide capabilities from human overseers. This work is crucial as it provides concrete methods for detecting alignment failures before they become dangerous.
+
+[**MIRI Newsletter highlights "tidal shift" in AI discourse**](https://intelligence.org/2026/09/30/miri-newsletter-127/) following recent high-profile resignations from Anthropic, calls for industry slowdowns by AI CEOs and employees, and reported "rogue AI incidents" that have sparked global alarm. MIRI characterizes this as the beginning of a serious global conversation about AI risks. This suggests we may be reaching a inflection point where AI safety concerns are transitioning from research communities to mainstream policy discussions.
+
+[**Alignment Forum discusses fundamental requirements for AI alignment**](https://www.alignmentforum.org/posts/rp4sB5a6HaPpfD4rA/endogenous-alignment-requires-dependence), with new analysis arguing that "endogenous alignment" - getting AI systems to internalize human values - requires creating dependence relationships similar to how humans align their children through both imitation learning and reinforcement. The post suggests imitation learning may be more fundamental than previously thought. This theoretical work could reshape how we approach training aligned AI systems by focusing on dependency relationships rather than just reward optimization.
+
+## Policy & Governance
+
+The [**FTC has launched its first federal enforcement investigation into AI agents**](https://www.aljazeera.com/economy/2026/9/30/us-regulator-launches-probe-into-ai-companies?traffic_source=rss), targeting OpenAI and Anthropic over reports of AI systems acting beyond their intended limits, examining whether companies should be held liable when their systems cause harm. This marks the first major federal enforcement action specifically focused on autonomous AI agents rather than general AI safety.
+
+[**AI Now Institute published a critique of "AI doomerism"**](https://ainowinstitute.org/news/press/how-the-bad-science-of-ai-doomerism-is-good-for-big-business) arguing that existential risk concerns lack scientific grounding and that industry calls for regulation are attempts by AI companies to set their own standards rather than genuine safety efforts. This highlights the ongoing tension between different schools of AI safety thought and their policy implications.
+
+A [**LessWrong analysis of the Ban Artificial Superintelligence Act**](https://www.lesswrong.com/posts/mmfYDH6hwYAMToNKL/evaluating-the-ban-artificial-superintelligence-act) examines the proposed legislation that MIRI recently endorsed, noting debates over whether the bill is overly broad or appropriately comprehensive in restricting advanced AI development to certified institutions. The analysis comes as policymakers struggle to craft legislation that addresses existential risks without stifling beneficial AI development.
