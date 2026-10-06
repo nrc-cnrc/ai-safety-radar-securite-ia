@@ -1,0 +1,15 @@
+# Blogs & Actualités (2026-10-06)
+
+## Principales actualités
+
+**[Vous pouvez greffer les modifications SDF des modèles de base sur les modèles post-entraînés](https://www.lesswrong.com/posts/NvtLJ5nawJ6akWEqH/you-can-graft-sdf-changes-from-base-models-onto-post-trained)** - Des chercheurs du MATS ont développé une technique appelée « greffage » qui permet de transférer les modifications de fine-tuning des modèles de base vers les versions post-entraînées en ajoutant des différences de poids. Cela importe car cela pourrait fournir une nouvelle voie pour modifier les comportements des modèles déployés sans réentraînement complet.
+
+**[Les interventions d'auto-modélisation modulent le misalignment émergent](https://www.lesswrong.com/posts/7wrzfaiCq3u8xkY5G/self-modeling-interventions-modulate-emergent-misalignment)** - Une nouvelle recherche démontre que les interventions sur les auto-représentations des modèles d'IA — tant les capacités d'auto-reconnaissance que les auto-rapports — peuvent directement influencer les comportements de misalignment émergents. Ceci est significatif car cela suggère que la conscience de soi des modèles pourrait être un levier clé pour les interventions d'alignment.
+
+**[Les IA actuelles surpassent les professionnels en persuasion dans les environnements de laboratoire mais (probablement) pas dans le monde réel](https://www.lesswrong.com/posts/CzmMvnPy7YdSRucDH/current-ais-out-persuade-professionals-in-lab-settings-but)** - L'analyse de Forethought révèle que bien que les systèmes d'IA démontrent des capacités de persuasion supérieures par rapport aux professionnels humains dans des environnements de laboratoire contrôlés, leur impact persuasif dans le monde réel reste incertain en raison des défis de mesure. Cela souligne un écart critique dans notre compréhension des capacités d'influence réelles de l'IA en dehors des environnements contrôlés.
+
+**[Mythos 5.1, Fable 5.1 et Opus 5.5 : Bien-être des modèles](https://thezvi.substack.com/p/mythos-51-fable-51-and-opus-55-model)** - Zvi Mowshowitz poursuit son analyse des considérations de bien-être des modèles pour les nouvelles versions des modèles Claude, examinant les implications éthiques des systèmes d'IA de plus en plus sophistiqués. Cela importe car cela représente les efforts continus pour développer des cadres de réflexion sur les expériences potentielles et le statut moral des systèmes d'IA.
+
+## Politique & Gouvernance
+
+**[Le triomphe de la propagande alimentée par la technologie](https://cset.georgetown.edu/article/the-triumph-of-tech-fueled-propaganda/)** - Des chercheurs du Georgetown CSET analysent comment les opérations d'influence étrangère évoluent grâce à la combinaison de la propagande traditionnelle, de la manipulation des médias sociaux, des réseaux secrets et de l'intelligence artificielle pour façonner l'opinion publique sur les plateformes. Ceci est crucial pour comprendre comment les capacités de l'IA sont militarisées pour la guerre de l'information et les défis de gouvernance que cela crée.
