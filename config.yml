@@ -355,6 +355,9 @@ aisi_websites:
   - name: Korea AI Safety Institute
     url: https://www.msit.go.kr/eng/index.do
     tier: 1
+  - name: Australian AI Safety Institute
+    url: https://www.industry.gov.au/science-technology-and-innovation/technology/artificial-intelligence/ai-safety-institute
+    tier: 1
 
 # Hacker News search keywords
 hn_keywords:
