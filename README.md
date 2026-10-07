@@ -14,7 +14,7 @@ Runs every morning via GitHub Actions, pulls from nine types of data sources, su
 
 | Source | What it tracks |
 |---|---|
-| **AI Safety Institutes** | Updates from US AISI, UK AISI, Canada CAISI, Japan J-AISI, Singapore AISI, EU AI Office, Korea AISI |
+| **AI Safety Institutes** | Updates from US AISI, UK AISI, Canada CAISI, Japan J-AISI, Singapore AISI, EU AI Office, Korea AISI, Australian AISI |
 | **ArXiv** | Papers tagged cs.AI, cs.CL, cs.LG, cs.CY, cs.CR matching safety keywords |
 | **Scientific Journals** | Peer-reviewed articles from general science (Nature, Science, PNAS, PLOS ONE), AI/ML technical journals (Nature Machine Intelligence, JMLR, JAIR, Patterns), and AI ethics/society/policy journals (AI & Society, AI and Ethics, Ethics and Information Technology, Minds and Machines, Philosophy & Technology, Big Data & Society) — keyword-filtered for AI safety relevance |
 | **Org Websites** | New publications from Anthropic, OpenAI, DeepMind (sitemap crawling) |
