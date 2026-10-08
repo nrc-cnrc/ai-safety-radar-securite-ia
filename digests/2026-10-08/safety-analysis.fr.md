@@ -1,0 +1,15 @@
+# Blogs & News (08-10-2026)
+
+## Actualités principales
+
+**[Réflexion d'un ingénieur DeepSeek sur l'IA qui automatise son propre travail](https://www.lesswrong.com/posts/o8roRrdisBAjngHJN/a-summary-of-a-viral-chinese-essay-on-what-a-deepseek-kernel)** - Un essai chinois viral d'un ingénieur kernel DeepSeek qui a écrit le mécanisme d'attention principal pour DeepSeek v4.1 réfléchit sur l'IA qui pourrait remplacer son travail spécialisé, concluant avec des arguments en faveur de l'IA frontière à poids ouverts. Cela offre une perspective d'initié rare sur la façon dont les développeurs d'IA eux-mêmes perçoivent les risques de remplacement de leur propre technologie.
+
+**[Les résultats mathématiques d'OpenAI sont-ils « créatifs » de manière importante ?](https://www.lesswrong.com/posts/neHiCSdL4tJDg7Hrm/are-openai-s-math-results-creative-in-an-important-way)** - LessWrong discute de savoir si les récentes capacités mathématiques d'OpenAI représentent une véritable innovation nécessaire pour des tâches comme développer de nouvelles armes biologiques ou résoudre l'alignment, certains arguant que les paradigmes actuels pourraient ne pas s'adapter facilement à une science véritablement innovante. Ce débat est crucial pour évaluer si les trajectoires actuelles de développement de l'IA posent des risques existentiels par l'émergence de nouvelles capacités.
+
+**[Le discours sur les cyber-risques est défaillant](https://www.interconnects.ai/p/the-cyber-risk-discourse-is-broken)** - Nathan Lambert argumente que les discussions autour des cyber-risques de l'IA et des modèles à poids ouverts manquent de nuance concernant les compromis et sont trop idéologiques. Cela importe car les capacités cyber représentent un vecteur de risque IA clé à court terme où les décisions de gouvernance sur l'accès aux modèles pourraient considérablement impacter les résultats de sécurité.
+
+## Politique et gouvernance
+
+**[Devrions-nous tracer les puces IA ?](https://cset.georgetown.edu/article/should-we-track-ai-chips/)** - Le CSET de Georgetown a publié une recherche examinant comment les méthodes de vérification de localisation pourraient améliorer l'application des contrôles d'exportation sur les puces IA puissantes, enquêtant sur les approches techniques pour atténuer la contrebande de puces. Cette recherche est critique alors que la gouvernance du calcul par les contrôles de puces devient un outil politique principal pour gérer le développement de l'IA et la compétition internationale.
+
+**[Sécurité épistémique dans la supervision scalable](https://www.industry.gov.au/publications/epistemic-safety-scalable-oversight)** - L'Institut australien de sécurité de l'IA a publié une nouvelle recherche sur les défis de sécurité épistémique dans les approches de supervision scalable pour les systèmes d'IA. Cela représente un investissement gouvernemental continu dans la recherche technique en sécurité de l'IA, particulièrement autour des mécanismes de supervision qui pourraient être cruciaux pour gérer les futurs systèmes plus capables.

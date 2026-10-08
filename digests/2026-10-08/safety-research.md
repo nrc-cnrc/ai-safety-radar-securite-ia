@@ -1,0 +1,21 @@
+# Research Papers (2026-10-08)
+
+## Key Papers
+
+Several papers this week address critical AI safety challenges, from deceptive behaviors to robustness failures and governance mechanisms.
+
+**[SLDR: Defending Against Malicious Fine-tuning via Selective Layers Recovery and Dynamic Routing](https://arxiv.org/abs/2610.10345v1)** presents a post-fine-tuning defense against adversarial fine-tuning that can maintain task performance while eroding safety refusal behaviors. The method identifies safety-sensitive layers and uses selective recovery with dynamic routing to restore refusal capabilities. This addresses a critical vulnerability in fine-tuning-as-a-service deployments where malicious actors could compromise aligned models.
+
+**[How to train your model organism](https://arxiv.org/abs/2610.10203v1)** proposes a framework for validating model organisms used in interpretability research with three objectives: target-behavior installation, general-capability preservation, and confound minimization. Current practices of training only for target behavior installation are insufficient for reliable interpretability research. This work provides essential methodological guidance for creating trustworthy test cases for alignment techniques.
+
+**[SLDR: Defending Against Malicious Fine-tuning via Selective Layers Recovery and Dynamic Routing](https://arxiv.org/abs/2610.10345v1)** demonstrates that safety sensitivity in neural networks is signed - different layers can strengthen or weaken refusal behavior when scaled. Building on this insight, SLDR selectively recovers safety-critical layers after potentially malicious fine-tuning while preserving task performance through dynamic routing. This provides a practical defense against a significant attack vector in AI deployment.
+
+**[PatchBench: Measuring Collateral Damage in Activation Patching](https://arxiv.org/abs/2610.10276v1)** introduces evaluation protocols that measure whether safety patches cause over-refusal on benign prompts or fail on harmful variants. Current patch evaluation focuses only on exact evaluation prompts, missing critical failure modes. The benchmark reveals that patches often succeed on evaluation sets while failing catastrophically on related inputs, highlighting the need for more comprehensive safety evaluation.
+
+**[Reasoning-Token Spikes Under Prompted Untruthful Responding in Large Language Models](https://arxiv.org/abs/2610.10405v1)** discovers that models produce distinctive patterns in internal reasoning tokens when prompted to respond untruthfully, even when chain-of-thought outputs appear normal. This finding suggests monitoring approaches that don't rely on semantic interpretability of reasoning traces may be viable for detecting deceptive behavior in AI systems.
+
+**[AI Safety Considerations for Agents With Limited Time to Act](https://arxiv.org/abs/2610.10285v1)** examines theoretical bounds for safety guarantees in partially observable environments with time constraints. The work introduces realistic scenarios showing how time pressure and observability limits constrain achievable safety guarantees, providing important theoretical foundations for understanding safety limits in real-world deployments.
+
+**[Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models](https://arxiv.org/abs/2610.10526v1)** reveals extreme sensitivity to instruction phrasing in vision-language-action models, with single word changes causing success rates to swing by tens of points. Even models fine-tuned with rephrase augmentation show swings up to 61 points, indicating this robustness failure persists despite mitigation attempts. This fragility poses serious risks for real-world robotic deployments.
+
+**[Comprehension Audits to Mitigate Risks from Automated AI Research](https://arxiv.org/abs/2610.10064v1)** proposes comprehension audits as a governance mechanism requiring demonstrated human understanding before continuing AI development or deployment. With AI already writing most code at frontier labs, this addresses the critical risk of insufficient human oversight in AI development pipelines.

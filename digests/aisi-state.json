@@ -82,7 +82,9 @@
     "https://www.aisi.gov.uk/blog/optimal-stopping-spending-evaluation-compute-where-it-counts",
     "https://www.aisi.gov.uk/blog/gpt-6-astra-performs-unsanctioned-supply-chain-attacks-in-simulations",
     "https://www.aisi.gov.uk/research/evaluating-whether-gpt-6-astra-performs-unsanctioned-supply-chain-attacks",
-    "https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities"
+    "https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities",
+    "https://www.aisi.gov.uk/research/transect-retaining-observability-for-long-horizon-llm-agent-evaluations",
+    "https://www.aisi.gov.uk/blog/transect-making-large-scale-agentic-evaluations-easier-to-understand"
   ],
   "Canada AI Safety Institute (CAISI)": [],
   "Japan AI Safety Institute (J-AISI)": [],
@@ -264,5 +266,17 @@
   ],
   "Korea AI Safety Institute": [
     "https://www.msit.go.kr/eng/newsLetter/list.do?sCode=eng&mPid=2&mId=8"
+  ],
+  "Australian AI Safety Institute": [
+    "https://www.industry.gov.au/science-technology-and-innovation/industry-innovation/research-and-development-tax-incentive",
+    "https://www.industry.gov.au/publications/national-ai-plan",
+    "https://www.nist.gov/news-events/news/2024/11/fact-sheet-us-department-commerce-us-department-state-launch-international",
+    "https://www.industry.gov.au/publications/seoul-declaration-countries-attending-ai-seoul-summit-21-22-may-2024#seoul-statement-of-intent-2",
+    "https://www.industry.gov.au/publications/bletchley-declaration-countries-attending-ai-safety-summit-1-2-november-2023",
+    "https://www.industry.gov.au/publications/epistemic-safety-scalable-oversight",
+    "https://www.industry.gov.au/publications/risks-and-controls-multi-agent-systems",
+    "https://www.industry.gov.au/publications/best-practice-automated-evaluation-large-language-models",
+    "https://www.industry.gov.au/publications/second-key-update-technical-safeguards-and-risk-management",
+    "https://www.industry.gov.au/publications/first-key-update-capabilities-and-risk-implications"
   ]
 }
