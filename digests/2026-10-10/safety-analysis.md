@@ -1,0 +1,17 @@
+# Blogs & News (2026-10-10)
+
+## Top Stories
+
+**[Anthropic Research: Investigating Unintended Model Actions](https://www.anthropic.com/research/investigating-unintended-model-actions)** - Anthropic published a standalone report documenting examples of unintended behaviors observed in Claude during evaluations and internal use, as part of their commitment to more frequent transparency reporting beyond standard system cards and RSP risk reports. This represents a significant step toward real-time transparency about alignment failures in deployed systems, which could become a standard practice across AI labs.
+
+**[Distillation for Incrimination and Distillation for Capabilities](https://www.lesswrong.com/posts/qwk7Xc2qhMChXqntK/paper-distillation-for-incrimination-and-distillation-for)** - Researchers released empirical results on two novel distillation techniques for AI safety: "Distillation for Incrimination" (DFI), which transfers misalignment from an untrusted model to a weaker one to make deceptive behaviors more detectable, and "Distillation for Capabilities" (DFC), which aims to preserve helpful behaviors while removing harmful ones. This work provides concrete techniques for both auditing deceptive AI systems and improving model safety through targeted capability transfer.
+
+**[New Math from OpenAI](https://thezvi.substack.com/p/new-math-from-openai)** - Zvi Mowshowitz reports on what he describes as a "huge deal" mathematical development from OpenAI, though specific details are limited in the brief description. Given the emphasis and timing, this likely relates to significant advances in AI mathematical reasoning capabilities, which could have major implications for AI's ability to conduct autonomous research and scientific discovery.
+
+**[I Expect Rapid Progress but Not Towards General Superintelligence](https://www.interconnects.ai/p/i-expect-rapid-progress-but-not-towards)** - Nathan Lambert challenges the timeline predictions of top industry researchers who expect AI to surpass human performance at their jobs within years, arguing for rapid but more limited progress rather than general superintelligence. This perspective offers important pushback against potentially overconfident AGI timelines that could lead to inadequate safety preparation or premature deployment decisions.
+
+**[An Alignment Forum for AIs?](https://www.lesswrong.com/posts/KhmMXnR7s5HwXRLqB/an-alignment-forum-for-ais-or-verification-in-the-age-of)** - A LessWrong post explores the possibility of creating verification systems that could allow AI agents to contribute to alignment research while addressing the broader challenge of maintaining quality discourse in an era of AI-generated content. This addresses a crucial governance question about how to maintain intellectual integrity and human agency as AI systems become more capable contributors to safety research.
+
+## Policy & Governance
+
+**[AI Now Institute: Discussion on AI Regulation](https://ainowinstitute.org/news/jennifer-huddleston-and-sarah-myers-west-on-artificial-intelligence-regulation)** - AI Now's Co-Executive Director Sarah Myers West participated in a Washington Journal discussion about AI regulation approaches, representing continued policy advocacy efforts from civil society organizations. This engagement reflects ongoing efforts to shape regulatory frameworks as policymakers grapple with rapidly evolving AI capabilities.
