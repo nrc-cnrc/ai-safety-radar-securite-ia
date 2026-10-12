@@ -1,0 +1,15 @@
+# Blogs & News (2026-10-12)
+
+## Top Stories
+
+**[Minimum required pacing: finish aligning it before you train the next one](https://www.alignmentforum.org/posts/ZWSstGSwmaxTjQ8W7/minimum-required-pacing-finish-aligning-it-before-you-train)** - An Alignment Forum post proposes a concrete pacing standard for AI development: labs should not train next-generation models until they have adequately resolved all significant alignment issues in current-generation models, using the analogy that you wouldn't build a Mach 3 jet before understanding why your Mach 2 jet keeps crashing. This represents a practical framework for operationalizing AI development pausing without requiring complete industry coordination.
+
+**[Game Design Creativity evals](https://www.lesswrong.com/posts/f6zuAfteYtupddiqF/game-design-creativity-evals)** - A LessWrong user describes their personal evaluation method for testing AI creativity by asking models to design novel games with unprecedented mechanics, noting that while earlier models defaulted to time manipulation concepts, reasoning models have begun producing genuinely creative outputs. This informal evaluation highlights the importance of domain-specific expertise in assessing AI capabilities and the evolution of creative reasoning in recent models.
+
+**[My Buddy Mike, Efficiency Gains From AI, and The World's Most Boringly Benign Criminal Conspiracy](https://www.lesswrong.com/posts/YmTmQDuQR6ki2BSGN/my-buddy-mike-efficiency-gains-from-ai-and-the-world-s-most)** - A LessWrong post uses an obfuscated real-world example to explore how AI-driven efficiency gains might create unexpected ethical dilemmas and potential for misuse, even in mundane professional contexts. This case study illustrates how AI deployment in everyday work environments could create novel alignment challenges beyond traditional safety scenarios.
+
+## Policy & Governance
+
+**[US lets Britain test unreleased models](https://www.channelnewsasia.com/business/us-reverses-course-britains-testing-ai-models-telegraph-says-6451601)** - The Trump administration has reversed its previous position and now allows US AI companies like OpenAI and Anthropic to share unreleased models with Britain's AI Security Institute for pre-deployment safety testing. This policy shift facilitates international cooperation on AI safety evaluation, though it doesn't establish binding safety requirements for developers.
+
+**[Lancet ranks nuclear war and AI among 17 major threats](https://www.theguardian.com/global-development/2026/oct/11/nuclear-war-and-malicious-use-of-ai-threaten-end-of-humanity-by-2100-says-lancet-assessment)** - A 35-member Lancet commission has included nuclear conflict and malicious AI use among 17 major threats that could impact global health through 2100, with both identified as potential extinction risks despite being considered unlikely. This represents significant mainstream medical and scientific recognition of AI as an existential risk comparable to nuclear warfare.
