@@ -442,7 +442,9 @@
     "https://www.anthropic.com/news/genesis-mission-commitment",
     "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source",
     "https://www.anthropic.com/research/the-missing-map-of-the-sky",
-    "https://www.anthropic.com/research/investigating-unintended-model-actions"
+    "https://www.anthropic.com/research/investigating-unintended-model-actions",
+    "https://www.anthropic.com/research/distillation-defenses",
+    "https://www.anthropic.com/research/self-replicating-ai"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"

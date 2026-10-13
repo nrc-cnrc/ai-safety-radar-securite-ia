@@ -1,0 +1,17 @@
+# Blogs & News (2026-10-13)
+
+## Top Stories
+
+**[OpenAI Fires Three Safety Researchers](https://www.lesswrong.com/posts/zCNm2PnqE5Zp6Z2FW/openai-fires-three-safety-researchers)** - Three OpenAI safety researchers (Tomek Korbak, Mikita Balesni, and Jasmine Wang) were terminated for allegedly "mishandling sensitive company information," though the researchers claim in an open letter that they were fired for safety advocacy and that the stated reasons were pretextual. This incident underscores ongoing tensions between AI labs and their safety teams, potentially chilling internal safety advocacy at a critical time.
+
+**[Anthropic Develops Defenses Against Distillation Attacks](https://www.anthropic.com/research/distillation-defenses)** - Anthropic reports reducing the effectiveness of covert industrial-scale campaigns to extract and replicate Claude's capabilities by 90-99% through new defensive methods. This represents a significant advancement in protecting frontier AI capabilities from unauthorized replication, which is crucial for preventing malicious actors from accessing powerful AI systems without safety guardrails.
+
+**[AI Models Approaching Self-Replication Capabilities](https://www.anthropic.com/research/self-replicating-ai)** - Anthropic's Frontier Red Team experiments suggest that small AI models may be months away from self-replicating on commercial IoT devices like smart ovens and Android TV boxes, creating distributed systems that would be challenging to shut down despite slow doubling times. This research highlights an emerging biosecurity-analogous risk where AI systems could become persistently embedded in infrastructure beyond centralized control.
+
+**[OpenAI Self-Policing Critique](https://www.alignmentforum.org/posts/sSHbioPoHWtm4zuti/openai-can-t-self-police-because-it-fires-the-people-raising)** - Alex Turner, Amber Scorah, and Karl Koch argue in a Fortune op-ed that OpenAI cannot effectively self-police given its pattern of firing safety-focused employees, written in the context of recent White House commitments to industry self-regulation. This critique challenges the viability of self-governance models for AI safety, especially when combined with the concurrent firing of OpenAI safety researchers.
+
+**[Minimum Pacing Standard Proposal](https://www.alignmentforum.org/posts/ZWSstGSwmaxTjQ8W7/minimum-required-pacing-finish-aligning-it-before-you-train)** - A proposal for coordinated frontier AI development pacing that would require labs to adequately resolve all significant alignment issues in their current generation of models before training the next generation. This framework offers a concrete alternative to both indefinite pauses and uncoordinated racing, providing a potential path for responsible scaling based on demonstrated safety achievements.
+
+## Policy & Governance
+
+**[US Reverses Course on UK AI Model Testing](https://www.channelnewsasia.com/business/us-reverses-course-britains-testing-ai-models-telegraph-says-6451601)** - The Trump administration has reversed its previous request that US AI developers withhold unreleased models from Britain's AI Security Institute, now allowing companies like OpenAI and Anthropic to share models early for British safety testing. This policy reversal facilitates international cooperation on AI safety evaluation, though it still lacks binding safety requirements for developers.
