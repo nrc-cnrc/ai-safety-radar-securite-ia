@@ -1,0 +1,26 @@
+# Communauté et outils (2026-10-15)
+
+## Discussions clés
+
+**1. Sécurité des agents et cadres de contrôle d'outils**
+Plusieurs discussions importantes ont émergé autour d'architectures robustes de sécurité des agents. Les [propositions du cookbook d'Anthropic](https://github.com/anthropics/claude-cookbooks/issues/719) pour des garde-fous déterministes comme vérifications pré/post-action sur les appels d'outils d'agents représentent un changement critique depuis la sécurité basée sur les prompts vers l'application d'invariants externes. Pendant ce temps, l'[analyse d'Agent Audit Kit](https://github.com/sattyamjjain/agent-audit-kit/pull/964) de l'empoisonnement d'outils MCP à travers le dataset MCPTox montre 1 348 outils empoisonnés sur 45 serveurs réels, soulignant le besoin de validation systématique des outils. Ceci importe car cela démontre l'écart entre les mesures de sécurité théoriques et les surfaces d'attaque du monde réel auxquelles font face les agents en production.
+
+**2. Sécurité de LM Evaluation Harness et problèmes de cache**
+Le [harness d'évaluation d'EleutherAI](https://github.com/EleutherAI/lm-evaluation-harness/issues/4393) fait face à de multiples préoccupations de sécurité, incluant le cache de requêtes qui utilise par défaut les répertoires site-packages et la sélection de tâches exécutant du code arbitraire avant validation. Le [problème de contournement trust_remote_code](https://github.com/EleutherAI/lm-evaluation-harness/issues/4391) montre que les drapeaux de sécurité peuvent escalader mais jamais désescalader, tandis que plusieurs tâches codent en dur l'exécution de code distant de manière inconditionnelle. Ceci importe car les cadres d'évaluation sont une infrastructure critique pour la recherche en sécurité de l'IA, et leur compromission pourrait invalider les évaluations de sécurité dans tout le domaine.
+
+**3. Interprétabilité des transformers et méthodes de contrôle**
+Les [discussions TransformerLens](https://github.com/TransformerLensOrg/TransformerLens/issues/1879) autour de la recherche d'alignment distribuée (DAS) avec des contrôles entraînés représentent des méthodes d'interprétabilité avancées pour comprendre les mécanismes internes des modèles. La proposition d'interventions d'échange sur les sous-espaces linéaires offre de nouvelles approches à l'interprétabilité mécanistique. Ceci importe car des outils d'interprétabilité fiables sont essentiels pour comprendre comment les techniques d'alignment affectent réellement le comportement des modèles au niveau mécanistique.
+
+## Sorties GitHub et outils notables
+
+**1. Extensions serveur Guardrails v2.5+ ([NVIDIA-NeMo/Guardrails](https://github.com/NVIDIA-NeMo/Guardrails/pull/2457))**
+Nouvelles extensions de transport HTTP appartenant à l'application, support du dialecte Chat LiteLLM, et dispatch HTTP sortant concret pour le déploiement de garde-fous en production. Les mises à jour permettent le routage réseau personnalisé, les clients HTTPX partagés, et la gestion de champs d'extension spécifiques aux fournisseurs tout en maintenant des profils de garde-fous à texte unique. Ceci importe car cela fournit l'infrastructure nécessaire pour déployer des garde-fous à grande échelle dans des systèmes de production où le routage réseau et la compatibilité des fournisseurs sont des préoccupations critiques.
+
+**2. Agent Footprint v10.3.0 ([footprintjs/agentfootprint](https://github.com/footprintjs/agentfootprint/releases/tag/v10.3.0))**
+Introduit la sortie structurée de fournisseur natif avec `.outputSchema(parser, { strategy: 'native' })` pour la conformité de schéma forcée au-delà des approches JSON-dans-prompt. Inclut des types publics additifs pour les enregistrements de vérification de réclamations étendues et des points de contrôle sauvegardés avec des identités d'occurrence exactes et des observations de vérification. Ceci importe car cela comble l'écart entre le formatage de sortie lâche basé sur les prompts et l'extraction de données structurées fiable nécessaire pour l'intégration d'outils d'agents.
+
+**3. StoryForge v0.1.12 ([XZZKANY/StoryForge](https://github.com/XZZKANY/StoryForge/pull/340))**
+Complète la migration TypeScript avec un système de validation parallèle qui exécute des moteurs Python/TS parallèles et compare les requêtes de modèles avant exécution. Le système détecte quand les migrations TS produisent des prompts différents des originaux Python tout en maintenant la stabilité de production. Ceci importe car cela démontre une approche pratique pour migrer graduellement des systèmes d'agents complexes tout en maintenant la sécurité par validation différentielle.
+
+**4. Corrections de sécurité de vérification QWED ([QWED-AI/qwed-verification](https://github.com/QWED-AI/qwed-verification/pull/454))**
+Adresse de multiples vulnérabilités de sécurité incluant le contournement d'authentification de clé API expirée (CWE-613), la rédaction d'URL dans les logs, et les imports de fournisseurs HTTPS uniquement. Les corrections appliquent des vérifications d'expiration de clés aux limites d'authentification et implémentent un comportement fermé-par-défaut approprié pour les services de vérification. Ceci importe car les systèmes de vérification sont des limites de confiance qui nécessitent une hygiène de sécurité robuste pour maintenir l'intégrité des évaluations de sécurité.
