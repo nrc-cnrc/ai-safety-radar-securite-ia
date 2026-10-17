@@ -447,7 +447,12 @@
     "https://www.anthropic.com/research/self-replicating-ai",
     "https://www.anthropic.com/news/singapore-office-opening",
     "https://www.anthropic.com/news/2026-us-midterms",
-    "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+    "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+    "https://www.anthropic.com/research/ai-expectations-gap",
+    "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+    "https://www.anthropic.com/research/ecdsa-curve-origins",
+    "https://www.anthropic.com/research/employment-at-anthropic",
+    "https://www.anthropic.com/research/expectations-for-the-future"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
