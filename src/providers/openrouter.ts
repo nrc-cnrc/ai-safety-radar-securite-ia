@@ -20,7 +20,7 @@ export class OpenRouterProvider implements LlmProvider {
         "X-Title": "AI Safety Daily Digest",
       },
     });
-    this.model = process.env.LLM_MODEL || "anthropic/claude-sonnet-4";
+    this.model = process.env.LLM_MODEL || "anthropic/claude-sonnet-5";
   }
 
   async summarize(prompt: string, maxTokens = 4096): Promise<string> {
