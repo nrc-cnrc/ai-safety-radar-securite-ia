@@ -7,7 +7,7 @@ export class AnthropicProvider implements LlmProvider {
 
   constructor() {
     this.client = new Anthropic();
-    this.model = process.env.LLM_MODEL || "claude-sonnet-4-6";
+    this.model = process.env.LLM_MODEL || "claude-sonnet-5-5";
   }
 
   async summarize(prompt: string, maxTokens = 4096): Promise<string> {
