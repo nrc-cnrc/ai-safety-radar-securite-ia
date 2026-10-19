@@ -1,3 +1,35 @@
 # Community & Tools (2026-10-19)
 
-*Report generation failed after retries.*
+## Key Discussions
+
+**1. "Big Tech Oligarchs Have a Terrible Plan for Humanity" ([The Atlantic](https://www.theatlantic.com/ideas/2026/10/ai-regulation-transhumanism-oligarchs/689013/), via [HN](https://news.ycombinator.com/item?id=50153403))**
+A critique arguing that a cluster of AI-industry leaders are pushing transhumanist and deregulatory agendas under the banner of "progress," with governance implications for how AI regulation debates get framed. Discussion volume was modest (34 points, 3 comments) but the piece touches a recurring community worry: that safety and governance rhetoric is being co-opted by commercial/ideological interests.
+*Why it matters: frames the political backdrop against which concrete AI safety regulation (EU AI Act follow-ons, US state bills) will be negotiated.*
+
+**2. Generative-task eval scoring can't tell "wrong" from "didn't parse" — [EleutherAI/lm-evaluation-harness #4007](https://github.com/EleutherAI/lm-evaluation-harness/issues/4007)**
+A census of the harness's 4,524 generative tasks found that **64.9%** score an unparseable model response identically to a definitively wrong one, hiding a major source of noise in benchmark results (including safety-relevant evals that build on this harness). A fix ([PR #4421](https://github.com/EleutherAI/lm-evaluation-harness/pull/4421)) adds an `unparsed_rate` metric, and sibling fixes landed for [MMLU-Pro answer extraction](https://github.com/EleutherAI/lm-evaluation-harness/pull/4417) and [CLIcK's missing option E](https://github.com/EleutherAI/lm-evaluation-harness/pull/4420).
+*Why it matters: silent conflation of "model refused/garbled" with "model is wrong" can systematically bias published capability and safety benchmark numbers across the ecosystem.*
+
+**3. A new benchmark for model subversion and "goal guarding" — [kevinoshaughnessy/subversionbench](https://github.com/kevinoshaughnessy/subversionbench)**
+Active work ([issue #101](https://github.com/kevinoshaughnessy/subversionbench/issues/101), [#100](https://github.com/kevinoshaughnessy/subversionbench/issues/100), [#99](https://github.com/kevinoshaughnessy/subversionbench/issues/99)) is running "mainline" and "goal-guarding" subversion evals against recent models (Aion 3.5/3.5-mini, Xiaomi MiMo v2.6-pro), plus a push to implement a cheaper deterministic grader ([#83](https://github.com/kevinoshaughnessy/subversionbench/issues/83)) and draft a preprint ([#69](https://github.com/kevinoshaughnessy/subversionbench/issues/69)).
+*Why it matters: direct, systematic empirical tracking of scheming/subversion-adjacent behavior across frontier and mid-tier models is exactly the kind of longitudinal signal the alignment community has been asking for.*
+
+**4. Interpretability tooling correctness bugs — [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens)**
+Three notable bug reports/fixes this week: compatibility-mode weight processing leaving biases in float32 on bf16/fp16 bridges ([#1911](https://github.com/TransformerLensOrg/TransformerLens/issues/1911) → [fix](https://github.com/TransformerLensOrg/TransformerLens/pull/1912)), `including_permanent=True` ignoring the `level` scope when clearing hooks ([#1913](https://github.com/TransformerLensOrg/TransformerLens/issues/1913) → [fix](https://github.com/TransformerLensOrg/TransformerLens/pull/1914)), and a subtler autograd-preservation bug in scaled hooks ([PR #1915](https://github.com/TransformerLensOrg/TransformerLens/pull/1915)).
+*Why it matters: TransformerLens underlies a large fraction of published mechanistic-interpretability research; silent dtype/hook-scope bugs can quietly invalidate ablation and patching results used in safety-relevant circuit analysis.*
+
+**5. Untrusted code execution inside a "safety" verification tool — [QWED-AI/qwed-verification #431](https://github.com/QWED-AI/qwed-verification/issues/431)**
+`SymbolicVerifier` uses CrossHair to symbolically check LLM-generated code, but CrossHair works by *importing* the module — meaning arbitrary top-level code from an untrusted LLM output runs on the host before any sandboxing kicks in. Fixed in [PR #464](https://github.com/QWED-AI/qwed-verification/pull/464) by forcing CrossHair to run only inside the existing Docker sandbox.
+*Why it matters: a classic "verification tool becomes an attack surface" failure mode — a sharp reminder that formal/symbolic verifiers for LLM output need their own threat model.*
+
+## Notable GitHub Releases & Tools
+
+- **[NVIDIA-NeMo/Guardrails — Agent Threat Rules detection rail](https://github.com/NVIDIA-NeMo/Guardrails/pull/2251)**: Adds an input rail matching user messages against the open [Agent Threat Rules](https://github.com/Agent-Threat-Rule/agent-threat-rules) catalog (prompt injection, jailbreaks, tool poisoning, MCP attacks, skill compromise). *Why it matters: brings a community-maintained, continuously updated attack-pattern catalog directly into a production guardrails pipeline.*
+
+- **[sattyamjjain/agent-airlock v0.10.25](https://github.com/sattyamjjain/agent-airlock/pull/334)**: Hardens the API-contract layer and MCP guard logic (F1–F18 fail-open fixes), closes two triaged CVEs via regression fixtures ([#346](https://github.com/sattyamjjain/agent-airlock/pull/346)) covering an MCP server path-traversal CVE ([CVE-2026-57496](https://github.com/sattyamjjain/agent-airlock/issues/329), CVSS 9.6) and a shell-command-injection CVE ([CVE-2026-108953](https://github.com/sattyamjjain/agent-airlock/issues/317)). *Why it matters: ongoing proactive triage of real MCP/agent-tooling CVEs against a guard library is a rare, concrete security-hardening workflow for agentic deployments.*
+
+- **[batrapulkit/squidbrake v0.13.3](https://github.com/batrapulkit/squidbrake/releases/tag/v0.13.3)**: Ships a public hosted free plan for its agent-action approval gateway, alongside [v0.13.1](https://github.com/batrapulkit/squidbrake/releases/tag/v0.13.1) fixing path-resolution bypasses (symlinks, globs, `cd`) that could let an agent reach the tool's own key material. *Why it matters: a human-in-the-loop approval layer for agent tool calls is exactly the kind of lightweight control surface many teams need before granting agents write access.*
+
+- **[EleutherAI/bergson — span-level & per-token attribution](https://github.com/EleutherAI/bergson/pull/524)**: Adds span-level training-data attribution between document- and token-level granularity, plus defaulting per-token scoring to output-token influence ([PR #557](https://github.com/EleutherAI/bergson/pull/557)) and single-neuron query support ([PR #554](https://github.com/EleutherAI/bergson/pull/554)). *Why it matters: finer-grained, efficient data attribution is a key building block for auditing what training data drives specific (including unsafe) model behaviors.*
+
+- **[DariuszNewecki/CORE v2.15.2](https://github.com/DariuszNewecki/CORE/releases/tag/v2.15.2)** and companion PRs ([#1202](https://github.com/DariuszNewecki/CORE/pull/1202), [#1203](https://github.com/DariuszNewecki/CORE/pull/1203), [#1204](https://github.com/DariuszNewecki/CORE/pull/1204)):
