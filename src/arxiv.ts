@@ -13,8 +13,12 @@ export interface ArxivPaper {
 
 export async function fetchArxiv(): Promise<ArxivPaper[]> {
   const config = loadConfig();
-  // ArXiv doesn't publish on weekends; use 2-day lookback to catch Friday papers on Monday
-  const since = daysAgo(2);
+  // ArXiv doesn't publish on weekends, and Friday's papers can still be the newest
+  // available well into Monday's run, so use a 4-day lookback to make sure Monday
+  // (and days following a holiday) still catch Friday's papers. The API already caps
+  // results at max_results, so a wider window just means fewer get dropped by the
+  // date filter, not more are fetched.
+  const since = daysAgo(4);
 
   const allPapers: ArxivPaper[] = [];
 
