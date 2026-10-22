@@ -1,0 +1,33 @@
+# Research Papers (2026-10-22)
+
+## Key Papers
+
+**[Digital restraints: when AI may override human decisions](https://link.springer.com/article/10.1007/s10676-026-09925-x)** *(Ethics and Information Technology, peer-reviewed)*
+This paper argues that existing AI ethics frameworks—built around influence, manipulation, and fairness—fail to address a growing class of systems that actively constrain, block, or bypass human decisions: fraud detectors halting transactions, autonomous vehicles overriding steering, and neurotechnologies that may modulate cognition upstream of action. The authors propose a new normative category of "digital restraints" to analyze when such overrides are ethically justified. *Why it matters:* As AI systems move from advisory to directly coercive roles, governance frameworks need updated vocabulary and standards for legitimate override authority—a gap with direct relevance to AI safety regulation.
+
+**[Assessing the Empirical Evidence for Loss of Control from Agentic General-Purpose AI](https://arxiv.org/abs/2610.25241v1)**
+Motivated by the EU Code of Practice for General-Purpose AI, which lists "loss of control" as a systemic risk requiring assessment, this study conducts the first structured review of 19 empirical studies on agentic misalignment, evaluating evidence quality across eight dimensions. The authors find significant gaps in rigor and generalizability in current empirical support for loss-of-control scenarios. *Why it matters:* This is a rare meta-scientific effort to hold AI risk claims to an evidentiary standard, directly informing how regulators should weight loss-of-control concerns in policy.
+
+**[Monitorability Is Trainable: Post-Training for Chain-of-Thought Monitorability](https://arxiv.org/abs/2610.29734v1)**
+The authors note that CoT monitoring—one of the few practical oversight tools for capable AI—degrades when training (e.g., compression, optimization against monitors) decouples stated reasoning from actual model behavior. They propose an unsupervised post-training objective that maximizes mutual information between CoT and behavior to explicitly preserve monitorability. *Why it matters:* This directly tackles a core fragility in interpretability-based oversight, offering a concrete lever to keep reasoning traces faithful as models scale.
+
+**[Why Static Probes Fail: Context Determines Deception Feature Composition](https://arxiv.org/abs/2610.27577v1)**
+This paper challenges the common assumption that deception corresponds to a single linear direction in LLM representation space, showing instead that the internal "deception feature" composition shifts with context, undermining static linear probes used for scheming/sandbagging detection. *Why it matters:* If deception detectors built on fixed probes are context-fragile, current mechanistic interpretability approaches to catching deceptive AI may be far less robust than assumed.
+
+**[Compaction Laundering: Provenance Destruction in Context-Compacting Coding Agents](https://arxiv.org/abs/2610.29869v1)**
+The author identifies that popular open-source coding agents flatten typed conversation history into plain-text strings before summarization, destroying message provenance and creating an exploitable trust boundary—an attacker who controls any content the agent reads can inject instructions that survive context compaction as "trusted" memory. *Why it matters:* This is a concrete, practical prompt-injection vector in widely deployed agentic coding tools, with implications for any system that compresses long-running agent context.
+
+**[A Calibrated Instrument for Detecting Disposition Drift in Language Models](https://arxiv.org/abs/2610.25735v1)**
+This work critiques the common practice of reporting pre-deployment safety traits (deception, power-seeking, sycophancy) as single AI-judged summary rates without error analysis, and introduces a calibrated instrument to detect "disposition drift" as models are modified post-release via fine-tuning or reasoning-depth changes. *Why it matters:* Safety certifications at release time are only as good as their durability; this offers a more rigorous way to track whether safety properties erode after deployment.
+
+**[Unintended Side Effects of Value Training in LLMs](https://arxiv.org/abs/2610.29922v1)**
+Fine-tuning LLMs on individual value dimensions (using Hofstede's framework) produces unexpected changes in unrelated capabilities and behaviors, revealing that values are interconnected in ways current narrow evaluations fail to capture. *Why it matters:* Value alignment interventions may have unanticipated collateral effects on model behavior, a critical consideration as more labs pursue targeted "value tuning."
+
+**[Uncensored Is Not Unbiased: Abliteration Removes Refusals but Not Script-Dependent Bias About Taiwan](https://arxiv.org/abs/2610.29342v1)**
+Testing abliterated (refusal-removed) open-weight models against their originals on politically sensitive statements about Taiwan and Tiananmen, the author finds that removing the refusal direction does not remove underlying political bias encoded via script/language choice. *Why it matters:* This complicates the popular narrative that "uncensoring" models yields neutral outputs, with implications for how censorship and bias are conflated in open-weight model governance debates.
+
+**[WRDO: Weighted Refusal Direction Optimization in Aligned Language Models](https://arxiv.org/abs/2610.29555v1)**
+The authors show that the standard single difference-of-means "refusal direction" used to study alignment robustness aggregates heterogeneous harm categories, and propose a weighted optimization approach that better captures how refusal is mediated across diverse harmful prompt types. *Why it matters:* Understanding refusal mechanisms at this granularity is essential for both red-teaming aligned models and designing more robust safety training.
+
+**[PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust](https://arxiv.org/abs/2610.28987v1)**
+PerMIT addresses persistent memory as an undefended attack surface for prompt injection and poisoning in LLM agents, introducing a memory architecture with provable integrity guarantees that mediates untrusted environment-derived values through a finite, machine-checked interface. *Why it matters:* As agents increasingly rely on long-term memory, formally verified defenses against memory poisoning are a crucial building block for secure agentic deployment.
