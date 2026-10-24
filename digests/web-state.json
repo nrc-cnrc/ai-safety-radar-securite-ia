@@ -506,7 +506,8 @@
     "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
     "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
     "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-    "https://www.anthropic.com/research/formal-verification"
+    "https://www.anthropic.com/research/formal-verification",
+    "https://www.anthropic.com/research/alignment-assessment-ukaisi"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -1119,7 +1120,8 @@
     "https://www.iaps.ai/research/preparing-for-offensive-cyber-agents-piloting-ai-enabled-penetration-testing-and-red-teaming",
     "https://www.iaps.ai/research/embedded-evaluators-for-frontier-ai-contractual-foundations-for-credible-assessments",
     "https://www.iaps.ai/research/honeypots-for-ai-agent-insider-threats",
-    "https://www.iaps.ai/research/cloud-compute-a-policy-escalation-framework"
+    "https://www.iaps.ai/research/cloud-compute-a-policy-escalation-framework",
+    "https://www.iaps.ai/research/operationalizing-us-china-ai-incident-notification"
   ],
   "Conjecture": [
     "https://www.conjecture.dev/research/build-a-simple-game-with-tactics",
