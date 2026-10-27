@@ -87,7 +87,11 @@
     "https://www.aisi.gov.uk/research/transect-retaining-observability-for-long-horizon-llm-agent-evaluations",
     "https://www.aisi.gov.uk/blog/transect-making-large-scale-agentic-evaluations-easier-to-understand",
     "https://www.aisi.gov.uk/blog/towards-technical-best-practice-for-frontier-ai-development",
-    "https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident"
+    "https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident",
+    "https://www.aisi.gov.uk/research/the-effectiveness-and-durability-of-pretraining-data-filtering-in-protein-language-models",
+    "https://www.aisi.gov.uk/research/reprobait-can-coding-agents-build-their-own-biological-ai-tools",
+    "https://www.aisi.gov.uk/blog/pretraining-data-filtering-in-open-weight-biological-models",
+    "https://www.aisi.gov.uk/blog/can-ai-coding-agents-rebuild-biological-ai-tools-from-a-paper"
   ],
   "Canada AI Safety Institute (CAISI)": [],
   "Japan AI Safety Institute (J-AISI)": [],
