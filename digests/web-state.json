@@ -508,7 +508,11 @@
     "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
     "https://www.anthropic.com/research/formal-verification",
     "https://www.anthropic.com/research/alignment-assessment-ukaisi",
-    "https://www.anthropic.com/news/s1-sec"
+    "https://www.anthropic.com/news/s1-sec",
+    "https://www.anthropic.com/news/expanding-partnership-gsa",
+    "https://www.anthropic.com/research/agents-judgment-calls",
+    "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
+    "https://www.anthropic.com/research/early-progress-drug-development"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
