@@ -1,0 +1,20 @@
+# Blogs & News (2026-10-30)
+
+## Top Stories
+
+**[Anthropic Files Its S-1](https://thezvi.substack.com/p/anthropic-files-its-s-1)** — Zvi Mowshowitz offers a comprehensive, "model card"-style breakdown of Anthropic's S-1 filing ahead of its IPO, parsing financials, governance structure, and safety commitments disclosed as part of the filing. This is a landmark moment for AI safety governance: as the first frontier lab with an explicit safety mission to go public, Anthropic's S-1 offers an unusually detailed, legally-binding window into how commercial pressures, board structure, and safety commitments interact once a safety-focused lab answers to public shareholders.
+
+**[AI #192: Anthropic Is Going Public](https://thezvi.substack.com/p/ai-192-anthropic-is-going-public)** — Zvi's weekly roundup frames the broader implications of Anthropic's IPO announcement alongside other developments in the week's AI news. It matters because an IPO changes incentive structures at a company central to current AI safety research and policy advocacy, raising questions about whether public-market pressures will erode its safety-first positioning over time.
+
+**[Leaking Muse's Charter, Meta's model spec](https://www.lesswrong.com/posts/TJGPL5FAk9sCioPbE/leaking-muse-s-charter-meta-s-model-spec)** — A LessWrong researcher reconstructed large portions of Meta's "Charter" document (its internal model spec) for the open-weights Muse Spark Open model by iteratively eliciting it through chain-of-thought prompting, rather than from any leaked source. This matters because it demonstrates that model specs and alignment documents intended to stay internal can often be reverse-engineered from model behavior alone, raising transparency and security questions for labs that rely on undisclosed specs to shape model behavior.
+
+**[What is OpenAI's Mission Advisory Council?](https://www.lesswrong.com/posts/KxbeqePFBooJteoeC/what-is-openai-s-mission-advisory-council-1)** — This post investigates the lesser-known Mission Advisory Council (MAC), one of three bodies — alongside the Safety and Security Committee and Safety Advisory Group — reportedly holding "oversight responsibility for safety" at OpenAI, prompted by Mikita Balesni's public letter to the company. Why it matters: as OpenAI's safety governance becomes increasingly layered and opaque, independent efforts to map who actually holds power over safety decisions are critical for external accountability.
+
+**[Artificial Analysis v5 and the benchmarker's dilemma](https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers)** — Nathan Lambert reviews the state of the third-party AI benchmarking industry via Artificial Analysis's v5 update, examining structural problems in how independent benchmarks are built, funded, and trusted. This matters for safety and governance because reliable, independent model evaluation is foundational infrastructure for both regulatory oversight and informed public/enterprise decision-making — and current incentive structures may be undermining that reliability.
+
+## Policy & Governance
+
+No official AI Safety Institute or regulator publications appeared in today's dataset. However, two items touch on AI governance structures worth flagging for policymakers:
+
+- **[What is OpenAI's Mission Advisory Council?](https://www.lesswrong.com/posts/KxbeqePFBooJteoeC/what-is-openai-s-mission-advisory-council-1)** maps the internal safety-oversight architecture at OpenAI, relevant to ongoing debates about corporate self-governance adequacy — it matters because regulators and researchers need clarity on where real safety authority sits inside labs before they can assess whether self-governance commitments are credible.
+- **[Anthropic Files Its S-1](https://thezvi.substack.com/p/anthropic-files-its-s-1)** discloses governance and safety-related commitments as legally binding public filings for the first time from a frontier safety-focused lab — it matters because IPO disclosures create a new, more rigorous paper trail that policymakers and researchers can use to hold the company accountable to its stated safety mission post-IPO.
