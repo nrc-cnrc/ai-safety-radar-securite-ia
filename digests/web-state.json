@@ -513,7 +513,8 @@
     "https://www.anthropic.com/research/agents-judgment-calls",
     "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
     "https://www.anthropic.com/research/early-progress-drug-development",
-    "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions"
+    "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+    "https://www.anthropic.com/research/provable-inference"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -1129,7 +1130,8 @@
     "https://www.iaps.ai/research/embedded-evaluators-for-frontier-ai-contractual-foundations-for-credible-assessments",
     "https://www.iaps.ai/research/honeypots-for-ai-agent-insider-threats",
     "https://www.iaps.ai/research/cloud-compute-a-policy-escalation-framework",
-    "https://www.iaps.ai/research/operationalizing-us-china-ai-incident-notification"
+    "https://www.iaps.ai/research/operationalizing-us-china-ai-incident-notification",
+    "https://www.iaps.ai/research/how-to-secure-advanced-us-chips"
   ],
   "Conjecture": [
     "https://www.conjecture.dev/research/build-a-simple-game-with-tactics",

@@ -1,0 +1,20 @@
+# Blogs & News (2026-11-03)
+
+## Top Stories
+
+**1. [Progress on provable inference for large language models](https://www.anthropic.com/research/provable-inference)** (Anthropic)
+Anthropic shared research progress on using zkSNARKs — a cryptographic proof technique — to verify that a given model inference was actually run as claimed, without revealing model weights or exposing proprietary details. This is pitched as a step toward "provable inference" infrastructure that could underpin compliance, auditing, and trust-but-verify regimes between labs, auditors, and regulators. *Why it matters: cryptographic verification of model behavior could become a foundational tool for AI governance — enabling third-party audits and compute-governance enforcement without forcing labs to disclose weights or proprietary IP.*
+
+**2. [Some "coherence arguments" are two different things in a trenchcoat](https://www.alignmentforum.org/posts/5a4tuSNDNodPsiS26/some-coherence-arguments-are-two-different-things-in-a)** (Alignment Forum)
+A detailed conceptual dissection of "coherence arguments" — the claims that market competition, self-reflective AI systems, and training algorithms all push agents toward being more internally consistent. The author argues these arguments conflate two distinct pressures: toward self-consistency, and toward ruthless long-term-outcome-maximizing behavior with indifference to everything else — and that the second (more dangerous) claim doesn't actually follow from the premises as often assumed. *Why it matters: this challenges a load-bearing argument in AI risk theorizing (that advanced AI will inevitably become a ruthless utility-maximizer), with direct implications for how seriously to weight classic misalignment threat models.*
+
+**3. [Against strawmanning unilateral pauses](https://www.lesswrong.com/posts/enzpS72uDmomiWN7a/against-strawmanning-unilateral-pauses)** and [Scott Alexander's Against SURA Seems Deeply Confused](https://thezvi.substack.com/p/scott-alexanders-against-sura-seems) (LessWrong / Zvi Mowshowitz)
+A live debate has broken out over Scott Alexander's critique of "unilateral pause" proposals (a lab or individual halting frontier development absent broader coordination). Both responses argue Alexander attacks a weak version of the pause proposal — ignoring conditional/limited pause designs where training resumes if others don't follow, and where staff are redirected to alignment/safety work rather than let go — and contend his game-theoretic objections don't hold against these stronger formulations. *Why it matters: this is a substantive sharpening of one of the most consequential strategic questions in AI safety — whether individual actors should ever unilaterally slow down — with direct relevance to lab policy and advocacy strategy.*
+
+**4. [Import AI 479: Spacewar; low-latency tasks versus LLMs; Genie 4](https://importai.substack.com/p/import-ai-479-spacewar-low-latency)** (Jack Clark)
+Jack Clark's newsletter covers emerging gaps between LLM capabilities and low-latency/real-time task performance, alongside commentary on world-model systems like Genie 4. *Why it matters: tracking where frontier capabilities still lag (e.g., real-time control tasks) helps calibrate near-term risk timelines and where safety attention should concentrate.*
+
+## Policy & Governance
+
+**[How to Secure Advanced U.S. Chips](https://www.iaps.ai/research/how-to-secure-advanced-us-chips)** (IAPS — Cassia King, Erich Grunewald, Hamish Low)
+This memo lays out concrete recommendations for hardening the security of advanced U.S. AI chips against theft, smuggling, and diversion, addressing a key enforcement gap in export-control and compute-governance regimes. *Why it matters: compute governance is only as strong as the physical and supply-chain security underpinning it — this memo targets a critical, under-addressed implementation gap in U.S. chip export policy.*
