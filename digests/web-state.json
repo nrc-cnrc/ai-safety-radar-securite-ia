@@ -516,7 +516,10 @@
     "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
     "https://www.anthropic.com/research/provable-inference",
     "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
-    "https://www.anthropic.com/research/how-researchers-use-claude"
+    "https://www.anthropic.com/research/how-researchers-use-claude",
+    "https://www.anthropic.com/research/components-of-agent-memory",
+    "https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs",
+    "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -1215,6 +1218,7 @@
     "https://palisaderesearch.org/blog/palisade-podcast-tim-hua",
     "https://palisaderesearch.org/blog/palisade-podcast-daniel-kokotajlo",
     "https://palisaderesearch.org/blog/palisade-podcast-matthew-lipka",
-    "https://palisaderesearch.org/blog/palisade-podcast-dara-lind"
+    "https://palisaderesearch.org/blog/palisade-podcast-dara-lind",
+    "https://palisaderesearch.org/blog/announcing-frominside-ai"
   ]
 }
