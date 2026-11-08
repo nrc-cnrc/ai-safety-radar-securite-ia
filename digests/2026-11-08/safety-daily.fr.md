@@ -1,0 +1,9 @@
+# Bulletin quotidien (2026-11-08)
+
+## Top 3 des développements
+
+**Une analyse de l'AI Now Institute relie les résultats des élections de mi-mandat à un rejet croissant des infrastructures d'IA** - [2026 election breakdown: Americans vote down data centers, AI and oligarchy](https://ainowinstitute.org/news/2026-election-breakdown-americans-vote-down-data-centers-ai-and-oligarchy) rapporte que les électeurs de plusieurs scrutins ont rejeté la construction de centres de données et l'influence politique de l'industrie de l'IA, selon une discussion entre Sophie Song, Brian Merchant, Molly White et Dave Karpf de l'AI Now Institute. Ceci est important car cela signale une résistance politique populaire à l'expansion des infrastructures d'IA, susceptible de créer des frictions réglementaires au niveau des États et des collectivités locales bien avant toute action fédérale en matière de politique d'IA.
+
+**Une nouvelle méthode étend l'interprétabilité au-delà de la découverte de caractéristiques dépendantes d'un corpus** - [Towards interpreting any residual stream direction by scaling activation inversion](https://arxiv.org/abs/2611.08465v1) présente les Maximally-Activating Example Metamodels, qui génèrent des exemples textuels pour des directions arbitraires du flux résiduel plutôt que de s'appuyer sur une recherche de corpus, surmontant ainsi une limitation clé des approches d'apprentissage de dictionnaire comme les SAE. Ceci est important car cela élargit la portée pratique de l'audit de modèles basé sur les activations à des directions qui n'apparaissent pas naturellement dans les corpus de texte disponibles.
+
+**Une étude de terrain documente l'usage de l'IA générative dans une intervention humanitaire en zone de conflit actif** - [Responsible GenAI Use During Active Armed Conflict: Evidence from Sudan's Emergency Response Rooms](https://arxiv.org/

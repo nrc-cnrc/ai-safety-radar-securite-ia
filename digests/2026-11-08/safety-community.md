@@ -1,0 +1,26 @@
+# Community & Tools (2026-11-08)
+
+## Key Discussions
+
+**1. A coordinated "deterministic physics/bounds validation" pitch lands simultaneously across five major agent ecosystems**
+Nearly identical issues proposing a rule-based, no-LLM-call validator for tool-call arguments (checking probabilities stay in [0,1], quantities are non-negative, NaN/Inf are caught, etc.) appeared within the same hour on [Anthropic Cookbook](https://github.com/anthropics/claude-cookbooks/issues/962), [OpenAI Cookbook](https://github.com/openai/openai-cookbook/issues/3295), [aider](https://github.com/Aider-AI/aider/issues/5965), [NVIDIA NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails/issues/2583), and [promptfoo](https://github.com/promptfoo/promptfoo/issues/12236). All reference a shared "phm-lite" rule table. This looks like a single actor (or bot) systematically seeding the same deterministic-guardrail proposal across the ecosystem's most-used agent/tooling repos simultaneously. **Why it matters:** it's a notable case study in how "safety tooling" proposals can be mass-distributed to shape multiple projects' roadmaps at once — worth watching whether maintainers adopt a shared validation primitive or treat this as spam/coordinated inauthentic contribution.
+
+**2. MCPAudit ships "Trust Before Connect" — sandbox an MCP server before installing it**
+[saagpatel/MCPAudit#392](https://github.com/saagpatel/MCPAudit/pull/392) merges an experimental feature that resolves an MCP server's published metadata/namespace and runs it in a sandbox before a user installs it, landing via a "one-time override" of the project's normal two-reviewer rule because the diff exceeded the CI reviewer's 200k-character cap (split into a resolver PR, [#393](https://github.com/saagpatel/MCPAudit/pull/393)). Open follow-up findings are tracked in [issue #394](https://github.com/saagpatel/MCPAudit/issues/394). **Why it matters:** as MCP becomes the default plugin/tool-discovery mechanism for agents, pre-install sandboxing is a concrete answer to the "install a random MCP server and let it run" supply-chain risk — though shipping it via a governance override is itself worth scrutiny.
+
+**3. agent-airlock patches four "fail-open" guard bugs and an SSRF class tied to real CVEs**
+A stacked PR series — [#458](https://github.com/sattyamjjain/agent-airlock/pull/458), [#459](https://github.com/sattyamjjain/agent-airlock/pull/459), [#460](https://github.com/sattyamjjain/agent-airlock/pull/460) — closes guard bugs where JSON-RPC request IDs sent as `7` vs `"7"` could desynchronize elicitation windows, and fixes OAuth metadata-issuer binding plus base64-encoded header evasion. A companion PR ([#451](https://github.com/sattyamjjain/agent-airlock/pull/451)) hardens a path-scoped egress allowlist against a `..;`-segment SSRF bypass tied to CVE-2026-120492. **Why it matters:** these are concrete, exploitable fail-open conditions in a widely-used agent security gateway — a reminder that MCP/agent guardrail layers need the same adversarial scrutiny as any other security boundary.
+
+**4. NeMo Guardrails' non-LLM jailbreak detectors are shown to be English-centric**
+[Issue #2570](https://github.com/NVIDIA-NeMo/Guardrails/issues/2570) reports that NeMo's perplexity-heuristic and embedding-classifier jailbreak detectors miss equivalent Polish-language jailbreaks that the English detectors would catch. **Why it matters:** it's a concrete, reproducible example of the well-known "safety training/tooling doesn't transfer across languages" gap, now surfacing in a production-grade open-source guardrails library rather than just academic benchmarks.
+
+**5. lm-evaluation-harness explicitly excludes two "compromised" litellm releases**
+[EleutherAI/lm-evaluation-harness#4551](https://github.com/EleutherAI/lm-evaluation-harness/pull/4551) relaxes a litellm version pin but specifically carves out `1.82.7` and `1.82.8` as compromised releases that must stay excluded. **Why it matters:** a quiet but important supply-chain security signal for one of the most widely used LLM routing libraries, now baked into a major eval harness's dependency constraints.
+
+## Notable GitHub Releases & Tools
+
+- **[TransformerLens v4.4.0](https://github.com/TransformerLensOrg/TransformerLens/pull/1997)** — Adds architecture adapters for Falcon-H1, LFM2/LFM2-MoE, and MiniCPM, fixes a faithfulness-test rounding bug, and patches a memory leak in attention-pattern caching. *Why it matters: keeps the field's dominant mechanistic-interpretability library current with the newest hybrid SSM/attention architectures researchers need to audit.*
+
+- **[Oumi Weights Lab v0.5.0 / v0.5.1](https://github.com/oumi-ai/weights-lab/releases/tag/v0.5.0)** — Turns circuit-finding techniques (direct logit attribution, path patching, edge attribution, SAEs/transcoders, attribution graphs) into tested, reusable "lab calls" agents can invoke, plus a batched `ablation_scan` and script-mode `open_lab`. *Why it matters: productizes interpretability research tooling for use by autonomous agents investigating models, a step toward scalable interpretability workflows.*
+
+- **[NeMo Guardrails: HiddenLayer AI Runtime Security rail](https://github.com/NVIDIA-NeMo/Guardrails/pull/2575) and [Agent Threat Rules (ATR) detection rail](https://github.com/NVIDIA-Ne
