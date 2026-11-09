@@ -1,0 +1,13 @@
+# Blogs & News (2026-11-09)
+
+## Top Stories
+
+**1. [Ajeya: AI is dramatically accelerating AI research right now](https://www.alignmentforum.org/posts/8tL9f5HZxsTvn2LHp/ajeya-ai-is-dramatically-accelerating-ai-research-right-now)** — Alignment Forum
+This post flags a consequential disclosure buried in Anthropic's recent S-1 filing: the company says it "may imminently meet" the threshold for "dramatically accelerated progress due to AI" under its Responsible Scaling Policy (effective July 2026). That threshold is defined as overall AI capabilities progress running at roughly *twice* the fastest sustained pre-automation rate, plausibly driven by AI systems automating AI R&D itself. Ajeya's analysis treats this as a live, near-term signal rather than a hypothetical — the kind of RSP trigger that was designed to prompt enhanced safety commitments. **This matters because it suggests one of the frontier labs' own governance mechanisms may be about to activate for the first time, testing whether voluntary scaling policies can actually constrain behavior once recursive AI R&D acceleration becomes measurable rather than theoretical.**
+
+**2. [Notes on Take-Off Speeds and RSI](https://www.alignmentforum.org/posts/ft9hzw82v7FRDKmpn/notes-on-take-off-speeds-and-rsi)** — Alignment Forum
+Released as course material for AI safety training, these notes lay out the core conceptual framework for reasoning about takeoff speeds and recursive self-improvement (RSI) — distinguishing slow/fast/hard takeoff scenarios and the mechanisms (e.g., compute-efficiency gains, automated research loops) that could drive discontinuous capability jumps. The author explicitly timed the release to coincide with the current moment of heightened attention to RSI dynamics, directly complementary to the Ajeya post above. **This matters as a timely primer for researchers and policymakers trying to build shared mental models of takeoff dynamics just as real-world evidence (like Anthropic's RSP threshold signal) starts to make these previously abstract scenarios concrete.**
+
+---
+
+*Note: Several other items in today's feed (e.g., personal essays on career decision-making and rationality technique, and a community Solstice event announcement) were outside the scope of AI safety, alignment, or governance and have been omitted. No AISI, regulatory, or think-tank policy publications were available in today's source set.*
