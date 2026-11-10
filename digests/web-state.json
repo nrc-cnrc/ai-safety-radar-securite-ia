@@ -519,7 +519,9 @@
     "https://www.anthropic.com/research/how-researchers-use-claude",
     "https://www.anthropic.com/research/components-of-agent-memory",
     "https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs",
-    "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models"
+    "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
+    "https://www.anthropic.com/news/roadshow-launch",
+    "https://www.anthropic.com/research/claude-electronics-design"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -992,7 +994,8 @@
     "https://deepmind.google/research/publications/157938/",
     "https://deepmind.google/research/publications/260459/",
     "https://deepmind.google/research/publications/149959/",
-    "https://deepmind.google/research/publications/279443/"
+    "https://deepmind.google/research/publications/279443/",
+    "https://deepmind.google/research/publications/250558/"
   ],
   "IAPS (Institute for AI Policy & Strategy)": [
     "https://www.iaps.ai/research/ai-decision-support-systems",
