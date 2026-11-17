@@ -522,7 +522,8 @@
     "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
     "https://www.anthropic.com/news/roadshow-launch",
     "https://www.anthropic.com/research/claude-electronics-design",
-    "https://www.anthropic.com/research/building-strong-safety-evaluations"
+    "https://www.anthropic.com/research/building-strong-safety-evaluations",
+    "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"
@@ -620,7 +621,8 @@
     "https://apolloresearch.ai/blog/embedded-evaluators-are-necessary-for-meaningful-external-testing",
     "https://apolloresearch.ai/blog/on-testifying-on-misaligned-ai-in-the-us-senate",
     "https://apolloresearch.ai/blog/principles-for-embedded-evaluations",
-    "https://apolloresearch.ai/blog/towards-embedded-evaluations-for-scheming-propensities"
+    "https://apolloresearch.ai/blog/towards-embedded-evaluations-for-scheming-propensities",
+    "https://apolloresearch.ai/blog/pilot-towards-embedded-evaluations"
   ],
   "Epoch AI": [
     "https://epoch.ai/blog/a-compute-based-framework-for-thinking-about-the-future-of-ai",
