@@ -1,0 +1,35 @@
+# Community & Tools (2026-11-19)
+
+## Key Discussions
+
+**1. "Anthropic Is Not a Safe AI Company" — coalition challenges Anthropic's safety branding ahead of IPO** ([HN, 135 pts, 77 comments](https://news.ycombinator.com/item?id=50548485) / [press release](https://www.businesswire.com/news/home/20261118974464/en/Anthropic-is-Not-a-Safe-AI-Company---Broad-Coalition-of-Scientists-Legal-Scholars-and-Tech-Leaders-Challenge-Anthropics-Safety-Branding-Ahead-of-IPO))
+The top story of the period: a coalition of scientists, legal scholars, and tech leaders is publicly disputing Anthropic's "safety-first" marketing right as the company moves toward an IPO. HN discussion centers on whether Anthropic's RSP commitments and interpretability publications constitute meaningful safety practice versus marketing, and what financial incentives at IPO do to safety-capability tradeoffs. **Why it matters:** this is a direct test case of whether safety branding survives commercial and investor pressure — a dynamic every frontier lab will face.
+
+**2. MLflow issue: LLM-judge "Guidelines" scorer follows instructions embedded inside the text it's supposed to be grading** ([mlflow#27957](https://github.com/mlflow/mlflow/issues/27957))
+A textbook prompt-injection vulnerability in an evaluation harness: the guidelines-based scorer can be manipulated by instructions planted inside the response under evaluation, undermining the integrity of the grading signal itself. **Why it matters:** as LLM-as-judge becomes the default scalable oversight mechanism, judges that can be steered by the content they grade represent a fundamental weak point in automated safety evaluation pipelines.
+
+**3. catpilot-ai-guardrails: command-reader evasion via ANSI-C `$'...'` quoting** ([issue #148](https://github.com/catpilotai/catpilot-ai-guardrails/issues/148))
+A found bypass where an agent could escape guardrail command-matching by encoding destructive commands (e.g. `rm -rf $'\x2f'`) in bash's ANSI-C quoting, which the hook's reader doesn't decode before pattern-matching. The fix is tracked alongside a broader hardening push (OIDC auth for the reference MCP server, cross-platform installers, OCSF/ECS evidence export — see [PR #151](https://github.com/catpilotai/catpilot-ai-guardrails/pull/151), [#152](https://github.com/catpilotai/catpilot-ai-guardrails/pull/152), [#153](https://github.com/catpilotai/catpilot-ai-guardrails/pull/153)). **Why it matters:** it's a concrete reminder that shell-level guardrails for coding agents need adversarial, not just literal, command parsing — these hooks are increasingly the last line of defense against destructive agent actions.
+
+**4. openai/evals: steganography eval silently passed malformed judge responses** ([PR #1862](https://github.com/openai/evals/pull/1862))
+A fix closing a gap where missing `task_output`/`payload` fields in the steganography-detection eval were replaced with empty strings instead of being flagged, letting malformed model responses pass as valid. **Why it matters:** steganographic communication between models/agents is a known concern for scalable-oversight and collusion risks, and a silently-lenient eval undermines confidence in any negative result from this benchmark.
+
+## Notable GitHub Releases & Tools
+
+**[NVIDIA-NeMo/Guardrails v0.25.0](https://github.com/NVIDIA-NeMo/Guardrails/releases/tag/v0.25.0)**
+Adds checks for agent *tool calls and results* (not just text I/O), a hooks server for Claude Code/Codex/NeMo Relay, and a new "NeMo Guardrails Gateway" for wrapping existing model APIs with input/output checks, plus LLM-judged tool-safety rails and CEL-expression rules. **Why it matters:** extending guardrails from chat-turn filtering to tool-call-level enforcement is a necessary step as agentic systems take real-world actions, not just generate text.
+
+**[catpilot-ai-guardrails feature wave](https://github.com/catpilotai/catpilot-ai-guardrails/pull/153)** (one-command cross-platform install, OIDC-secured MCP server, OCSF/ECS evidence export)
+A fast-moving guardrails project for coding agents (Claude Code, Codex, Copilot) shipping enterprise hardening: proven Python interpreter checks before hook install, resource-server auth for its reference MCP server, and security-log export in standard formats (OCSF/ECS). **Why it matters:** this is the kind of deployable, auditable control-plane tooling organizations need to actually operationalize "guardrails" beyond prompt-level instructions.
+
+**[agent-airlock PR #506 — supply-chain malware detection for agent frameworks](https://github.com/sattyamjjain/agent-airlock/pull/506)**
+Adds detection for the real-world malicious `agent-framework` 1.26.1/1.26.2 PyPI packages ([GHSA-764m-3ppc-5m73](https://github.com/advisories/GHSA-764m-3ppc-5m73)), which drop a `.pth` file that steals credentials on every interpreter startup. **Why it matters:** confirms that agent-tooling supply chains are now an active attack vector, not a hypothetical one — defensive tooling needs to track these incidents in near real time.
+
+**[TransformerLens interpretability fixes](https://github.com/TransformerLensOrg/TransformerLens/pull/2028)** (half-precision `ActivationCache` decomposition fix, legacy model-loading fix [#2029](https://github.com/TransformerLensOrg/TransformerLens/pull/2029), Gemma tokenizer fix [#2033](https://github.com/TransformerLensOrg/TransformerLens/pull/2033))
+A cluster of correctness fixes to the field's most widely used mechanistic-interpretability library, including dtype/device bugs in residual-stream decomposition that could silently corrupt analysis on bf16/fp16 models. **Why it matters:** interpretability research depends on this library's numerical correctness; silent dtype bugs in activation decomposition could have produced misleading circuit/feature analyses until caught.
+
+**[verifywise-ai/verifywise: EN 18286 compliance framework added](https://github.com/verifywise-ai/verifywise/pull/5422)**
+Adds EN 18286:2026, the first harmonised EU standard supporting Article 17 of the EU AI Act, as a built-in registry framework (organization- and use-case-level), shipped in [v2.6.9](https://github.com/verifywise-ai/verifywise/releases/tag/v2.6.9). **Why it matters:** gives compliance teams an immediately usable, open-source mapping from AI Act quality-management obligations to concrete checklist items, ahead of enforcement deadlines.
+
+**[stanford-crfm/helm — IFEval scoring race condition](https://github.com/stanford-crfm/helm/issues/4384)**
+A concurrency bug where `langdetect`'s lazy, unlocked profile loading under `ThreadPoolExecutor` causes compliant responses to be scored as failing IFEval instructions. **Why it matters:** another instance of benchmark infrastructure silently corrupting results — HELM's published capability scores for IFEval may need re-auditing until this is patched.
