@@ -527,7 +527,8 @@
     "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
     "https://www.anthropic.com/research/claude-black-hole-physics",
     "https://www.anthropic.com/news/ipo-close",
-    "https://www.anthropic.com/research/working-with-ai"
+    "https://www.anthropic.com/research/working-with-ai",
+    "https://www.anthropic.com/research/migrating-api-to-rust"
   ],
   "OpenAI Blog": [
     "https://openai.com/sitemap.xml/research/"

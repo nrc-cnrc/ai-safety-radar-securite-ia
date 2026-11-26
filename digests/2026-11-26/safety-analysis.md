@@ -1,0 +1,15 @@
+# Blogs & News (2026-11-26)
+
+## Top Stories
+
+- **[Claude and Levent Alpöge Prove the Riemann Hypothesis](https://thezvi.substack.com/p/claude-and-levent-alpoge-prove-the)** (Zvi Mowshowitz/Don't Worry About the Vase): Zvi reports on a claimed proof of the Riemann Hypothesis — "the most famous problem in mathematics" — produced through collaboration between Anthropic's Claude and mathematician Levent Alpöge. Details on verification, formalization status, and the division of labor between human and model remain to be fully scrutinized, but if substantiated this would be one of the most significant AI-assisted mathematics results to date. *This matters because a verified contribution to a landmark unsolved problem would be a watershed capability signal, reshaping assumptions about how far current frontier models can push original research and intensifying debate over evaluation rigor for extraordinary AI-generated claims.*
+
+- **[Migrating our Messages API to Rust](https://www.anthropic.com/research/migrating-api-to-rust)** (Anthropic): Anthropic describes rewriting its production Messages API from Python to Rust, using fleets of Claude agents to autonomously identify and fix behavioral discrepancies between the old and new implementations. *This matters as a real-world case study of highly autonomous, agentic software engineering being trusted on safety-and-reliability-critical production infrastructure — a preview of the oversight challenges that come with delegating complex verification work to AI agents.*
+
+- **[Jensen Huang Reinstated As Nvidia CEO at Behest of President Trump](https://thezvi.substack.com/p/jensen-huang-reinstated-as-nvidia)** (Zvi Mowshowitz): Following apparent political pressure, Donald Trump publicly "hoped" Nvidia's board would reinstate Jensen Huang as CEO, and the board subsequently complied. *This matters for AI governance because direct presidential intervention in the leadership of the world's dominant AI chip supplier signals an unusual blending of executive political power with control over critical compute infrastructure, with implications for export-control policy, industry independence, and concentration-of-power risk.*
+
+## Policy & Governance
+
+- **[Jensen Huang Reinstated As Nvidia CEO at Behest of President Trump](https://thezvi.substack.com/p/jensen-huang-reinstated-as-nvidia)**: See above — political actors exerting direct influence over corporate leadership at a chokepoint firm for global AI compute. *Why it matters: it sets a precedent for executive-branch leverage over AI hardware supply chains, a key lever in both industrial policy and international AI competition.*
+
+*Note: Several items in today's LessWrong feed (e.g., posts on "dunks," Sam Kriss commentary, and a P≠NP holiday parody) were tagged AI but are off-topic cultural/humor pieces with no direct AI safety or governance content, and have been omitted from this digest.*
