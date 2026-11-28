@@ -1,0 +1,13 @@
+# Blogs & News (2026-11-28)
+
+## Top Stories
+
+**[I don't expect superposition in transformer MLP neurons](https://www.alignmentforum.org/posts/o9dPGxEbpQrnasgDB/i-don-t-expect-superposition-in-transformer-mlp-neurons)** (Alignment Forum): A technical interpretability post arguing that while superposition-style feature compression likely occurs in the residual stream of well-trained, under-parameterized transformers, it is less likely to occur within MLP neurons themselves. This distinction matters for mechanistic interpretability research because it shapes where researchers should focus their search for monosemantic features and how they interpret sparse autoencoder results — getting the locus of superposition wrong could misdirect substantial interpretability effort.
+
+**[Astra 6.2's Brain Gets Smart But Its Head Gets Dumb](https://thezvi.substack.com/p/astra-62s-brain-gets-smart-but-its)** (Zvi Mowshowitz): Zvi examines a new model release (Astra 6.2), noting a split between strong underlying capability gains ("brain") and degraded higher-level judgment or output quality ("head"). This matters because it highlights a recurring and underappreciated alignment failure mode — raw capability improving faster than the reliability of the model's situational judgment — which complicates simple capability-based risk assessments.
+
+**[It's a Belief Cascade](https://www.lesswrong.com/posts/2kZgma6h2epedGBtD/it-s-a-belief-cascade)** (LessWrong): A critical reflection addressed to the Berkeley AI safety community, arguing that intense focus on predicting AI "timelines" is creating an information bubble where fuzzy, uncertain forecasts collapse into false collective certainty via social belief cascades. This matters because it's a rare piece of internal epistemic self-correction in the safety community, warning that groupthink on timelines could distort research priorities, funding, and policy advocacy.
+
+**[AI #196: The Return](https://thezvi.substack.com/p/ai-196-the-return)** (Zvi Mowshowitz): The latest installment of Zvi's weekly AI roundup, covering the broad sweep of recent model releases, safety incidents, and community discourse. It serves as a useful aggregator for practitioners trying to keep up with the pace of developments, though as a synthesis piece it should be read alongside primary sources rather than as a standalone signal.
+
+*Note: No AI Safety Institute updates, regulatory actions, or think tank policy publications were available in today's data, so the Policy & Governance section is omitted.*
